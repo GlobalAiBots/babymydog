@@ -14,15 +14,17 @@ export const metadata: Metadata = {
 
 function Nav() {
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg"><span className="text-2xl">\ud83d\udc3e</span><span className="text-charcoal" style={{fontFamily:'Playfair Display,serif'}}>Baby<span className="text-rose">MyDog</span></span></Link>
-        <div className="flex items-center gap-4 sm:gap-6 text-sm font-medium">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-rose/10">
+      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2.5 font-bold text-xl">
+          <span className="text-2xl">&#128062;</span>
+          <span className="text-charcoal" style={{fontFamily:'Playfair Display,serif'}}>Baby<span className="text-rose">MyDog</span></span>
+        </Link>
+        <div className="flex items-center gap-5 sm:gap-7 text-sm font-medium">
           <Link href="/breeds" className="text-gray-500 hover:text-rose transition">Breeds</Link>
           <Link href="/best" className="text-gray-500 hover:text-rose transition">Best Products</Link>
           <Link href="/gifts" className="text-gray-500 hover:text-rose transition hidden sm:block">Gift Guides</Link>
           <Link href="/blog" className="text-gray-500 hover:text-rose transition hidden sm:block">Blog</Link>
-          <Link href="/about" className="text-gray-500 hover:text-rose transition hidden sm:block">About</Link>
         </div>
       </div>
     </nav>
@@ -31,16 +33,55 @@ function Nav() {
 
 function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 mt-16">
-      <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-gray-500">
-          <div><p className="font-bold text-charcoal mb-2" style={{fontFamily:'Playfair Display,serif'}}>\ud83d\udc3e BabyMyDog</p><p>Premium product reviews and care guides for dog lovers. Because your dog deserves the best.</p></div>
-          <div><p className="font-bold text-charcoal mb-2">Explore</p><div className="flex flex-col gap-1"><Link href="/breeds" className="hover:text-rose transition">Dog Breeds</Link><Link href="/best" className="hover:text-rose transition">Best Products</Link><Link href="/gifts" className="hover:text-rose transition">Gift Guides</Link><Link href="/blog" className="hover:text-rose transition">Blog</Link><Link href="/disclosure" className="hover:text-rose transition">Affiliate Disclosure</Link></div></div>
-          <div><p className="font-bold text-charcoal mb-2">Legal</p><div className="flex flex-col gap-1"><Link href="/about" className="hover:text-rose transition">About</Link><Link href="/privacy" className="hover:text-rose transition">Privacy</Link><Link href="/terms" className="hover:text-rose transition">Terms</Link></div></div>
-          <div><p className="font-bold text-charcoal mb-2">From Global AI Bots</p><div className="flex flex-col gap-1"><a href="https://globalaibots.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">Global AI Bots</a><a href="https://askcletus.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">CLETUS AI</a><a href="https://rampseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">RampSeeker</a><a href="https://pierseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">PierSeeker</a><a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">BarkSeeker</a></div></div>
+    <footer className="mt-20" style={{background:'#4A1942'}}>
+      <div className="max-w-6xl mx-auto px-4 py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+          <div>
+            <p className="font-bold text-white text-lg mb-3" style={{fontFamily:'Playfair Display,serif'}}>&#128062; BabyMyDog</p>
+            <p className="text-white/60 leading-relaxed">Expert-picked products for pampered pups. Because your dog deserves to be spoiled.</p>
+            <div className="mt-4">
+              <p className="text-white/40 text-xs mb-2">Join the Pack</p>
+              <div className="flex gap-2">
+                <input type="email" placeholder="your@email.com" className="flex-1 px-3 py-2 rounded-full text-xs bg-white/10 border border-white/20 text-white placeholder:text-white/30 outline-none focus:border-rose transition" />
+                <button className="bg-rose hover:bg-rose-dark text-white text-xs font-bold px-4 py-2 rounded-full transition">Join</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className="font-bold text-white mb-3">Shop</p>
+            <div className="flex flex-col gap-1.5 text-white/60">
+              <Link href="/best/dog-beds" className="hover:text-rose transition">Dog Beds</Link>
+              <Link href="/best/dog-food" className="hover:text-rose transition">Dog Food</Link>
+              <Link href="/best/dog-toys" className="hover:text-rose transition">Dog Toys</Link>
+              <Link href="/best/dog-grooming" className="hover:text-rose transition">Grooming</Link>
+              <Link href="/best" className="hover:text-rose transition">All Products</Link>
+            </div>
+          </div>
+          <div>
+            <p className="font-bold text-white mb-3">Company</p>
+            <div className="flex flex-col gap-1.5 text-white/60">
+              <Link href="/about" className="hover:text-rose transition">About</Link>
+              <Link href="/blog" className="hover:text-rose transition">Blog</Link>
+              <Link href="/breeds" className="hover:text-rose transition">Breed Guides</Link>
+              <Link href="/privacy" className="hover:text-rose transition">Privacy</Link>
+              <Link href="/terms" className="hover:text-rose transition">Terms</Link>
+              <Link href="/disclosure" className="hover:text-rose transition">Affiliate Disclosure</Link>
+            </div>
+          </div>
+          <div>
+            <p className="font-bold text-white mb-3">From Global AI Bots</p>
+            <div className="flex flex-col gap-1.5 text-white/60">
+              <a href="https://globalaibots.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">Global AI Bots</a>
+              <a href="https://askcletus.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">CLETUS AI</a>
+              <a href="https://rampseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">RampSeeker</a>
+              <a href="https://pierseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">PierSeeker</a>
+              <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-rose transition">BarkSeeker</a>
+              <a href="https://babymydog.com" className="hover:text-rose transition">BabyMyDog</a>
+            </div>
+          </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-gray-200 text-xs text-gray-400 text-center">
-          <p>&copy; {new Date().getFullYear()} BabyMyDog. All rights reserved. <Link href="/disclosure" className="hover:text-rose transition">Affiliate Disclosure</Link></p>
+        <div className="mt-10 pt-6 border-t border-white/10 text-center">
+          <p className="text-white/40 text-xs">Made with &#128062; for dog lovers everywhere &middot; &copy; {new Date().getFullYear()} BabyMyDog &middot; <Link href="/disclosure" className="hover:text-rose transition">Affiliate Disclosure</Link></p>
         </div>
       </div>
     </footer>

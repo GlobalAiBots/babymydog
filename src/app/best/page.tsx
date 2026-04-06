@@ -10,17 +10,20 @@ export const metadata: Metadata = {
 
 export default function BestPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold text-charcoal mb-2" style={{fontFamily:'Playfair Display,serif'}}>Best Dog Products</h1>
-      <p className="text-gray-500 mb-8">Expert-reviewed picks across {productCategories.length} categories. Updated for 2026.</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {productCategories.map(c => (
-          <Link key={c.slug} href={`/best/${c.slug}`} className="group bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all border-l-4 border-l-rose">
-            <h2 className="font-bold text-charcoal group-hover:text-rose transition">{c.title}</h2>
-            <p className="text-gray-500 text-sm mt-2">{c.description}</p>
-            <p className="text-rose text-sm font-semibold mt-3">{c.picks.length} expert picks &rarr;</p>
-          </Link>
-        ))}
+    <div className="min-h-screen" style={{ backgroundColor: '#FFF9F0' }}>
+      <div className="max-w-5xl mx-auto px-4 py-14">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#4A1942] mb-3" style={{ fontFamily: 'Playfair Display,serif' }}>Best Dog Products</h1>
+        <p className="text-gray-500 text-lg mb-10">Expert-reviewed picks across {productCategories.length} categories. Updated for 2026.</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {productCategories.map(c => (
+            <Link key={c.slug} href={`/best/${c.slug}`} className="group bg-white border border-gray-100 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-l-4 border-l-[#E8637A]">
+              <h2 className="font-bold text-[#4A1942] text-lg group-hover:text-[#E8637A] transition" style={{ fontFamily: 'Playfair Display,serif' }}>{c.title}</h2>
+              <p className="text-gray-500 text-sm mt-3 leading-relaxed">{c.description}</p>
+              <p className="text-[#E8637A] text-sm font-semibold mt-4">{c.picks.length} expert picks &rarr;</p>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
