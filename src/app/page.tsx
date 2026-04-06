@@ -37,6 +37,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TRUST BAR */}
+      <section className="border-y border-charcoal/5 py-5" style={{background:'#F0EEEB'}}>
+        <div className="max-w-[1200px] mx-auto px-6 flex flex-wrap justify-center gap-6 md:gap-12 text-xs text-charcoal/40 font-medium">
+          <span>Independent Reviews</span>
+          <span className="hidden sm:inline">&middot;</span>
+          <span>No Sponsored Rankings</span>
+          <span className="hidden sm:inline">&middot;</span>
+          <span>Updated Monthly</span>
+          <span className="hidden sm:inline">&middot;</span>
+          <span>Trusted by Dog Owners Nationwide</span>
+        </div>
+      </section>
+
       {/* SHOP BY CATEGORY */}
       <section className="py-20" style={{background:'#F0EEEB'}}>
         <div className="max-w-[1200px] mx-auto px-6">
@@ -118,6 +131,32 @@ export default function Home() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* WHY TRUST US */}
+      <section className="py-20" style={{background:'#F0EEEB'}}>
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-charcoal">Why Trust Us</h2>
+            <p className="text-charcoal/40 mt-2">We do the research so you don&apos;t have to</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { title: "Research-Based", desc: "We test and compare dozens of products before making a single recommendation" },
+              { title: "No Sponsored Rankings", desc: "Our picks are based on quality, not payment. Period." },
+              { title: "Dog Owners First", desc: "Real recommendations from real dog people who use these products daily" },
+              { title: "Updated Monthly", desc: "We refresh our picks as new products launch and prices change" },
+            ].map((f) => (
+              <div key={f.title} className="text-center">
+                <div className="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center bg-white" style={{boxShadow:'0 2px 8px rgba(0,0,0,0.06)'}}>
+                  <div className="w-3 h-3 rounded-full bg-terra" />
+                </div>
+                <h3 className="font-bold text-charcoal text-sm mb-2">{f.title}</h3>
+                <p className="text-charcoal/40 text-xs leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

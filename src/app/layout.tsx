@@ -17,6 +17,7 @@ function Nav() {
     <nav className="sticky top-0 z-50 bg-cream/95 backdrop-blur-md">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-charcoal">
+          <span className="text-lg">&#128062;</span>
           <span className="text-terra">BabyMyDog</span>
         </Link>
         <div className="flex items-center gap-8 text-sm">
