@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { productCategories } from "@/data/products";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,17 +11,28 @@ export const metadata: Metadata = {
 
 export default function BestPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFF9F0' }}>
-      <div className="max-w-5xl mx-auto px-4 py-14">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#4A1942] mb-3" style={{ fontFamily: 'Playfair Display,serif' }}>Best Dog Products</h1>
-        <p className="text-gray-500 text-lg mb-10">Expert-reviewed picks across {productCategories.length} categories. Updated for 2026.</p>
+    <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
+      <div className="max-w-[1200px] mx-auto px-6 py-20">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] mb-3">Best Dog Products</h1>
+        <p className="text-[#1A1A1A]/50 text-lg mb-14">Expert-reviewed picks across {productCategories.length} categories. Updated for 2026.</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {productCategories.map(c => (
-            <Link key={c.slug} href={`/best/${c.slug}`} className="group bg-white border border-gray-100 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-l-4 border-l-[#E8637A]">
-              <h2 className="font-bold text-[#4A1942] text-lg group-hover:text-[#E8637A] transition" style={{ fontFamily: 'Playfair Display,serif' }}>{c.title}</h2>
-              <p className="text-gray-500 text-sm mt-3 leading-relaxed">{c.description}</p>
-              <p className="text-[#E8637A] text-sm font-semibold mt-4">{c.picks.length} expert picks &rarr;</p>
+            <Link
+              key={c.slug}
+              href={`/best/${c.slug}`}
+              className="group bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform"
+              style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}
+            >
+              <ImagePlaceholder id={`best-cat-${c.slug}`} alt={c.title} aspect="landscape" className="rounded-none" />
+              <div className="p-6">
+                <h2 className="font-bold text-[#1A1A1A] text-lg group-hover:text-[#C4704B] transition">{c.title}</h2>
+                <p className="text-[#1A1A1A]/50 text-sm mt-2 leading-relaxed">{c.description}</p>
+                <p className="text-[#C4704B] text-sm font-semibold mt-4 inline-flex items-center gap-1">
+                  {c.picks.length} expert picks <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
+                </p>
+              </div>
             </Link>
           ))}
         </div>

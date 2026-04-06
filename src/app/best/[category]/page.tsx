@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { productCategories, getProductCategoryBySlug } from "@/data/products";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
 
 export function generateStaticParams() { return productCategories.map(c => ({ category: c.slug })); }
@@ -22,65 +23,76 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
   if (!cat) notFound();
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFF9F0' }}>
-      <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
+      <div className="max-w-[1200px] mx-auto px-6 py-20">
+
         {/* Breadcrumbs */}
-        <nav className="text-sm text-gray-400 mb-8 flex flex-wrap gap-2">
-          <Link href="/" className="hover:text-[#E8637A] transition">Home</Link><span>/</span>
-          <Link href="/best" className="hover:text-[#E8637A] transition">Best Products</Link><span>/</span>
-          <span className="text-[#4A1942] font-medium">{cat.title}</span>
+        <nav className="text-sm text-[#1A1A1A]/40 mb-6 flex flex-wrap gap-2">
+          <Link href="/" className="hover:text-[#C4704B] transition">Home</Link><span>/</span>
+          <Link href="/best" className="hover:text-[#C4704B] transition">Best Products</Link><span>/</span>
+          <span className="text-[#1A1A1A] font-medium">{cat.title}</span>
         </nav>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold text-[#4A1942] mb-4" style={{ fontFamily: 'Playfair Display,serif' }}>{cat.title}</h1>
-        <p className="text-gray-500 text-lg mb-10">{cat.description}</p>
+        <h1 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] mb-4">{cat.title}</h1>
+        <p className="text-[#1A1A1A]/60 text-lg mb-3 max-w-2xl">{cat.description}</p>
+        <p className="text-xs text-[#1A1A1A]/30 font-medium uppercase tracking-wider mb-14">Last Updated: April 2026</p>
 
-        {/* Our Top Picks Summary */}
-        <div className="mb-12">
-          <h2 className="text-xl font-bold text-[#4A1942] mb-5" style={{ fontFamily: 'Playfair Display,serif' }}>Our Top Picks</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Our Top Picks — 3 Cards */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">Our Top Picks</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cat.picks.slice(0, 3).map((pick, i) => (
-              <div key={i} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow text-center">
-                <span className="inline-block text-xs font-bold text-[#E8637A] bg-[#E8637A]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
-                <h3 className="font-bold text-[#4A1942] text-lg mb-3" style={{ fontFamily: 'Playfair Display,serif' }}>{pick.name}</h3>
-                <a href="#amazon" className="text-[#E8637A] text-sm font-semibold hover:underline">See on Amazon &rarr;</a>
+              <div key={i} className="bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <ImagePlaceholder id={`best-${cat.slug}-top-${i}`} alt={pick.name} aspect="landscape" className="rounded-none" />
+                <div className="p-6 text-center">
+                  <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
+                  <h3 className="font-bold text-[#1A1A1A] text-lg mb-3">{pick.name}</h3>
+                  <a href="#amazon" className="text-[#C4704B] text-sm font-semibold hover:underline">See on Amazon &rarr;</a>
+                </div>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* Full Product Reviews */}
-        <div className="space-y-8 mb-12">
+        {/* Detailed Reviews */}
+        <section className="space-y-8 mb-16">
+          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">Detailed Reviews</h2>
           {cat.picks.map((pick, i) => (
-            <div key={i} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border-l-4 border-l-[#E8637A]">
-              <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
-                <h3 className="font-bold text-[#4A1942] text-2xl" style={{ fontFamily: 'Playfair Display,serif' }}>{pick.name}</h3>
-                <span className="text-xs font-bold text-[#E8637A] bg-[#E8637A]/10 px-4 py-1.5 rounded-full whitespace-nowrap">{pick.badge}</span>
+            <div key={i} className="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <div className="md:w-[280px] flex-shrink-0">
+                <ImagePlaceholder id={`best-${cat.slug}-review-${i}`} alt={pick.name} aspect="square" className="rounded-none h-full" />
               </div>
-              <p className="text-gray-600 leading-relaxed mb-5">{pick.description}</p>
-              <ul className="space-y-2 mb-6">
-                {pick.features.map((f, j) => (
-                  <li key={j} className="text-gray-500 text-sm flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-[#E8637A]/10 flex items-center justify-center flex-shrink-0 text-[#E8637A] text-xs font-bold">&#10003;</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a href="#amazon" className="inline-block bg-[#E8637A] hover:bg-[#d4566b] text-white font-bold text-sm px-7 py-3 rounded-full transition shadow-sm hover:shadow-xl">
-                Check Price on Amazon &rarr;
-              </a>
+              <div className="p-8 flex-1">
+                <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
+                  <h3 className="font-bold text-[#1A1A1A] text-xl">{pick.name}</h3>
+                  <span className="text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-4 py-1.5 rounded-full whitespace-nowrap">{pick.badge}</span>
+                </div>
+                <p className="text-[#1A1A1A]/60 leading-relaxed mb-5">{pick.description}</p>
+                <ul className="space-y-2 mb-6">
+                  {pick.features.map((f, j) => (
+                    <li key={j} className="text-[#1A1A1A]/50 text-sm flex items-start gap-3">
+                      <span className="w-5 h-5 rounded-full bg-[#5B7B5E]/10 flex items-center justify-center flex-shrink-0 text-[#5B7B5E] text-xs font-bold">&#10003;</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#amazon" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition">
+                  Check Price on Amazon &rarr;
+                </a>
+              </div>
             </div>
           ))}
-        </div>
+        </section>
 
         {/* How We Choose */}
-        <div className="rounded-2xl p-8 mb-10" style={{ backgroundColor: 'rgba(74, 25, 66, 0.08)' }}>
-          <h2 className="text-xl font-bold text-[#4A1942] mb-4" style={{ fontFamily: 'Playfair Display,serif' }}>How We Choose</h2>
-          <p className="text-gray-600 leading-relaxed">Our team researches hundreds of products, reads thousands of verified owner reviews, and consults with veterinarians and pet care professionals. We prioritize safety, durability, and real-world performance so you can shop with confidence.</p>
-        </div>
+        <section className="rounded-2xl p-10 mb-12" style={{ backgroundColor: '#F0EEEB' }}>
+          <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">How We Choose</h2>
+          <p className="text-[#1A1A1A]/60 leading-relaxed">Our team researches hundreds of products, reads thousands of verified owner reviews, and consults with veterinarians and pet care professionals. We prioritize safety, durability, and real-world performance so you can shop with confidence.</p>
+        </section>
 
         {/* Affiliate Disclaimer */}
-        <p className="text-gray-400 text-xs italic text-center">As an Amazon Associate, BabyMyDog earns from qualifying purchases. This does not affect our editorial independence.</p>
+        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate, BabyMyDog earns from qualifying purchases. This does not affect our editorial independence.</p>
       </div>
     </div>
   );
