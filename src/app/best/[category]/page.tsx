@@ -17,6 +17,31 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   };
 }
 
+const categorySearchTerms: Record<string, string> = {
+  "dog-beds": "best+dog+bed",
+  "dog-food": "best+dog+food",
+  "dog-toys": "best+dog+toys",
+  "dog-treats": "best+dog+treats",
+  "dog-grooming": "dog+grooming+kit",
+  "dog-crates": "best+dog+crate",
+  "dog-harnesses": "best+dog+harness",
+  "dog-leashes": "best+dog+leash",
+  "dog-bowls": "dog+bowl+feeder",
+  "dog-supplements": "dog+joint+supplements",
+  "dog-cameras": "dog+camera+monitor",
+  "dog-gps-trackers": "dog+gps+tracker",
+  "dog-dental": "dog+dental+care",
+  "dog-coats": "dog+coat+jacket",
+  "puppy-essentials": "new+puppy+starter+kit",
+};
+
+function amazonLink(slug: string, productName?: string): string {
+  const terms = productName
+    ? productName.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '+')
+    : categorySearchTerms[slug] || "best+dog+products";
+  return `https://www.amazon.com/s?k=${terms}&tag=babymydog03-20`;
+}
+
 export default async function ProductPage({ params }: { params: Promise<{ category: string }> }) {
   const { category } = await params;
   const cat = getProductCategoryBySlug(category);
@@ -26,19 +51,16 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
     <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
       <div className="max-w-[1200px] mx-auto px-6 py-20">
 
-        {/* Breadcrumbs */}
         <nav className="text-sm text-[#1A1A1A]/40 mb-6 flex flex-wrap gap-2">
           <Link href="/" className="hover:text-[#C4704B] transition">Home</Link><span>/</span>
           <Link href="/best" className="hover:text-[#C4704B] transition">Best Products</Link><span>/</span>
           <span className="text-[#1A1A1A] font-medium">{cat.title}</span>
         </nav>
 
-        {/* Title */}
         <h1 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] mb-4">{cat.title}</h1>
         <p className="text-[#1A1A1A]/60 text-lg mb-3 max-w-2xl">{cat.description}</p>
         <p className="text-xs text-[#1A1A1A]/30 font-medium uppercase tracking-wider mb-14">Last Updated: April 2026</p>
 
-        {/* Our Top Picks — 3 Cards */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">Our Top Picks</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -48,14 +70,13 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 <div className="p-6 text-center">
                   <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
                   <h3 className="font-bold text-[#1A1A1A] text-lg mb-3">{pick.name}</h3>
-                  <a href="#amazon" className="text-[#C4704B] text-sm font-semibold hover:underline">See on Amazon &rarr;</a>
+                  <a href={amazonLink(cat.slug, pick.name)} target="_blank" rel="noopener noreferrer" className="text-[#C4704B] text-sm font-semibold hover:underline">See on Amazon &rarr;</a>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Detailed Reviews */}
         <section className="space-y-8 mb-16">
           <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">Detailed Reviews</h2>
           {cat.picks.map((pick, i) => (
@@ -77,7 +98,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     </li>
                   ))}
                 </ul>
-                <a href="#amazon" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition">
+                <a href={amazonLink(cat.slug, pick.name)} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition">
                   Check Price on Amazon &rarr;
                 </a>
               </div>
@@ -85,14 +106,12 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           ))}
         </section>
 
-        {/* How We Choose */}
         <section className="rounded-2xl p-10 mb-12" style={{ backgroundColor: '#F0EEEB' }}>
           <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">How We Choose</h2>
           <p className="text-[#1A1A1A]/60 leading-relaxed">Our team researches hundreds of products, reads thousands of verified owner reviews, and consults with veterinarians and pet care professionals. We prioritize safety, durability, and real-world performance so you can shop with confidence.</p>
         </section>
 
-        {/* Affiliate Disclaimer */}
-        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate, BabyMyDog earns from qualifying purchases. This does not affect our editorial independence.</p>
+        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate (tag: babymydog03-20), BabyMyDog earns from qualifying purchases. This does not affect our editorial independence.</p>
       </div>
     </div>
   );

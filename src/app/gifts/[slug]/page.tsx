@@ -22,7 +22,7 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
         {guide.gifts.map((gift, i) => (
           <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-start justify-between gap-4">
             <div><h3 className="font-bold text-charcoal">{gift.name}</h3><p className="text-gray-500 text-sm mt-1">{gift.description}</p></div>
-            <div className="text-right flex-shrink-0"><p className="font-bold text-rose">{gift.price}</p><a href="#amazon" className="text-xs text-gold-dark font-semibold hover:underline mt-1 inline-block">Buy on Amazon &rarr;</a></div>
+            <div className="text-right flex-shrink-0"><p className="font-bold text-rose">{gift.price}</p><a href={`https://www.amazon.com/s?k=${encodeURIComponent(gift.name)}&tag=babymydog03-20`} target="_blank" rel="noopener noreferrer" className="text-xs text-gold-dark font-semibold hover:underline mt-1 inline-block">Buy on Amazon &rarr;</a></div>
           </div>
         ))}
       </div>
