@@ -7,20 +7,44 @@
 
 // Map of image slot IDs to real photo files
 const realImages: Record<string, { src: string; alt: string }> = {
+  // Homepage hero
   "hero-1": { src: "/images/happy-dog-owner-hugging-golden-retriever.jpg", alt: "Happy dog owner hugging a golden retriever" },
+  // Homepage category cards
   "category-beds": { src: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Dog relaxing in a premium gray dog bed" },
-  "category-toys": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever playing with stuffed toy" },
-  "category-food": { src: "/images/chocolate-lab-licking-lips-hungry.jpg", alt: "Chocolate Labrador licking lips" },
-  "category-gear": { src: "/images/couple-petting-dog-wearing-harness.jpg", alt: "Couple with dog wearing a harness" },
-  "category-gifts": { src: "/images/cute-black-dog-holding-thank-you-card.jpg", alt: "Adorable dog holding a thank you card" },
-  "breed-featured-1": { src: "/images/hound-dog-resting-on-bed-in-doorway.jpg", alt: "Beautiful hound dog resting on bed" },
-  "blog-1": { src: "/images/chocolate-lab-licking-lips-hungry.jpg", alt: "How to choose the right dog food for your breed" },
-  "blog-2": { src: "/images/pug-snuggled-in-patterned-dog-bed.jpg", alt: "Signs your dog needs a better bed" },
-  "blog-3": { src: "/images/puppy-sleeping-peacefully-on-round-bed.jpg", alt: "New puppy essentials checklist" },
+  "category-toys": { src: "/images/pug-cuddling-pink-unicorn-plush-toy.jpg", alt: "Adorable pug cuddling a plush unicorn toy - best dog toys reviewed" },
+  "category-food": { src: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Excited husky being fed from dog bowl - best dog food reviews" },
+  "category-gear": { src: "/images/french-bulldog-and-friend-in-designer-outfits.jpg", alt: "Stylish dogs in designer outfits - best dog gear and accessories" },
+  "category-gifts": { src: "/images/small-fluffy-dog-in-banana-pajamas.jpg", alt: "Cute dog in banana pajamas - perfect gift for pampered pups" },
+  "category-grooming": { src: "/images/french-bulldog-wearing-cute-shirt.jpg", alt: "Well-groomed French Bulldog in a cute shirt - best dog grooming tools" },
+  // Homepage breed spotlight
+  "breed-featured-1": { src: "/images/golden-retriever-holding-flower-outdoors.jpg", alt: "Golden Retriever holding a flower - America's favorite family dog" },
+  // Blog posts
+  "blog-1": { src: "/images/german-shepherd-catching-kibble-midair.jpg", alt: "German Shepherd catching kibble in mid-air - how to choose the right dog food" },
+  "blog-2": { src: "/images/pug-snuggled-in-patterned-dog-bed.jpg", alt: "Signs your dog needs a better bed - pug in comfortable dog bed" },
+  "blog-3": { src: "/images/two-happy-dogs-goldendoodle-and-black-lab.jpg", alt: "Two happy dogs ready for adventure - new puppy essentials checklist" },
+  "blog-4": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Dog grooming at home - golden retriever after grooming session" },
+  "blog-5": { src: "/images/yorkie-running-with-kong-ball-outdoors.jpg", alt: "Indestructible dog toys for heavy chewers - yorkie with Kong ball" },
+  // Product pages - dog beds
   "best-dog-beds-top-0": { src: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Best dog beds 2026 expert reviewed" },
-  "best-dog-beds-review-0": { src: "/images/dachshund-in-cozy-blue-dog-bed.jpg", alt: "Dachshund in a cozy blue dog bed" },
-  "best-dog-toys-top-0": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Best dog toys 2026" },
-  "best-dog-food-top-0": { src: "/images/chocolate-lab-licking-lips-hungry.jpg", alt: "Best dog food 2026" },
+  "best-dog-beds-review-0": { src: "/images/dachshund-in-cozy-blue-dog-bed.jpg", alt: "Dachshund in a cozy blue dog bed - top rated" },
+  "best-dog-beds-review-1": { src: "/images/pug-snuggled-in-patterned-dog-bed.jpg", alt: "Pug snuggled in patterned dog bed" },
+  "best-dog-beds-review-2": { src: "/images/puppy-sleeping-peacefully-on-round-bed.jpg", alt: "Puppy sleeping on round dog bed" },
+  "best-dog-beds-review-3": { src: "/images/hound-dog-resting-on-bed-in-doorway.jpg", alt: "Hound dog resting on bed in doorway" },
+  // Product pages - dog toys
+  "best-dog-toys-top-0": { src: "/images/pug-cuddling-pink-unicorn-plush-toy.jpg", alt: "Best dog toys 2026 - pug with plush toy" },
+  "best-dog-toys-review-0": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever with stuffed toy" },
+  "best-dog-toys-review-1": { src: "/images/yorkie-running-with-kong-ball-outdoors.jpg", alt: "Yorkie running with Kong ball" },
+  // Product pages - dog food
+  "best-dog-food-top-0": { src: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Best dog food 2026 - husky at feeding time" },
+  "best-dog-food-review-0": { src: "/images/chocolate-lab-licking-lips-hungry.jpg", alt: "Chocolate lab ready for dinner" },
+  "best-dog-food-review-1": { src: "/images/german-shepherd-catching-kibble-midair.jpg", alt: "German Shepherd catching kibble" },
+  // Product pages - dog grooming
+  "best-dog-grooming-top-0": { src: "/images/french-bulldog-wearing-cute-shirt.jpg", alt: "Best dog grooming tools 2026" },
+  // Product pages - dog harnesses
+  "best-dog-harnesses-top-0": { src: "/images/french-bulldog-and-friend-in-designer-outfits.jpg", alt: "Best dog harnesses 2026" },
+  "best-dog-harnesses-review-0": { src: "/images/couple-petting-dog-wearing-harness.jpg", alt: "Dog wearing a comfortable harness" },
+  // Newsletter / about
+  "newsletter": { src: "/images/woman-kissing-golden-retriever-outdoors.jpg", alt: "Woman kissing her golden retriever - join the BabyMyDog community" },
 };
 
 function getGradient(id: string): string {

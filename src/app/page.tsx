@@ -162,12 +162,17 @@ export default function Home() {
 
       {/* NEWSLETTER */}
       <section className="py-20" style={{background:'#5B7B5E'}}>
-        <div className="max-w-[600px] mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Join the Pack</h2>
-          <p className="text-white/60 mt-4 leading-relaxed">Weekly product picks, breed tips, and exclusive deals. Free forever.</p>
-          <div className="flex gap-3 mt-8 max-w-md mx-auto">
-            <input type="email" placeholder="your@email.com" className="flex-1 px-5 py-3.5 rounded-full text-sm outline-none border-0" style={{background:'rgba(255,255,255,0.15)', color:'white'}} />
-            <button className="bg-white text-sage font-bold px-7 py-3.5 rounded-full transition text-sm hover:bg-cream whitespace-nowrap">Subscribe</button>
+        <div className="max-w-[900px] mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <ImagePlaceholder id="newsletter" alt="Woman kissing her golden retriever - join the BabyMyDog community" aspect="square" className="rounded-3xl" />
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">Join the Pack</h2>
+              <p className="text-white/60 mt-4 leading-relaxed">Weekly product picks, breed tips, and exclusive deals. Free forever.</p>
+              <div className="flex gap-3 mt-8 max-w-md">
+                <input type="email" placeholder="your@email.com" className="flex-1 px-5 py-3.5 rounded-full text-sm outline-none border-0" style={{background:'rgba(255,255,255,0.15)', color:'white'}} />
+                <button className="bg-white text-sage font-bold px-7 py-3.5 rounded-full transition text-sm hover:bg-cream whitespace-nowrap">Subscribe</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
