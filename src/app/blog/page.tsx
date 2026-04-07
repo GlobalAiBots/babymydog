@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandName from "@/components/BrandName";
 import { blogPosts } from "@/data/blog-posts";
 import type { Metadata } from "next";
 
@@ -39,7 +40,7 @@ export default function BlogPage() {
       <div className="max-w-[1200px] mx-auto px-6 py-20">
 
         <div className="mb-14">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] mb-4">The BabyMyDog Blog</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] mb-4">The <BrandName /> Blog</h1>
           <p className="text-[#1A1A1A]/50 text-lg max-w-2xl">Expert tips, product reviews, and breed guides from a retired AKC breeder and dog lover.</p>
         </div>
 

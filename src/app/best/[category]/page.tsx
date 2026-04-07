@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandName from "@/components/BrandName";
 import { notFound } from "next/navigation";
 import { productCategories, getProductCategoryBySlug } from "@/data/products";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
@@ -104,7 +105,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         <div className="flex items-center gap-3 mb-14">
           <div className="w-10 h-10 rounded-full bg-[#C4704B]/10 flex items-center justify-center text-[#C4704B] font-bold text-sm">BM</div>
           <div>
-            <p className="text-sm font-semibold text-[#1A1A1A]">Reviewed by the BabyMyDog Team</p>
+            <p className="text-sm font-semibold text-[#1A1A1A]">Reviewed by the <BrandName /> Team</p>
             <p className="text-xs text-[#1A1A1A]/40">Retired AKC breeder &amp; U.S. military veteran &middot; 20+ years with dogs</p>
           </div>
         </div>
@@ -250,7 +251,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         </section>
 
         {/* Affiliate Disclosure */}
-        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate (tag: babymydog03-20), BabyMyDog earns from qualifying purchases. Prices shown are approximate and may vary. This does not affect our editorial independence.</p>
+        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate (tag: babymydog03-20), <BrandName /> earns from qualifying purchases. Prices shown are approximate and may vary. This does not affect our editorial independence.</p>
       </div>
 
       {/* Sticky Mobile CTA Bar */}

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import BrandName from "@/components/BrandName";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,7 +46,7 @@ export default function BestDogFoodSensitiveStomach() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">
           Best Dog Food for Sensitive Stomachs: Vet-Approved Picks for 2026
         </h1>
-        <p className="text-gray-400 text-sm mb-2">By the BabyMyDog Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+        <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; Nutrition &middot; 9 min read</p>
 
         <img

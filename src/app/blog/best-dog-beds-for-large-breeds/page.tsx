@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import BrandName from "@/components/BrandName";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -50,7 +51,7 @@ export default function BestDogBedsForLargeBreeds() {
           Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026
         </h1>
         <p className="text-gray-400 text-sm mb-2">April 7, 2026 &middot; Products &middot; 8 min read</p>
-        <p className="text-sm text-gray-500 mb-8 italic">By the BabyMyDog Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+        <p className="text-sm text-gray-500 mb-8 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
 
         <img
           src="/images/dog-relaxing-premium-gray-bed-with-plants.jpg"

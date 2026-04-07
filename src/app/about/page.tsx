@@ -1,16 +1,17 @@
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import BrandName from "@/components/BrandName";
 import type { Metadata } from "next";
 export const metadata: Metadata = { title: "About BabyMyDog", alternates: { canonical: "https://babymydog.com/about" } };
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
       <ImagePlaceholder id="about-hero" alt="Woman adventuring with her dog on ocean cliffs" aspect="wide" className="rounded-2xl mb-10" />
-      <h1 className="text-3xl font-bold text-charcoal mb-6" style={{fontFamily:'Playfair Display,serif'}}>About BabyMyDog</h1>
+      <h1 className="text-3xl font-bold text-charcoal mb-6" style={{fontFamily:'Playfair Display,serif'}}>About <BrandName /></h1>
       <div className="space-y-6 text-gray-600 leading-relaxed">
-        <p><strong className="text-charcoal">BabyMyDog helps you find the best products for your furry family member.</strong> We research, review, and recommend the top dog products across every category — from beds and food to grooming tools and tech gadgets.</p>
+        <p><strong className="text-charcoal"><BrandName /> helps you find the best products for your furry family member.</strong> We research, review, and recommend the top dog products across every category — from beds and food to grooming tools and tech gadgets.</p>
         <p>Every recommendation is based on real research, veterinary input, and feedback from dog owners. We believe your dog deserves the best, and we&apos;re here to help you find it without the guesswork.</p>
-        <p><strong className="text-charcoal">BabyMyDog is owned and operated by a retired AKC English Bulldog breeder and U.S. military veteran.</strong> Years of hands-on experience raising show-quality puppies informs every product recommendation on this site. We&apos;re not selling dogs — we&apos;re helping you take better care of yours.</p>
-        <p className="font-semibold text-charcoal">BabyMyDog is part of a family of sites built by <a href="https://globalaibots.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">Global AI Bots</a>:</p>
+        <p><strong className="text-charcoal"><BrandName /> is owned and operated by a retired AKC English Bulldog breeder and U.S. military veteran.</strong> Years of hands-on experience raising show-quality puppies informs every product recommendation on this site. We&apos;re not selling dogs — we&apos;re helping you take better care of yours.</p>
+        <p className="font-semibold text-charcoal"><BrandName /> is part of a family of sites built by <a href="https://globalaibots.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">Global AI Bots</a>:</p>
         <ul className="list-none space-y-2 text-sm">
           <li><a href="https://rampseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose font-semibold hover:underline">RampSeeker</a> — Every boat ramp in America</li>
           <li><a href="https://pierseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose font-semibold hover:underline">PierSeeker</a> — Every fishing pier in America</li>

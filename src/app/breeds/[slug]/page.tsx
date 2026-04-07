@@ -1,4 +1,5 @@
 import React from "react";
+import BrandName from "@/components/BrandName";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { breeds, getBreedBySlug } from "@/data/breeds";
@@ -248,7 +249,7 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
 
       {/* Footer Credit */}
       <div className="max-w-[1200px] mx-auto px-6 py-8 text-center">
-        <p className="text-[#1A1A1A]/30 text-xs">BabyMyDog is powered by <strong className="text-[#1A1A1A]/40">CLETUS AI</strong> from <strong className="text-[#1A1A1A]/40">Global AI Bots</strong></p>
+        <p className="text-[#1A1A1A]/30 text-xs"><BrandName /> is powered by <strong className="text-[#1A1A1A]/40">CLETUS AI</strong> from <strong className="text-[#1A1A1A]/40">Global AI Bots</strong></p>
       </div>
     </div>
   );

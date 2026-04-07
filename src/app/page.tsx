@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandName from "@/components/BrandName";
 import { breeds } from "@/data/breeds";
 import { blogPosts } from "@/data/blog-posts";
 
@@ -150,7 +151,7 @@ export default function Home() {
       {/* WHY DOG PARENTS TRUST US */}
       <section className="py-20" style={{ background: '#FAF8F5' }}>
         <div className="max-w-[1200px] mx-auto px-6">
-          <h2 className="text-3xl font-bold text-[#1A1A1A] text-center mb-12">Why Dog Parents Trust BabyMyDog</h2>
+          <h2 className="text-3xl font-bold text-[#1A1A1A] text-center mb-12">Why Dog Parents Trust <BrandName /></h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-8 text-center" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)', borderTop: '3px solid #C4704B' }}>
               <span className="text-3xl">&#127941;</span>
