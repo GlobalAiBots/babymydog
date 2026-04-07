@@ -57,7 +57,7 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
               </div>
               <div className="text-right flex-shrink-0">
                 <p className="font-bold text-[#C4704B]">{gift.price}</p>
-                <a href={`https://www.amazon.com/s?k=${encodeURIComponent(gift.name)}&tag=babymydog03-20`} target="_blank" rel="noopener noreferrer" className="text-xs text-[#C4704B] font-semibold hover:underline mt-1 inline-block">Buy on Amazon &rarr;</a>
+                <a href={gift.asin ? `https://www.amazon.com/dp/${gift.asin}?tag=babymydog03-20` : `https://www.amazon.com/s?k=${encodeURIComponent(gift.name)}&tag=babymydog03-20`} target="_blank" rel="noopener noreferrer" className="text-xs text-[#C4704B] font-semibold hover:underline mt-1 inline-block">Buy on Amazon &rarr;</a>
               </div>
             </div>
           ))}

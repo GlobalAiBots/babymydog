@@ -130,13 +130,13 @@ export default function BulldogPage() {
             <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">Top Products for Bulldogs</h2>
             <div className="space-y-4">
               {[
-                { name: "Bulldog Wrinkle Wipes", search: "bulldog+wrinkle+wipes+cleaning+pads", why: "Essential for keeping those adorable folds clean and infection-free" },
-                { name: "Cooling Mat for Dogs", search: "dog+cooling+mat+pad+bulldog", why: "A must for heat-sensitive bulldogs — keeps them cool without AC" },
-                { name: "Elevated Dog Bowl", search: "elevated+dog+bowl+bulldog+raised", why: "Helps bulldogs breathe easier while eating — reduces gulping and gas" },
-                { name: "Orthopedic Dog Bed", search: "orthopedic+dog+bed+medium+bulldog", why: "Supports their stocky frame and eases joint pressure" },
-                { name: "No-Pull Dog Harness", search: "no+pull+dog+harness+bulldog+medium", why: "Always use a harness, never a collar — bulldogs have breathing issues" },
+                { name: "Bulldog Wrinkle Wipes", asin: "B07PMN6RQN", why: "Essential for keeping those adorable folds clean and infection-free" },
+                { name: "Cooling Mat for Dogs", asin: "B07GDRPZPB", why: "A must for heat-sensitive bulldogs — keeps them cool without AC" },
+                { name: "Elevated Dog Bowl", asin: "B08F4WWJ68", why: "Helps bulldogs breathe easier while eating — reduces gulping and gas" },
+                { name: "Orthopedic Dog Bed", asin: "B0CXPMV4V1", why: "Supports their stocky frame and eases joint pressure" },
+                { name: "No-Pull Dog Harness", asin: "B01M8JT6FT", why: "Always use a harness, never a collar — bulldogs have breathing issues" },
               ].map((prod) => (
-                <a key={prod.name} href={`https://www.amazon.com/s?k=${prod.search}&tag=${TAG}`} target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <a key={prod.name} href={`https://www.amazon.com/dp/${prod.asin}?tag=${TAG}`} target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                   <h3 className="font-bold text-[#1A1A1A] text-sm">{prod.name}</h3>
                   <p className="text-[#1A1A1A]/50 text-xs mt-1 leading-relaxed">{prod.why}</p>
                   <span className="inline-block mt-3 bg-[#C4704B] text-white text-xs font-semibold px-4 py-2 rounded-full">Shop on Amazon &rarr;</span>
