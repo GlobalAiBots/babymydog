@@ -92,6 +92,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="antialiased min-h-screen flex flex-col" style={{background:'#FAF8F5', fontFamily:"'DM Sans', sans-serif"}}>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-5MB60LVFB2" strategy="afterInteractive" />
+        <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5MB60LVFB2');`}</Script>
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4822220549367368" crossOrigin="anonymous" strategy="afterInteractive" />
         <Nav />
         <main className="flex-1">{children}</main>

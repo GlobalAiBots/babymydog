@@ -23,8 +23,20 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
   const breed = getBreedBySlug(slug);
   if (!breed) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `${breed.name} — Care Guide, Products & Tips`,
+    "description": breed.description,
+    "author": { "@type": "Organization", "name": "BabyMyDog" },
+    "publisher": { "@type": "Organization", "name": "BabyMyDog", "url": "https://babymydog.com" },
+    "datePublished": "2026-04-01",
+    "dateModified": "2026-04-06",
+  };
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Full-width Hero */}
       <div className="relative w-full">

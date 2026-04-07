@@ -238,7 +238,12 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "blog-choose-breeder": { src: "/images/vet-examining-english-bulldog-ear.jpg", alt: "Vet examining English Bulldog - how to choose a reputable breeder" },
   // Bulldog breed page health section
   "bulldog-vet-checkup": { src: "/images/english-bulldog-at-vet-checkup.jpg", alt: "English Bulldog at the veterinarian for regular checkup" },
-  // Gift guide - Christmas
+  // Gift guide heroes
+  "gift-dog-lovers-hero": { src: "/images/happy-dog-owner-hugging-golden-retriever.jpg", alt: "Best gifts for dog lovers - curated gift guide" },
+  "gift-new-puppy-hero": { src: "/images/golden-retriever-puppies-in-a-row.jpg", alt: "New puppy gift guide - everything you need" },
+  "gift-dog-mom-hero": { src: "/images/woman-kissing-golden-retriever-outdoors.jpg", alt: "Best gifts for dog moms" },
+  "gift-dog-dad-hero": { src: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", alt: "Best gifts for dog dads" },
+  "gift-dog-christmas-hero": { src: "/images/dog-with-christmas-plush-toy-holiday.jpg", alt: "Happy dog with Christmas plush toy and holiday socks - best dog Christmas gifts" },
   "gift-christmas-hero": { src: "/images/dog-with-christmas-plush-toy-holiday.jpg", alt: "Happy dog with Christmas plush toy and holiday socks - best dog Christmas gifts" },
   // About / lifestyle
   "about-hero": { src: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", alt: "Woman adventuring with her dog on ocean cliffs - BabyMyDog helps you find the best for your pup" },

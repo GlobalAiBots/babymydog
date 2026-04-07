@@ -50,8 +50,38 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
   const cat = getProductCategoryBySlug(category);
   if (!cat) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": cat.title,
+    "description": cat.description,
+    "numberOfItems": cat.picks.length,
+    "itemListElement": cat.picks.map((pick, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "Product",
+        "name": pick.name,
+        "description": pick.description,
+        "review": {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": pick.rating, "bestRating": 5 },
+          "author": { "@type": "Organization", "name": "BabyMyDog" },
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": `https://www.amazon.com/dp/${pick.asin}?tag=babymydog03-20`,
+          "priceCurrency": "USD",
+          "price": pick.price.replace("$", ""),
+          "availability": "https://schema.org/InStock",
+        },
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen pb-24 md:pb-0" style={{ backgroundColor: '#FAF8F5' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-[1200px] mx-auto px-6 py-20">
 
         {/* Breadcrumbs */}
