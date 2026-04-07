@@ -21,11 +21,15 @@ function Nav() {
           <span className="text-xl sm:text-2xl text-[#C4704B] -ml-0.5" style={{ fontFamily: "'Pacifico', cursive", transform: 'rotate(-3deg)', display: 'inline-block', position: 'relative', top: '2px' }}>my dog</span>
           <span className="text-lg ml-1 group-hover:animate-bounce">&#128062;</span>
         </Link>
-        <div className="flex items-center gap-8 text-sm">
+        <div className="flex items-center gap-6 sm:gap-8 text-sm">
           <Link href="/breeds" className="text-charcoal/60 hover:text-terra transition">Breeds</Link>
           <Link href="/best" className="text-charcoal/60 hover:text-terra transition">Products</Link>
           <Link href="/gifts" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Gifts</Link>
           <Link href="/blog" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Blog</Link>
+          <Link href="/best" className="hidden sm:inline-flex items-center gap-1.5 bg-[#C4704B] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#b5623f] transition">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+            Shop Now
+          </Link>
         </div>
       </div>
     </nav>
@@ -100,6 +104,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-5MB60LVFB2" strategy="afterInteractive" />
         <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5MB60LVFB2');`}</Script>
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4822220549367368" crossOrigin="anonymous" strategy="afterInteractive" />
+        <a href="/best" className="block w-full bg-[#C4704B] text-white text-center py-2 text-xs sm:text-sm font-medium hover:bg-[#b5623f] transition">
+          &#128062; New for 2026 &mdash; Our team just dropped fresh picks across all 15 product categories &rarr;
+        </a>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
