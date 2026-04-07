@@ -12,17 +12,17 @@ const realImages: Record<string, { src: string; alt: string }> = {
   // Homepage category cards
   "category-beds": { src: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Dog relaxing in a premium gray dog bed" },
   "category-toys": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever playing with stuffed toy - best dog toys reviewed by experts" },
-  "category-food": { src: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Excited husky being fed from dog bowl - best dog food reviews" },
-  "category-gear": { src: "/images/french-bulldog-and-friend-in-designer-outfits.jpg", alt: "Stylish dogs in designer outfits - best dog gear and accessories" },
-  "category-gifts": { src: "/images/small-fluffy-dog-in-banana-pajamas.jpg", alt: "Adorable dog in banana pajamas - perfect gifts for pampered pups" },
+  "category-food": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Dog looking at bowl of premium kibble - best dog food reviews and recommendations" },
+  "category-gear": { src: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", alt: "Dog wearing premium red harness and leash - best dog gear and accessories reviewed" },
+  "category-gifts": { src: "/images/golden-retriever-puppies-in-red-wagon.jpg", alt: "Adorable golden retriever puppies in a red wagon - best gifts for dog lovers" },
   "category-grooming": { src: "/images/french-bulldog-wearing-cute-shirt.jpg", alt: "Well-groomed French Bulldog in a cute shirt - best dog grooming tools" },
   // Homepage breed spotlight
   "breed-featured-1": { src: "/images/golden-retriever-holding-flower-outdoors.jpg", alt: "Golden Retriever holding a flower - America's favorite family dog" },
   // Blog posts
-  "blog-1": { src: "/images/german-shepherd-catching-kibble-midair.jpg", alt: "German Shepherd catching kibble in mid-air - how to choose the right dog food" },
+  "blog-1": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Dog eyeing a bowl of kibble - how to choose the right dog food for your breed" },
   "blog-2": { src: "/images/pug-snuggled-in-patterned-dog-bed.jpg", alt: "Signs your dog needs a better bed - pug in comfortable dog bed" },
-  "blog-3": { src: "/images/two-happy-dogs-goldendoodle-and-black-lab.jpg", alt: "Two happy dogs ready for adventure - new puppy essentials checklist" },
-  "blog-4": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Dog grooming at home - golden retriever after grooming session" },
+  "blog-3": { src: "/images/golden-retriever-puppies-in-a-row.jpg", alt: "Five golden retriever puppies - the ultimate new puppy essentials checklist" },
+  "blog-4": { src: "/images/fluffy-pomeranian-walking-in-booties.jpg", alt: "Well-groomed Pomeranian in stylish booties - dog grooming tips for home" },
   "blog-5": { src: "/images/yorkie-running-with-kong-ball-outdoors.jpg", alt: "Indestructible dog toys for heavy chewers - yorkie with Kong ball" },
   // Product pages - dog beds
   "best-dog-beds-top-0": { src: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Best dog beds 2026 expert reviewed" },
@@ -32,9 +32,11 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "best-dog-beds-review-3": { src: "/images/hound-dog-resting-on-bed-in-doorway.jpg", alt: "Hound dog resting on bed in doorway" },
   // Product pages - dog toys
   "best-dog-toys-top-0": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Best dog toys 2026 - golden retriever with toy" },
+  "best-dog-toys-top-1": { src: "/images/weimaraner-puppies-sleeping-with-toys.jpg", alt: "Puppies surrounded by colorful toys - best dog toys reviewed" },
   "best-dog-toys-review-0": { src: "/images/pug-cuddling-pink-unicorn-plush-toy.jpg", alt: "Pug cuddling a plush unicorn toy - our favorite indestructible dog toys" },
   "best-dog-toys-review-1": { src: "/images/yorkie-running-with-kong-ball-outdoors.jpg", alt: "Yorkie running with Kong ball" },
-  "best-dog-toys-review-2": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever with favorite stuffed toy" },
+  "best-dog-toys-review-2": { src: "/images/weimaraner-puppies-sleeping-with-toys.jpg", alt: "Puppies surrounded by colorful toys" },
+  "best-dog-toys-review-3": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever with favorite stuffed toy" },
   // Product pages - dog food
   "best-dog-food-top-0": { src: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Best dog food 2026 - husky at feeding time" },
   "best-dog-food-review-0": { src: "/images/chocolate-lab-licking-lips-hungry.jpg", alt: "Chocolate lab ready for dinner" },
@@ -42,9 +44,19 @@ const realImages: Record<string, { src: string; alt: string }> = {
   // Product pages - dog grooming
   "best-dog-grooming-top-0": { src: "/images/french-bulldog-wearing-cute-shirt.jpg", alt: "Best dog grooming tools 2026" },
   // Product pages - dog harnesses
-  "best-dog-harnesses-top-0": { src: "/images/french-bulldog-and-friend-in-designer-outfits.jpg", alt: "Best dog harnesses 2026" },
+  "best-dog-harnesses-top-0": { src: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", alt: "Dog modeling a premium red harness - best dog harnesses 2026" },
   "best-dog-harnesses-review-0": { src: "/images/couple-petting-dog-wearing-harness.jpg", alt: "Dog wearing a comfortable harness" },
-  // Newsletter / about
+  "best-dog-harnesses-review-1": { src: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", alt: "Goldendoodle in red harness on a walk" },
+  // Product pages - dog food (additional)
+  "best-dog-food-review-2": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Border collie with premium kibble" },
+  // Breed avatars
+  "breed-avatar-golden-retriever": { src: "/images/golden-retriever-puppy-portrait-with-collar.jpg", alt: "Golden Retriever puppy - breed guide and product recommendations" },
+  "breed-avatar-beagle": { src: "/images/two-beagle-puppies-peeking-over-ledge.jpg", alt: "Two beagle puppies - breed guide and care tips" },
+  // Gift guide - Christmas
+  "gift-christmas-hero": { src: "/images/dog-with-christmas-plush-toy-holiday.jpg", alt: "Happy dog with Christmas plush toy and holiday socks - best dog Christmas gifts" },
+  // About / lifestyle
+  "about-hero": { src: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", alt: "Woman adventuring with her dog on ocean cliffs - BabyMyDog helps you find the best for your pup" },
+  // Newsletter
   "newsletter": { src: "/images/cute-black-dog-holding-thank-you-card.jpg", alt: "Sweet dog saying thank you - join the BabyMyDog pack for weekly picks" },
 };
 

@@ -1,8 +1,10 @@
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
 export const metadata: Metadata = { title: "About BabyMyDog", alternates: { canonical: "https://babymydog.com/about" } };
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
+      <ImagePlaceholder id="about-hero" alt="Woman adventuring with her dog on ocean cliffs" aspect="wide" className="rounded-2xl mb-10" />
       <h1 className="text-3xl font-bold text-charcoal mb-6" style={{fontFamily:'Playfair Display,serif'}}>About BabyMyDog</h1>
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <p><strong className="text-charcoal">BabyMyDog helps you find the best products for your furry family member.</strong> We research, review, and recommend the top dog products across every category — from beds and food to grooming tools and tech gadgets.</p>

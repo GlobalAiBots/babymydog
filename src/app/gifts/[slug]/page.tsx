@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { giftGuides, getGiftGuideBySlug } from "@/data/gifts";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
 export function generateStaticParams() { return giftGuides.map(g => ({ slug: g.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -18,6 +19,7 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
       <nav className="text-sm text-gray-400 mb-6 flex flex-wrap gap-2"><Link href="/" className="hover:text-rose transition">Home</Link><span>/</span><Link href="/gifts" className="hover:text-rose transition">Gift Guides</Link><span>/</span><span className="text-charcoal font-medium">{guide.title}</span></nav>
       <h1 className="text-3xl font-bold text-charcoal mb-3" style={{fontFamily:'Playfair Display,serif'}}>{guide.title}</h1>
       <p className="text-gray-500 mb-8">{guide.description}</p>
+      {slug === "dog-christmas" && <div className="mb-8"><ImagePlaceholder id="gift-christmas-hero" alt="Happy dog with Christmas plush toy" aspect="wide" className="rounded-2xl" /></div>}
       <div className="space-y-4">
         {guide.gifts.map((gift, i) => (
           <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-start justify-between gap-4">

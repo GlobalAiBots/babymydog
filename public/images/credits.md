@@ -24,3 +24,14 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | french-bulldog-wearing-cute-shirt.jpg | Karsten Winegeart | T7Hxkhv23yY |
 | two-happy-dogs-goldendoodle-and-black-lab.jpg | Jay Wennington | CdK2eYhWfQ0 |
 | small-fluffy-dog-in-banana-pajamas.jpg | Michael G | fuDYWb1SaQc |
+| golden-retriever-puppies-in-a-row.jpg | Bharathi Kannan | rfL-thiRzDs |
+| golden-retriever-puppy-portrait-with-collar.jpg | Bill Stephan | 9LkqymZFLrE |
+| woman-hiking-with-dog-ocean-cliffs.jpg | Erik McLean | PXnZYfcyF28 |
+| goldendoodle-wearing-red-harness-and-leash.jpg | Hugo Michael | 6T18N7P7tLg |
+| australian-shepherd-puppies-litter.jpg | Jametlene Reskp | VDrErQEF9e4 |
+| dog-with-christmas-plush-toy-holiday.jpg | Madalyn Cox | NE48YzTbYvo |
+| fluffy-pomeranian-walking-in-booties.jpg | Maxim Tolchinskiy | jI1YuTwXsfw |
+| weimaraner-puppies-sleeping-with-toys.jpg | Nathalie Spehner | ME11XuIpUXg |
+| golden-retriever-puppies-in-red-wagon.jpg | Andrew Lancaster | k34a6Yzt6A0 |
+| border-collie-looking-at-food-bowl-kibble.jpg | Ayla Verschueren | Qvbr5Uxgz_Q |
+| two-beagle-puppies-peeking-over-ledge.jpg | Ben Michel | Uyn3kXAaZX8 |
