@@ -51,7 +51,15 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "best-dog-food-review-2": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Border collie with premium kibble" },
   // Breed avatars
   "breed-avatar-golden-retriever": { src: "/images/golden-retriever-puppy-portrait-with-collar.jpg", alt: "Golden Retriever puppy - breed guide and product recommendations" },
+  "breed-avatar-bulldog": { src: "/images/english-bulldog-puppy-maggie.jpg", alt: "English Bulldog puppy - breed guide and care tips from a breeder" },
   "breed-avatar-beagle": { src: "/images/two-beagle-puppies-peeking-over-ledge.jpg", alt: "Two beagle puppies - breed guide and care tips" },
+  // Bulldog breed page
+  "breed-bulldog-hero": { src: "/images/english-bulldog-whiskey-brindle.jpg", alt: "Beautiful brindle English Bulldog - breed guide and care tips" },
+  "breed-bulldog-product-1": { src: "/images/english-bulldog-puppy-king-louis.jpg", alt: "English Bulldog puppy King Louis" },
+  "breed-bulldog-product-2": { src: "/images/english-bulldog-puppy-bella.png", alt: "English Bulldog puppy Bella" },
+  // Blog - bulldog posts
+  "blog-bulldog-care": { src: "/images/english-bulldog-whiskey-brindle.jpg", alt: "English Bulldog care guide - what every owner needs to know" },
+  "blog-choose-breeder": { src: "/images/english-bulldog-puppy-luna.jpg", alt: "English Bulldog puppy from a reputable breeder - how to choose" },
   // Gift guide - Christmas
   "gift-christmas-hero": { src: "/images/dog-with-christmas-plush-toy-holiday.jpg", alt: "Happy dog with Christmas plush toy and holiday socks - best dog Christmas gifts" },
   // About / lifestyle

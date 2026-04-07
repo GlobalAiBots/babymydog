@@ -35,3 +35,13 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | golden-retriever-puppies-in-red-wagon.jpg | Andrew Lancaster | k34a6Yzt6A0 |
 | border-collie-looking-at-food-bowl-kibble.jpg | Ayla Verschueren | Qvbr5Uxgz_Q |
 | two-beagle-puppies-peeking-over-ledge.jpg | Ben Michel | Uyn3kXAaZX8 |
+
+## Owner's Photos (from bellabulls.com — used with permission)
+
+| File | Source |
+|------|--------|
+| english-bulldog-whiskey-brindle.jpg | BellaBulls.com (owner's breeding program) |
+| english-bulldog-puppy-king-louis.jpg | BellaBulls.com |
+| english-bulldog-puppy-luna.jpg | BellaBulls.com |
+| english-bulldog-puppy-maggie.jpg | BellaBulls.com |
+| english-bulldog-puppy-bella.png | BellaBulls.com |
