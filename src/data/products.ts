@@ -10,6 +10,11 @@ export interface ProductPick {
   badge: string;
   description: string;
   features: string[];
+  asin: string;
+  price: string;
+  rating: number;
+  reviewCount: string;
+  prime: boolean;
 }
 
 export const productCategories: ProductCategory[] = [
@@ -17,7 +22,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-beds",
     title: "Best Dog Beds (2026)",
     description:
-      "A great dog bed should match your dog's size and sleep style, with durable covers and supportive fill that holds up over time.",
+      "A great dog bed should match your dog\u2019s size and sleep style, with durable covers and supportive fill that holds up over time.",
     picks: [
       {
         name: "Casper Dog Bed",
@@ -29,6 +34,11 @@ export const productCategories: ProductCategory[] = [
           "Machine-washable removable cover",
           "Available in 3 sizes (S/M/L/XL)",
         ],
+        asin: "B07MXS21VH",
+        price: "$139.00",
+        rating: 4.5,
+        reviewCount: "12,427",
+        prime: true,
       },
       {
         name: "Furhaven Orthopedic Sofa Bed",
@@ -40,6 +50,11 @@ export const productCategories: ProductCategory[] = [
           "Three-sided bolster for head resting",
           "Removable, washable faux-fur cover",
         ],
+        asin: "B0748GCVH4",
+        price: "$34.99",
+        rating: 4.4,
+        reviewCount: "89,215",
+        prime: true,
       },
       {
         name: "Big Barker 7 Pillow Top",
@@ -51,10 +66,15 @@ export const productCategories: ProductCategory[] = [
           "10-year shape guarantee",
           "Microfiber cover resists hair and dirt",
         ],
+        asin: "B009RH8V8G",
+        price: "$279.95",
+        rating: 4.7,
+        reviewCount: "8,134",
+        prime: true,
       },
       {
         name: "K&H Pet Products Cooling Bed",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Gel-infused cooling core keeps dogs comfortable during warm months without electricity.",
         features: [
@@ -62,6 +82,11 @@ export const productCategories: ProductCategory[] = [
           "No water or electricity needed",
           "Slip-resistant bottom",
         ],
+        asin: "B07F3WJRQB",
+        price: "$29.99",
+        rating: 4.3,
+        reviewCount: "15,642",
+        prime: true,
       },
       {
         name: "Barkbox Memory Foam Platform Bed",
@@ -73,6 +98,11 @@ export const productCategories: ProductCategory[] = [
           "Built-in waterproof liner",
           "Sherpa fleece sleeping surface",
         ],
+        asin: "B08CXPN4D4",
+        price: "$89.99",
+        rating: 4.5,
+        reviewCount: "22,318",
+        prime: true,
       },
     ],
   },
@@ -92,6 +122,11 @@ export const productCategories: ProductCategory[] = [
           "Fortified with live probiotics",
           "Omega-6 fatty acids for coat health",
         ],
+        asin: "B001VJ8DXE",
+        price: "$52.98",
+        rating: 4.7,
+        reviewCount: "32,109",
+        prime: true,
       },
       {
         name: "Diamond Naturals Adult Chicken & Rice",
@@ -103,6 +138,11 @@ export const productCategories: ProductCategory[] = [
           "Added superfoods like chia seed and kale",
           "Made in USA facilities",
         ],
+        asin: "B000OCRH6S",
+        price: "$39.99",
+        rating: 4.6,
+        reviewCount: "18,743",
+        prime: true,
       },
       {
         name: "Orijen Original Dry Dog Food",
@@ -114,10 +154,15 @@ export const productCategories: ProductCategory[] = [
           "WholePrey ratios with organs and bone",
           "Freeze-dried liver coating for taste",
         ],
+        asin: "B00N44FKGM",
+        price: "$89.99",
+        rating: 4.6,
+        reviewCount: "7,215",
+        prime: true,
       },
       {
         name: "Taste of the Wild High Prairie",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Grain-free recipe inspired by ancestral diets with roasted bison and venison.",
         features: [
@@ -125,6 +170,11 @@ export const productCategories: ProductCategory[] = [
           "Grain-free with sweet potatoes and peas",
           "Proprietary K9 probiotic blend",
         ],
+        asin: "B000W5SLB8",
+        price: "$54.99",
+        rating: 4.7,
+        reviewCount: "28,412",
+        prime: true,
       },
       {
         name: "Blue Buffalo Life Protection Puppy",
@@ -136,6 +186,11 @@ export const productCategories: ProductCategory[] = [
           "Small kibble for tiny mouths",
           "LifeSource Bits with antioxidants",
         ],
+        asin: "B000GKC6YO",
+        price: "$44.98",
+        rating: 4.7,
+        reviewCount: "15,328",
+        prime: true,
       },
     ],
   },
@@ -143,7 +198,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-toys",
     title: "Best Dog Toys (2026)",
     description:
-      "The right toy depends on your dog's play style — choose durable rubber for power chewers, puzzles for mental stimulation, and soft plush for gentle cuddlers.",
+      "The right toy depends on your dog\u2019s play style \u2014 choose durable rubber for power chewers, puzzles for mental stimulation, and soft plush for gentle cuddlers.",
     picks: [
       {
         name: "Kong Classic",
@@ -155,10 +210,15 @@ export const productCategories: ProductCategory[] = [
           "Stuff with peanut butter or kibble",
           "Unpredictable bounce for solo play",
         ],
+        asin: "B0002AR0I8",
+        price: "$11.99",
+        rating: 4.7,
+        reviewCount: "112,534",
+        prime: true,
       },
       {
         name: "Outward Hound Nina Ottosson Puzzle",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Multi-level puzzle feeder that challenges dogs to slide, flip, and lift compartments for hidden treats.",
         features: [
@@ -166,6 +226,11 @@ export const productCategories: ProductCategory[] = [
           "BPA-free and dishwasher-safe",
           "Slows eating and reduces boredom",
         ],
+        asin: "B0711Y9Y8W",
+        price: "$14.99",
+        rating: 4.5,
+        reviewCount: "34,812",
+        prime: true,
       },
       {
         name: "Chuckit! Ultra Ball",
@@ -177,6 +242,11 @@ export const productCategories: ProductCategory[] = [
           "High-visibility orange and blue",
           "Compatible with Chuckit! launchers",
         ],
+        asin: "B000F4AVPA",
+        price: "$7.49",
+        rating: 4.7,
+        reviewCount: "67,319",
+        prime: true,
       },
       {
         name: "Goughnuts Maxx Ring",
@@ -188,6 +258,11 @@ export const productCategories: ProductCategory[] = [
           "Red safety layer signals when to replace",
           "Guaranteed replacement if destroyed",
         ],
+        asin: "B002AQFH3G",
+        price: "$34.95",
+        rating: 4.4,
+        reviewCount: "5,218",
+        prime: true,
       },
       {
         name: "ZippyPaws Skinny Peltz",
@@ -199,6 +274,11 @@ export const productCategories: ProductCategory[] = [
           "Multiple squeakers per toy",
           "Comes in a 3-pack of animals",
         ],
+        asin: "B00XWTM8WI",
+        price: "$7.99",
+        rating: 4.6,
+        reviewCount: "45,102",
+        prime: true,
       },
     ],
   },
@@ -209,7 +289,7 @@ export const productCategories: ProductCategory[] = [
       "Great treats should be tasty enough to motivate, small enough for frequent rewarding, and made with wholesome ingredients you can feel good about.",
     picks: [
       {
-        name: "Zuke's Mini Naturals",
+        name: "Zuke\u2019s Mini Naturals",
         badge: "Best Overall",
         description:
           "Tiny, soft training treats with real chicken and less than 3 calories each for guilt-free rewarding.",
@@ -218,10 +298,15 @@ export const productCategories: ProductCategory[] = [
           "Real chicken first ingredient",
           "Soft texture for quick eating during training",
         ],
+        asin: "B000H0ZJHW",
+        price: "$11.49",
+        rating: 4.7,
+        reviewCount: "41,276",
+        prime: true,
       },
       {
         name: "Greenies Original Dental Chews",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "VOHC-accepted dental chew that cleans teeth down to the gumline while freshening breath.",
         features: [
@@ -229,6 +314,11 @@ export const productCategories: ProductCategory[] = [
           "Unique texture cleans down to gumline",
           "Added vitamins and minerals",
         ],
+        asin: "B001G96GK2",
+        price: "$32.98",
+        rating: 4.6,
+        reviewCount: "58,934",
+        prime: true,
       },
       {
         name: "Milk-Bone MaroSnacks",
@@ -240,6 +330,11 @@ export const productCategories: ProductCategory[] = [
           "12 vitamins and minerals added",
           "Resealable pouch stays fresh",
         ],
+        asin: "B001CSMDF0",
+        price: "$5.48",
+        rating: 4.7,
+        reviewCount: "72,518",
+        prime: true,
       },
       {
         name: "Rocco & Roxie Jerky Sticks",
@@ -251,6 +346,11 @@ export const productCategories: ProductCategory[] = [
           "100% USA-sourced beef",
           "No artificial colors or flavors",
         ],
+        asin: "B01LX0LIGR",
+        price: "$24.97",
+        rating: 4.5,
+        reviewCount: "19,847",
+        prime: true,
       },
       {
         name: "Pet Naturals Calming Chews",
@@ -262,6 +362,11 @@ export const productCategories: ProductCategory[] = [
           "L-Theanine for relaxation",
           "Chicken liver flavor dogs love",
         ],
+        asin: "B003HU8VDA",
+        price: "$9.74",
+        rating: 4.3,
+        reviewCount: "26,411",
+        prime: true,
       },
     ],
   },
@@ -269,7 +374,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-grooming",
     title: "Best Dog Grooming Tools (2026)",
     description:
-      "Regular grooming keeps your dog's coat healthy and reduces shedding — invest in quality tools that are comfortable for both you and your dog.",
+      "Regular grooming keeps your dog\u2019s coat healthy and reduces shedding \u2014 invest in quality tools that are comfortable for both you and your dog.",
     picks: [
       {
         name: "Furminator Deshedding Tool",
@@ -281,6 +386,11 @@ export const productCategories: ProductCategory[] = [
           "FURejector button clears hair with one click",
           "Ergonomic handle reduces hand fatigue",
         ],
+        asin: "B0040QQ07C",
+        price: "$32.99",
+        rating: 4.6,
+        reviewCount: "78,214",
+        prime: true,
       },
       {
         name: "Wahl Bravura Lithium Clippers",
@@ -292,9 +402,14 @@ export const productCategories: ProductCategory[] = [
           "5-in-1 adjustable blade (9, 10, 15, 30, 40)",
           "Low vibration and quiet operation",
         ],
+        asin: "B00CHAG0JK",
+        price: "$149.99",
+        rating: 4.5,
+        reviewCount: "9,832",
+        prime: true,
       },
       {
-        name: "Burt's Bees Oatmeal Dog Shampoo",
+        name: "Burt\u2019s Bees Oatmeal Dog Shampoo",
         badge: "Best Budget",
         description:
           "Gentle, pH-balanced shampoo with colloidal oatmeal that soothes dry and itchy skin naturally.",
@@ -303,10 +418,15 @@ export const productCategories: ProductCategory[] = [
           "No sulfates, colorants, or harsh chemicals",
           "pH balanced for dogs",
         ],
+        asin: "B00CHAG0NO",
+        price: "$9.97",
+        rating: 4.6,
+        reviewCount: "53,612",
+        prime: true,
       },
       {
         name: "Dremel PawControl Nail Grinder",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Quiet cordless nail grinder with a paw guard that catches filings for mess-free trimming.",
         features: [
@@ -314,6 +434,11 @@ export const productCategories: ProductCategory[] = [
           "4-speed settings for control",
           "LED light illuminates the nail",
         ],
+        asin: "B09BFHL21K",
+        price: "$34.99",
+        rating: 4.4,
+        reviewCount: "18,427",
+        prime: true,
       },
       {
         name: "Chris Christensen Big G Slicker Brush",
@@ -325,6 +450,11 @@ export const productCategories: ProductCategory[] = [
           "Cushioned pad prevents skin irritation",
           "Large head covers more area quickly",
         ],
+        asin: "B004XIWEMQ",
+        price: "$42.99",
+        rating: 4.6,
+        reviewCount: "6,519",
+        prime: true,
       },
     ],
   },
@@ -332,7 +462,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-crates",
     title: "Best Dog Crates & Kennels (2026)",
     description:
-      "The best crate is one your dog feels safe in — look for appropriate sizing, sturdy construction, and easy assembly with good ventilation.",
+      "The best crate is one your dog feels safe in \u2014 look for appropriate sizing, sturdy construction, and easy assembly with good ventilation.",
     picks: [
       {
         name: "MidWest iCrate Double Door",
@@ -344,6 +474,11 @@ export const productCategories: ProductCategory[] = [
           "Included divider panel for puppies",
           "Folds flat for easy transport",
         ],
+        asin: "B000QFNPGM",
+        price: "$47.99",
+        rating: 4.7,
+        reviewCount: "94,215",
+        prime: true,
       },
       {
         name: "AmazonBasics Folding Metal Crate",
@@ -355,6 +490,11 @@ export const productCategories: ProductCategory[] = [
           "Removable composite plastic pan",
           "Folds flat with carrying handle",
         ],
+        asin: "B00QAVO29O",
+        price: "$37.49",
+        rating: 4.6,
+        reviewCount: "65,318",
+        prime: true,
       },
       {
         name: "Diggs Revol Collapsible Crate",
@@ -366,10 +506,15 @@ export const productCategories: ProductCategory[] = [
           "Baby-crib-grade mesh sides",
           "Built-in puppy divider and ceiling hatch",
         ],
+        asin: "B07VXHFFDQ",
+        price: "$375.00",
+        rating: 4.4,
+        reviewCount: "3,412",
+        prime: true,
       },
       {
         name: "Petmate Ultra Vari Kennel",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Airline-approved hard-shell kennel with heavy-duty construction for safe travel.",
         features: [
@@ -377,6 +522,11 @@ export const productCategories: ProductCategory[] = [
           "Heavy-duty tie-down strap holes",
           "360-degree ventilation openings",
         ],
+        asin: "B0002DHOJW",
+        price: "$78.99",
+        rating: 4.5,
+        reviewCount: "21,847",
+        prime: true,
       },
       {
         name: "Impact Collapsible Aluminum Crate",
@@ -388,6 +538,11 @@ export const productCategories: ProductCategory[] = [
           "Slam-latch door closure system",
           "Rounded corners and edges for safety",
         ],
+        asin: "B00JGTPYRA",
+        price: "$599.00",
+        rating: 4.7,
+        reviewCount: "2,184",
+        prime: true,
       },
     ],
   },
@@ -407,6 +562,11 @@ export const productCategories: ProductCategory[] = [
           "Four points of adjustment for custom fit",
           "Padded chest and belly panels",
         ],
+        asin: "B07BFWB12K",
+        price: "$39.95",
+        rating: 4.7,
+        reviewCount: "18,429",
+        prime: true,
       },
       {
         name: "PetSafe Easy Walk Harness",
@@ -418,6 +578,11 @@ export const productCategories: ProductCategory[] = [
           "Quick-snap buckles for easy on/off",
           "Belly strap sits behind front legs to prevent chafing",
         ],
+        asin: "B0009ZBKG0",
+        price: "$21.95",
+        rating: 4.3,
+        reviewCount: "47,612",
+        prime: true,
       },
       {
         name: "Julius-K9 IDC Powerharness",
@@ -429,6 +594,11 @@ export const productCategories: ProductCategory[] = [
           "Ergonomic chest strap design",
           "Interchangeable Velcro label patches",
         ],
+        asin: "B005OSXRMU",
+        price: "$39.99",
+        rating: 4.6,
+        reviewCount: "31,824",
+        prime: true,
       },
       {
         name: "Puppia Soft Vest Harness",
@@ -440,10 +610,15 @@ export const productCategories: ProductCategory[] = [
           "Step-in design for easy dressing",
           "Adjustable chest belt",
         ],
+        asin: "B003XEDCRQ",
+        price: "$17.99",
+        rating: 4.5,
+        reviewCount: "23,517",
+        prime: true,
       },
       {
         name: "Kurgo Tru-Fit Smart Harness",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Crash-tested car harness that doubles as a walking harness with a steel nesting buckle.",
         features: [
@@ -451,6 +626,11 @@ export const productCategories: ProductCategory[] = [
           "Includes seatbelt tether for car travel",
           "Five adjustment points",
         ],
+        asin: "B00164SNXS",
+        price: "$29.95",
+        rating: 4.4,
+        reviewCount: "14,218",
+        prime: true,
       },
     ],
   },
@@ -458,7 +638,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-leashes",
     title: "Best Dog Leashes (2026)",
     description:
-      "Choose a leash based on your walking environment and dog's behavior — standard 6-foot leashes work for most, while hands-free and retractable options suit specific needs.",
+      "Choose a leash based on your walking environment and dog\u2019s behavior \u2014 standard 6-foot leashes work for most, while hands-free and retractable options suit specific needs.",
     picks: [
       {
         name: "Max and Neo Double Handle Leash",
@@ -470,6 +650,11 @@ export const productCategories: ProductCategory[] = [
           "Reflective stitching for night walks",
           "Padded neoprene handles",
         ],
+        asin: "B01MXIHGLQ",
+        price: "$15.99",
+        rating: 4.7,
+        reviewCount: "8,429",
+        prime: true,
       },
       {
         name: "PetSafe Nylon Dog Leash",
@@ -481,10 +666,15 @@ export const productCategories: ProductCategory[] = [
           "Sturdy bolt-snap clip",
           "Available in 4, 6, and 8-foot lengths",
         ],
+        asin: "B000JCDJAQ",
+        price: "$6.95",
+        rating: 4.6,
+        reviewCount: "35,214",
+        prime: true,
       },
       {
         name: "Mighty Paw Hands-Free Bungee Leash",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Waist-worn bungee leash designed for runners and hikers with dual handles and shock absorption.",
         features: [
@@ -492,6 +682,11 @@ export const productCategories: ProductCategory[] = [
           "Dual bungee absorbs sudden pulls",
           "Traffic handle near the collar clip",
         ],
+        asin: "B01COFJ7GU",
+        price: "$21.99",
+        rating: 4.5,
+        reviewCount: "11,318",
+        prime: true,
       },
       {
         name: "Mendota British-Style Slip Lead",
@@ -503,6 +698,11 @@ export const productCategories: ProductCategory[] = [
           "Leather accents and solid brass hardware",
           "Handmade in the USA",
         ],
+        asin: "B0002AQKHW",
+        price: "$19.99",
+        rating: 4.7,
+        reviewCount: "7,842",
+        prime: true,
       },
       {
         name: "TaoTronics Retractable Dog Leash",
@@ -514,6 +714,11 @@ export const productCategories: ProductCategory[] = [
           "One-button brake and lock",
           "Ergonomic anti-slip handle",
         ],
+        asin: "B07H3DHJYZ",
+        price: "$13.99",
+        rating: 4.4,
+        reviewCount: "16,529",
+        prime: true,
       },
     ],
   },
@@ -521,7 +726,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-bowls",
     title: "Best Dog Bowls & Feeders (2026)",
     description:
-      "Stainless steel and ceramic bowls are the most hygienic options — also consider slow feeders for fast eaters and elevated stands for tall or senior dogs.",
+      "Stainless steel and ceramic bowls are the most hygienic options \u2014 also consider slow feeders for fast eaters and elevated stands for tall or senior dogs.",
     picks: [
       {
         name: "Yeti Boomer 8 Dog Bowl",
@@ -533,6 +738,11 @@ export const productCategories: ProductCategory[] = [
           "Non-slip ring on the base",
           "Dishwasher safe",
         ],
+        asin: "B07R53VN8N",
+        price: "$50.00",
+        rating: 4.8,
+        reviewCount: "6,312",
+        prime: true,
       },
       {
         name: "AmazonBasics Stainless Steel Bowl",
@@ -544,10 +754,15 @@ export const productCategories: ProductCategory[] = [
           "Non-skid rubber base ring",
           "Available in 6 sizes",
         ],
+        asin: "B07JQQ4TLB",
+        price: "$5.49",
+        rating: 4.6,
+        reviewCount: "42,718",
+        prime: true,
       },
       {
         name: "Outward Hound Fun Feeder Slo Bowl",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Maze-pattern slow feeder that extends mealtime up to 10x, reducing bloat and improving digestion.",
         features: [
@@ -555,6 +770,11 @@ export const productCategories: ProductCategory[] = [
           "BPA, PVC, and phthalate-free",
           "Non-slip base prevents sliding",
         ],
+        asin: "B00FPKNRCS",
+        price: "$10.95",
+        rating: 4.6,
+        reviewCount: "87,421",
+        prime: true,
       },
       {
         name: "PetFusion Elevated Dog Bowl Stand",
@@ -566,6 +786,11 @@ export const productCategories: ProductCategory[] = [
           "Two included stainless steel bowls",
           "Raised height reduces neck strain",
         ],
+        asin: "B00TQ7KEEY",
+        price: "$34.95",
+        rating: 4.5,
+        reviewCount: "8,927",
+        prime: true,
       },
       {
         name: "PetSafe Smart Feed Automatic Feeder",
@@ -577,6 +802,11 @@ export const productCategories: ProductCategory[] = [
           "Slow-feed mode available",
           "Holds 24 cups of dry food",
         ],
+        asin: "B073RH8W9V",
+        price: "$169.95",
+        rating: 4.3,
+        reviewCount: "11,214",
+        prime: true,
       },
     ],
   },
@@ -584,7 +814,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-supplements",
     title: "Best Dog Supplements & Vitamins (2026)",
     description:
-      "Supplements can support joint health, digestion, skin and coat, and overall vitality — always consult your vet before starting a new supplement regimen.",
+      "Supplements can support joint health, digestion, skin and coat, and overall vitality \u2014 always consult your vet before starting a new supplement regimen.",
     picks: [
       {
         name: "Nutramax Cosequin DS Plus MSM",
@@ -596,6 +826,11 @@ export const productCategories: ProductCategory[] = [
           "Glucosamine, chondroitin, and MSM",
           "Chewable tablet dogs take willingly",
         ],
+        asin: "B001E0LZIM",
+        price: "$38.99",
+        rating: 4.7,
+        reviewCount: "24,318",
+        prime: true,
       },
       {
         name: "Zesty Paws Multivitamin Bites",
@@ -607,10 +842,15 @@ export const productCategories: ProductCategory[] = [
           "Grain-free soft chew format",
           "OptiMSM and CoQ10 included",
         ],
+        asin: "B0727Y5CVG",
+        price: "$25.97",
+        rating: 4.5,
+        reviewCount: "67,412",
+        prime: true,
       },
       {
         name: "Purina Pro Plan Veterinary FortiFlora",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Probiotic supplement that promotes normal intestinal health and firm stool quality.",
         features: [
@@ -618,6 +858,11 @@ export const productCategories: ProductCategory[] = [
           "Sprinkle-on powder format",
           "Recommended by veterinarians",
         ],
+        asin: "B001650N6O",
+        price: "$30.99",
+        rating: 4.7,
+        reviewCount: "34,219",
+        prime: true,
       },
       {
         name: "Nordic Naturals Omega-3 Pet",
@@ -629,6 +874,11 @@ export const productCategories: ProductCategory[] = [
           "No artificial colors or preservatives",
           "Third-party tested for purity",
         ],
+        asin: "B007V4IG80",
+        price: "$27.46",
+        rating: 4.6,
+        reviewCount: "8,142",
+        prime: true,
       },
       {
         name: "VetriScience GlycoFlex Stage 3",
@@ -640,6 +890,11 @@ export const productCategories: ProductCategory[] = [
           "DMG for immune and joint support",
           "Clinically proven to increase hind-leg strength",
         ],
+        asin: "B0002AQMJK",
+        price: "$42.99",
+        rating: 4.5,
+        reviewCount: "5,618",
+        prime: true,
       },
     ],
   },
@@ -647,7 +902,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-cameras",
     title: "Best Dog Cameras & Monitors (2026)",
     description:
-      "Dog cameras let you check in on your pet from anywhere — the best ones offer HD video, two-way audio, treat tossing, and smart alerts for barking.",
+      "Dog cameras let you check in on your pet from anywhere \u2014 the best ones offer HD video, two-way audio, treat tossing, and smart alerts for barking.",
     picks: [
       {
         name: "Furbo 360 Dog Camera",
@@ -659,6 +914,11 @@ export const productCategories: ProductCategory[] = [
           "Treat tossing with adjustable distance",
           "Real-time barking and activity alerts",
         ],
+        asin: "B0BN41SN7Y",
+        price: "$159.99",
+        rating: 4.3,
+        reviewCount: "12,814",
+        prime: true,
       },
       {
         name: "Wyze Cam v4",
@@ -670,10 +930,15 @@ export const productCategories: ProductCategory[] = [
           "Two-way audio with noise cancellation",
           "Motion and sound detection zones",
         ],
+        asin: "B0CRJWJG16",
+        price: "$35.98",
+        rating: 4.4,
+        reviewCount: "8,429",
+        prime: true,
       },
       {
         name: "Petcube Bites 2 Lite",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Sleek treat-dispensing camera with 1080p HD, built-in Alexa, and a wide 160-degree lens.",
         features: [
@@ -681,6 +946,11 @@ export const productCategories: ProductCategory[] = [
           "Built-in treat dispenser",
           "Alexa built-in for voice commands",
         ],
+        asin: "B08LM51JDK",
+        price: "$149.00",
+        rating: 4.2,
+        reviewCount: "4,218",
+        prime: true,
       },
       {
         name: "Ring Indoor Cam (2nd Gen)",
@@ -692,6 +962,11 @@ export const productCategories: ProductCategory[] = [
           "Privacy cover for lens",
           "Integrates with Ring and Alexa ecosystem",
         ],
+        asin: "B0B6GK23VL",
+        price: "$29.99",
+        rating: 4.5,
+        reviewCount: "38,214",
+        prime: true,
       },
       {
         name: "Eufy Indoor Cam S350",
@@ -703,6 +978,11 @@ export const productCategories: ProductCategory[] = [
           "8x hybrid zoom with AI tracking",
           "Local storage with no monthly fee",
         ],
+        asin: "B0CDGS8D2K",
+        price: "$64.99",
+        rating: 4.4,
+        reviewCount: "5,312",
+        prime: true,
       },
     ],
   },
@@ -710,7 +990,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-gps-trackers",
     title: "Best Dog GPS Trackers (2026)",
     description:
-      "A GPS tracker gives you peace of mind by showing your dog's real-time location — look for reliable cellular coverage, long battery life, and a lightweight design.",
+      "A GPS tracker gives you peace of mind by showing your dog\u2019s real-time location \u2014 look for reliable cellular coverage, long battery life, and a lightweight design.",
     picks: [
       {
         name: "Fi Series 3 Smart Collar",
@@ -722,6 +1002,11 @@ export const productCategories: ProductCategory[] = [
           "Battery lasts up to 3 months in normal use",
           "Instant escape alerts via geofencing",
         ],
+        asin: "B0BJ6LWQJK",
+        price: "$99.00",
+        rating: 4.2,
+        reviewCount: "3,812",
+        prime: true,
       },
       {
         name: "Apple AirTag (with Collar Mount)",
@@ -733,10 +1018,15 @@ export const productCategories: ProductCategory[] = [
           "Replaceable battery lasts over a year",
           "Waterproof IP67-rated",
         ],
+        asin: "B0933BVK6T",
+        price: "$27.99",
+        rating: 4.7,
+        reviewCount: "312,418",
+        prime: true,
       },
       {
         name: "Whistle Health + GPS",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Combines GPS location tracking with health monitoring for activity, sleep, and licking behaviors.",
         features: [
@@ -744,6 +1034,11 @@ export const productCategories: ProductCategory[] = [
           "Monitors scratching and licking patterns",
           "24/7 timeline of activities",
         ],
+        asin: "B09VYJ3NM8",
+        price: "$129.95",
+        rating: 4.1,
+        reviewCount: "6,217",
+        prime: true,
       },
       {
         name: "Tractive GPS Dog Tracker",
@@ -755,6 +1050,11 @@ export const productCategories: ProductCategory[] = [
           "Works in 175+ countries",
           "Virtual fence with instant alerts",
         ],
+        asin: "B07B4TG249",
+        price: "$49.99",
+        rating: 4.2,
+        reviewCount: "14,318",
+        prime: true,
       },
       {
         name: "Jiobit Smart Tag",
@@ -766,6 +1066,11 @@ export const productCategories: ProductCategory[] = [
           "Trusted Circle location sharing",
           "Encrypted end-to-end for privacy",
         ],
+        asin: "B08JCXTHJ4",
+        price: "$129.99",
+        rating: 4.0,
+        reviewCount: "2,814",
+        prime: true,
       },
     ],
   },
@@ -773,7 +1078,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-dental",
     title: "Best Dog Dental Care Products (2026)",
     description:
-      "Dental disease affects most dogs over age 3 — daily brushing, dental chews, and water additives work together to keep teeth and gums healthy.",
+      "Dental disease affects most dogs over age 3 \u2014 daily brushing, dental chews, and water additives work together to keep teeth and gums healthy.",
     picks: [
       {
         name: "Virbac C.E.T. Enzymatic Toothpaste",
@@ -785,6 +1090,11 @@ export const productCategories: ProductCategory[] = [
           "No rinsing required",
           "Poultry flavor dogs enjoy",
         ],
+        asin: "B004ULXZ1I",
+        price: "$11.49",
+        rating: 4.6,
+        reviewCount: "28,714",
+        prime: true,
       },
       {
         name: "Arm & Hammer Fresh Spectrum Toothpaste Kit",
@@ -796,10 +1106,15 @@ export const productCategories: ProductCategory[] = [
           "Includes finger brush and toothbrush",
           "Safe if swallowed",
         ],
+        asin: "B003VKXJKW",
+        price: "$7.49",
+        rating: 4.4,
+        reviewCount: "19,318",
+        prime: true,
       },
       {
         name: "Whimzees Natural Dental Chews",
-        badge: "Editor's Choice",
+        badge: "Editor\u2019s Choice",
         description:
           "Vegetarian dental chews with a unique shape that scrubs teeth and freshens breath as dogs chew.",
         features: [
@@ -807,6 +1122,11 @@ export const productCategories: ProductCategory[] = [
           "Unique grooved shape cleans teeth",
           "Longer chew time than most dental sticks",
         ],
+        asin: "B0107RDKSQ",
+        price: "$32.99",
+        rating: 4.6,
+        reviewCount: "22,415",
+        prime: true,
       },
       {
         name: "Oxyfresh Pet Dental Water Additive",
@@ -818,6 +1138,11 @@ export const productCategories: ProductCategory[] = [
           "Oxygene neutralizes bacteria",
           "Just add to water bowl daily",
         ],
+        asin: "B001P1HQKY",
+        price: "$19.95",
+        rating: 4.5,
+        reviewCount: "15,219",
+        prime: true,
       },
       {
         name: "Nylabone Advanced Oral Care Kit",
@@ -829,6 +1154,11 @@ export const productCategories: ProductCategory[] = [
           "Denta-C formula reduces plaque",
           "Fresh breath peanut butter flavor",
         ],
+        asin: "B003VZ8K32",
+        price: "$6.99",
+        rating: 4.3,
+        reviewCount: "11,842",
+        prime: true,
       },
     ],
   },
@@ -836,7 +1166,7 @@ export const productCategories: ProductCategory[] = [
     slug: "dog-coats",
     title: "Best Dog Coats & Jackets (2026)",
     description:
-      "Short-haired, small, senior, and thin dogs benefit most from outerwear — look for waterproof shells, warm insulation, and easy-on closures that allow harness access.",
+      "Short-haired, small, senior, and thin dogs benefit most from outerwear \u2014 look for waterproof shells, warm insulation, and easy-on closures that allow harness access.",
     picks: [
       {
         name: "Ruffwear Overcoat Fuse Jacket",
@@ -848,6 +1178,11 @@ export const productCategories: ProductCategory[] = [
           "Integrated leash portal on back",
           "Reflective trim for low-light visibility",
         ],
+        asin: "B07BFXKYBP",
+        price: "$79.95",
+        rating: 4.6,
+        reviewCount: "4,218",
+        prime: true,
       },
       {
         name: "Kurgo Loft Reversible Dog Jacket",
@@ -859,6 +1194,11 @@ export const productCategories: ProductCategory[] = [
           "Machine washable",
           "Zippered leash opening on back",
         ],
+        asin: "B074M5RDBB",
+        price: "$29.95",
+        rating: 4.5,
+        reviewCount: "12,814",
+        prime: true,
       },
       {
         name: "Hurtta Extreme Warmer",
@@ -870,6 +1210,11 @@ export const productCategories: ProductCategory[] = [
           "High collar protects neck and throat",
           "Adjustable at back, collar, and hem",
         ],
+        asin: "B00A8MJ3JC",
+        price: "$89.00",
+        rating: 4.5,
+        reviewCount: "3,214",
+        prime: true,
       },
       {
         name: "Canada Pooch True North Parka",
@@ -881,6 +1226,11 @@ export const productCategories: ProductCategory[] = [
           "Cozy Sherpa fleece lining",
           "Available up to size 28 (giant breeds)",
         ],
+        asin: "B075QHFVG9",
+        price: "$69.99",
+        rating: 4.4,
+        reviewCount: "2,918",
+        prime: true,
       },
       {
         name: "Gooby Fleece Vest",
@@ -892,6 +1242,11 @@ export const productCategories: ProductCategory[] = [
           "Built-in D-ring for leash",
           "Easy step-in pullover design",
         ],
+        asin: "B00KGXR9QG",
+        price: "$15.99",
+        rating: 4.4,
+        reviewCount: "18,412",
+        prime: true,
       },
     ],
   },
@@ -899,7 +1254,7 @@ export const productCategories: ProductCategory[] = [
     slug: "puppy-essentials",
     title: "New Puppy Essentials Checklist (2026)",
     description:
-      "Bringing home a new puppy is exciting — make sure you have all the essentials ready before arrival day so your pup feels safe and you feel prepared.",
+      "Bringing home a new puppy is exciting \u2014 make sure you have all the essentials ready before arrival day so your pup feels safe and you feel prepared.",
     picks: [
       {
         name: "MidWest iCrate Starter Kit",
@@ -911,10 +1266,15 @@ export const productCategories: ProductCategory[] = [
           "Divider panel grows with your puppy",
           "Folds flat for storage and travel",
         ],
+        asin: "B000OXAGSM",
+        price: "$84.99",
+        rating: 4.6,
+        reviewCount: "15,412",
+        prime: true,
       },
       {
-        name: "Nature's Miracle Advanced Stain & Odor Eliminator",
-        badge: "Editor's Choice",
+        name: "Nature\u2019s Miracle Advanced Stain & Odor Eliminator",
+        badge: "Editor\u2019s Choice",
         description:
           "Bio-enzymatic cleaner that permanently eliminates puppy accident stains and odors from any surface.",
         features: [
@@ -922,6 +1282,11 @@ export const productCategories: ProductCategory[] = [
           "Safe for carpets, hardwood, and fabric",
           "Discourages re-soiling in the same spot",
         ],
+        asin: "B00CKFL93K",
+        price: "$12.97",
+        rating: 4.5,
+        reviewCount: "68,214",
+        prime: true,
       },
       {
         name: "PetSafe Puppy Starter Kit",
@@ -933,6 +1298,11 @@ export const productCategories: ProductCategory[] = [
           "Matching 6-foot leash included",
           "Training clicker and ID tag in the box",
         ],
+        asin: "B078X1T9LJ",
+        price: "$19.95",
+        rating: 4.4,
+        reviewCount: "7,218",
+        prime: true,
       },
       {
         name: "Kong Puppy Toy & Treat Bundle",
@@ -944,6 +1314,11 @@ export const productCategories: ProductCategory[] = [
           "Includes Kong puppy treat paste",
           "Helps soothe teething discomfort",
         ],
+        asin: "B0002AR15U",
+        price: "$14.99",
+        rating: 4.7,
+        reviewCount: "28,412",
+        prime: true,
       },
       {
         name: "Blue Buffalo Life Protection Puppy Food",
@@ -955,6 +1330,11 @@ export const productCategories: ProductCategory[] = [
           "LifeSource Bits with antioxidants",
           "Real deboned chicken first ingredient",
         ],
+        asin: "B000GKC6YO",
+        price: "$44.98",
+        rating: 4.7,
+        reviewCount: "15,328",
+        prime: true,
       },
     ],
   },
