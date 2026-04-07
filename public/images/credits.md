@@ -35,6 +35,19 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | golden-retriever-puppies-in-red-wagon.jpg | Andrew Lancaster | k34a6Yzt6A0 |
 | border-collie-looking-at-food-bowl-kibble.jpg | Ayla Verschueren | Qvbr5Uxgz_Q |
 | two-beagle-puppies-peeking-over-ledge.jpg | Ben Michel | Uyn3kXAaZX8 |
+| english-springer-spaniel-wearing-harness.jpg | Rafaella Waasdorp | 2ux2_HZDbXI |
+| havanese-dog-in-red-harness-outdoors.jpg | Taru Goyal | H6Op4IYaPhI |
+| boston-terrier-portrait-sitting-indoors.jpg | Erik McLean | _hjnojxSSAI |
+| pomeranian-sitting-on-gray-armchair.jpg | Alireza Roudbarmohammadi | RxqEbllziIw |
+| bernese-mountain-dog-standing-in-autumn-leaves.jpg | Jelmer Toering | ZOZIB5p77JU |
+| siberian-husky-blue-eyes-on-deck.jpg | Christian Bowen | KD_dzY1oOh8 |
+| shih-tzu-laying-in-green-grass.jpg | Monika Guzikowska | IQzAdIva7ss |
+| great-dane-merle-portrait-autumn.jpg | Drew | TsF4vXUz5S8 |
+| cane-corso-blue-standing-in-garden.jpg | Sophie Hollies | OlfGOuJD94M |
+| miniature-schnauzer-with-harness-smiling.jpg | Sebastian Coman Travel | 1-9MfePQqUk |
+| boxer-dog-close-up-face-portrait.jpg | Yousef Espanioly | Wgaqx7loF2A |
+| doberman-pinscher-brown-portrait-chain.jpg | Jorge Rosales | Glz3qayP5us |
+| cavalier-king-charles-spaniel-on-white-bed.jpg | Tracy Anderson | XFwj5LEVvMI |
 
 ## Owner's Photos (from bellabulls.com — used with permission)
 
