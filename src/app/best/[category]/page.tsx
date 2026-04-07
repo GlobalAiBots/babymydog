@@ -94,6 +94,31 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           </table>
         </div>
 
+        {/* Our Top Picks */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">Our Top Picks</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {cat.picks.slice(0, 3).map((pick, i) => (
+              <div key={i} className="bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <ImagePlaceholder id={`best-${cat.slug}-top-${i}`} alt={pick.name} aspect="landscape" className="rounded-none" />
+                <div className="p-6 text-center">
+                  <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-2">{pick.badge}</span>
+                  <h3 className="font-bold text-[#1A1A1A] text-lg mb-1">{pick.name}</h3>
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <StarRating rating={pick.rating} />
+                    <span className="text-[#1A1A1A]/40 text-xs">({pick.reviewCount})</span>
+                  </div>
+                  <p className="text-xl font-bold text-[#1A1A1A] mb-3">{pick.price}</p>
+                  {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
+                  <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-6 py-2.5 rounded-full transition w-full">
+                    Check Price &rarr;
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Detailed Reviews */}
         <section className="space-y-8 mb-16">
           <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">Detailed Reviews</h2>
