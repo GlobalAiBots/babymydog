@@ -11,10 +11,10 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "hero-1": { src: "/images/happy-dog-owner-hugging-golden-retriever.jpg", alt: "Happy dog owner hugging a golden retriever" },
   // Homepage category cards
   "category-beds": { src: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Dog relaxing in a premium gray dog bed" },
-  "category-toys": { src: "/images/pug-cuddling-pink-unicorn-plush-toy.jpg", alt: "Adorable pug cuddling a plush unicorn toy - best dog toys reviewed" },
+  "category-toys": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever playing with stuffed toy - best dog toys reviewed by experts" },
   "category-food": { src: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Excited husky being fed from dog bowl - best dog food reviews" },
   "category-gear": { src: "/images/french-bulldog-and-friend-in-designer-outfits.jpg", alt: "Stylish dogs in designer outfits - best dog gear and accessories" },
-  "category-gifts": { src: "/images/small-fluffy-dog-in-banana-pajamas.jpg", alt: "Cute dog in banana pajamas - perfect gift for pampered pups" },
+  "category-gifts": { src: "/images/small-fluffy-dog-in-banana-pajamas.jpg", alt: "Adorable dog in banana pajamas - perfect gifts for pampered pups" },
   "category-grooming": { src: "/images/french-bulldog-wearing-cute-shirt.jpg", alt: "Well-groomed French Bulldog in a cute shirt - best dog grooming tools" },
   // Homepage breed spotlight
   "breed-featured-1": { src: "/images/golden-retriever-holding-flower-outdoors.jpg", alt: "Golden Retriever holding a flower - America's favorite family dog" },
@@ -31,9 +31,10 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "best-dog-beds-review-2": { src: "/images/puppy-sleeping-peacefully-on-round-bed.jpg", alt: "Puppy sleeping on round dog bed" },
   "best-dog-beds-review-3": { src: "/images/hound-dog-resting-on-bed-in-doorway.jpg", alt: "Hound dog resting on bed in doorway" },
   // Product pages - dog toys
-  "best-dog-toys-top-0": { src: "/images/pug-cuddling-pink-unicorn-plush-toy.jpg", alt: "Best dog toys 2026 - pug with plush toy" },
-  "best-dog-toys-review-0": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever with stuffed toy" },
+  "best-dog-toys-top-0": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Best dog toys 2026 - golden retriever with toy" },
+  "best-dog-toys-review-0": { src: "/images/pug-cuddling-pink-unicorn-plush-toy.jpg", alt: "Pug cuddling a plush unicorn toy - our favorite indestructible dog toys" },
   "best-dog-toys-review-1": { src: "/images/yorkie-running-with-kong-ball-outdoors.jpg", alt: "Yorkie running with Kong ball" },
+  "best-dog-toys-review-2": { src: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Golden retriever with favorite stuffed toy" },
   // Product pages - dog food
   "best-dog-food-top-0": { src: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Best dog food 2026 - husky at feeding time" },
   "best-dog-food-review-0": { src: "/images/chocolate-lab-licking-lips-hungry.jpg", alt: "Chocolate lab ready for dinner" },
@@ -44,7 +45,7 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "best-dog-harnesses-top-0": { src: "/images/french-bulldog-and-friend-in-designer-outfits.jpg", alt: "Best dog harnesses 2026" },
   "best-dog-harnesses-review-0": { src: "/images/couple-petting-dog-wearing-harness.jpg", alt: "Dog wearing a comfortable harness" },
   // Newsletter / about
-  "newsletter": { src: "/images/woman-kissing-golden-retriever-outdoors.jpg", alt: "Woman kissing her golden retriever - join the BabyMyDog community" },
+  "newsletter": { src: "/images/cute-black-dog-holding-thank-you-card.jpg", alt: "Sweet dog saying thank you - join the BabyMyDog pack for weekly picks" },
 };
 
 function getGradient(id: string): string {
