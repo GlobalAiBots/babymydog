@@ -48,6 +48,18 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | boxer-dog-close-up-face-portrait.jpg | Yousef Espanioly | Wgaqx7loF2A |
 | doberman-pinscher-brown-portrait-chain.jpg | Jorge Rosales | Glz3qayP5us |
 | cavalier-king-charles-spaniel-on-white-bed.jpg | Tracy Anderson | XFwj5LEVvMI |
+| white-dog-getting-groomed-with-scissors.jpg | Buddy An | LpK2xddrElI |
+| poodle-professional-grooming-salon.jpg | Reba Spike | nAedTCXPdeg |
+| australian-shepherd-blue-eyes-smiling.jpg | Daniel Lincoln | 9bPk_yVooGw |
+| pembroke-welsh-corgi-smiling-crater-lake.jpg | Y Tsui | QzSrKduMg7s |
+| german-shorthaired-pointer-resting-on-bed.jpg | Fabian Gieske | 4jh2TMblYn0 |
+| dachshund-puppy-jumping-mid-air.jpg | Steve Smith | aeUrroZvf08 |
+| rottweiler-smiling-happy-outdoors.jpg | Henrique Malaguti | -lhfLt9Jc74 |
+| english-bulldog-outdoors-with-frisbee.jpg | BP Miller | viklGGAWECc |
+| english-bulldog-laying-down-resting.jpg | Sebastien Lavalaye | pU06jFGi4J4 |
+| french-bulldog-looking-up-big-eyes.jpg | Angelos Michalopoulos | VzG64C5T7p4 |
+| golden-retriever-with-stuffed-toy-grass.jpg | Barnabas Davoti | Afogod2A0Zc |
+| poodle-wearing-red-coat-boots-snow.jpg | Asif Ali | rBzNQdnadXE |
 
 ## Owner's Photos (from bellabulls.com — used with permission)
 
@@ -58,3 +70,5 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | english-bulldog-puppy-luna.jpg | BellaBulls.com |
 | english-bulldog-puppy-maggie.jpg | BellaBulls.com |
 | english-bulldog-puppy-bella.png | BellaBulls.com |
+| vet-examining-english-bulldog-ear.jpg | BellaBulls.com (owner's breeding program) |
+| english-bulldog-at-vet-checkup.jpg | BellaBulls.com (owner's breeding program) |

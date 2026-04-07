@@ -15,15 +15,15 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "category-food": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Dog looking at bowl of premium kibble - best dog food reviews and recommendations" },
   "category-gear": { src: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", alt: "Dog wearing premium red harness and leash - best dog gear and accessories reviewed" },
   "category-gifts": { src: "/images/golden-retriever-puppies-in-red-wagon.jpg", alt: "Adorable golden retriever puppies in a red wagon - best gifts for dog lovers" },
-  "category-grooming": { src: "/images/french-bulldog-wearing-cute-shirt.jpg", alt: "Well-groomed French Bulldog in a cute shirt - best dog grooming tools" },
+  "category-grooming": { src: "/images/white-dog-getting-groomed-with-scissors.jpg", alt: "Dog being professionally groomed - best dog grooming tools reviewed" },
   // Homepage breed spotlight
   "breed-featured-1": { src: "/images/golden-retriever-holding-flower-outdoors.jpg", alt: "Golden Retriever holding a flower - America's favorite family dog" },
   // Blog posts
   "blog-1": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Dog eyeing a bowl of kibble - how to choose the right dog food for your breed" },
   "blog-2": { src: "/images/pug-snuggled-in-patterned-dog-bed.jpg", alt: "Signs your dog needs a better bed - pug in comfortable dog bed" },
   "blog-3": { src: "/images/golden-retriever-puppies-in-a-row.jpg", alt: "Five golden retriever puppies - the ultimate new puppy essentials checklist" },
-  "blog-4": { src: "/images/fluffy-pomeranian-walking-in-booties.jpg", alt: "Well-groomed Pomeranian in stylish booties - dog grooming tips for home" },
-  "blog-5": { src: "/images/yorkie-running-with-kong-ball-outdoors.jpg", alt: "Indestructible dog toys for heavy chewers - yorkie with Kong ball" },
+  "blog-4": { src: "/images/white-dog-getting-groomed-with-scissors.jpg", alt: "Dog grooming at home - save money with the right tools" },
+  "blog-5": { src: "/images/golden-retriever-with-stuffed-toy-grass.jpg", alt: "Golden retriever with favorite toy - best indestructible dog toys" },
   // Product pages - dog beds
   "best-dog-beds-top-0": { src: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Best dog beds 2026 expert reviewed" },
   "best-dog-beds-review-0": { src: "/images/dachshund-in-cozy-blue-dog-bed.jpg", alt: "Dachshund in a cozy blue dog bed - top rated" },
@@ -51,8 +51,15 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "best-dog-food-review-2": { src: "/images/border-collie-looking-at-food-bowl-kibble.jpg", alt: "Border collie with premium kibble" },
   // Breed avatars
   "breed-avatar-golden-retriever": { src: "/images/golden-retriever-puppy-portrait-with-collar.jpg", alt: "Golden Retriever puppy - breed guide and product recommendations" },
-  "breed-avatar-bulldog": { src: "/images/english-bulldog-puppy-maggie.jpg", alt: "English Bulldog puppy - breed guide and care tips from a breeder" },
+  "breed-avatar-bulldog": { src: "/images/english-bulldog-outdoors-with-frisbee.jpg", alt: "English Bulldog - breed guide from a retired AKC breeder" },
   "breed-avatar-beagle": { src: "/images/two-beagle-puppies-peeking-over-ledge.jpg", alt: "Two beagle puppies - breed guide and care tips" },
+  "breed-avatar-australian-shepherd": { src: "/images/australian-shepherd-blue-eyes-smiling.jpg", alt: "Australian Shepherd with blue eyes - breed guide" },
+  "breed-avatar-pembroke-welsh-corgi": { src: "/images/pembroke-welsh-corgi-smiling-crater-lake.jpg", alt: "Pembroke Welsh Corgi - breed guide and product picks" },
+  "breed-avatar-german-shorthaired-pointer": { src: "/images/german-shorthaired-pointer-resting-on-bed.jpg", alt: "German Shorthaired Pointer - breed guide" },
+  "breed-avatar-dachshund": { src: "/images/dachshund-puppy-jumping-mid-air.jpg", alt: "Dachshund puppy jumping through grass - breed guide" },
+  "breed-avatar-rottweiler": { src: "/images/rottweiler-smiling-happy-outdoors.jpg", alt: "Rottweiler - breed guide and product recommendations" },
+  "breed-avatar-french-bulldog": { src: "/images/french-bulldog-looking-up-big-eyes.jpg", alt: "French Bulldog - breed guide and care tips" },
+  "breed-avatar-poodle": { src: "/images/poodle-wearing-red-coat-boots-snow.jpg", alt: "Poodle in winter coat and boots - breed guide" },
   "breed-avatar-english-springer-spaniel": { src: "/images/english-springer-spaniel-wearing-harness.jpg", alt: "English Springer Spaniel - breed guide and product recommendations" },
   "breed-avatar-havanese": { src: "/images/havanese-dog-in-red-harness-outdoors.jpg", alt: "Havanese dog - breed guide and care tips" },
   "breed-avatar-boston-terrier": { src: "/images/boston-terrier-portrait-sitting-indoors.jpg", alt: "Boston Terrier - breed guide and product picks" },
@@ -66,7 +73,14 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "breed-avatar-boxer": { src: "/images/boxer-dog-close-up-face-portrait.jpg", alt: "Boxer dog - breed guide and product picks for active dogs" },
   "breed-avatar-doberman-pinscher": { src: "/images/doberman-pinscher-brown-portrait-chain.jpg", alt: "Doberman Pinscher - breed guide and training product recommendations" },
   "breed-avatar-cavalier-king-charles-spaniel": { src: "/images/cavalier-king-charles-spaniel-on-white-bed.jpg", alt: "Cavalier King Charles Spaniel - breed guide and care tips" },
-  // Breed hero images (reuse avatar photos for breed detail pages)
+  // Breed hero images
+  "breed-australian-shepherd-hero": { src: "/images/australian-shepherd-blue-eyes-smiling.jpg", alt: "Australian Shepherd - complete breed guide" },
+  "breed-pembroke-welsh-corgi-hero": { src: "/images/pembroke-welsh-corgi-smiling-crater-lake.jpg", alt: "Pembroke Welsh Corgi - complete breed guide" },
+  "breed-german-shorthaired-pointer-hero": { src: "/images/german-shorthaired-pointer-resting-on-bed.jpg", alt: "German Shorthaired Pointer - complete breed guide" },
+  "breed-dachshund-hero": { src: "/images/dachshund-puppy-jumping-mid-air.jpg", alt: "Dachshund - complete breed guide" },
+  "breed-rottweiler-hero": { src: "/images/rottweiler-smiling-happy-outdoors.jpg", alt: "Rottweiler - complete breed guide" },
+  "breed-french-bulldog-hero": { src: "/images/french-bulldog-looking-up-big-eyes.jpg", alt: "French Bulldog - complete breed guide" },
+  "breed-poodle-hero": { src: "/images/poodle-wearing-red-coat-boots-snow.jpg", alt: "Poodle - complete breed guide" },
   "breed-english-springer-spaniel-hero": { src: "/images/english-springer-spaniel-wearing-harness.jpg", alt: "English Springer Spaniel - complete breed guide" },
   "breed-havanese-hero": { src: "/images/havanese-dog-in-red-harness-outdoors.jpg", alt: "Havanese - complete breed guide" },
   "breed-boston-terrier-hero": { src: "/images/boston-terrier-portrait-sitting-indoors.jpg", alt: "Boston Terrier - complete breed guide" },
@@ -87,8 +101,15 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "breed-bulldog-product-1": { src: "/images/english-bulldog-puppy-king-louis.jpg", alt: "English Bulldog puppy King Louis" },
   "breed-bulldog-product-2": { src: "/images/english-bulldog-puppy-bella.png", alt: "English Bulldog puppy Bella" },
   // Blog - bulldog posts
-  "blog-bulldog-care": { src: "/images/english-bulldog-whiskey-brindle.jpg", alt: "English Bulldog care guide - what every owner needs to know" },
-  "blog-choose-breeder": { src: "/images/english-bulldog-puppy-luna.jpg", alt: "English Bulldog puppy from a reputable breeder - how to choose" },
+  "blog-bulldog-care": { src: "/images/english-bulldog-laying-down-resting.jpg", alt: "English Bulldog care guide from a retired breeder" },
+  "blog-choose-breeder": { src: "/images/vet-examining-english-bulldog-ear.jpg", alt: "Vet examining English Bulldog - how to choose a reputable breeder" },
+  // Bulldog breed page health section
+  "bulldog-vet-checkup": { src: "/images/english-bulldog-at-vet-checkup.jpg", alt: "English Bulldog at the veterinarian for regular checkup" },
+  // Product pages - grooming
+  "best-dog-grooming-top-0": { src: "/images/poodle-professional-grooming-salon.jpg", alt: "Professional dog grooming - best grooming tools 2026" },
+  "best-dog-grooming-review-0": { src: "/images/white-dog-getting-groomed-with-scissors.jpg", alt: "Dog being groomed with professional scissors" },
+  // Product pages - coats
+  "best-dog-coats-top-0": { src: "/images/poodle-wearing-red-coat-boots-snow.jpg", alt: "Dog wearing winter coat and boots - best dog coats 2026" },
   // Gift guide - Christmas
   "gift-christmas-hero": { src: "/images/dog-with-christmas-plush-toy-holiday.jpg", alt: "Happy dog with Christmas plush toy and holiday socks - best dog Christmas gifts" },
   // About / lifestyle

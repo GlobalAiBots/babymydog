@@ -109,6 +109,12 @@ export default function BulldogPage() {
               </ul>
             </div>
 
+            {/* Vet checkup image */}
+            <div className="mb-8">
+              <ImagePlaceholder id="bulldog-vet-checkup" alt="English Bulldog at the veterinarian for regular checkup" aspect="wide" className="rounded-2xl" />
+              <p className="text-[#1A1A1A]/30 text-xs mt-2 text-center">Regular vet visits are essential for bulldogs — catch issues early.</p>
+            </div>
+
             {/* Blog callout */}
             <div className="bg-white rounded-2xl p-6 mb-8 flex items-center gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
               <ImagePlaceholder id="breed-bulldog-product-1" alt="English Bulldog puppy" aspect="square" className="w-20 h-20 rounded-xl flex-shrink-0" />
