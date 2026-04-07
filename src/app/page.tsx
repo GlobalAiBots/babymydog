@@ -1,72 +1,99 @@
 import Link from "next/link";
 import { breeds } from "@/data/breeds";
 import { blogPosts } from "@/data/blog-posts";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-const topBreeds = breeds.slice(0, 8);
+/* eslint-disable @next/next/no-img-element */
+
+const topBreeds = breeds.slice(0, 10);
 
 const categories = [
-  { slug: "dog-beds", name: "Beds & Comfort", img: "category-beds", alt: "Cozy dog bed" },
-  { slug: "dog-food", name: "Food & Nutrition", img: "category-food", alt: "Premium dog food" },
-  { slug: "dog-toys", name: "Toys & Play", img: "category-toys", alt: "Dog playing" },
-  { slug: "dog-grooming", name: "Grooming & Care", img: "category-grooming", alt: "Dog grooming" },
-  { slug: "dog-harnesses", name: "Gear & Accessories", img: "category-gear", alt: "Dog harness" },
-  { slug: "/gifts", name: "Gift Shop", img: "category-gifts", alt: "Dog gifts" },
+  { slug: "dog-beds", name: "Beds & Comfort", img: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", alt: "Cozy dog bed", color: "#C4704B" },
+  { slug: "dog-food", name: "Food & Nutrition", img: "/images/excited-husky-getting-fed-dog-bowl.jpg", alt: "Premium dog food", color: "#5B7B5E" },
+  { slug: "dog-toys", name: "Toys & Play", img: "/images/golden-retriever-holding-stuffed-toy.jpg", alt: "Dog playing", color: "#D4AD3C" },
+  { slug: "dog-grooming", name: "Grooming & Care", img: "/images/poodle-professional-grooming-salon.jpg", alt: "Dog grooming", color: "#5DADE2" },
+  { slug: "dog-harnesses", name: "Gear & Accessories", img: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", alt: "Dog harness", color: "#8B6914" },
+  { slug: "/gifts", name: "Gift Shop", img: "/images/dog-with-christmas-plush-toy-holiday.jpg", alt: "Dog gifts", color: "#C0392B" },
 ];
+
+const breedAvatars: Record<string, string> = {
+  "golden-retriever": "/images/golden-retriever-puppy-portrait-with-collar.jpg",
+  "labrador-retriever": "/images/black-labrador-retriever-sitting-on-bridge.jpg",
+  "french-bulldog": "/images/french-bulldog-looking-up-big-eyes.jpg",
+  "german-shepherd": "/images/german-shepherd-portrait-studio-dark.jpg",
+  "poodle": "/images/poodle-wearing-red-coat-boots-snow.jpg",
+  "bulldog": "/images/english-bulldog-outdoors-with-frisbee.jpg",
+  "beagle": "/images/two-beagle-puppies-peeking-over-ledge.jpg",
+  "rottweiler": "/images/rottweiler-smiling-happy-outdoors.jpg",
+  "dachshund": "/images/dachshund-puppy-jumping-mid-air.jpg",
+  "pembroke-welsh-corgi": "/images/pembroke-welsh-corgi-smiling-crater-lake.jpg",
+};
+
+const blogImages: Record<string, string> = {
+  "english-bulldog-care-guide": "/images/english-bulldog-laying-down-resting.jpg",
+  "how-to-choose-dog-breeder": "/images/vet-examining-english-bulldog-ear.jpg",
+  "choose-right-dog-food": "/images/border-collie-looking-at-food-bowl-kibble.jpg",
+  "signs-dog-needs-better-bed": "/images/pug-snuggled-in-patterned-dog-bed.jpg",
+  "new-puppy-checklist": "/images/golden-retriever-puppies-in-a-row.jpg",
+  "dog-grooming-at-home": "/images/white-dog-getting-groomed-with-scissors.jpg",
+  "indestructible-dog-toys": "/images/golden-retriever-with-stuffed-toy-grass.jpg",
+};
 
 export default function Home() {
   return (
     <div>
-      {/* HERO — Two column */}
-      <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl md:text-[56px] leading-[1.1] font-bold text-charcoal tracking-tight">
-              Everything Your Dog Needs.{" "}
-              <span className="text-terra">Curated by Experts.</span>
-            </h1>
-            <p className="text-charcoal/50 mt-6 text-lg leading-relaxed max-w-md">Breed-specific product picks, honest reviews, and gift guides for dog people.</p>
-            <div className="flex gap-4 mt-10">
-              <Link href="/best" className="bg-terra hover:bg-terra-dark text-white font-semibold px-7 py-3.5 rounded-full transition text-sm">Explore Products</Link>
-              <Link href="/breeds" className="bg-warm-gray hover:bg-sand text-charcoal font-semibold px-7 py-3.5 rounded-full transition text-sm">Find Your Breed</Link>
-            </div>
+      {/* HERO — Full-bleed dramatic */}
+      <section className="relative min-h-[60vh] md:min-h-[85vh] flex items-end overflow-hidden">
+        <img src="/images/happy-dog-owner-hugging-golden-retriever.jpg" alt="Happy dog owner with golden retriever" className="absolute inset-0 w-full h-full object-cover" loading="eager" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/70 via-[#1A1A1A]/20 to-transparent" />
+        <div className="relative max-w-[1200px] mx-auto px-6 pb-16 md:pb-24 w-full z-10">
+          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1]">
+            Spoil Your<br />Best Friend.
+          </h1>
+          <p className="text-white/80 mt-4 text-lg md:text-xl max-w-lg">Expert-picked products, breed guides, and honest reviews &mdash; because your dog deserves the best.</p>
+          <div className="flex flex-wrap gap-4 mt-8">
+            <Link href="/best" className="bg-white text-[#C4704B] font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-[#FAF8F5] hover:shadow-lg text-sm">Shop Products</Link>
+            <Link href="/breeds" className="border-2 border-white text-white font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-white hover:text-[#C4704B] text-sm">Find Your Breed</Link>
           </div>
-          <div>
-            <ImagePlaceholder id="hero-1" alt="Happy dog owner hugging a golden retriever" aspect="hero" className="rounded-3xl" priority={true} />
-          </div>
+        </div>
+        {/* Bounce arrow */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 hidden md:block animate-bounce">
+          <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
         </div>
       </section>
 
       {/* TRUST BAR */}
-      <section className="border-y border-charcoal/5 py-5" style={{background:'#F0EEEB'}}>
-        <div className="max-w-[1200px] mx-auto px-6 flex flex-wrap justify-center gap-6 md:gap-12 text-xs text-charcoal/40 font-medium">
-          <span>Independent Reviews</span>
-          <span className="hidden sm:inline">&middot;</span>
-          <span>No Sponsored Rankings</span>
-          <span className="hidden sm:inline">&middot;</span>
-          <span>Updated Monthly</span>
-          <span className="hidden sm:inline">&middot;</span>
-          <span>Trusted by Dog Owners Nationwide</span>
+      <section className="py-5" style={{ background: '#3D5A40' }}>
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-2 md:flex md:justify-center md:gap-12 gap-4 text-sm font-semibold text-white text-center">
+            <span>&#128021; 50 Breed Guides</span>
+            <span>&#11088; 75 Products Reviewed</span>
+            <span>&#127942; Expert-Picked</span>
+            <span>&#127482;&#127480; Veteran Owned</span>
+          </div>
         </div>
       </section>
 
       {/* SHOP BY CATEGORY */}
-      <section className="py-20" style={{background:'#F0EEEB'}}>
+      <section className="py-20" style={{ background: '#F0EEEB' }}>
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal">Shop by Category</h2>
-            <p className="text-charcoal/40 mt-3">Expert-reviewed picks in every category</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A]">Shop by Category</h2>
+            <p className="text-[#1A1A1A]/40 mt-3">Expert-reviewed picks in every category</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
             {categories.map((c) => (
               <Link key={c.slug} href={c.slug.startsWith('/') ? c.slug : `/best/${c.slug}`} className="group block">
-                <div className="relative overflow-hidden rounded-2xl bg-white" style={{boxShadow:'0 2px 8px rgba(0,0,0,0.06)'}}>
-                  <div className="overflow-hidden">
-                    <ImagePlaceholder id={c.img} alt={c.alt} aspect="landscape" className="rounded-none group-hover:scale-105 transition-transform duration-500" />
+                <div className="relative overflow-hidden rounded-2xl bg-white transition-all duration-300 hover:shadow-xl" style={{ borderTop: `3px solid ${c.color}` }}>
+                  <div className="relative overflow-hidden">
+                    <img src={c.img} alt={c.alt} loading="lazy" decoding="async" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-300" style={{ backgroundColor: c.color }} />
                   </div>
                   <div className="p-5">
-                    <h3 className="font-bold text-charcoal text-lg">{c.name}</h3>
-                    <span className="text-terra text-sm mt-1 inline-block group-hover:translate-x-1 transition-transform">Shop now &rarr;</span>
+                    <h3 className="font-bold text-[#1A1A1A] text-lg">{c.name}</h3>
+                    <div className="flex items-center justify-between mt-1">
+                      <span className="text-[#C4704B] text-sm font-semibold group-hover:translate-x-1 transition-transform duration-300 inline-block">Shop now &rarr;</span>
+                      <span className="text-xs text-[#1A1A1A]/30">5 expert picks</span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -75,58 +102,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BREED SPOTLIGHT */}
-      <section className="max-w-[1200px] mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <ImagePlaceholder id="breed-featured-1" alt="Golden Retriever portrait" aspect="square" className="rounded-3xl" />
-          <div>
-            <p className="text-terra text-sm font-semibold uppercase tracking-wider mb-3">Breed Spotlight</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal leading-tight">Golden Retriever</h2>
-            <p className="text-charcoal/50 mt-4 leading-relaxed">America&apos;s favorite family dog. Friendly, intelligent, and devoted — Goldens thrive with the right products.</p>
-            <div className="flex gap-6 mt-6 text-sm">
-              <div><span className="font-bold text-charcoal">55-75 lbs</span><br/><span className="text-charcoal/40">Weight</span></div>
-              <div><span className="font-bold text-charcoal">10-12 yrs</span><br/><span className="text-charcoal/40">Life Span</span></div>
-              <div><span className="font-bold text-charcoal">High</span><br/><span className="text-charcoal/40">Energy</span></div>
+      {/* BREED SPOTLIGHT — Full-width split */}
+      <section className="relative overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+          <div className="relative overflow-hidden">
+            <img src="/images/golden-retriever-holding-flower-outdoors.jpg" alt="Golden Retriever portrait" loading="lazy" decoding="async" className="w-full h-full object-cover min-h-[300px]" />
+          </div>
+          <div className="relative flex items-center" style={{ background: '#5B7B5E' }}>
+            {/* Subtle paw watermark */}
+            <div className="absolute inset-0 opacity-5" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 60 60'%3E%3Cellipse cx='30' cy='38' rx='8' ry='10' fill='%23fff'/%3E%3Ccircle cx='20' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='40' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='16' cy='34' r='3.5' fill='%23fff'/%3E%3Ccircle cx='44' cy='34' r='3.5' fill='%23fff'/%3E%3C/svg%3E")`, backgroundSize: '80px 80px' }} />
+            <div className="relative px-10 md:px-16 py-12">
+              <span className="text-white/60 text-sm font-semibold uppercase tracking-wider">Breed Spotlight</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 leading-tight">Golden Retriever</h2>
+              <p className="text-white/70 mt-4 leading-relaxed">America&apos;s favorite family dog. Friendly, intelligent, and devoted &mdash; Goldens thrive with the right products.</p>
+              <div className="flex gap-8 mt-6 text-sm">
+                <div><span className="font-bold text-white">55-75 lbs</span><br /><span className="text-white/50">Weight</span></div>
+                <div><span className="font-bold text-white">10-12 yrs</span><br /><span className="text-white/50">Life Span</span></div>
+                <div><span className="font-bold text-white">High</span><br /><span className="text-white/50">Energy</span></div>
+              </div>
+              <Link href="/breeds/golden-retriever" className="inline-block mt-8 bg-white text-[#5B7B5E] font-bold px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg text-sm">See Our Picks for Goldens &rarr;</Link>
             </div>
-            <Link href="/breeds/golden-retriever" className="inline-block mt-8 bg-terra hover:bg-terra-dark text-white font-semibold px-7 py-3 rounded-full transition text-sm">See Our Picks for Goldens &rarr;</Link>
           </div>
         </div>
       </section>
 
-      {/* POPULAR BREEDS */}
-      <section className="max-w-[1200px] mx-auto px-6 py-12">
+      {/* POPULAR BREEDS — Circular avatars */}
+      <section className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <h2 className="text-3xl font-bold text-charcoal">Popular Breeds</h2>
-            <p className="text-charcoal/40 mt-2">Breed-specific care guides and product picks</p>
+            <h2 className="text-3xl font-bold text-[#1A1A1A]">Popular Breeds</h2>
+            <p className="text-[#1A1A1A]/40 mt-2">Breed-specific care guides and product picks</p>
           </div>
-          <Link href="/breeds" className="text-terra text-sm font-semibold hover:text-terra-dark transition hidden sm:block">View all 50 &rarr;</Link>
+          <Link href="/breeds" className="text-[#C4704B] text-sm font-semibold hover:text-[#b5623f] transition hidden sm:block">View all 50 &rarr;</Link>
         </div>
-        <div className="grid grid-cols-4 sm:grid-cols-8 gap-6">
+        <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
           {topBreeds.map((b) => (
-            <Link key={b.slug} href={`/breeds/${b.slug}`} className="group text-center">
-              <ImagePlaceholder id={`breed-avatar-${b.slug}`} alt={b.name} aspect="square" className="rounded-full w-full group-hover:scale-105 transition-transform duration-300" />
-              <p className="font-semibold text-charcoal text-xs mt-3 group-hover:text-terra transition">{b.name}</p>
+            <Link key={b.slug} href={`/breeds/${b.slug}`} className="group flex-shrink-0 text-center snap-start">
+              <div className="w-24 h-24 rounded-full overflow-hidden border-3 border-white shadow-md group-hover:shadow-xl group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-[#C4704B] transition-all duration-300 mx-auto">
+                <img src={breedAvatars[b.slug] || ""} alt={b.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+              </div>
+              <p className="font-semibold text-[#1A1A1A] text-xs mt-3 group-hover:text-[#C4704B] transition-all duration-300">{b.name}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* WHY DOG PARENTS TRUST US */}
+      <section className="py-20" style={{ background: '#FAF8F5' }}>
+        <div className="max-w-[1200px] mx-auto px-6">
+          <h2 className="text-3xl font-bold text-[#1A1A1A] text-center mb-12">Why Dog Parents Trust BabyMyDog</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl p-8 text-center" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)', borderTop: '3px solid #C4704B' }}>
+              <span className="text-3xl">&#127941;</span>
+              <h3 className="font-bold text-[#1A1A1A] text-lg mt-4 mb-2">Retired AKC Breeder</h3>
+              <p className="text-[#1A1A1A]/50 text-sm leading-relaxed">20+ years of hands-on experience with show-quality dogs</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 text-center" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)', borderTop: '3px solid #5B7B5E' }}>
+              <span className="text-3xl">&#128300;</span>
+              <h3 className="font-bold text-[#1A1A1A] text-lg mt-4 mb-2">Research-Driven</h3>
+              <p className="text-[#1A1A1A]/50 text-sm leading-relaxed">Every pick backed by vet input and thousands of owner reviews</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 text-center" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)', borderTop: '3px solid #D4C5A9' }}>
+              <span className="text-3xl">&#128175;</span>
+              <h3 className="font-bold text-[#1A1A1A] text-lg mt-4 mb-2">No Sponsored Rankings</h3>
+              <p className="text-[#1A1A1A]/50 text-sm leading-relaxed">We buy and test products ourselves &mdash; brands can&apos;t pay for placement</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FROM THE BLOG */}
       <section className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="flex items-end justify-between mb-10">
-          <h2 className="text-3xl font-bold text-charcoal">From the Blog</h2>
-          <Link href="/blog" className="text-terra text-sm font-semibold hover:text-terra-dark transition hidden sm:block">All posts &rarr;</Link>
+          <h2 className="text-3xl font-bold text-[#1A1A1A]">From the Blog</h2>
+          <Link href="/blog" className="text-[#C4704B] text-sm font-semibold hover:text-[#b5623f] transition hidden sm:block">All posts &rarr;</Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {blogPosts.slice(0, 3).map((p, i) => (
+          {blogPosts.slice(0, 3).map((p) => (
             <Link key={p.slug} href={`/blog/${p.slug}`} className="group block">
-              <div className="bg-white rounded-2xl overflow-hidden" style={{boxShadow:'0 2px 8px rgba(0,0,0,0.06)'}}>
-                <ImagePlaceholder id={`blog-${i + 1}`} alt={p.title} aspect="wide" className="rounded-none group-hover:scale-105 transition-transform duration-500" />
+              <div className="bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                {blogImages[p.slug] && (
+                  <div className="overflow-hidden">
+                    <img src={blogImages[p.slug]} alt={p.title} loading="lazy" decoding="async" className="w-full aspect-[16/9] object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                )}
                 <div className="p-6">
-                  <p className="text-charcoal/30 text-xs mb-2">{p.date}</p>
-                  <h3 className="font-bold text-charcoal leading-snug group-hover:text-terra transition">{p.title}</h3>
-                  <p className="text-charcoal/40 text-sm mt-2 line-clamp-2">{p.description}</p>
+                  <p className="text-[#1A1A1A]/30 text-xs mb-2">{p.date}</p>
+                  <h3 className="font-bold text-[#1A1A1A] leading-snug group-hover:text-[#C4704B] transition-all duration-300">{p.title}</h3>
+                  <p className="text-[#1A1A1A]/40 text-sm mt-2 line-clamp-2">{p.description}</p>
                 </div>
               </div>
             </Link>
@@ -134,45 +197,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY TRUST US */}
-      <section className="py-20" style={{background:'#F0EEEB'}}>
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-charcoal">Why Trust Us</h2>
-            <p className="text-charcoal/40 mt-2">We do the research so you don&apos;t have to</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { title: "Research-Based", desc: "We test and compare dozens of products before making a single recommendation" },
-              { title: "No Sponsored Rankings", desc: "Our picks are based on quality, not payment. Period." },
-              { title: "Dog Owners First", desc: "Real recommendations from real dog people who use these products daily" },
-              { title: "Updated Monthly", desc: "We refresh our picks as new products launch and prices change" },
-            ].map((f) => (
-              <div key={f.title} className="text-center">
-                <div className="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center bg-white" style={{boxShadow:'0 2px 8px rgba(0,0,0,0.06)'}}>
-                  <div className="w-3 h-3 rounded-full bg-terra" />
-                </div>
-                <h3 className="font-bold text-charcoal text-sm mb-2">{f.title}</h3>
-                <p className="text-charcoal/40 text-xs leading-relaxed">{f.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* NEWSLETTER */}
-      <section className="py-20" style={{background:'#5B7B5E'}}>
+      <section className="py-20" style={{ background: '#C4704B' }}>
         <div className="max-w-[900px] mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <ImagePlaceholder id="newsletter" alt="Woman kissing her golden retriever - join the BabyMyDog community" aspect="square" className="rounded-3xl" />
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">Join the Pack</h2>
-              <p className="text-white/60 mt-4 leading-relaxed">Weekly product picks, breed tips, and exclusive deals. Free forever.</p>
-              <div className="flex gap-3 mt-8 max-w-md">
-                <input type="email" placeholder="your@email.com" className="flex-1 px-5 py-3.5 rounded-full text-sm outline-none border-0" style={{background:'rgba(255,255,255,0.15)', color:'white'}} />
-                <button className="bg-white text-sage font-bold px-7 py-3.5 rounded-full transition text-sm hover:bg-cream whitespace-nowrap">Subscribe</button>
-              </div>
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">Join the Pack &#128062;</h2>
+            <p className="text-white/80 mt-4 leading-relaxed max-w-md mx-auto">Weekly picks, breed tips, and deals. Loved by 5,000+ dog parents.</p>
+            <div className="flex flex-col sm:flex-row gap-3 mt-8 max-w-md mx-auto">
+              <input type="email" placeholder="your@email.com" className="flex-1 px-5 py-3.5 rounded-full text-sm outline-none border-0 bg-white/20 text-white placeholder-white/50" />
+              <button className="bg-[#1A1A1A] text-white font-bold px-7 py-3.5 rounded-full transition-all duration-300 text-sm hover:bg-[#2A2420] whitespace-nowrap">Subscribe Free</button>
             </div>
+            <p className="text-white/40 text-xs mt-4">No spam, ever. Unsubscribe anytime.</p>
           </div>
         </div>
       </section>
