@@ -141,6 +141,52 @@ const realImages: Record<string, { src: string; alt: string }> = {
   "about-hero": { src: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", alt: "Woman adventuring with her dog on ocean cliffs - BabyMyDog helps you find the best for your pup" },
   // Newsletter
   "newsletter": { src: "/images/cute-black-dog-holding-thank-you-card.jpg", alt: "Sweet dog saying thank you - join the BabyMyDog pack for weekly picks" },
+  // === NEW BREED PHOTOS — 15 remaining breeds ===
+  // Shetland Sheepdog
+  "breed-avatar-shetland-sheepdog": { src: "/images/shetland-sheepdog-smiling-outdoors.jpg", alt: "Shetland Sheepdog - breed guide and care tips" },
+  "breed-shetland-sheepdog-hero": { src: "/images/shetland-sheepdog-smiling-outdoors.jpg", alt: "Shetland Sheepdog - complete breed guide" },
+  // Brittany
+  "breed-avatar-brittany": { src: "/images/brittany-spaniel-snow-portrait.jpg", alt: "Brittany Spaniel - breed guide and care tips" },
+  "breed-brittany-hero": { src: "/images/brittany-spaniel-snow-portrait.jpg", alt: "Brittany - complete breed guide" },
+  // Cocker Spaniel
+  "breed-avatar-cocker-spaniel": { src: "/images/cocker-spaniel-puppy-golden.jpg", alt: "Cocker Spaniel - breed guide and grooming tips" },
+  "breed-cocker-spaniel-hero": { src: "/images/cocker-spaniel-puppy-golden.jpg", alt: "Cocker Spaniel - complete breed guide" },
+  // Vizsla
+  "breed-avatar-vizsla": { src: "/images/vizsla-running-in-tall-grass.jpg", alt: "Vizsla - breed guide and care tips" },
+  "breed-vizsla-hero": { src: "/images/vizsla-running-in-tall-grass.jpg", alt: "Vizsla - complete breed guide" },
+  // Chihuahua
+  "breed-avatar-chihuahua": { src: "/images/chihuahua-fawn-white-portrait.jpg", alt: "Chihuahua - breed guide and care tips" },
+  "breed-chihuahua-hero": { src: "/images/chihuahua-fawn-white-portrait.jpg", alt: "Chihuahua - complete breed guide" },
+  // Rhodesian Ridgeback
+  "breed-avatar-rhodesian-ridgeback": { src: "/images/rhodesian-ridgeback-sunset-portrait.jpg", alt: "Rhodesian Ridgeback - breed guide and care tips" },
+  "breed-rhodesian-ridgeback-hero": { src: "/images/rhodesian-ridgeback-sunset-portrait.jpg", alt: "Rhodesian Ridgeback - complete breed guide" },
+  // Belgian Malinois
+  "breed-avatar-belgian-malinois": { src: "/images/belgian-malinois-sitting-proud.jpg", alt: "Belgian Malinois - breed guide and training tips" },
+  "breed-belgian-malinois-hero": { src: "/images/belgian-malinois-sitting-proud.jpg", alt: "Belgian Malinois - complete breed guide" },
+  // Newfoundland
+  "breed-avatar-newfoundland": { src: "/images/newfoundland-sunflower-field.jpg", alt: "Newfoundland - breed guide and care tips" },
+  "breed-newfoundland-hero": { src: "/images/newfoundland-sunflower-field.jpg", alt: "Newfoundland - complete breed guide" },
+  // West Highland White Terrier
+  "breed-avatar-west-highland-white-terrier": { src: "/images/west-highland-white-terrier-red-collar.jpg", alt: "West Highland White Terrier - breed guide and grooming tips" },
+  "breed-west-highland-white-terrier-hero": { src: "/images/west-highland-white-terrier-red-collar.jpg", alt: "West Highland White Terrier - complete breed guide" },
+  // Akita
+  "breed-avatar-akita": { src: "/images/akita-sitting-in-grass-garden.jpg", alt: "Akita - breed guide and care tips" },
+  "breed-akita-hero": { src: "/images/akita-sitting-in-grass-garden.jpg", alt: "Akita - complete breed guide" },
+  // Basset Hound
+  "breed-avatar-basset-hound": { src: "/images/basset-hound-portrait-long-ears.jpg", alt: "Basset Hound - breed guide and care tips" },
+  "breed-basset-hound-hero": { src: "/images/basset-hound-portrait-long-ears.jpg", alt: "Basset Hound - complete breed guide" },
+  // Irish Setter
+  "breed-avatar-irish-setter": { src: "/images/irish-setter-standing-tall-grass.jpg", alt: "Irish Setter - breed guide and care tips" },
+  "breed-irish-setter-hero": { src: "/images/irish-setter-standing-tall-grass.jpg", alt: "Irish Setter - complete breed guide" },
+  // Dalmatian
+  "breed-avatar-dalmatian": { src: "/images/dalmatian-running-autumn-field.jpg", alt: "Dalmatian - breed guide and exercise tips" },
+  "breed-dalmatian-hero": { src: "/images/dalmatian-running-autumn-field.jpg", alt: "Dalmatian - complete breed guide" },
+  // Samoyed
+  "breed-avatar-samoyed": { src: "/images/samoyed-white-yellow-flowers.jpg", alt: "Samoyed - breed guide and grooming tips" },
+  "breed-samoyed-hero": { src: "/images/samoyed-white-yellow-flowers.jpg", alt: "Samoyed - complete breed guide" },
+  // Alaskan Malamute
+  "breed-avatar-alaskan-malamute": { src: "/images/alaskan-malamute-black-white-snow.jpg", alt: "Alaskan Malamute - breed guide and care tips" },
+  "breed-alaskan-malamute-hero": { src: "/images/alaskan-malamute-black-white-snow.jpg", alt: "Alaskan Malamute - complete breed guide" },
 };
 
 function getGradient(id: string): string {

@@ -83,6 +83,28 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | border-collie-red-eating-kibble.jpg | Ayla Verschueren | QIbjKOsmIhQ |
 | labradoodle-apricot-curly-in-bed.jpg | Alfred Lee | dW6R_NEJdjQ |
 
+## Additional Breed Photos
+
+All additional breed photos sourced from Unsplash (unsplash.com) — free for commercial use under the Unsplash License.
+
+| File | Source |
+|------|--------|
+| basset-hound-portrait-long-ears.jpg | Unsplash |
+| akita-sitting-in-grass-garden.jpg | Unsplash |
+| west-highland-white-terrier-red-collar.jpg | Unsplash |
+| newfoundland-sunflower-field.jpg | Unsplash |
+| belgian-malinois-sitting-proud.jpg | Unsplash |
+| rhodesian-ridgeback-sunset-portrait.jpg | Unsplash |
+| chihuahua-fawn-white-portrait.jpg | Unsplash |
+| vizsla-running-in-tall-grass.jpg | Unsplash |
+| cocker-spaniel-puppy-golden.jpg | Unsplash |
+| brittany-spaniel-snow-portrait.jpg | Unsplash |
+| shetland-sheepdog-smiling-outdoors.jpg | Unsplash |
+| alaskan-malamute-black-white-snow.jpg | Unsplash |
+| samoyed-white-yellow-flowers.jpg | Unsplash |
+| dalmatian-running-autumn-field.jpg | Unsplash |
+| irish-setter-standing-tall-grass.jpg | Unsplash |
+
 ## Owner's Photos (from bellabulls.com — used with permission)
 
 | File | Source |
