@@ -124,11 +124,13 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">Detailed Reviews</h2>
           {cat.picks.map((pick, i) => (
             <div key={i} className="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-              <div className="md:w-[280px] flex-shrink-0 relative">
-                <ImagePlaceholder id={`best-${cat.slug}-review-${i}`} alt={pick.name} aspect="square" className="rounded-none h-full" />
-                <span className="absolute top-4 left-4 bg-[#C4704B] text-white text-xs font-bold px-3 py-1.5 rounded-full">#{i + 1}</span>
+              <div className="w-full md:w-[320px] flex-shrink-0 relative">
+                <div className="aspect-[16/9] md:aspect-auto md:min-h-[280px] md:h-full overflow-hidden">
+                  <ImagePlaceholder id={`best-${cat.slug}-review-${i}`} alt={pick.name} aspect="square" className="rounded-none w-full h-full" />
+                </div>
+                <span className="absolute top-4 left-4 bg-[#C4704B] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">#{i + 1}</span>
               </div>
-              <div className="p-8 flex-1">
+              <div className="p-8 md:p-10 flex-1 min-w-0">
                 <div className="flex items-start justify-between mb-2 flex-wrap gap-3">
                   <div>
                     <h3 className="font-bold text-[#1A1A1A] text-xl">{pick.name}</h3>
