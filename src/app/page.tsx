@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <ImagePlaceholder id="hero-1" alt="Happy dog in a sunlit room" aspect="hero" className="rounded-3xl" />
+            <ImagePlaceholder id="hero-1" alt="Happy dog owner hugging a golden retriever" aspect="hero" className="rounded-3xl" priority={true} />
           </div>
         </div>
       </section>
