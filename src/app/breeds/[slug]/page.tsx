@@ -1,8 +1,11 @@
+import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { breeds, getBreedBySlug } from "@/data/breeds";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
+
+/* eslint-disable @next/next/no-img-element */
 
 export function generateStaticParams() { return breeds.map(b => ({ slug: b.slug })); }
 
@@ -18,10 +21,69 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+function getProductInfo(rec: string): { image: string; link: string; label: string } {
+  const r = rec.toLowerCase();
+  if (r.includes("bed")) return { image: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", link: "/best/dog-beds", label: "Dog Beds" };
+  if (r.includes("food") || r.includes("kibble")) return { image: "/images/border-collie-looking-at-food-bowl-kibble.jpg", link: "/best/dog-food", label: "Dog Food" };
+  if (r.includes("toy") || r.includes("fetch") || r.includes("chew") || r.includes("puzzle")) return { image: "/images/golden-retriever-holding-stuffed-toy.jpg", link: "/best/dog-toys", label: "Dog Toys" };
+  if (r.includes("brush") || r.includes("groom") || r.includes("deshed")) return { image: "/images/poodle-professional-grooming-salon.jpg", link: "/best/dog-grooming", label: "Grooming Tools" };
+  if (r.includes("harness")) return { image: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", link: "/best/dog-harnesses", label: "Dog Harnesses" };
+  if (r.includes("leash") || r.includes("collar")) return { image: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", link: "/best/dog-leashes", label: "Dog Leashes" };
+  if (r.includes("crate") || r.includes("kennel")) return { image: "/images/hound-dog-resting-on-bed-in-doorway.jpg", link: "/best/dog-crates", label: "Dog Crates" };
+  if (r.includes("supplement") || r.includes("joint") || r.includes("vitamin")) return { image: "/images/english-bulldog-at-vet-checkup.jpg", link: "/best/dog-supplements", label: "Supplements" };
+  if (r.includes("coat") || r.includes("jacket") || r.includes("cooling") || r.includes("vest") || r.includes("winter")) return { image: "/images/poodle-wearing-red-coat-boots-snow.jpg", link: "/best/dog-coats", label: "Dog Coats" };
+  if (r.includes("shampoo")) return { image: "/images/white-dog-getting-groomed-with-scissors.jpg", link: "/best/dog-grooming", label: "Dog Shampoo" };
+  if (r.includes("treat")) return { image: "/images/chocolate-lab-licking-lips-hungry.jpg", link: "/best/dog-treats", label: "Dog Treats" };
+  if (r.includes("dental")) return { image: "/images/vet-examining-english-bulldog-ear.jpg", link: "/best/dog-dental", label: "Dental Care" };
+  if (r.includes("camera") || r.includes("monitor")) return { image: "/images/happy-dog-owner-hugging-golden-retriever.jpg", link: "/best/dog-cameras", label: "Dog Cameras" };
+  if (r.includes("tracker") || r.includes("gps")) return { image: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", link: "/best/dog-gps-trackers", label: "GPS Trackers" };
+  if (r.includes("bowl") || r.includes("feeder")) return { image: "/images/excited-husky-getting-fed-dog-bowl.jpg", link: "/best/dog-bowls", label: "Bowls & Feeders" };
+  if (r.includes("nail") || r.includes("ear")) return { image: "/images/poodle-professional-grooming-salon.jpg", link: "/best/dog-grooming", label: "Grooming Tools" };
+  return { image: "/images/golden-retriever-with-stuffed-toy-grass.jpg", link: "/best", label: "Dog Products" };
+}
+
+function getCareIcon(tip: string): string {
+  const t = tip.toLowerCase();
+  if (t.includes("brush") || t.includes("coat") || t.includes("groom") || t.includes("shed")) return "\uD83E\uDEB6";
+  if (t.includes("exercise") || t.includes("walk") || t.includes("run") || t.includes("swim") || t.includes("active")) return "\uD83C\uDFC3";
+  if (t.includes("ear") || t.includes("clean") || t.includes("wrinkle")) return "\uD83D\uDC42";
+  if (t.includes("food") || t.includes("feed") || t.includes("diet") || t.includes("weight") || t.includes("meal")) return "\uD83C\uDF56";
+  if (t.includes("train") || t.includes("social") || t.includes("obedien")) return "\uD83C\uDF93";
+  if (t.includes("vet") || t.includes("dental") || t.includes("teeth") || t.includes("health")) return "\uD83C\uDFE5";
+  return "\u2713";
+}
+
+function getInternalLinks(breed: { name: string; size: string; groomingNeeds: string; exerciseNeeds: string; healthIssues: string[] }): React.ReactNode {
+  const links: React.ReactNode[] = [];
+  if (breed.groomingNeeds === "high") {
+    links.push(<span key="groom">our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline">top grooming tools</Link></span>);
+  }
+  if (breed.size === "large" || breed.size === "giant") {
+    links.push(<span key="bed">our <Link href="/best/dog-beds" className="text-[#C4704B] hover:underline">best beds for large breeds</Link></span>);
+  }
+  if (breed.exerciseNeeds === "high") {
+    links.push(<span key="toy">our <Link href="/best/dog-toys" className="text-[#C4704B] hover:underline">favorite toys for active dogs</Link></span>);
+  }
+  if (breed.healthIssues.some(h => h.toLowerCase().includes("hip") || h.toLowerCase().includes("dysplasia"))) {
+    links.push(<span key="supp">our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline">recommended joint supplements</Link></span>);
+  }
+  if (links.length === 0) {
+    links.push(<span key="all">our <Link href="/best" className="text-[#C4704B] hover:underline">expert-reviewed product picks</Link></span>);
+  }
+  const display = links.slice(0, 2);
+  return (
+    <p className="text-[#1A1A1A]/50 leading-relaxed text-sm mt-6 italic">
+      Looking for the best products for your {breed.name}? Check out {display[0]}{display[1] ? <> and {display[1]}</> : null}.
+    </p>
+  );
+}
+
 export default async function BreedPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const breed = getBreedBySlug(slug);
   if (!breed) notFound();
+
+  const relatedBreeds = breeds.filter(b => b.group === breed.group && b.slug !== breed.slug).slice(0, 4);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -62,7 +124,7 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
             { label: "Size", value: breed.size },
             { label: "Weight", value: breed.weightRange },
             { label: "Life Span", value: breed.lifeSpan },
-            { label: "Energy", value: breed.temperament.includes("active") || breed.temperament.includes("energetic") ? "High" : "Moderate" },
+            { label: "Energy", value: breed.exerciseNeeds },
             { label: "Shedding", value: breed.shedding },
           ].map((s, i) => (
             <div key={s.label} className="flex items-center gap-4">
@@ -87,6 +149,7 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
             <section>
               <h2 className="text-2xl font-bold text-[#1A1A1A] mb-5">About the {breed.name}</h2>
               <p className="text-[#1A1A1A]/70 leading-relaxed text-lg">{breed.description}</p>
+              {getInternalLinks(breed)}
             </section>
 
             {/* Care Guide */}
@@ -95,7 +158,7 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
               <div className="space-y-3">
                 {breed.careTips.map((tip, i) => (
                   <div key={i} className="bg-white rounded-2xl p-5 flex items-start gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                    <span className="w-6 h-6 rounded-full bg-[#5B7B5E]/10 flex items-center justify-center flex-shrink-0 text-[#5B7B5E] text-sm font-bold mt-0.5">&#10003;</span>
+                    <span className="w-8 h-8 rounded-full bg-[#5B7B5E]/10 flex items-center justify-center flex-shrink-0 text-lg mt-0.5">{getCareIcon(tip)}</span>
                     <p className="text-[#1A1A1A]/70 text-sm leading-relaxed">{tip}</p>
                   </div>
                 ))}
@@ -113,60 +176,72 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
                   </div>
                 ))}
               </div>
+              <p className="text-[#1A1A1A]/40 text-xs mt-4 italic">
+                Always consult your veterinarian for breed-specific health screenings.
+                <Link href="/blog/how-to-choose-dog-breeder" className="text-[#C4704B] hover:underline ml-1">
+                  Learn about choosing a reputable breeder &rarr;
+                </Link>
+              </p>
             </section>
           </div>
 
           {/* Right Column — 35% Sticky Sidebar */}
           <aside className="lg:w-[35%]">
-            <div className="lg:sticky lg:top-8 space-y-6">
-              <h3 className="text-xl font-bold text-[#1A1A1A]">Top Picks</h3>
-              {breed.recommendedProducts.slice(0, 3).map((p, i) => {
-                const href = `/best/${p.includes("bed") ? "dog-beds" : p.includes("brush") || p.includes("shampoo") ? "dog-grooming" : p.includes("supplement") || p.includes("joint") ? "dog-supplements" : p.includes("toy") || p.includes("fetch") || p.includes("puzzle") || p.includes("chew") ? "dog-toys" : p.includes("harness") ? "dog-harnesses" : p.includes("coat") || p.includes("vest") || p.includes("cooling") || p.includes("winter") ? "dog-coats" : p.includes("bowl") || p.includes("feeder") ? "dog-bowls" : p.includes("dental") ? "dog-dental" : p.includes("crate") ? "dog-crates" : p.includes("nail") || p.includes("ear") ? "dog-grooming" : "dog-toys"}`;
-                return (
-                  <Link key={i} href={href} className="group block bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                    <ImagePlaceholder id={`breed-${breed.slug}-pick-${i}`} alt={p.replace(/-/g, ' ')} aspect="landscape" className="mb-4" />
-                    <p className="font-semibold text-[#1A1A1A] capitalize text-sm">{p.replace(/-/g, ' ')}</p>
-                    <span className="text-[#C4704B] text-xs font-semibold mt-2 inline-flex items-center gap-1">
-                      View picks <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
-                    </span>
-                  </Link>
-                );
-              })}
+            <div className="lg:sticky lg:top-20 space-y-6">
+              <h3 className="text-xl font-bold text-[#1A1A1A]">Recommended for Your {breed.name}</h3>
+              <div className="grid grid-cols-2 gap-4">
+                {breed.recommendedProducts.map((rec, i) => {
+                  const info = getProductInfo(rec);
+                  return (
+                    <Link key={i} href={info.link} className="group block bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img src={info.image} alt={info.label} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      </div>
+                      <div className="p-3">
+                        <p className="font-semibold text-[#1A1A1A] text-sm">{info.label}</p>
+                        <span className="text-[#C4704B] text-xs font-semibold mt-1 inline-flex items-center gap-1">
+                          See Our Picks <span className="group-hover:translate-x-1 transition-transform duration-300 inline-block">&rarr;</span>
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </aside>
         </div>
       </div>
 
-      {/* Full-width Products Section */}
-      <div className="bg-white py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-8">Products for Your {breed.name}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {breed.recommendedProducts.slice(0, 4).map((p, i) => {
-              const href = `/best/${p.includes("bed") ? "dog-beds" : p.includes("brush") || p.includes("shampoo") ? "dog-grooming" : p.includes("supplement") || p.includes("joint") ? "dog-supplements" : p.includes("toy") || p.includes("fetch") || p.includes("puzzle") || p.includes("chew") ? "dog-toys" : p.includes("harness") ? "dog-harnesses" : p.includes("coat") || p.includes("vest") || p.includes("cooling") || p.includes("winter") ? "dog-coats" : p.includes("bowl") || p.includes("feeder") ? "dog-bowls" : p.includes("dental") ? "dog-dental" : p.includes("crate") ? "dog-crates" : p.includes("nail") || p.includes("ear") ? "dog-grooming" : "dog-toys"}`;
-              return (
-                <Link key={i} href={href} className="group bg-[#FAF8F5] rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                  <ImagePlaceholder id={`breed-${breed.slug}-product-${i}`} alt={p.replace(/-/g, ' ')} aspect="square" className="mb-4" />
-                  <p className="font-semibold text-[#1A1A1A] capitalize text-sm">{p.replace(/-/g, ' ')}</p>
-                  <span className="text-[#C4704B] text-xs font-semibold mt-2 inline-flex items-center gap-1">
-                    Shop now <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
-                  </span>
-                </Link>
-              );
-            })}
+      {/* Related Breeds */}
+      {relatedBreeds.length > 0 && (
+        <div className="max-w-[1200px] mx-auto px-6 pb-16">
+          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-8">You Might Also Like</h2>
+          <div className="flex gap-8 overflow-x-auto pb-4">
+            {relatedBreeds.map((b) => (
+              <Link key={b.slug} href={`/breeds/${b.slug}`} className="group flex-shrink-0 text-center">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-md group-hover:shadow-xl group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-[#C4704B] transition-all duration-300 mx-auto">
+                  <ImagePlaceholder id={`breed-avatar-${b.slug}`} alt={b.name} aspect="square" className="w-full h-full rounded-full" />
+                </div>
+                <p className="font-semibold text-[#1A1A1A] text-xs mt-3 group-hover:text-[#C4704B] transition-all duration-300">{b.name}</p>
+              </Link>
+            ))}
           </div>
         </div>
-      </div>
+      )}
 
       {/* BarkSeeker Callout */}
-      <div style={{ backgroundColor: '#5B7B5E' }} className="py-12">
-        <div className="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="relative overflow-hidden" style={{ backgroundColor: '#5B7B5E' }}>
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 60 60'%3E%3Cellipse cx='30' cy='38' rx='8' ry='10' fill='%23fff'/%3E%3Ccircle cx='20' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='40' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='16' cy='34' r='3.5' fill='%23fff'/%3E%3Ccircle cx='44' cy='34' r='3.5' fill='%23fff'/%3E%3C/svg%3E")`, backgroundSize: '80px 80px' }} />
+        <div className="relative max-w-[1200px] mx-auto px-6 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-bold text-white mb-2">Find dog parks for your {breed.name}</h3>
-            <p className="text-white/80 text-sm">Discover off-leash parks, trails, and play areas near you.</p>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-2xl">&#127795;</span>
+              <h3 className="text-xl font-bold text-white">Find Dog Parks Near You</h3>
+            </div>
+            <p className="text-white/80 text-sm max-w-md">Discover off-leash parks, trails, and play areas perfect for your {breed.name}.</p>
           </div>
-          <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-[#5B7B5E] font-semibold text-sm px-8 py-3 rounded-full hover:scale-[1.02] transition-transform">
-            Visit BarkSeeker &rarr;
+          <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-[#5B7B5E] font-bold text-sm px-8 py-3.5 rounded-full hover:shadow-lg transition-all duration-300">
+            Explore BarkSeeker &rarr;
           </a>
         </div>
       </div>
