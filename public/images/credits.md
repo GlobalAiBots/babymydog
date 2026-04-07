@@ -60,6 +60,21 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | french-bulldog-looking-up-big-eyes.jpg | Angelos Michalopoulos | VzG64C5T7p4 |
 | golden-retriever-with-stuffed-toy-grass.jpg | Barnabas Davoti | Afogod2A0Zc |
 | poodle-wearing-red-coat-boots-snow.jpg | Asif Ali | rBzNQdnadXE |
+| german-shepherd-portrait-studio-dark.jpg | Michael G | BtwFA_v1xg4 |
+| black-poodle-sitting-on-bed-elegant.jpg | Lavi Cella | c09XaLZF-pw |
+| cream-pomeranian-smiling-on-steps-leash.jpg | Flouffy | VBkIK3qj3QE |
+| white-pomeranian-puppy-fluffy.jpg | Ian Deneumostier | W6wBjQ17r4w |
+| german-shepherd-sitting-autumn-forest-path.jpg | Jana Ohajdova | IqF8B95ZFfs |
+| fawn-french-bulldog-studio-portrait.jpg | Alexandru Sofronie | jVOkrxUSzAQ |
+| black-labrador-retriever-portrait-close-up.jpg | Ari Spada | Cn9XO8qeJpE |
+| black-labrador-retriever-sitting-on-bridge.jpg | Ben Hanson | q9wjM94iMpU |
+| english-springer-spaniel-playing-in-water.jpg | Rafaella Waasdorp | 1wnd5wpPpdA |
+| english-springer-spaniel-holding-leash-field.jpg | Rafaella Waasdorp | cYhNsws8zaI |
+| scruffy-terrier-smiling-purple-flowers.jpg | Acidfern | aOSEeSYILMc |
+| scruffy-terrier-looking-up-outdoors.jpg | Acidfern | vNpAWIgvKSE |
+| boston-terrier-laying-with-tennis-ball.jpg | igorthegoodboy | H5quY5v1fLQ |
+| boston-terrier-puppy-blue-eyes-close-up.jpg | Henrique Ferreira | 1NJaSloehfk |
+| boston-terrier-portrait-warm-indoors.jpg | Silvana Carlos | 9c1LKPnQebs |
 
 ## Owner's Photos (from bellabulls.com — used with permission)
 
