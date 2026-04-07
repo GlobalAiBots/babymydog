@@ -64,11 +64,13 @@ function Footer() {
           <div>
             <p className="text-white/60 font-semibold mb-4 text-xs uppercase tracking-wider">Our Network</p>
             <div className="flex flex-col gap-2 text-white/40">
-              <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">BarkSeeker</a>
               <a href="https://rampseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">RampSeeker</a>
               <a href="https://pierseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">PierSeeker</a>
+              <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">BarkSeeker</a>
+              <a href="https://grandlakeai.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Grand Lake AI</a>
+              <a href="https://askcletus.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">CLETUS AI Chat</a>
+              <a href="https://getcletus.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">CLETUS AI Voice</a>
               <a href="https://globalaibots.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Global AI Bots</a>
-              <a href="https://askcletus.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">CLETUS AI</a>
             </div>
           </div>
         </div>
