@@ -75,6 +75,13 @@ All photos from Unsplash — free for commercial use under the Unsplash License.
 | boston-terrier-laying-with-tennis-ball.jpg | igorthegoodboy | H5quY5v1fLQ |
 | boston-terrier-puppy-blue-eyes-close-up.jpg | Henrique Ferreira | 1NJaSloehfk |
 | boston-terrier-portrait-warm-indoors.jpg | Silvana Carlos | 9c1LKPnQebs |
+| yorkshire-terrier-portrait-brick-patio.jpg | Daria Turchak | yUu4hy7nw5c |
+| black-pug-wearing-yellow-beanie.jpg | Charlesdeluvio | AQRp2NH-O8k |
+| bichon-frise-waving-paw-blue-collar.jpg | Cole Wyland | 1hLSnDbAj80 |
+| pit-bull-terrier-jumping-for-ball.jpg | Jake Hutchison | UoFjCM-QFaE |
+| australian-cattle-dog-hiking-mountains.jpg | Patrick Hendry | RR-D4qtz7qQ |
+| border-collie-red-eating-kibble.jpg | Ayla Verschueren | QIbjKOsmIhQ |
+| labradoodle-apricot-curly-in-bed.jpg | Alfred Lee | dW6R_NEJdjQ |
 
 ## Owner's Photos (from bellabulls.com — used with permission)
 
