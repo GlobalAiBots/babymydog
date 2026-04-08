@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { giftGuides, getGiftGuideBySlug } from "@/data/gifts";
+import productImages from "@/data/product-images.json";
 import type { Metadata } from "next";
+
+const imgMap = productImages as Record<string, string>;
 
 /* eslint-disable @next/next/no-img-element */
 
@@ -52,8 +55,12 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
           {guide.gifts.map((gift, i) => (
             <div key={i} className="bg-white rounded-2xl p-6 flex items-start gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
               {gift.asin && (
-                <a href={`https://www.amazon.com/dp/${gift.asin}?tag=babymydog03-20`} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-16 h-16 flex-shrink-0 bg-gradient-to-br from-[#FF9900]/10 to-[#FF9900]/5 rounded-xl flex items-center justify-center border border-[#FF9900]/20 hover:border-[#FF9900]/40 transition">
-                  <span className="text-xl">&#128230;</span>
+                <a href={`https://www.amazon.com/dp/${gift.asin}?tag=babymydog03-20`} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-16 h-16 flex-shrink-0 bg-white rounded-xl flex items-center justify-center border border-gray-100 hover:border-[#C4704B]/30 transition overflow-hidden p-1">
+                  {imgMap[gift.asin] ? (
+                    <img src={imgMap[gift.asin]} alt={gift.name} className="max-w-full max-h-full object-contain" loading="lazy" referrerPolicy="no-referrer" />
+                  ) : (
+                    <span className="text-xl">&#128722;</span>
+                  )}
                 </a>
               )}
               <div className="flex-1 min-w-0">
