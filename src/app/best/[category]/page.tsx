@@ -80,6 +80,14 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
   return (
     <div className="min-h-screen pb-24 md:pb-0" style={{ backgroundColor: '#FAF8F5' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Best Products", "item": "https://babymydog.com/best" },
+          { "@type": "ListItem", "position": 3, "name": cat.title, "item": `https://babymydog.com/best/${cat.slug}` },
+        ],
+      }) }} />
       <div className="max-w-[1200px] mx-auto px-6 py-20">
 
         {/* Breadcrumbs */}
@@ -231,64 +239,78 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           const relatedPosts: Record<string, { title: string; href: string }[]> = {
             "dog-beds": [
               { title: "Best Dog Beds for Large Breeds", href: "/blog/best-dog-beds-for-large-breeds" },
-              { title: "10 Signs Your Dog Needs a Better Bed", href: "/blog/signs-dog-needs-better-bed" },
+              { title: "Signs Your Dog Needs a Better Bed", href: "/blog/signs-dog-needs-better-bed" },
+              { title: "Best Bed for Great Danes", href: "/blog/best-bed-for-great-dane" },
+              { title: "Best Dog Bed for Corgis", href: "/blog/best-dog-bed-for-corgi" },
             ],
             "dog-food": [
               { title: "How to Choose the Right Dog Food", href: "/blog/choose-right-dog-food" },
               { title: "Best Dog Food for Puppies", href: "/blog/best-dog-food-for-puppies" },
-              { title: "Best Dog Food for Sensitive Stomach", href: "/blog/best-dog-food-for-sensitive-stomach" },
+              { title: "Best Food for Sensitive Stomachs", href: "/blog/best-dog-food-for-sensitive-stomach" },
+              { title: "Best Food for Weight Loss", href: "/blog/best-dog-food-for-weight-loss" },
+              { title: "When to Switch Puppy to Adult Food", href: "/blog/when-to-switch-puppy-to-adult-food" },
             ],
             "dog-toys": [
               { title: "Best Indestructible Dog Toys", href: "/blog/indestructible-dog-toys" },
+              { title: "Best Toys for Labrador Retrievers", href: "/blog/best-toys-for-labrador-retriever" },
+              { title: "Best Toys for Australian Shepherds", href: "/blog/best-toys-for-australian-shepherd" },
+              { title: "Best Chew Toys for Aggressive Chewers", href: "/blog/best-chew-toys-aggressive-chewers" },
+            ],
+            "dog-harnesses": [
+              { title: "Best Harness for Dogs That Pull", href: "/blog/best-dog-harness-for-dogs-that-pull" },
+              { title: "Best Harness for Dachshunds", href: "/blog/best-harness-for-dachshund" },
+              { title: "Best Harness for German Shepherds", href: "/blog/best-harness-for-german-shepherd" },
+              { title: "How to Stop Leash Pulling", href: "/blog/how-to-stop-dog-from-pulling-on-leash" },
+            ],
+            "dog-leashes": [
+              { title: "How to Stop Leash Pulling", href: "/blog/how-to-stop-dog-from-pulling-on-leash" },
             ],
             "dog-grooming": [
               { title: "Dog Grooming at Home", href: "/blog/dog-grooming-at-home" },
               { title: "How Often Should I Bathe My Dog?", href: "/blog/how-often-should-i-bathe-my-dog" },
-            ],
-            "dog-harnesses": [
-              { title: "Best Dog Harness for Dogs That Pull", href: "/blog/best-dog-harness-for-dogs-that-pull" },
-              { title: "How to Stop Your Dog From Pulling on Leash", href: "/blog/how-to-stop-dog-from-pulling-on-leash" },
+              { title: "Grooming Tools for Goldendoodles", href: "/blog/best-grooming-tools-for-goldendoodle" },
+              { title: "How to Clean Dog Ears", href: "/blog/how-to-clean-dog-ears" },
             ],
             "dog-crates": [
-              { title: "Best Dog Crate for Puppy Training", href: "/blog/best-dog-crate-for-puppy-training" },
-              { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
+              { title: "Best Crate for Puppy Training", href: "/blog/best-dog-crate-for-puppy-training" },
+              { title: "How to Crate Train a Puppy", href: "/blog/how-to-crate-train-puppy" },
+              { title: "Best Crate for Husky Puppies", href: "/blog/best-crate-for-husky-puppy" },
             ],
             "dog-supplements": [
-              { title: "Dog Joint Supplements — Do They Work?", href: "/blog/dog-joint-supplements-do-they-work" },
+              { title: "Do Joint Supplements Work?", href: "/blog/dog-joint-supplements-do-they-work" },
+              { title: "Best Supplements for Rottweilers", href: "/blog/best-supplements-for-rottweiler" },
             ],
-            "dog-gps-trackers": [
-              { title: "Best GPS Tracker for Dogs", href: "/blog/best-gps-tracker-for-dogs" },
+            "dog-dental": [
+              { title: "How to Clean Dog Ears", href: "/blog/how-to-clean-dog-ears" },
             ],
             "dog-coats": [
               { title: "Winter Dog Care Tips", href: "/blog/winter-dog-care-tips" },
             ],
-            "puppy-essentials": [
-              { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
-              { title: "Best Dog Food for Puppies", href: "/blog/best-dog-food-for-puppies" },
-            ],
-            "dog-anxiety": [
-              { title: "English Bulldog Care Guide", href: "/blog/english-bulldog-care-guide" },
-            ],
             "dog-boots": [
               { title: "Winter Dog Care Tips", href: "/blog/winter-dog-care-tips" },
             ],
-            "dog-cooling": [
-              { title: "English Bulldog Care Guide", href: "/blog/english-bulldog-care-guide" },
+            "dog-anxiety": [
+              { title: "How to Stop Dog Barking", href: "/blog/how-to-stop-dog-from-barking" },
+            ],
+            "dog-bowls": [
+              { title: "Best Slow Feeder for Labs", href: "/blog/best-slow-feeder-for-labs" },
             ],
             "dog-puzzle-toys": [
-              { title: "Best Indestructible Dog Toys", href: "/blog/indestructible-dog-toys" },
+              { title: "Best Toys for Australian Shepherds", href: "/blog/best-toys-for-australian-shepherd" },
+              { title: "Best Chew Toys for Aggressive Chewers", href: "/blog/best-chew-toys-aggressive-chewers" },
             ],
-            "dog-car-seats": [
+            "dog-cooling": [
+              { title: "How Much Exercise Does My Dog Need?", href: "/blog/how-much-exercise-does-my-dog-need" },
+            ],
+            "dog-training": [
+              { title: "How to Crate Train a Puppy", href: "/blog/how-to-crate-train-puppy" },
+              { title: "How to Stop Leash Pulling", href: "/blog/how-to-stop-dog-from-pulling-on-leash" },
+              { title: "How to Stop Dog Barking", href: "/blog/how-to-stop-dog-from-barking" },
+            ],
+            "puppy-essentials": [
               { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
-            ],
-            "dog-feeders": [
-              { title: "How to Choose the Right Dog Food", href: "/blog/choose-right-dog-food" },
-            ],
-            "dog-raincoats": [
-              { title: "Winter Dog Care Tips", href: "/blog/winter-dog-care-tips" },
-            ],
-            "dog-water-fountains": [
-              { title: "How to Choose the Right Dog Food", href: "/blog/choose-right-dog-food" },
+              { title: "How to Crate Train a Puppy", href: "/blog/how-to-crate-train-puppy" },
+              { title: "Best Dog Food for Puppies", href: "/blog/best-dog-food-for-puppies" },
             ],
           };
           const posts = relatedPosts[cat.slug];

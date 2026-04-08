@@ -42,6 +42,17 @@ const blogImages: Record<string, string> = {
 export default function Home() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "WebSite", "name": "BabyMyDog", "url": "https://babymydog.com",
+        "description": "Premium products and care guides for dog lovers. 50 breed guides, 27 product categories, expert reviews.",
+        "potentialAction": { "@type": "SearchAction", "target": "https://babymydog.com/breeds?q={search_term_string}", "query-input": "required name=search_term_string" },
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "Organization", "name": "BabyMyDog", "url": "https://babymydog.com",
+        "logo": "https://babymydog.com/favicon.svg",
+        "description": "Expert-picked products for pampered pups. Honest reviews, no sponsored rankings.",
+      }) }} />
+
       {/* HERO — Full-bleed dramatic */}
       <section className="relative min-h-[60vh] md:min-h-[85vh] flex items-end overflow-hidden">
         <img src="/images/happy-dog-owner-hugging-golden-retriever.jpg" alt="Happy dog owner with golden retriever" className="absolute inset-0 w-full h-full object-cover" loading="eager" />

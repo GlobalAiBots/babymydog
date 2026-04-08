@@ -38,4 +38,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# data files
+*.csv
+scripts/output/
+scripts/*.log
 next-env.d.ts

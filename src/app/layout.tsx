@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
-  description: "Find the best products for your dog across 25 categories. Breed-specific recommendations, expert reviews, gift guides. Because your dog deserves to be spoiled.",
+  description: "Find the best products for your dog across 27 categories. Breed-specific recommendations, expert reviews, gift guides. Because your dog deserves to be spoiled.",
   openGraph: {
     title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
     description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
@@ -15,7 +15,12 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "https://babymydog.com/og-image.png", width: 1200, height: 630, alt: "BabyMyDog — Premium Products for Dog Lovers" }],
   },
-  twitter: { card: "summary", title: "BabyMyDog" },
+  twitter: {
+    card: "summary_large_image",
+    title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
+    description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
+    images: ["https://babymydog.com/og-image.png"],
+  },
   alternates: { canonical: "https://babymydog.com" },
 };
 
