@@ -203,7 +203,7 @@ export default function Home() {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white">Join the Pack &#128062;</h2>
-            <p className="text-white/80 mt-4 leading-relaxed max-w-md mx-auto">Weekly picks, breed tips, and deals. Loved by 5,000+ dog parents.</p>
+            <p className="text-white/80 mt-4 leading-relaxed max-w-md mx-auto">Join dog parents who get our best picks, breed tips, and deals every week.</p>
             <div className="flex flex-col sm:flex-row gap-3 mt-8 max-w-md mx-auto">
               <input type="email" placeholder="your@email.com" className="flex-1 px-5 py-3.5 rounded-full text-sm outline-none border-0 bg-white/20 text-white placeholder-white/50" />
               <button className="bg-[#1A1A1A] text-white font-bold px-7 py-3.5 rounded-full transition-all duration-300 text-sm hover:bg-[#2A2420] whitespace-nowrap">Subscribe Free</button>

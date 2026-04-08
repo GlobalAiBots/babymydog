@@ -132,7 +132,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   <td className="py-4 px-4 font-bold text-[#1A1A1A]">{pick.price}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
-                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer" className="text-[#C4704B] text-xs font-semibold hover:underline whitespace-nowrap">View on Amazon &rarr;</a>
+                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] text-xs font-semibold hover:underline whitespace-nowrap">View on Amazon &rarr;</a>
                   </td>
                 </tr>
               ))}
@@ -156,7 +156,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   </div>
                   <p className="text-xl font-bold text-[#1A1A1A] mb-3">{pick.price}</p>
                   {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
-                  <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-6 py-2.5 rounded-full transition w-full">
+                  <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-6 py-2.5 rounded-full transition w-full">
                     Check Price &rarr;
                   </a>
                 </div>
@@ -203,7 +203,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     </li>
                   ))}
                 </ul>
-                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition text-center">
+                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block w-full sm:w-auto bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition text-center">
                   Check Price on Amazon &rarr;
                 </a>
               </div>
@@ -239,10 +239,68 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           </div>
         </section>
 
+        {/* Related Articles */}
+        {(() => {
+          const relatedPosts: Record<string, { title: string; href: string }[]> = {
+            "dog-beds": [
+              { title: "Best Dog Beds for Large Breeds", href: "/blog/best-dog-beds-for-large-breeds" },
+              { title: "10 Signs Your Dog Needs a Better Bed", href: "/blog/signs-dog-needs-better-bed" },
+            ],
+            "dog-food": [
+              { title: "How to Choose the Right Dog Food", href: "/blog/choose-right-dog-food" },
+              { title: "Best Dog Food for Puppies", href: "/blog/best-dog-food-for-puppies" },
+              { title: "Best Dog Food for Sensitive Stomach", href: "/blog/best-dog-food-for-sensitive-stomach" },
+            ],
+            "dog-toys": [
+              { title: "Best Indestructible Dog Toys", href: "/blog/indestructible-dog-toys" },
+            ],
+            "dog-grooming": [
+              { title: "Dog Grooming at Home", href: "/blog/dog-grooming-at-home" },
+              { title: "How Often Should I Bathe My Dog?", href: "/blog/how-often-should-i-bathe-my-dog" },
+            ],
+            "dog-harnesses": [
+              { title: "Best Dog Harness for Dogs That Pull", href: "/blog/best-dog-harness-for-dogs-that-pull" },
+              { title: "How to Stop Your Dog From Pulling on Leash", href: "/blog/how-to-stop-dog-from-pulling-on-leash" },
+            ],
+            "dog-crates": [
+              { title: "Best Dog Crate for Puppy Training", href: "/blog/best-dog-crate-for-puppy-training" },
+              { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
+            ],
+            "dog-supplements": [
+              { title: "Dog Joint Supplements — Do They Work?", href: "/blog/dog-joint-supplements-do-they-work" },
+            ],
+            "dog-gps-trackers": [
+              { title: "Best GPS Tracker for Dogs", href: "/blog/best-gps-tracker-for-dogs" },
+            ],
+            "dog-coats": [
+              { title: "Winter Dog Care Tips", href: "/blog/winter-dog-care-tips" },
+            ],
+            "puppy-essentials": [
+              { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
+              { title: "Best Dog Food for Puppies", href: "/blog/best-dog-food-for-puppies" },
+            ],
+          };
+          const posts = relatedPosts[cat.slug];
+          if (!posts) return null;
+          return (
+            <section className="mt-16 pt-12 border-t border-[#D4C5A9]/40 mb-16">
+              <h2 className="text-xl font-bold text-[#1A1A1A] mb-6">Related Articles</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {posts.map(post => (
+                  <Link key={post.href} href={post.href} className="block bg-white rounded-xl p-5 hover:shadow-md transition border border-[#D4C5A9]/30">
+                    <p className="font-semibold text-[#1A1A1A] text-sm">{post.title}</p>
+                    <p className="text-[#C4704B] text-xs mt-1">Read more &rarr;</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
+
         {/* Newsletter Signup */}
         <section className="rounded-2xl p-10 mb-12 text-center" style={{ background: 'linear-gradient(135deg, #C4704B11 0%, #5B7B5E11 100%)' }}>
           <h2 className="text-xl font-bold text-[#1A1A1A] mb-2">Get Our Weekly Picks</h2>
-          <p className="text-[#1A1A1A]/60 mb-6 max-w-md mx-auto">Join 5,000+ dog parents who get our best product finds, breed tips, and exclusive deals every Thursday.</p>
+          <p className="text-[#1A1A1A]/60 mb-6 max-w-md mx-auto">Join dog parents who get our best product finds, breed tips, and exclusive deals every Thursday.</p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input type="email" placeholder="Enter your email" className="flex-1 px-5 py-3 rounded-full border border-[#D4C5A9] text-sm focus:outline-none focus:border-[#C4704B] bg-white" />
             <button className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition whitespace-nowrap">Join the Pack</button>
@@ -261,7 +319,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <p className="text-sm font-bold text-[#1A1A1A] truncate">{cat.picks[0].name}</p>
           <p className="text-sm font-bold text-[#C4704B]">{cat.picks[0].price}</p>
         </div>
-        <a href={amazonLink(cat.picks[0].asin)} target="_blank" rel="noopener noreferrer" className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
+        <a href={amazonLink(cat.picks[0].asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
           Buy on Amazon
         </a>
       </div>

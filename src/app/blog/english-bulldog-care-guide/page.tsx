@@ -91,7 +91,7 @@ export default function EnglishBulldogCareGuide() {
             And here&apos;s the big one: <strong>English Bulldogs cannot swim.</strong> I can&apos;t stress this enough. Their heavy front-end, short legs, and flat face make it physically impossible for most of them to stay afloat. Never leave a bulldog unattended near a pool, pond, lake, or even a bathtub with deep water. If you want them near water, invest in a well-fitted life vest and supervise every single second.
           </p>
           <p>
-            A <a href="https://www.amazon.com/dp/B07GDRPZPB?tag=babymydog03-20" target="_blank" rel="noopener noreferrer" className="text-[#C4704B] hover:underline font-semibold">cooling mat</a> is one of the best investments you can make for a bulldog. I keep one in every room during summer, and my dogs gravitate to them naturally.
+            A <a href="https://www.amazon.com/dp/B07GDRPZPB?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">cooling mat</a> is one of the best investments you can make for a bulldog. I keep one in every room during summer, and my dogs gravitate to them naturally.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Wrinkle and Skin Care Routine</h2>
@@ -100,7 +100,7 @@ export default function EnglishBulldogCareGuide() {
             If there&apos;s one care routine that separates bulldog owners from everyone else, it&apos;s wrinkle cleaning. Those adorable face folds need to be cleaned two to three times per week &mdash; some dogs need it daily, depending on how deep their wrinkles are and how much moisture gets trapped in there.
           </p>
           <p>
-            My routine is simple: I use <a href="https://www.amazon.com/dp/B07PMN6RQN?tag=babymydog03-20" target="_blank" rel="noopener noreferrer" className="text-[#C4704B] hover:underline font-semibold">wrinkle wipes</a> to clean between every fold, making sure I get into the nose rope (that big fold over the nose) and the folds around the tail pocket. After wiping, I dry the area thoroughly with a soft cloth. Moisture left behind is the enemy &mdash; that&apos;s what leads to yeast infections and bacterial growth.
+            My routine is simple: I use <a href="https://www.amazon.com/dp/B07PMN6RQN?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">wrinkle wipes</a> to clean between every fold, making sure I get into the nose rope (that big fold over the nose) and the folds around the tail pocket. After wiping, I dry the area thoroughly with a soft cloth. Moisture left behind is the enemy &mdash; that&apos;s what leads to yeast infections and bacterial growth.
           </p>
           <p>
             Watch for redness, a funky smell, or brown discharge. Those are signs an infection is brewing, and you&apos;ll want to see your vet for a medicated wipe or cream. Prevention is so much easier than treatment, so stay on top of it. I also recommend checking their ears weekly, as bulldogs are prone to ear infections too. The same wipe-and-dry approach works well for ears.
@@ -124,9 +124,9 @@ export default function EnglishBulldogCareGuide() {
             After years of raising bulldogs, these are the products I genuinely can&apos;t live without:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><a href="https://www.amazon.com/dp/B07PMN6RQN?tag=babymydog03-20" target="_blank" rel="noopener noreferrer" className="text-[#C4704B] hover:underline font-semibold">Wrinkle Wipes</a> &mdash; Essential for keeping those face folds clean and infection-free. I go through these like crazy and always keep a backup pack on hand.</li>
-            <li><a href="https://www.amazon.com/dp/B07GDRPZPB?tag=babymydog03-20" target="_blank" rel="noopener noreferrer" className="text-[#C4704B] hover:underline font-semibold">Cooling Mat</a> &mdash; A must-have for summer months. Self-cooling gel mats give your bulldog a comfortable place to chill when temperatures rise.</li>
-            <li><a href="https://www.amazon.com/dp/B0CXPMV4V1?tag=babymydog03-20" target="_blank" rel="noopener noreferrer" className="text-[#C4704B] hover:underline font-semibold">Orthopedic Dog Bed</a> &mdash; Bulldogs need proper joint support. A good orthopedic bed with memory foam can make a real difference, especially as they age.</li>
+            <li><a href="https://www.amazon.com/dp/B07PMN6RQN?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Wrinkle Wipes</a> &mdash; Essential for keeping those face folds clean and infection-free. I go through these like crazy and always keep a backup pack on hand.</li>
+            <li><a href="https://www.amazon.com/dp/B07GDRPZPB?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Cooling Mat</a> &mdash; A must-have for summer months. Self-cooling gel mats give your bulldog a comfortable place to chill when temperatures rise.</li>
+            <li><a href="https://www.amazon.com/dp/B0CXPMV4V1?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Orthopedic Dog Bed</a> &mdash; Bulldogs need proper joint support. A good orthopedic bed with memory foam can make a real difference, especially as they age.</li>
           </ul>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Common Bulldog Myths &mdash; Debunked</h2>

@@ -7,10 +7,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
   description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides. Because your dog deserves to be spoiled.",
-  openGraph: { title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers", url: "https://babymydog.com", siteName: "BabyMyDog", type: "website" },
+  openGraph: {
+    title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
+    description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
+    url: "https://babymydog.com",
+    siteName: "BabyMyDog",
+    type: "website",
+    images: [{ url: "https://babymydog.com/og-image.png", width: 1200, height: 630, alt: "BabyMyDog — Premium Products for Dog Lovers" }],
+  },
   twitter: { card: "summary", title: "BabyMyDog" },
   alternates: { canonical: "https://babymydog.com" },
-  other: { "google-adsense-account": "ca-pub-4822220549367368" },
 };
 
 function Nav() {
@@ -97,6 +103,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;900&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet" />
@@ -104,7 +111,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased min-h-screen flex flex-col" style={{background:'#FAF8F5', fontFamily:"'DM Sans', sans-serif"}}>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-5MB60LVFB2" strategy="afterInteractive" />
         <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5MB60LVFB2');`}</Script>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4822220549367368" crossOrigin="anonymous" strategy="afterInteractive" />
         <a href="/best" className="block w-full bg-[#C4704B] text-white text-center py-2 text-xs sm:text-sm font-medium hover:bg-[#b5623f] transition">
           &#128062; New for 2026 &mdash; Our team just dropped fresh picks across all 15 product categories &rarr;
         </a>
