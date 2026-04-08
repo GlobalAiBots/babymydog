@@ -1,10 +1,7 @@
 import Link from "next/link";
 import { getBreedBySlug } from "@/data/breeds";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
-import productImages from "@/data/product-images.json";
 import type { Metadata } from "next";
-
-const imgMap = productImages as Record<string, string>;
 
 const breed = getBreedBySlug("bulldog")!;
 
@@ -140,13 +137,6 @@ export default function BulldogPage() {
                 { name: "No-Pull Dog Harness", asin: "B01M8JT6FT", why: "Always use a harness, never a collar — bulldogs have breathing issues" },
               ].map((prod) => (
                 <a key={prod.name} href={`https://www.amazon.com/dp/${prod.asin}?tag=${TAG}`} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                  <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center mb-3 mx-auto border border-gray-100 overflow-hidden p-1">
-                    {imgMap[prod.asin] ? (
-                      <img src={imgMap[prod.asin]} alt={prod.name} className="max-w-full max-h-full object-contain" loading="lazy" referrerPolicy="no-referrer" />
-                    ) : (
-                      <span className="text-lg">&#128722;</span>
-                    )}
-                  </div>
                   <h3 className="font-bold text-[#1A1A1A] text-sm">{prod.name}</h3>
                   <p className="text-[#1A1A1A]/50 text-xs mt-1 leading-relaxed">{prod.why}</p>
                   <span className="inline-block mt-3 bg-[#C4704B] text-white text-xs font-semibold px-4 py-2 rounded-full">Shop on Amazon &rarr;</span>

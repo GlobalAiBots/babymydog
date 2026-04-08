@@ -52,9 +52,6 @@ export default function BestPage() {
         {/* Category Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {productCategories.map(c => {
-            const prices = c.picks.map(p => parseFloat(p.price.replace('$', '').replace(',', '')));
-            const minPrice = Math.min(...prices);
-            const maxPrice = Math.max(...prices);
             const avgRating = (c.picks.reduce((sum, p) => sum + p.rating, 0) / c.picks.length).toFixed(1);
             const img = categoryImages[c.slug];
             return (
@@ -73,7 +70,7 @@ export default function BestPage() {
                   <h2 className="font-bold text-[#1A1A1A] text-lg group-hover:text-[#C4704B] transition">{c.title}</h2>
                   <p className="text-[#1A1A1A]/50 text-sm mt-2 leading-relaxed line-clamp-2">{c.description}</p>
                   <div className="flex items-center gap-3 mt-3 text-xs text-[#1A1A1A]/40">
-                    <span className="font-semibold text-[#1A1A1A]/60">From ${minPrice.toFixed(2)} &ndash; ${maxPrice.toFixed(2)}</span>
+                    <span className="font-semibold text-[#1A1A1A]/60">{c.picks.length} expert picks</span>
                   </div>
                   <div className="flex items-center gap-1.5 mt-2 text-xs text-[#1A1A1A]/40">
                     <span className="inline-flex items-center gap-0.5">

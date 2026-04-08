@@ -2,10 +2,7 @@ import Link from "next/link";
 import BrandName from "@/components/BrandName";
 import { notFound } from "next/navigation";
 import { productCategories, getProductCategoryBySlug } from "@/data/products";
-import productImages from "@/data/product-images.json";
 import type { Metadata } from "next";
-
-const imgMap = productImages as Record<string, string>;
 
 export function generateStaticParams() { return productCategories.map(c => ({ category: c.slug })); }
 
@@ -74,8 +71,6 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         "offers": {
           "@type": "Offer",
           "url": `https://www.amazon.com/dp/${pick.asin}?tag=babymydog03-20`,
-          "priceCurrency": "USD",
-          "price": pick.price.replace("$", ""),
           "availability": "https://schema.org/InStock",
         },
       },
@@ -120,7 +115,6 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Rank</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Product</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Best For</th>
-                <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Price</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Rating</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium"></th>
               </tr>
@@ -131,7 +125,6 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   <td className="py-4 px-4 font-bold text-[#C4704B]">#{i + 1}</td>
                   <td className="py-4 px-4 font-semibold text-[#1A1A1A]">{pick.name}</td>
                   <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge}</td>
-                  <td className="py-4 px-4 font-bold text-[#1A1A1A]">{pick.price}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
                     <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] text-xs font-semibold hover:underline whitespace-nowrap">View on Amazon &rarr;</a>
@@ -148,27 +141,16 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cat.picks.slice(0, 3).map((pick, i) => (
               <div key={i} className="bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block bg-white flex items-center justify-center p-6 min-h-[160px] group border-b border-gray-100">
-                  {imgMap[pick.asin] ? (
-                    <img src={imgMap[pick.asin]} alt={pick.name} className="max-w-full max-h-[140px] object-contain" loading="lazy" referrerPolicy="no-referrer" />
-                  ) : (
-                    <div className="flex flex-col items-center justify-center text-center">
-                      <span className="text-3xl mb-1">&#128722;</span>
-                      <span className="text-xs text-[#C4704B] font-semibold group-hover:underline">View on Amazon</span>
-                    </div>
-                  )}
-                </a>
                 <div className="p-6 text-center">
-                  <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-2">{pick.badge}</span>
-                  <h3 className="font-bold text-[#1A1A1A] text-lg mb-1">{pick.name}</h3>
-                  <div className="flex items-center justify-center gap-2 mb-2">
+                  <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
+                  <h3 className="font-bold text-[#1A1A1A] text-lg mb-2">{pick.name}</h3>
+                  <div className="flex items-center justify-center gap-2 mb-3">
                     <StarRating rating={pick.rating} />
                     <span className="text-[#1A1A1A]/40 text-xs">({pick.reviewCount})</span>
                   </div>
-                  <p className="text-xl font-bold text-[#1A1A1A] mb-3">{pick.price}</p>
                   {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
                   <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-6 py-2.5 rounded-full transition w-full">
-                    Check Price &rarr;
+                    Check Price on Amazon &rarr;
                   </a>
                 </div>
               </div>
@@ -183,33 +165,21 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             <span className="text-xs text-[#1A1A1A]/40 bg-[#F0EEEB] px-3 py-1.5 rounded-full">Sorted by: Our Ranking</span>
           </div>
           {cat.picks.map((pick, i) => (
-            <div key={i} className="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-              <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full md:w-[240px] flex-shrink-0 relative bg-white flex items-center justify-center p-6 border-b md:border-b-0 md:border-r border-gray-100 group">
-                <span className="absolute top-4 left-4 bg-[#C4704B] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">#{i + 1}</span>
-                {imgMap[pick.asin] ? (
-                  <img src={imgMap[pick.asin]} alt={pick.name} className="max-w-full max-h-[180px] object-contain" loading="lazy" referrerPolicy="no-referrer" />
-                ) : (
-                  <div className="flex flex-col items-center justify-center text-center">
-                    <span className="text-4xl mb-2">&#128722;</span>
-                    <span className="text-sm font-bold text-[#1A1A1A]/60 leading-tight mb-1">{pick.name}</span>
-                    <span className="text-xs text-[#C4704B] font-semibold group-hover:underline">View on Amazon</span>
-                  </div>
-                )}
-              </a>
-              <div className="p-8 md:p-10 flex-1 min-w-0">
+            <div key={i} className="bg-white rounded-2xl overflow-hidden" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <div className="p-8 md:p-10">
                 <div className="flex items-start justify-between mb-2 flex-wrap gap-3">
                   <div>
-                    <h3 className="font-bold text-[#1A1A1A] text-xl">{pick.name}</h3>
+                    <div className="flex items-center gap-3 mb-1">
+                      <span className="bg-[#C4704B] text-white text-xs font-bold px-3 py-1 rounded-full">#{i + 1}</span>
+                      <h3 className="font-bold text-[#1A1A1A] text-xl">{pick.name}</h3>
+                    </div>
                     <div className="flex flex-wrap items-center gap-3 mt-1.5">
                       <StarRating rating={pick.rating} />
                       <span className="text-[#1A1A1A]/40 text-sm">({pick.reviewCount} reviews)</span>
                       {pick.prime && <PrimeBadge />}
                     </div>
                   </div>
-                  <div className="text-right">
-                    <span className="text-2xl font-bold text-[#1A1A1A]">{pick.price}</span>
-                    <span className="block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mt-1">{pick.badge}</span>
-                  </div>
+                  <span className="text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full">{pick.badge}</span>
                 </div>
                 <p className="text-[#1A1A1A]/60 leading-relaxed mb-5 mt-4">{pick.description}</p>
                 <ul className="space-y-2 mb-6">
@@ -350,7 +320,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         </section>
 
         {/* Affiliate Disclosure */}
-        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate (tag: babymydog03-20), <BrandName /> earns from qualifying purchases. Prices shown are approximate and may vary. This does not affect our editorial independence.</p>
+        <p className="text-[#1A1A1A]/30 text-xs italic text-center">As an Amazon Associate, <BrandName /> earns from qualifying purchases. This does not affect our editorial independence. Prices and availability are subject to change.</p>
       </div>
 
       {/* Sticky Mobile CTA Bar */}
@@ -358,10 +328,9 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         <div className="flex-1 min-w-0">
           <p className="text-xs text-[#1A1A1A]/40 truncate">Our #1 Pick</p>
           <p className="text-sm font-bold text-[#1A1A1A] truncate">{cat.picks[0].name}</p>
-          <p className="text-sm font-bold text-[#C4704B]">{cat.picks[0].price}</p>
         </div>
         <a href={amazonLink(cat.picks[0].asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
-          Buy on Amazon
+          Check Price
         </a>
       </div>
     </div>
