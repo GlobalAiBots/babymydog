@@ -123,6 +123,8 @@ export default function Home() {
                 { slug: "dog-leashes", name: "Leashes", icon: "\u{1F43E}" },
                 { slug: "dog-bowls", name: "Bowls & Feeders", icon: "\u{1F963}" },
                 { slug: "puppy-essentials", name: "Puppy Essentials", icon: "\u{1F436}" },
+                { slug: "dog-collars", name: "Collars & Tags", icon: "\u{1F4DB}" },
+                { slug: "dog-training", name: "Training Tools", icon: "\u{1F3AF}" },
               ].map((c) => (
                 <Link key={c.slug} href={`/best/${c.slug}`} className="flex items-center gap-2 bg-white rounded-xl p-3 hover:shadow-md hover:-translate-y-0.5 transition-all border border-[#D4C5A9]/30">
                   <span className="text-lg">{c.icon}</span>

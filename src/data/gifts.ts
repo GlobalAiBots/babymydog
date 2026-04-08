@@ -148,7 +148,7 @@ export const giftGuides: GiftGuide[] = [
       "Step up the gift game with premium picks that show you really get them \u2014 and their dog.",
     gifts: [
       { name: "Furbo Mini Dog Camera", price: "$39-49", description: "Compact treat-tossing camera with 1080p HD, night vision, and barking alerts.", asin: "B09BKGG67G" },
-      { name: "Ruffwear Front Range Harness", price: "$40-45", description: "Premium padded everyday harness with front and back leash clips \u2014 a gift they\u2019ll use every day.", asin: "B01N7YDQKH" },
+      { name: "Ruffwear Front Range Harness", price: "$40-45", description: "Premium padded everyday harness with front and back leash clips \u2014 a gift they\u2019ll use every day.", asin: "B0CLB4ZBWF" },
       { name: "YETI Boomer 8 Dog Bowl", price: "$40-50", description: "Nearly indestructible stainless steel dog bowl with non-slip base. The Yeti of dog bowls.", asin: "B08F4WWJ68" },
       { name: "Kurgo Loft Reversible Dog Jacket", price: "$35-45", description: "Reversible jacket with ripstop shell on one side and fleece on the other.", asin: "B07L6C5KRM" },
       { name: "PetSafe Smart Feed Automatic Feeder", price: "$45-50", description: "Wi-Fi connected feeder with app scheduling \u2014 perfect for the tech-savvy dog parent." },

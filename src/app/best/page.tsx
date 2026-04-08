@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best Dog Products (2026) — Expert Reviews | BabyMyDog",
-  description: "Expert-reviewed dog products across 25 categories. Find the best beds, food, toys, grooming tools, and more for your dog.",
+  description: "Expert-reviewed dog products across 27 categories. Find the best beds, food, toys, grooming tools, and more for your dog.",
   alternates: { canonical: "https://babymydog.com/best" },
 };
 
@@ -34,6 +34,8 @@ const categoryImages: Record<string, string> = {
   "dog-raincoats": "/images/french-bulldog-and-friend-in-designer-outfits.jpg",
   "dog-cooling": "/images/english-bulldog-outdoors-with-frisbee.jpg",
   "dog-puzzle-toys": "/images/golden-retriever-holding-stuffed-toy.jpg",
+  "dog-collars": "/images/couple-petting-dog-wearing-harness.jpg",
+  "dog-training": "/images/german-shepherd-sitting-autumn-forest-path.jpg",
 };
 
 /* eslint-disable @next/next/no-img-element */

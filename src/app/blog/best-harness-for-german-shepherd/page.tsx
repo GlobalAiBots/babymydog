@@ -72,7 +72,7 @@ export default function BestHarnessForGermanShepherd() {
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">1. Ruffwear Front Range Harness &mdash; Best Overall</h3>
           <p>
-            The <a href="https://www.amazon.com/dp/B01N7YDQKH?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Ruffwear Front Range</a> ($45) is the harness I recommend to most German Shepherd owners. It has both front and back leash attachment points, four adjustment points for a custom fit on a GSD&apos;s deep chest, and padded chest and belly panels that prevent chafing. The construction is bombproof &mdash; I&apos;ve seen these last years on powerful dogs with daily use. The reflective trim is a genuine safety feature, not decorative.
+            The <a href="https://www.amazon.com/dp/B0CLB4ZBWF?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Ruffwear Front Range</a> ($45) is the harness I recommend to most German Shepherd owners. It has both front and back leash attachment points, four adjustment points for a custom fit on a GSD&apos;s deep chest, and padded chest and belly panels that prevent chafing. The construction is bombproof &mdash; I&apos;ve seen these last years on powerful dogs with daily use. The reflective trim is a genuine safety feature, not decorative.
           </p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">2. PetSafe Easy Walk Harness &mdash; Best No-Pull Option</h3>
