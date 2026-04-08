@@ -37,6 +37,8 @@ export default function BestChewToysAggressiveChewers() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Chew Toys for Aggressive Chewers: Indestructible Picks</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
 
+        <img src="/images/golden-retriever-with-stuffed-toy-grass.jpg" alt="Golden Retriever with toy" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>If you have ever handed your dog a brand-new toy and watched it reduced to confetti in under three minutes, you are living with a power chewer. I have been there. During my years breeding working-line dogs, I went through enough destroyed toys to fill a dumpster before I finally figured out which products actually survive and which are just expensive garbage. The truth is that no toy is truly indestructible &mdash; any dog with determination and strong jaws can eventually damage anything &mdash; but the right materials and designs can extend a toy&apos;s life from minutes to months.</p>

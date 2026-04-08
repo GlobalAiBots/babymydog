@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best Dog Products (2026) — Expert Reviews | BabyMyDog",
-  description: "Expert-reviewed dog products across 15 categories. Find the best beds, food, toys, grooming tools, and more for your dog.",
+  description: "Expert-reviewed dog products across 25 categories. Find the best beds, food, toys, grooming tools, and more for your dog.",
   alternates: { canonical: "https://babymydog.com/best" },
 };
 
@@ -24,6 +24,16 @@ const categoryImages: Record<string, string> = {
   "dog-dental": "/images/vet-examining-english-bulldog-ear.jpg",
   "dog-coats": "/images/poodle-wearing-red-coat-boots-snow.jpg",
   "puppy-essentials": "/images/golden-retriever-puppies-in-a-row.jpg",
+  "dog-anxiety": "/images/hound-dog-resting-on-bed-in-doorway.jpg",
+  "dog-car-seats": "/images/couple-petting-dog-wearing-harness.jpg",
+  "dog-water-fountains": "/images/excited-husky-getting-fed-dog-bowl.jpg",
+  "dog-strollers": "/images/fluffy-pomeranian-walking-in-booties.jpg",
+  "dog-backpacks": "/images/woman-hiking-with-dog-ocean-cliffs.jpg",
+  "dog-feeders": "/images/border-collie-looking-at-food-bowl-kibble.jpg",
+  "dog-boots": "/images/poodle-wearing-red-coat-boots-snow.jpg",
+  "dog-raincoats": "/images/french-bulldog-and-friend-in-designer-outfits.jpg",
+  "dog-cooling": "/images/english-bulldog-outdoors-with-frisbee.jpg",
+  "dog-puzzle-toys": "/images/golden-retriever-holding-stuffed-toy.jpg",
 };
 
 /* eslint-disable @next/next/no-img-element */

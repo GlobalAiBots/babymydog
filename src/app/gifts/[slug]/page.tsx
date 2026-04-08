@@ -50,8 +50,13 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
 
         <div className="space-y-4">
           {guide.gifts.map((gift, i) => (
-            <div key={i} className="bg-white rounded-2xl p-6 flex items-start justify-between gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-              <div>
+            <div key={i} className="bg-white rounded-2xl p-6 flex items-start gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              {gift.asin && (
+                <a href={`https://www.amazon.com/dp/${gift.asin}?tag=babymydog03-20`} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-20 h-20 flex-shrink-0 bg-[#FAFAFA] rounded-xl flex items-center justify-center p-2 border border-gray-100 hover:border-[#C4704B]/30 transition">
+                  <img src={`https://m.media-amazon.com/images/P/${gift.asin}.01._SCLZZZZZZZ_SX300_.jpg`} alt={gift.name} className="max-w-full max-h-full object-contain" loading="lazy" />
+                </a>
+              )}
+              <div className="flex-1 min-w-0">
                 <h3 className="font-bold text-[#1A1A1A]">{gift.name}</h3>
                 <p className="text-[#1A1A1A]/50 text-sm mt-1">{gift.description}</p>
               </div>

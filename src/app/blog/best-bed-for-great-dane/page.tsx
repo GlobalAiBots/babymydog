@@ -37,6 +37,8 @@ export default function BestBedForGreatDane() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Dog Bed for Great Danes in 2026: XL Orthopedic Picks</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
 
+        <img src="/images/great-dane-merle-portrait-autumn.jpg" alt="Great Dane portrait" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Great Danes are the largest breed most people will ever own, and their bedding needs are a category unto themselves. We are talking about 100 to 150-plus pounds of dog that needs somewhere to sleep for 14 to 16 hours a day. The bed that works for your friend&apos;s Labrador will be comically small and will flatten to a pancake within a week under a Dane&apos;s weight. Getting this right matters more for giant breeds than for any other size, because every hour a Great Dane spends on an inadequate surface accelerates the joint problems they are already genetically predisposed to.</p>

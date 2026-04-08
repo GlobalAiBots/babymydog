@@ -37,6 +37,8 @@ export default function BestDogBedForCorgi() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Dog Bed for Corgis in 2026: Orthopedic, Cooling &amp; Cozy</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
 
+        <img src="/images/pembroke-welsh-corgi-smiling-crater-lake.jpg" alt="Happy Corgi outdoors" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Corgis look like they were assembled from spare parts &mdash; a big dog&apos;s head and chest on two-inch legs &mdash; and that unique proportions create real bedding challenges. Like dachshunds, Pembroke and Cardigan Welsh Corgis have elongated spines relative to their leg length, which makes them susceptible to intervertebral disc disease (IVDD). Proper spinal support while sleeping is not a luxury for this breed, it is a medical consideration.</p>

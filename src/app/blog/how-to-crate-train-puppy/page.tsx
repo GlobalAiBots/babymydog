@@ -22,6 +22,8 @@ export default function HowToCrateTrainPuppy() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How to Crate Train a Puppy: Step-by-Step Schedule</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
+
+        <img src="/images/hound-dog-resting-on-bed-in-doorway.jpg" alt="Dog resting in doorway" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>I have sent home well over a hundred puppies to new families during my years as a breeder, and the single piece of advice I repeat more than any other is this: crate train your puppy starting the first night. Not because I am old-fashioned or rigid, but because a properly crate-trained puppy is a safer, calmer, more confident dog. The crate is not a punishment. It is a den &mdash; a place where your puppy feels secure the same way a child feels secure in their own bedroom. Done correctly, crate training prevents destructive chewing, accelerates housebreaking, keeps your puppy safe when you cannot supervise, and gives them a lifelong retreat where they can decompress.</p>

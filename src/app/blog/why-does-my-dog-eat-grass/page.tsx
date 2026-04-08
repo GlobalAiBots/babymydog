@@ -22,6 +22,8 @@ export default function WhyDoesMyDogEatGrass() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Why Does My Dog Eat Grass? A Vet-Informed Guide</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+
+        <img src="/images/golden-retriever-holding-flower-outdoors.jpg" alt="Golden Retriever in nature" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>If you have ever watched your dog walk right past an expensive bowl of premium kibble, trot into the yard, and start munching on grass like a tiny cow, you are not alone. This is one of the most common questions I have fielded in over thirty years of breeding and showing dogs, and the answer is more nuanced than most people expect. The good news is that in the vast majority of cases, grass eating is completely normal behavior. The not-so-good news is that in a small percentage of dogs, it can signal something that deserves attention.</p>

@@ -22,6 +22,8 @@ export default function BestAgeToNeuterDog() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Age to Neuter a Dog: What the Research Says in 2026</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
+
+        <img src="/images/english-bulldog-at-vet-checkup.jpg" alt="Dog at vet checkup" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Twenty years ago, the standard veterinary advice was simple: neuter at six months, no exceptions. Every shelter, every vet clinic, and every spay-neuter campaign pushed the same message. And for population control, that advice made sense &mdash; it prevented unwanted litters and reduced the burden on overcrowded shelters. But the science has evolved dramatically since then, and the conversation has gotten a lot more nuanced. We now know that the best age to neuter a dog depends on their breed, their size, their sex, and their individual health profile. The blanket six-month recommendation is outdated for many dogs, particularly large and giant breeds.</p>

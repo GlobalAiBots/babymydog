@@ -39,6 +39,8 @@ export default function BestDogFoodForPoodle() {
         </h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
 
+        <img src="/images/black-poodle-sitting-on-bed-elegant.jpg" alt="Elegant Poodle" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>

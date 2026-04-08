@@ -41,6 +41,8 @@ export default function BestHarnessForGermanShepherd() {
         </h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
 
+        <img src="/images/german-shepherd-sitting-autumn-forest-path.jpg" alt="German Shepherd in autumn" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>

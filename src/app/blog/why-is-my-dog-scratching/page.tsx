@@ -22,6 +22,8 @@ export default function WhyIsMyDogScratching() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Why Is My Dog Scratching So Much? Causes and Fixes</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 9 min read</p>
+
+        <img src="/images/vet-examining-english-bulldog-ear.jpg" alt="Vet examining dog" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Few things are more frustrating &mdash; for you and your dog &mdash; than nonstop scratching. The jingle of tags at 2 a.m. as your dog scratches behind their ear for the hundredth time. The raw, red patches on their belly. The bald spots forming along their flanks. You want to help, but first you have to figure out what is causing the itch, and that is where most people get stuck because there are at least seven common causes that all look surprisingly similar on the surface.</p>

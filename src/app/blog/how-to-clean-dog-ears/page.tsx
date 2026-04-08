@@ -22,6 +22,8 @@ export default function HowToCleanDogEars() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How to Clean Dog Ears at Home: Step-by-Step Guide</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+
+        <img src="/images/vet-examining-english-bulldog-ear.jpg" alt="Vet cleaning dog ears" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Ear cleaning is one of the most overlooked parts of routine dog care, and also one of the most important. A dog&apos;s ear canal is shaped like an &quot;L&quot; &mdash; it drops vertically and then makes a sharp horizontal turn toward the eardrum. That shape is great for protecting the eardrum from debris, but it also creates a warm, dark, moist pocket where bacteria and yeast thrive. When wax, moisture, and allergens accumulate in that pocket, infections follow. And ear infections in dogs are not just uncomfortable &mdash; they are painful, recurring, and expensive to treat once they become chronic.</p>

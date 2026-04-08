@@ -37,6 +37,8 @@ export default function BestSlowFeederForLabs() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Slow Feeder for Labs in 2026: Stop the Inhaling</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
 
+        <img src="/images/chocolate-lab-licking-lips-hungry.jpg" alt="Labrador ready to eat" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>If you have ever watched a Labrador Retriever eat dinner, you know the entire experience lasts approximately 11 seconds. The food hits the bowl, the bowl slides across the floor, and by the time you turn around the dog is licking the empty surface and staring at you like nothing happened. Then the burping starts. Possibly the vomiting. And the dog looks at you again, hoping for round two.</p>

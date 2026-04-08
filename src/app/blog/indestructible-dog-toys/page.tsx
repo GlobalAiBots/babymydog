@@ -7,6 +7,8 @@ export default function Post() {
       <nav className="text-sm text-gray-400 mb-6 flex flex-wrap gap-2"><Link href="/" className="hover:text-rose transition">Home</Link><span>/</span><Link href="/blog" className="hover:text-rose transition">Blog</Link><span>/</span><span className="text-charcoal font-medium">Best Dog Toys That Actually La...</span></nav>
       <h1 className="text-3xl font-bold text-charcoal mb-4 leading-tight" style={{fontFamily:'Playfair Display,serif'}}>Best Dog Toys That Actually Last</h1>
       <p className="text-gray-400 text-sm mb-8">March 28, 2026 &middot; 6 min read</p>
+
+        <img src="/images/golden-retriever-holding-stuffed-toy.jpg" alt="Golden Retriever with toy" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
       <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed space-y-6">
         <p>This comprehensive guide covers everything you need to know about dog toys that actually last. Whether you&apos;re a first-time dog owner or a seasoned pet parent, these expert tips will help you make the best choices for your furry family member.</p>
         <h2 className="text-2xl font-bold text-charcoal mt-10 mb-4" style={{fontFamily:'Playfair Display,serif'}}>Why This Matters</h2>

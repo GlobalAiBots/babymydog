@@ -37,6 +37,8 @@ export default function WhenToSwitchPuppyToAdultFood() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">When to Switch From Puppy Food to Adult Food</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
 
+        <img src="/images/golden-retriever-puppies-in-a-row.jpg" alt="Golden Retriever puppies" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>One of the most common questions I got from new puppy owners during my years as an AKC breeder was deceptively simple: &quot;When do I switch to adult food?&quot; The answer sounds straightforward &mdash; when they&apos;re done growing &mdash; but the timing varies dramatically depending on your dog&apos;s breed size, and getting it wrong in either direction can create real problems. Switch too early and you shortchange critical development. Switch too late and you risk overfeeding nutrients that an adult body no longer needs in those quantities.</p>

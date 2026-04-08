@@ -22,6 +22,8 @@ export default function HowToStopDogFromBarking() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How to Stop a Dog From Barking: 6 Proven Methods</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+
+        <img src="/images/scruffy-terrier-looking-up-outdoors.jpg" alt="Dog looking up outdoors" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Before you can stop a dog from barking, you have to understand why they are barking in the first place. This is where most people go wrong &mdash; they treat all barking the same way when in reality there are at least six distinct causes, and the fix for one can actually make another worse. Yelling at a dog who barks from anxiety, for example, adds stress to an already stressed dog and escalates the problem. After decades of working with dogs and their frustrated owners, here is what I have learned actually works.</p>

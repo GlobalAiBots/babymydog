@@ -22,6 +22,8 @@ export default function HowMuchExerciseDoesMyDogNeed() {
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How Much Exercise Does My Dog Need? A Breed-by-Breed Guide</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 9 min read</p>
+
+        <img src="/images/dalmatian-running-autumn-field.jpg" alt="Dalmatian running in field" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>The question I heard more than any other during my years as a breeder was not about food or training &mdash; it was &quot;how much exercise does my dog actually need?&quot; And my answer was always the same: it depends entirely on your dog. A <Link href="/breeds/siberian-husky" className="text-[#C4704B] hover:underline font-semibold">Siberian Husky</Link> that gets 30 minutes of walking a day will destroy your house out of sheer frustration. A <Link href="/breeds/bulldog" className="text-[#C4704B] hover:underline font-semibold">Bulldog</Link> forced to run for two hours in the summer could end up in the emergency room with heatstroke. Getting exercise right is not just about keeping your dog fit &mdash; it is about keeping them mentally stable, physically safe, and genuinely happy.</p>

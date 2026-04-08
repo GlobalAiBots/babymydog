@@ -2132,7 +2132,7 @@ export const productCategories: ProductCategory[] = [
   },
   {
     slug: "puppy-essentials",
-    title: "New Puppy Essentials Checklist (2026)",
+    title: "Best Puppy Essentials (2026)",
     description:
       "Bringing home a new puppy is exciting \u2014 make sure you have all the essentials ready before arrival day so your pup feels safe and you feel prepared.",
     picks: [

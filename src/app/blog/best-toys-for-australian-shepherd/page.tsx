@@ -37,6 +37,8 @@ export default function BestToysForAustralianShepherd() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Toys for Australian Shepherds in 2026: Mental Stimulation Picks</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
 
+        <img src="/images/australian-shepherd-blue-eyes-smiling.jpg" alt="Australian Shepherd smiling" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>An Australian Shepherd without a job is a natural disaster waiting to happen. I am not exaggerating. These dogs were bred to manage flocks of sheep across thousands of acres, making split-second decisions all day long. That herding intelligence does not shut off when they live in a suburban house. If you do not give an Aussie a constructive outlet for their brain, they will create their own entertainment &mdash; and it usually involves redecorating your furniture, herding your children, or teaching themselves to open doors and cabinets.</p>

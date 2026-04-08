@@ -2,7 +2,6 @@ import Link from "next/link";
 import BrandName from "@/components/BrandName";
 import { notFound } from "next/navigation";
 import { productCategories, getProductCategoryBySlug } from "@/data/products";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
 
 export function generateStaticParams() { return productCategories.map(c => ({ category: c.slug })); }
@@ -146,7 +145,9 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cat.picks.slice(0, 3).map((pick, i) => (
               <div key={i} className="bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                <ImagePlaceholder id={`best-${cat.slug}-top-${i}`} alt={pick.name} aspect="landscape" className="rounded-none" />
+                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block aspect-square bg-[#FAFAFA] flex items-center justify-center p-6">
+                  <img src={`https://m.media-amazon.com/images/P/${pick.asin}.01._SCLZZZZZZZ_SX300_.jpg`} alt={pick.name} className="max-w-full max-h-full object-contain" loading="lazy" />
+                </a>
                 <div className="p-6 text-center">
                   <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-2">{pick.badge}</span>
                   <h3 className="font-bold text-[#1A1A1A] text-lg mb-1">{pick.name}</h3>
@@ -173,12 +174,10 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           </div>
           {cat.picks.map((pick, i) => (
             <div key={i} className="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-              <div className="w-full md:w-[320px] flex-shrink-0 relative">
-                <div className="aspect-[16/9] md:aspect-auto md:min-h-[280px] md:h-full overflow-hidden">
-                  <ImagePlaceholder id={`best-${cat.slug}-review-${i}`} alt={pick.name} aspect="square" className="rounded-none w-full h-full" />
-                </div>
+              <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full md:w-[280px] flex-shrink-0 relative bg-[#FAFAFA] flex items-center justify-center p-8">
+                <img src={`https://m.media-amazon.com/images/P/${pick.asin}.01._SCLZZZZZZZ_SX300_.jpg`} alt={pick.name} className="max-w-full max-h-[200px] object-contain" loading="lazy" />
                 <span className="absolute top-4 left-4 bg-[#C4704B] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">#{i + 1}</span>
-              </div>
+              </a>
               <div className="p-8 md:p-10 flex-1 min-w-0">
                 <div className="flex items-start justify-between mb-2 flex-wrap gap-3">
                   <div>

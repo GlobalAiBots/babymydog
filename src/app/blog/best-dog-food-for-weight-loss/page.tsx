@@ -37,6 +37,8 @@ export default function BestDogFoodForWeightLoss() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Dog Food for Weight Loss in 2026: Vet-Approved Picks</h1>
         <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
 
+        <img src="/images/chocolate-lab-licking-lips-hungry.jpg" alt="Hungry Labrador" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>According to the Association for Pet Obesity Prevention, over 55% of dogs in the United States are overweight or obese. That is not a statistic I read somewhere and moved on from &mdash; I saw it firsthand during my years as an AKC breeder when puppy buyers would bring their dogs back for visits. Dogs I had placed as lean, athletic puppies would return a year or two later carrying 10, 15, even 20 extra pounds. The owners had no idea their dog was overweight because they had never been taught what a healthy body condition looks like.</p>
