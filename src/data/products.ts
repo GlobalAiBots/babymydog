@@ -242,7 +242,7 @@ export const productCategories: ProductCategory[] = [
           "Ergonomic wishbone shape for paw grip",
           "Durable nylon lasts for weeks",
         ],
-        asin: "B013OIGAHG",
+        asin: "B00N938KGU",
         price: "$12.78",
         rating: 4.5,
         reviewCount: "121K+",

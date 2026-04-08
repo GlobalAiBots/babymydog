@@ -88,7 +88,7 @@ export const giftGuides: GiftGuide[] = [
       { name: "KONG Holiday Goodie Bone", price: "$8-12", description: "Classic KONG Goodie Bone in red and green with treat-stuffable ends for holiday chewing fun.", asin: "B0002AR0I8" },
       { name: "Outward Hound Christmas Stocking for Dogs", price: "$15-20", description: "Pre-filled dog stocking with toys, treats, and a tennis ball \u2014 ready to hang on the mantle." },
       { name: "Frisco Holiday Reindeer Antler Headband", price: "$5-10", description: "Adjustable plush reindeer antler headband for the obligatory holiday photo card moment." },
-      { name: "West Paw Holiday Zogoflex Hurley Bone", price: "$15-25", description: "Tough, recyclable chew bone in seasonal red and green that is guaranteed against dog damage.", asin: "B013OIGAHG" },
+      { name: "West Paw Holiday Zogoflex Hurley Bone", price: "$15-25", description: "Tough, recyclable chew bone in seasonal red and green that is guaranteed against dog damage.", asin: "B00N938KGU" },
       { name: "Pet Krewe Elf Dog Costume", price: "$15-25", description: "Adorable elf costume with hat and collar that turns any dog into Santa\u2019s little helper." },
       { name: "Three Dog Bakery Holiday Cookie Assortment", price: "$20-30", description: "Festive box of hand-decorated, all-natural dog cookies shaped like candy canes, snowflakes, and trees." },
     ],

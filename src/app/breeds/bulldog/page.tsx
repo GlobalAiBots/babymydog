@@ -137,8 +137,8 @@ export default function BulldogPage() {
                 { name: "No-Pull Dog Harness", asin: "B01M8JT6FT", why: "Always use a harness, never a collar — bulldogs have breathing issues" },
               ].map((prod) => (
                 <a key={prod.name} href={`https://www.amazon.com/dp/${prod.asin}?tag=${TAG}`} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                  <div className="w-16 h-16 bg-[#FAFAFA] rounded-lg flex items-center justify-center p-1 mb-3 mx-auto border border-gray-100">
-                    <img src={`https://m.media-amazon.com/images/P/${prod.asin}.01._SCLZZZZZZZ_SX300_.jpg`} alt={prod.name} className="max-w-full max-h-full object-contain" loading="lazy" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FF9900]/10 to-[#FF9900]/5 rounded-lg flex items-center justify-center mb-3 mx-auto border border-[#FF9900]/20">
+                    <span className="text-lg">&#128230;</span>
                   </div>
                   <h3 className="font-bold text-[#1A1A1A] text-sm">{prod.name}</h3>
                   <p className="text-[#1A1A1A]/50 text-xs mt-1 leading-relaxed">{prod.why}</p>

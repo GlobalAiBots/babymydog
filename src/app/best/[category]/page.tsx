@@ -145,8 +145,9 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cat.picks.slice(0, 3).map((pick, i) => (
               <div key={i} className="bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block aspect-square bg-[#FAFAFA] flex items-center justify-center p-6">
-                  <img src={`https://m.media-amazon.com/images/P/${pick.asin}.01._SCLZZZZZZZ_SX300_.jpg`} alt={pick.name} className="max-w-full max-h-full object-contain" loading="lazy" />
+                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block bg-gradient-to-br from-[#FF9900]/10 to-[#FF9900]/5 flex flex-col items-center justify-center p-6 min-h-[140px] group">
+                  <span className="text-3xl mb-2">&#128230;</span>
+                  <span className="text-xs text-[#FF9900] font-semibold group-hover:underline">View on Amazon &rarr;</span>
                 </a>
                 <div className="p-6 text-center">
                   <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-2">{pick.badge}</span>
@@ -174,9 +175,11 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           </div>
           {cat.picks.map((pick, i) => (
             <div key={i} className="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-              <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full md:w-[280px] flex-shrink-0 relative bg-[#FAFAFA] flex items-center justify-center p-8">
-                <img src={`https://m.media-amazon.com/images/P/${pick.asin}.01._SCLZZZZZZZ_SX300_.jpg`} alt={pick.name} className="max-w-full max-h-[200px] object-contain" loading="lazy" />
+              <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full md:w-[220px] flex-shrink-0 relative bg-gradient-to-br from-[#FF9900]/10 to-[#FF9900]/5 flex flex-col items-center justify-center p-6 group">
                 <span className="absolute top-4 left-4 bg-[#C4704B] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">#{i + 1}</span>
+                <span className="text-4xl mb-3">&#128230;</span>
+                <span className="text-sm font-bold text-[#1A1A1A]/70 text-center leading-tight mb-2">{pick.name}</span>
+                <span className="text-xs text-[#FF9900] font-semibold group-hover:underline">View on Amazon &rarr;</span>
               </a>
               <div className="p-8 md:p-10 flex-1 min-w-0">
                 <div className="flex items-start justify-between mb-2 flex-wrap gap-3">
