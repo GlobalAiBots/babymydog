@@ -279,6 +279,30 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
               { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
               { title: "Best Dog Food for Puppies", href: "/blog/best-dog-food-for-puppies" },
             ],
+            "dog-anxiety": [
+              { title: "English Bulldog Care Guide", href: "/blog/english-bulldog-care-guide" },
+            ],
+            "dog-boots": [
+              { title: "Winter Dog Care Tips", href: "/blog/winter-dog-care-tips" },
+            ],
+            "dog-cooling": [
+              { title: "English Bulldog Care Guide", href: "/blog/english-bulldog-care-guide" },
+            ],
+            "dog-puzzle-toys": [
+              { title: "Best Indestructible Dog Toys", href: "/blog/indestructible-dog-toys" },
+            ],
+            "dog-car-seats": [
+              { title: "New Puppy Checklist", href: "/blog/new-puppy-checklist" },
+            ],
+            "dog-feeders": [
+              { title: "How to Choose the Right Dog Food", href: "/blog/choose-right-dog-food" },
+            ],
+            "dog-raincoats": [
+              { title: "Winter Dog Care Tips", href: "/blog/winter-dog-care-tips" },
+            ],
+            "dog-water-fountains": [
+              { title: "How to Choose the Right Dog Food", href: "/blog/choose-right-dog-food" },
+            ],
           };
           const posts = relatedPosts[cat.slug];
           if (!posts) return null;

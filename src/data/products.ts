@@ -1251,6 +1251,886 @@ export const productCategories: ProductCategory[] = [
     ],
   },
   {
+    slug: "dog-anxiety",
+    title: "Best Dog Anxiety Products (2026)",
+    description:
+      "Calming aids that actually work \u2014 from thunder vests to calming chews, backed by vet recommendations and real owner reviews.",
+    picks: [
+      {
+        name: "ThunderShirt Classic",
+        badge: "Best Overall",
+        description:
+          "The original anxiety vest that applies gentle, constant pressure to calm dogs during storms, fireworks, and separation anxiety.",
+        features: [
+          "Patented pressure wrap design",
+          "Over 80% success rate per manufacturer",
+          "Machine washable, solid construction",
+        ],
+        asin: "B0028QK6IS",
+        price: "$44.95",
+        rating: 4.3,
+        reviewCount: "35K+",
+        prime: true,
+      },
+      {
+        name: "Zesty Paws Calming Bites",
+        badge: "Best Value",
+        description:
+          "Soft chew treats with Suntheanine, organic hemp, and chamomile that promote relaxation without drowsiness.",
+        features: [
+          "Suntheanine L-Theanine clinically studied",
+          "Organic hemp seed powder and oil",
+          "Turkey-flavored soft chew format",
+        ],
+        asin: "B07GFN8TM5",
+        price: "$25.97",
+        rating: 4.4,
+        reviewCount: "42K+",
+        prime: true,
+      },
+      {
+        name: "Adaptil Calming Diffuser Kit",
+        badge: "Premium Pick",
+        description:
+          "Plug-in diffuser that releases a synthetic copy of the dog appeasing pheromone to reduce stress in the home.",
+        features: [
+          "Clinically proven DAP pheromone",
+          "Covers up to 700 sq ft",
+          "30-day refill included in starter kit",
+        ],
+        asin: "B003JFGRSK",
+        price: "$24.99",
+        rating: 4.3,
+        reviewCount: "18K+",
+        prime: true,
+      },
+      {
+        name: "PetHonesty Hemp Calming Chews",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Organic hemp-based soft chews with valerian root and ginger that ease anxiety without sedation.",
+        features: [
+          "Organic hemp oil and powder",
+          "Valerian root and chamomile blend",
+          "No artificial flavors or preservatives",
+        ],
+        asin: "B07GZTFND2",
+        price: "$26.99",
+        rating: 4.4,
+        reviewCount: "32K+",
+        prime: true,
+      },
+      {
+        name: "Best Friends by Sheri Calming Donut Bed",
+        badge: "Best for Small Dogs",
+        description:
+          "Round self-warming donut bed with raised rim and super-soft faux fur that mimics the comfort of a mother\u2019s coat.",
+        features: [
+          "Deep crevices for burrowing",
+          "Self-warming insulation layer",
+          "Machine washable and dryer safe",
+        ],
+        asin: "B07MBW3JNQ",
+        price: "$39.99",
+        rating: 4.5,
+        reviewCount: "65K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-car-seats",
+    title: "Best Dog Car Seats (2026)",
+    description:
+      "Keep your dog safe and comfortable on every car ride with crash-tested seats and booster options for every size.",
+    picks: [
+      {
+        name: "Kurgo Skybox Dog Booster Seat",
+        badge: "Best Overall",
+        description:
+          "Elevated booster seat with a sturdy metal frame that lets small dogs see out the window safely.",
+        features: [
+          "Zip-line tether system for safe movement",
+          "Waterproof, machine-washable liner",
+          "Folds flat for easy storage",
+        ],
+        asin: "B00164SPGE",
+        price: "$59.95",
+        rating: 4.3,
+        reviewCount: "8K+",
+        prime: true,
+      },
+      {
+        name: "PetSafe Happy Ride Booster Seat",
+        badge: "Best Value",
+        description:
+          "Quilted car seat with a telescoping security tether and a removable, washable liner.",
+        features: [
+          "Telescoping safety tether included",
+          "Quilted fleece liner is removable",
+          "Supports dogs up to 25 lbs",
+        ],
+        asin: "B003ARYKHI",
+        price: "$31.95",
+        rating: 4.3,
+        reviewCount: "12K+",
+        prime: true,
+      },
+      {
+        name: "Snoozer Lookout Car Seat",
+        badge: "Premium Pick",
+        description:
+          "Luxury booster seat with a removable faux-sheepskin liner and a connection strap for harness attachment.",
+        features: [
+          "Patented design elevates for window viewing",
+          "Faux-sheepskin and quilted microsuede",
+          "Multiple sizes up to 30 lbs",
+        ],
+        asin: "B001OALWFO",
+        price: "$69.95",
+        rating: 4.3,
+        reviewCount: "5K+",
+        prime: true,
+      },
+      {
+        name: "URPOWER Dog Car Seat Cover",
+        badge: "Best for Large Dogs",
+        description:
+          "Hammock-style seat cover that protects your back seat and converts to a standard bench cover.",
+        features: [
+          "600D Oxford waterproof fabric",
+          "Nonslip backing and seat anchors",
+          "Side flaps protect doors from scratches",
+        ],
+        asin: "B01A294AEI",
+        price: "$29.99",
+        rating: 4.5,
+        reviewCount: "55K+",
+        prime: true,
+      },
+      {
+        name: "K&H Pet Products Bucket Booster",
+        badge: "Best Budget",
+        description:
+          "Simple bucket-style booster that straps onto headrests and includes a fleece-lined interior.",
+        features: [
+          "Adjustable security leash included",
+          "Removable fleece liner",
+          "Crash-tested design",
+        ],
+        asin: "B003R5A0RG",
+        price: "$36.99",
+        rating: 4.3,
+        reviewCount: "6K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-water-fountains",
+    title: "Best Dog Water Fountains (2026)",
+    description:
+      "Filtered, flowing water encourages dogs to drink more \u2014 here are the quietest, easiest-to-clean fountains we\u2019ve found.",
+    picks: [
+      {
+        name: "PetSafe Drinkwell Platinum",
+        badge: "Best Overall",
+        description:
+          "168-ounce capacity fountain with a free-falling stream and replaceable carbon filter for clean water.",
+        features: [
+          "168 oz capacity for multi-pet homes",
+          "Replaceable carbon water filter",
+          "Adjustable flow control dial",
+        ],
+        asin: "B000L3XYZ4",
+        price: "$39.95",
+        rating: 4.4,
+        reviewCount: "35K+",
+        prime: true,
+      },
+      {
+        name: "Catit Pixi Smart Fountain",
+        badge: "Best Value",
+        description:
+          "Compact stainless steel-top fountain with app connectivity and a triple-action filter system.",
+        features: [
+          "Stainless steel drinking surface",
+          "WiFi connected with water level alerts",
+          "Triple-action filter system",
+        ],
+        asin: "B0B7G3LW3X",
+        price: "$44.99",
+        rating: 4.3,
+        reviewCount: "8K+",
+        prime: true,
+      },
+      {
+        name: "PETLIBRO Capsule Water Fountain",
+        badge: "Premium Pick",
+        description:
+          "Ultra-quiet 2.1L stainless steel fountain with a wireless pump and 30-day filter life indicator.",
+        features: [
+          "Full stainless steel water path",
+          "Wireless pump for silent operation",
+          "LED filter replacement indicator",
+        ],
+        asin: "B0BVNMS4ZM",
+        price: "$49.99",
+        rating: 4.5,
+        reviewCount: "15K+",
+        prime: true,
+      },
+      {
+        name: "Veken Pet Fountain",
+        badge: "Most Popular",
+        description:
+          "Affordable 84-oz BPA-free fountain with three flow modes and ultra-quiet pump operation.",
+        features: [
+          "Three water flow settings",
+          "BPA-free with LED night light",
+          "Ultra-quiet pump under 40dB",
+        ],
+        asin: "B07DLBKPKG",
+        price: "$18.99",
+        rating: 4.3,
+        reviewCount: "75K+",
+        prime: true,
+      },
+      {
+        name: "Pioneer Pet Raindrop Fountain",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Elegant stainless steel fountain shaped like a raindrop with a 60-oz capacity.",
+        features: [
+          "Full stainless steel construction",
+          "Unique raindrop design is easy to clean",
+          "Replaceable charcoal filter",
+        ],
+        asin: "B003XECF8K",
+        price: "$42.99",
+        rating: 4.3,
+        reviewCount: "10K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-strollers",
+    title: "Best Dog Strollers (2026)",
+    description:
+      "Perfect for senior dogs, injured pups, or small breeds who need a break on long walks \u2014 our top picks for every budget.",
+    picks: [
+      {
+        name: "HPZ Pet Rover Premium",
+        badge: "Best Overall",
+        description:
+          "Heavy-duty stroller with air-filled tires, a reversible handlebar, and a spacious carriage for dogs up to 75 lbs.",
+        features: [
+          "Air-filled tires with shock absorbers",
+          "Reversible handlebar for facing forward or back",
+          "Holds dogs up to 75 lbs",
+        ],
+        asin: "B06ZZWG35P",
+        price: "$189.99",
+        rating: 4.5,
+        reviewCount: "5K+",
+        prime: true,
+      },
+      {
+        name: "Pet Gear No-Zip Happy Trails",
+        badge: "Best Value",
+        description:
+          "Easy-lock no-zip entry stroller with a weather cover and a large undercarriage storage basket.",
+        features: [
+          "No-zip latch system for quick access",
+          "Includes weather cover and cup holder",
+          "Holds pets up to 30 lbs",
+        ],
+        asin: "B00IVCAIQ4",
+        price: "$79.99",
+        rating: 4.3,
+        reviewCount: "14K+",
+        prime: true,
+      },
+      {
+        name: "Ibiyaya 5-in-1 Combo EVA",
+        badge: "Premium Pick",
+        description:
+          "Converts between stroller, car seat, carrier, backpack, and rolling carrier for maximum versatility.",
+        features: [
+          "5-in-1 convertible design",
+          "EVA foam wheels for smooth ride",
+          "Holds pets up to 16 lbs",
+        ],
+        asin: "B08B44VY49",
+        price: "$199.99",
+        rating: 4.4,
+        reviewCount: "3K+",
+        prime: true,
+      },
+      {
+        name: "BestPet Dog Stroller",
+        badge: "Best Budget",
+        description:
+          "Lightweight foldable stroller with a three-wheel design and mesh windows at a wallet-friendly price.",
+        features: [
+          "3-wheel design for easy maneuverability",
+          "Folds with one hand",
+          "Holds pets up to 33 lbs",
+        ],
+        asin: "B081GMQJ92",
+        price: "$49.99",
+        rating: 4.2,
+        reviewCount: "18K+",
+        prime: true,
+      },
+      {
+        name: "Pet Gear Jogger No-Zip",
+        badge: "Best for Large Dogs",
+        description:
+          "Jogging stroller with 12-inch air-filled tires and a locking front wheel for active dog parents.",
+        features: [
+          "12-inch air-filled rubber tires",
+          "Locking front swivel wheel for jogging",
+          "Holds pets up to 75 lbs",
+        ],
+        asin: "B01C8AV3V4",
+        price: "$149.99",
+        rating: 4.3,
+        reviewCount: "4K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-backpacks",
+    title: "Best Dog Backpack Carriers (2026)",
+    description:
+      "Hands-free carriers for hiking, travel, and adventures with your small to medium-sized dog.",
+    picks: [
+      {
+        name: "K9 Sport Sack AIR Plus",
+        badge: "Best Overall",
+        description:
+          "Ergonomic forward-facing dog backpack with padded lumbar support and mesh ventilation for hikes up to 40 lbs.",
+        features: [
+          "Padded lumbar and shoulder support",
+          "Mesh side panels for airflow",
+          "Storage pockets and water bottle holder",
+        ],
+        asin: "B07XZQM3WK",
+        price: "$109.95",
+        rating: 4.5,
+        reviewCount: "6K+",
+        prime: true,
+      },
+      {
+        name: "PetAmi Deluxe Dog Carrier Backpack",
+        badge: "Best Value",
+        description:
+          "Ventilated backpack with a safety buckle, sherpa-lined base, and multiple entry points.",
+        features: [
+          "4-point ventilation mesh",
+          "Collapsible bowl and waste bag dispenser",
+          "Holds dogs up to 18 lbs",
+        ],
+        asin: "B07FNJQMH3",
+        price: "$39.99",
+        rating: 4.4,
+        reviewCount: "15K+",
+        prime: true,
+      },
+      {
+        name: "Kurgo G-Train Dog Carrier Backpack",
+        badge: "Premium Pick",
+        description:
+          "TSA-compliant carrier backpack with waterproof bottom, padded back panel, and expandable design.",
+        features: [
+          "TSA/airline approved as under-seat carrier",
+          "Waterproof EVA bottom",
+          "Stroller compatibility straps",
+        ],
+        asin: "B07KD5MTFQ",
+        price: "$139.95",
+        rating: 4.4,
+        reviewCount: "4K+",
+        prime: true,
+      },
+      {
+        name: "Pawaboo Pet Carrier Backpack",
+        badge: "Best Budget",
+        description:
+          "Expandable mesh backpack with an adjustable head opening and padded shoulder straps.",
+        features: [
+          "Expandable mesh design for more room",
+          "Padded and adjustable straps",
+          "Holds dogs up to 15 lbs",
+        ],
+        asin: "B07TC28SBP",
+        price: "$29.99",
+        rating: 4.3,
+        reviewCount: "10K+",
+        prime: true,
+      },
+      {
+        name: "Outward Hound PoochPouch Front Carrier",
+        badge: "Best for Small Dogs",
+        description:
+          "Front-facing kangaroo-style carrier that keeps small dogs close to your chest during walks and hikes.",
+        features: [
+          "Front-facing design for bonding",
+          "Interior safety leash attachment",
+          "Adjustable padded straps",
+        ],
+        asin: "B007V77IN0",
+        price: "$24.99",
+        rating: 4.2,
+        reviewCount: "8K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-feeders",
+    title: "Best Automatic Dog Feeders (2026)",
+    description:
+      "Timed feeders that keep your dog on schedule even when you\u2019re away \u2014 with portion control and app connectivity.",
+    picks: [
+      {
+        name: "PetSafe Smart Feed 2.0",
+        badge: "Best Overall",
+        description:
+          "Wi-Fi enabled automatic feeder with flexible scheduling, portion control, and slow-feed mode.",
+        features: [
+          "Schedule up to 12 meals per day via app",
+          "Slow feed mode dispenses food gradually",
+          "24-cup hopper capacity",
+        ],
+        asin: "B0B54HFFXJ",
+        price: "$149.95",
+        rating: 4.3,
+        reviewCount: "10K+",
+        prime: true,
+      },
+      {
+        name: "PETLIBRO Automatic Cat & Dog Feeder",
+        badge: "Best Value",
+        description:
+          "Reliable timed feeder with a twist-lock lid, freshness seal, and 10-second voice recorder.",
+        features: [
+          "Up to 6 meals per day scheduling",
+          "Twist-lock lid and desiccant box",
+          "10-second meal call recording",
+        ],
+        asin: "B098DT7VTN",
+        price: "$39.99",
+        rating: 4.4,
+        reviewCount: "28K+",
+        prime: true,
+      },
+      {
+        name: "PETKIT Fresh Element Solo",
+        badge: "Premium Pick",
+        description:
+          "Smart feeder with a built-in food scale, stainless steel bowl, and app-based portion tracking.",
+        features: [
+          "Built-in food scale for precise portions",
+          "304 stainless steel bowl",
+          "Dual power (battery + adapter)",
+        ],
+        asin: "B0B2JQZL94",
+        price: "$89.99",
+        rating: 4.3,
+        reviewCount: "5K+",
+        prime: true,
+      },
+      {
+        name: "Amazon Basics Gravity Pet Food Feeder",
+        badge: "Best Budget",
+        description:
+          "Simple gravity-fed feeder that refills the bowl automatically as your dog eats, no power needed.",
+        features: [
+          "No batteries or power required",
+          "6-lb food hopper capacity",
+          "BPA-free and dishwasher safe",
+        ],
+        asin: "B07QMQ3FWM",
+        price: "$14.99",
+        rating: 4.3,
+        reviewCount: "20K+",
+        prime: true,
+      },
+      {
+        name: "WOPET Automatic Dog Feeder",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Programmable feeder with a stainless steel tray, voice recorder, and low-food indicator.",
+        features: [
+          "1-4 meals per day with 1-39 portions each",
+          "Stainless steel food tray for hygiene",
+          "Voice recorder plays at feeding time",
+        ],
+        asin: "B0768H3Y9K",
+        price: "$45.99",
+        rating: 4.3,
+        reviewCount: "15K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-boots",
+    title: "Best Dog Boots (2026)",
+    description:
+      "Protect your dog\u2019s paws from hot pavement, ice, salt, and rough terrain with boots that actually stay on.",
+    picks: [
+      {
+        name: "QUMY Dog Boots Waterproof",
+        badge: "Best Overall",
+        description:
+          "Rugged waterproof boots with anti-slip soles, reflective straps, and a wide split seam for easy on/off.",
+        features: [
+          "Waterproof with anti-slip rubber sole",
+          "Two reflective adjustable straps",
+          "Wide split seam opening",
+        ],
+        asin: "B01N0O4TQD",
+        price: "$19.99",
+        rating: 4.3,
+        reviewCount: "28K+",
+        prime: true,
+      },
+      {
+        name: "Ruffwear Grip Trex Boots",
+        badge: "Premium Pick",
+        description:
+          "Trail-ready boots with Vibram outsoles and a secure closure system built for rugged terrain.",
+        features: [
+          "Vibram non-marking outsole",
+          "Breathable mesh upper",
+          "Secure hook-and-loop closure",
+        ],
+        asin: "B074KGKP3H",
+        price: "$41.95",
+        rating: 4.3,
+        reviewCount: "5K+",
+        prime: true,
+      },
+      {
+        name: "Ultra Paws Durable Dog Boots",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Foam-soled boots with wraparound Velcro closures and water-resistant fabric that stay put.",
+        features: [
+          "Closed-cell foam soles",
+          "Wraparound Velcro for secure fit",
+          "Water-resistant nylon upper",
+        ],
+        asin: "B005ESDKEO",
+        price: "$34.95",
+        rating: 4.2,
+        reviewCount: "4K+",
+        prime: true,
+      },
+      {
+        name: "PAWZ Natural Rubber Dog Boots",
+        badge: "Best Budget",
+        description:
+          "Disposable balloon-style rubber boots that fit snugly and provide a barrier against salt, chemicals, and hot surfaces.",
+        features: [
+          "100% natural rubber, biodegradable",
+          "Semi-disposable (reusable several times)",
+          "Sold in packs of 12",
+        ],
+        asin: "B005BUSZ5C",
+        price: "$17.50",
+        rating: 4.1,
+        reviewCount: "15K+",
+        prime: true,
+      },
+      {
+        name: "Muttluks Fleece-Lined Boots",
+        badge: "Best for Large Dogs",
+        description:
+          "Canadian-made winter boots with fleece lining, leather soles, and a stretchy leg cuff.",
+        features: [
+          "Genuine leather soles for traction",
+          "Warm fleece lining for cold weather",
+          "Reflective trim for visibility",
+        ],
+        asin: "B001V7M23C",
+        price: "$64.95",
+        rating: 4.4,
+        reviewCount: "3K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-raincoats",
+    title: "Best Dog Raincoats (2026)",
+    description:
+      "Waterproof coats that keep your dog dry without restricting movement \u2014 from lightweight shells to full-coverage slickers.",
+    picks: [
+      {
+        name: "HDE Dog Raincoat",
+        badge: "Best Overall",
+        description:
+          "Lightweight waterproof raincoat with a transparent hood, reflective strips, and a leash hole.",
+        features: [
+          "Fully waterproof PU material",
+          "Transparent hood with drawstring",
+          "Reflective safety strips",
+        ],
+        asin: "B019DCBPUY",
+        price: "$14.99",
+        rating: 4.3,
+        reviewCount: "18K+",
+        prime: true,
+      },
+      {
+        name: "Canada Pooch Torrential Tracker",
+        badge: "Premium Pick",
+        description:
+          "Premium rain jacket with 3M reflective accents, fleece lining, and a leash-accessible design.",
+        features: [
+          "Waterproof shell with fleece lining",
+          "3M reflective accents throughout",
+          "Full belly coverage for warmth",
+        ],
+        asin: "B07B4C7XB9",
+        price: "$54.99",
+        rating: 4.4,
+        reviewCount: "2K+",
+        prime: true,
+      },
+      {
+        name: "Ellie Dog Wear Yellow Raincoat",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Classic yellow slicker with a detachable hood, two-layer waterproof fabric, and a button-snap belly closure.",
+        features: [
+          "Two-layer waterproof construction",
+          "Detachable hood for versatility",
+          "Adjustable chest strap",
+        ],
+        asin: "B07QP4NV4D",
+        price: "$26.99",
+        rating: 4.3,
+        reviewCount: "6K+",
+        prime: true,
+      },
+      {
+        name: "Cosibell Waterproof Dog Raincoat",
+        badge: "Best Budget",
+        description:
+          "Affordable four-leg raincoat with reflective strips and a belly strap to keep your dog fully covered.",
+        features: [
+          "Full four-leg coverage",
+          "Lightweight and packable",
+          "Adjustable belly and neck straps",
+        ],
+        asin: "B07RN5S9D1",
+        price: "$16.99",
+        rating: 4.2,
+        reviewCount: "8K+",
+        prime: true,
+      },
+      {
+        name: "Hurtta Downpour Suit",
+        badge: "Best for Large Dogs",
+        description:
+          "Finnish-designed full-body rain suit with 3M reflectors and a hind-leg design that covers the whole dog.",
+        features: [
+          "Hase and laminate waterproof material",
+          "3M reflectors for visibility",
+          "Adjustable rear and collar",
+        ],
+        asin: "B009YXAGEW",
+        price: "$79.00",
+        rating: 4.5,
+        reviewCount: "1K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-cooling",
+    title: "Best Dog Cooling Products (2026)",
+    description:
+      "Beat the heat with cooling mats, vests, and bandanas that keep your dog comfortable all summer long.",
+    picks: [
+      {
+        name: "The Green Pet Shop Cooling Mat",
+        badge: "Best Overall",
+        description:
+          "Pressure-activated gel cooling mat that requires no water, electricity, or refrigeration.",
+        features: [
+          "Pressure-activated cooling gel",
+          "No water, power, or freezing needed",
+          "Recharges itself after 15-20 min of non-use",
+        ],
+        asin: "B07GDRPZPB",
+        price: "$32.99",
+        rating: 4.3,
+        reviewCount: "22K+",
+        prime: true,
+      },
+      {
+        name: "Ruffwear Swamp Cooler Vest",
+        badge: "Premium Pick",
+        description:
+          "Evaporative cooling vest that you soak in water, wring out, and put on your dog for hours of cooling.",
+        features: [
+          "Three-layer evaporative cooling",
+          "UPF 50+ sun protection",
+          "Reflective trim for visibility",
+        ],
+        asin: "B07543MXBF",
+        price: "$49.95",
+        rating: 4.4,
+        reviewCount: "4K+",
+        prime: true,
+      },
+      {
+        name: "Canada Pooch Chill Seeker Cooling Vest",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Soak-and-wear cooling vest with UPF 50+ protection and a secure Velcro closure.",
+        features: [
+          "Wet, wring, and wear technology",
+          "UPF 50+ sun protection",
+          "Lightweight and flexible",
+        ],
+        asin: "B07QV9HQZJ",
+        price: "$34.99",
+        rating: 4.3,
+        reviewCount: "3K+",
+        prime: true,
+      },
+      {
+        name: "ALL FOR PAWS Cooling Mat",
+        badge: "Best Budget",
+        description:
+          "Affordable self-cooling gel pad that activates on contact and folds for travel.",
+        features: [
+          "Non-toxic cooling gel",
+          "Foldable and portable",
+          "Scratch-resistant surface",
+        ],
+        asin: "B07BVHB24C",
+        price: "$19.99",
+        rating: 4.2,
+        reviewCount: "12K+",
+        prime: true,
+      },
+      {
+        name: "K&H Coolin\u2019 Pet Cot Elevated Bed",
+        badge: "Best for Large Dogs",
+        description:
+          "Elevated mesh cot that promotes airflow from all sides to keep dogs cool off the hot ground.",
+        features: [
+          "Elevated design promotes 360\u00b0 airflow",
+          "Breathable mesh center",
+          "Indoor/outdoor use, supports up to 150 lbs",
+        ],
+        asin: "B003SZSVGI",
+        price: "$37.99",
+        rating: 4.5,
+        reviewCount: "20K+",
+        prime: true,
+      },
+    ],
+  },
+  {
+    slug: "dog-puzzle-toys",
+    title: "Best Dog Puzzle Toys & Enrichment (2026)",
+    description:
+      "Mental stimulation is just as important as physical exercise \u2014 these puzzle feeders and enrichment toys fight boredom and anxiety.",
+    picks: [
+      {
+        name: "Outward Hound Nina Ottosson Puzzle",
+        badge: "Best Overall",
+        description:
+          "Multi-level interactive puzzle with sliding covers and flip-up compartments that challenge your dog to find hidden treats.",
+        features: [
+          "Multiple difficulty levels",
+          "BPA, PVC, and phthalate-free materials",
+          "Dishwasher-safe top rack",
+        ],
+        asin: "B0711Y9Y8W",
+        price: "$14.99",
+        rating: 4.5,
+        reviewCount: "45K+",
+        prime: true,
+      },
+      {
+        name: "AWOOF Snuffle Mat",
+        badge: "Best Value",
+        description:
+          "Fleece snuffle mat that mimics grass foraging, slowing down fast eaters and providing mental enrichment.",
+        features: [
+          "Dense fleece strips hide treats",
+          "Non-slip backing",
+          "Machine washable",
+        ],
+        asin: "B07N1CTWVS",
+        price: "$16.99",
+        rating: 4.4,
+        reviewCount: "18K+",
+        prime: true,
+      },
+      {
+        name: "West Paw Toppl Interactive Toy",
+        badge: "Premium Pick",
+        description:
+          "Stuffable rubber toy with an open design that\u2019s easier than a Kong for beginners and can be interlocked in two sizes.",
+        features: [
+          "Made in USA from Zogoflex material",
+          "Dishwasher safe and BPA-free",
+          "Two sizes interlock for harder challenge",
+        ],
+        asin: "B00KCBG2C0",
+        price: "$15.95",
+        rating: 4.5,
+        reviewCount: "12K+",
+        prime: true,
+      },
+      {
+        name: "LickiMat Classic Soother",
+        badge: "Editor\u2019s Choice",
+        description:
+          "Textured lick mat that you spread with peanut butter, yogurt, or wet food to promote calming, slow licking.",
+        features: [
+          "Promotes calming through repetitive licking",
+          "Textured surface for dental health",
+          "Freeze for longer-lasting enrichment",
+        ],
+        asin: "B07FXDD4PC",
+        price: "$9.95",
+        rating: 4.4,
+        reviewCount: "25K+",
+        prime: true,
+      },
+      {
+        name: "Bob-A-Lot Interactive Treat Dispenser",
+        badge: "Most Popular",
+        description:
+          "Wobbling treat-dispensing toy with adjustable openings that make your dog work for every kibble.",
+        features: [
+          "Two adjustable openings for difficulty",
+          "Large chamber holds a full meal",
+          "Weighted bottom wobbles unpredictably",
+        ],
+        asin: "B003ARUKU0",
+        price: "$15.99",
+        rating: 4.4,
+        reviewCount: "30K+",
+        prime: true,
+      },
+    ],
+  },
+  {
     slug: "puppy-essentials",
     title: "New Puppy Essentials Checklist (2026)",
     description:

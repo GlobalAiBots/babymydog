@@ -100,6 +100,37 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <div className="mt-8">
+            <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 text-center">More Categories</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { slug: "dog-anxiety", name: "Anxiety & Calming", icon: "\u{1F49A}" },
+                { slug: "dog-car-seats", name: "Car Seats", icon: "\u{1F697}" },
+                { slug: "dog-water-fountains", name: "Water Fountains", icon: "\u{1F4A7}" },
+                { slug: "dog-strollers", name: "Strollers", icon: "\u{1F6D2}" },
+                { slug: "dog-backpacks", name: "Backpack Carriers", icon: "\u{1F392}" },
+                { slug: "dog-feeders", name: "Auto Feeders", icon: "\u23F0" },
+                { slug: "dog-boots", name: "Dog Boots", icon: "\u{1F97E}" },
+                { slug: "dog-raincoats", name: "Raincoats", icon: "\u2614" },
+                { slug: "dog-cooling", name: "Cooling Gear", icon: "\u2744\uFE0F" },
+                { slug: "dog-puzzle-toys", name: "Puzzle Toys", icon: "\u{1F9E9}" },
+                { slug: "dog-crates", name: "Crates & Kennels", icon: "\u{1F3E0}" },
+                { slug: "dog-supplements", name: "Supplements", icon: "\u{1F48A}" },
+                { slug: "dog-cameras", name: "Dog Cameras", icon: "\u{1F4F7}" },
+                { slug: "dog-gps-trackers", name: "GPS Trackers", icon: "\u{1F4CD}" },
+                { slug: "dog-dental", name: "Dental Care", icon: "\u{1F9B7}" },
+                { slug: "dog-coats", name: "Coats & Jackets", icon: "\u{1F9E5}" },
+                { slug: "dog-leashes", name: "Leashes", icon: "\u{1F43E}" },
+                { slug: "dog-bowls", name: "Bowls & Feeders", icon: "\u{1F963}" },
+                { slug: "puppy-essentials", name: "Puppy Essentials", icon: "\u{1F436}" },
+              ].map((c) => (
+                <Link key={c.slug} href={`/best/${c.slug}`} className="flex items-center gap-2 bg-white rounded-xl p-3 hover:shadow-md hover:-translate-y-0.5 transition-all border border-[#D4C5A9]/30">
+                  <span className="text-lg">{c.icon}</span>
+                  <span className="text-sm font-semibold text-[#1A1A1A]">{c.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

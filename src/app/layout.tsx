@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
-  description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides. Because your dog deserves to be spoiled.",
+  description: "Find the best products for your dog across 25 categories. Breed-specific recommendations, expert reviews, gift guides. Because your dog deserves to be spoiled.",
   openGraph: {
     title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
     description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
