@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     url: "https://babymydog.com",
     siteName: "BabyMyDog",
     type: "website",
-    images: [{ url: "https://babymydog.com/og-image.svg", width: 1200, height: 630, alt: "BabyMyDog — Premium Products for Dog Lovers" }],
+    images: [{ url: "https://babymydog.com/opengraph-image", width: 1200, height: 630, alt: "BabyMyDog — Premium Products for Dog Lovers" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
     description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
-    images: ["https://babymydog.com/og-image.svg"],
+    images: ["https://babymydog.com/opengraph-image"],
   },
   alternates: { canonical: "https://babymydog.com" },
 };
