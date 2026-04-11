@@ -9,6 +9,14 @@ export default function Post() {
       <p className="text-gray-400 text-sm mb-8">April 2, 2026 &middot; 6 min read</p>
 
         <img src="/images/golden-retriever-puppies-in-red-wagon.jpg" alt="Puppies in a wagon" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "new puppy checklist", "item": "https://babymydog.com/blog/new-puppy-checklist" },
+        ],
+      }) }} />
       <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed space-y-6">
         <p>This comprehensive guide covers everything you need to know about ultimate new puppy checklist. Whether you&apos;re a first-time dog owner or a seasoned pet parent, these expert tips will help you make the best choices for your furry family member.</p>
         <h2 className="text-2xl font-bold text-charcoal mt-10 mb-4" style={{fontFamily:'Playfair Display,serif'}}>Why This Matters</h2>

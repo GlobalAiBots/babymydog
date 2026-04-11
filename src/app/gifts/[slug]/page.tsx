@@ -31,6 +31,14 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Gift Guides", "item": "https://babymydog.com/gifts" },
+          { "@type": "ListItem", "position": 3, "name": guide.title, "item": `https://babymydog.com/gifts/${guide.slug}` },
+        ],
+      }) }} />
       <div className="max-w-[900px] mx-auto px-6 py-12">
 
         <nav className="text-sm text-[#1A1A1A]/40 mb-6 flex flex-wrap gap-2">

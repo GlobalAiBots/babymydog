@@ -100,6 +100,14 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Breeds", "item": "https://babymydog.com/breeds" },
+          { "@type": "ListItem", "position": 3, "name": breed.name, "item": `https://babymydog.com/breeds/${breed.slug}` },
+        ],
+      }) }} />
 
       {/* Full-width Hero */}
       <div className="relative w-full">

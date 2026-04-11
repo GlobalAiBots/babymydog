@@ -27,6 +27,14 @@ export default function BestDogFoodForPitBull() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Pit Bulls", "item": "https://babymydog.com/blog/best-dog-food-for-pit-bull" },
+        ],
+      }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <nav className="text-sm text-gray-400 mb-6 flex flex-wrap gap-2">
           <Link href="/" className="hover:text-[#C4704B] transition">Home</Link><span>/</span>
