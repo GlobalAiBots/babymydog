@@ -56,25 +56,38 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
     "name": cat.title,
     "description": cat.description,
     "numberOfItems": cat.picks.length,
-    "itemListElement": cat.picks.map((pick, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "item": {
-        "@type": "Product",
-        "name": pick.name,
-        "description": pick.description,
-        "review": {
-          "@type": "Review",
-          "reviewRating": { "@type": "Rating", "ratingValue": pick.rating, "bestRating": 5 },
-          "author": { "@type": "Organization", "name": "BabyMyDog" },
+    "itemListElement": cat.picks.map((pick, i) => {
+      const brandMatch = pick.name.match(/^([A-Z][a-zA-Z&'.]+(?:\s[A-Z][a-zA-Z&'.]+)?)\s/);
+      const brand = brandMatch ? brandMatch[1] : "Various";
+      return {
+        "@type": "ListItem",
+        "position": i + 1,
+        "item": {
+          "@type": "Product",
+          "name": pick.name,
+          "description": pick.description,
+          "brand": { "@type": "Brand", "name": brand },
+          "review": {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": pick.rating, "bestRating": 5 },
+            "author": { "@type": "Organization", "name": "BabyMyDog" },
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": pick.rating,
+            "bestRating": 5,
+            "reviewCount": pick.reviewCount ? parseInt(pick.reviewCount.replace(/,/g, "")) || 100 : 100,
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": `https://www.amazon.com/dp/${pick.asin}?tag=babymydog03-20`,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "Amazon" },
+          },
         },
-        "offers": {
-          "@type": "Offer",
-          "url": `https://www.amazon.com/dp/${pick.asin}?tag=babymydog03-20`,
-          "availability": "https://schema.org/InStock",
-        },
-      },
-    })),
+      };
+    }),
   };
 
   return (

@@ -221,6 +221,54 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
         </div>
       </div>
 
+      {/* Recommended Products */}
+      <div className="max-w-[1200px] mx-auto px-6 pb-12">
+        <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">Recommended Products for Your {breed.name}</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {(() => {
+            const recs: { slug: string; label: string; desc: string; icon: string }[] = [];
+            // Size-based recommendations
+            if (breed.size === "large" || breed.size === "giant") {
+              recs.push({ slug: "dog-beds", label: "Large Breed Beds", desc: "Orthopedic support for big dogs", icon: "\uD83D\uDECF" });
+              recs.push({ slug: "dog-crates", label: "XL Dog Crates", desc: "Spacious crates for large breeds", icon: "\uD83C\uDFE0" });
+            } else {
+              recs.push({ slug: "dog-beds", label: "Cozy Dog Beds", desc: "Perfect-sized beds for smaller pups", icon: "\uD83D\uDECF" });
+              recs.push({ slug: "dog-coats", label: "Dog Coats & Jackets", desc: "Keep your pup warm in winter", icon: "\uD83E\uDDE5" });
+            }
+            // Exercise-based
+            if (breed.exerciseNeeds === "high") {
+              recs.push({ slug: "dog-toys", label: "Active Dog Toys", desc: "Fetch, tug, and puzzle toys for energetic breeds", icon: "\uD83E\uDD8E" });
+            } else {
+              recs.push({ slug: "dog-toys", label: "Chew Toys", desc: "Keep your pup entertained and happy", icon: "\uD83E\uDD8E" });
+            }
+            // Grooming-based
+            if (breed.groomingNeeds === "high") {
+              recs.push({ slug: "dog-grooming", label: "Grooming Tools", desc: "Brushes, combs, and deshedding tools", icon: "\u2702\uFE0F" });
+              recs.push({ slug: "dog-shampoo", label: "Dog Shampoo", desc: "Keep that coat clean and shiny", icon: "\uD83D\uDEC1" });
+            } else if (breed.shedding === "high") {
+              recs.push({ slug: "dog-grooming", label: "Deshedding Tools", desc: "Control shedding with the right brush", icon: "\u2702\uFE0F" });
+            }
+            // Health-based
+            if (breed.healthIssues.some(h => h.toLowerCase().includes("hip") || h.toLowerCase().includes("joint") || h.toLowerCase().includes("dysplasia"))) {
+              recs.push({ slug: "dog-supplements", label: "Joint Supplements", desc: "Glucosamine & chondroitin for healthy joints", icon: "\uD83D\uDC8A" });
+            }
+            // Universal
+            recs.push({ slug: "dog-food", label: breed.size === "small" ? "Small Breed Food" : "Premium Dog Food", desc: "Nutrition tailored to your breed", icon: "\uD83C\uDF56" });
+            if (breed.size === "small" || breed.healthIssues.some(h => h.toLowerCase().includes("trachea") || h.toLowerCase().includes("back"))) {
+              recs.push({ slug: "dog-harnesses", label: "No-Pull Harness", desc: "Safer than collars for this breed", icon: "\uD83E\uDDBA" });
+            }
+            return recs.slice(0, 6).map((r) => (
+              <Link key={r.slug} href={`/best/${r.slug}`} className="group bg-white rounded-2xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <span className="text-3xl block mb-3">{r.icon}</span>
+                <h3 className="font-bold text-[#1A1A1A] text-sm group-hover:text-[#C4704B] transition">{r.label}</h3>
+                <p className="text-[#1A1A1A]/50 text-xs mt-1">{r.desc}</p>
+                <span className="text-[#C4704B] text-xs font-semibold mt-2 inline-block">Shop Now &rarr;</span>
+              </Link>
+            ));
+          })()}
+        </div>
+      </div>
+
       {/* Related Breeds */}
       {relatedBreeds.length > 0 && (
         <div className="max-w-[1200px] mx-auto px-6 pb-16">
