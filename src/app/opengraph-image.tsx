@@ -29,7 +29,7 @@ export default function Image() {
           Premium Products &amp; Care Guides for Dog Lovers
         </p>
         <p style={{ fontSize: 22, color: "rgba(255,255,255,0.6)", marginTop: 16 }}>
-          261 Expert-Reviewed Products &middot; 50 Breed Guides &middot; 45 Blog Posts
+          260+ Expert-Reviewed Products &middot; 50 Breed Guides &middot; 45 Blog Posts
         </p>
         <p style={{ fontSize: 18, color: "rgba(255,255,255,0.4)", marginTop: 40 }}>babymydog.com</p>
       </div>

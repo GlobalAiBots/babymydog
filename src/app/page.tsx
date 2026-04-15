@@ -77,8 +77,8 @@ export default function Home() {
       <section className="py-5" style={{ background: '#3D5A40' }}>
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-2 md:flex md:justify-center md:gap-12 gap-4 text-sm font-semibold text-white text-center">
-            <span>&#128021; 50 Breed Guides</span>
-            <span>&#11088; 75 Products Reviewed</span>
+            <span>&#128021; {breeds.length} Breed Guides</span>
+            <span>&#11088; 260+ Products Reviewed</span>
             <span>&#127942; Expert-Picked</span>
             <span>&#127482;&#127480; Veteran Owned</span>
           </div>

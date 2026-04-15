@@ -119,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-5MB60LVFB2" strategy="afterInteractive" />
         <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5MB60LVFB2');`}</Script>
         <a href="/best" className="block w-full bg-[#C4704B] text-white text-center py-2 text-xs sm:text-sm font-medium hover:bg-[#b5623f] transition">
-          &#128062; New for 2026 &mdash; Our team just dropped fresh picks across all 15 product categories &rarr;
+          &#128062; New for 2026 &mdash; Our team just dropped fresh picks across all 20 product categories &rarr;
         </a>
         <Nav />
         <main className="flex-1">{children}</main>
