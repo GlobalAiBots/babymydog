@@ -103,7 +103,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/25 text-xs">
-          <p>Made with love for dog lovers everywhere &middot; &copy; {new Date().getFullYear()} <BrandName /></p>
+          <p>Veteran Owned &amp; Operated &#127482;&#127480; &middot; Made with love for dog lovers everywhere &middot; &copy; {new Date().getFullYear()} <BrandName /></p>
           <p className="mt-2"><BrandName /> is a participant in the Amazon Services LLC Associates Program. <Link href="/disclosure" className="underline hover:text-white/40 transition">Learn more</Link></p>
         </div>
       </div>

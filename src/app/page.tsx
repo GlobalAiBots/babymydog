@@ -81,12 +81,13 @@ export default function Home() {
       {/* TRUST BAR */}
       <section className="py-8" style={{ background: '#2D2006' }}>
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
             {[
               { num: "260+", label: "Products Reviewed" },
               { num: String(breeds.length), label: "Breed Guides" },
               { num: "20", label: "Categories Covered" },
               { num: "45+", label: "Expert Reviews" },
+              { num: "🇺🇸", label: "Veteran Owned" },
             ].map((s) => (
               <div key={s.label}>
                 <p className="text-[36px] md:text-[44px] font-extrabold text-[#F39C12] leading-none">{s.num}</p>
