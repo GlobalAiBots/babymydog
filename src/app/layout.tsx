@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "https://babymydog.com" },
   other: {
-    "impact-site-verification": "fe2b8b37-d426-4354-b0b0-e6bbdc5856ac",
+    "impact-site-verification": "65ddf468-c89d-4868-9024-864b43a9d3eb",
   },
 };
 
