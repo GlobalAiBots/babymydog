@@ -8,6 +8,112 @@ import type { Metadata } from "next";
 
 /* eslint-disable @next/next/no-img-element */
 
+interface TraitGroup {
+  products: { label: string; category: string; icon: string }[];
+  healthNote: string;
+}
+
+const BREED_TRAIT_MAP: Record<string, TraitGroup> = {
+  brachycephalic: {
+    products: [
+      { label: "Cooling mats — flat-faced breeds overheat easily", category: "/best/dog-cooling", icon: "❄️" },
+      { label: "Harnesses — safer than collars for short-nosed breeds", category: "/best/dog-harnesses", icon: "🦺" },
+      { label: "Grooming wipes — for cleaning skin folds daily", category: "/best/dog-grooming", icon: "🧴" },
+      { label: "Slow feeder bowls — prevents eating too fast", category: "/best/dog-bowls", icon: "🥣" },
+    ],
+    healthNote: "Brachycephalic breeds are prone to breathing difficulties, joint issues, and skin fold infections. Temperature regulation is critical — avoid exercise in hot weather and always have water available.",
+  },
+  large_active: {
+    products: [
+      { label: "Heavy-duty chew toys — built for powerful jaws", category: "/best/toys-for-chewers", icon: "🦴" },
+      { label: "Joint supplements — protect hips and knees early", category: "/best/dog-supplements", icon: "💊" },
+      { label: "XL orthopedic beds — proper support for big dogs", category: "/best/large-dog-products", icon: "🛏️" },
+      { label: "Fetch toys — burn off that high energy", category: "/best/fetch-toys", icon: "🎾" },
+    ],
+    healthNote: "Large active breeds need joint protection starting early in life. Heavy chewing is normal — redirect to appropriate toys rather than trying to stop it.",
+  },
+  small_breed: {
+    products: [
+      { label: "Small dental chews — sized for tiny mouths", category: "/best/dental-care", icon: "🦷" },
+      { label: "Cozy beds — small dogs love to burrow", category: "/best/small-dog-products", icon: "🛏️" },
+      { label: "Harnesses — protects fragile tracheas", category: "/best/dog-harnesses", icon: "🦺" },
+      { label: "Training treats — small, low-calorie bites", category: "/best/dog-treats", icon: "🦴" },
+    ],
+    healthNote: "Small breeds are prone to dental disease, luxating patella, and tracheal collapse. Always use a harness instead of a collar to protect the neck and trachea.",
+  },
+  double_coat: {
+    products: [
+      { label: "De-shedding brushes — manage that undercoat", category: "/best/dog-grooming", icon: "🪮" },
+      { label: "Deshedding shampoo — reduce loose fur", category: "/best/dog-grooming", icon: "🧴" },
+      { label: "Cooling products — double coats trap heat", category: "/best/dog-coats", icon: "❄️" },
+      { label: "Heavy-duty vacuum — you'll need one", category: "/best/dog-grooming", icon: "🧹" },
+    ],
+    healthNote: "Double-coated breeds shed heavily twice a year (\"blowing coat\"). Regular brushing 2-3x per week prevents matting. Never shave a double coat — it damages the fur and removes insulation.",
+  },
+  senior_prone: {
+    products: [
+      { label: "Joint supplements with glucosamine & chondroitin", category: "/best/senior-dog-products", icon: "💊" },
+      { label: "Orthopedic memory foam beds", category: "/best/senior-dog-products", icon: "🛏️" },
+      { label: "Soft toys — gentle on aging teeth", category: "/best/dog-toys", icon: "🧸" },
+      { label: "Dog ramps — easy on joints for cars & furniture", category: "/best/senior-dog-products", icon: "📐" },
+    ],
+    healthNote: "As dogs age, joint support becomes critical. Start supplements before symptoms appear. Softer toys and ramps reduce strain on aging bodies.",
+  },
+};
+
+const BREED_TRAITS: Record<string, string[]> = {
+  "french-bulldog": ["brachycephalic", "small_breed"],
+  "bulldog": ["brachycephalic", "senior_prone"],
+  "pug": ["brachycephalic", "small_breed"],
+  "boston-terrier": ["brachycephalic", "small_breed"],
+  "shih-tzu": ["brachycephalic", "small_breed"],
+  "cavalier-king-charles-spaniel": ["small_breed", "senior_prone"],
+  "golden-retriever": ["large_active", "double_coat"],
+  "labrador-retriever": ["large_active", "double_coat"],
+  "german-shepherd": ["large_active", "double_coat"],
+  "siberian-husky": ["large_active", "double_coat"],
+  "australian-shepherd": ["large_active", "double_coat"],
+  "border-collie": ["large_active", "double_coat"],
+  "bernese-mountain-dog": ["large_active", "double_coat", "senior_prone"],
+  "samoyed": ["large_active", "double_coat"],
+  "alaskan-malamute": ["large_active", "double_coat"],
+  "rottweiler": ["large_active", "senior_prone"],
+  "great-dane": ["large_active", "senior_prone"],
+  "cane-corso": ["large_active", "senior_prone"],
+  "newfoundland": ["large_active", "double_coat", "senior_prone"],
+  "rhodesian-ridgeback": ["large_active"],
+  "belgian-malinois": ["large_active"],
+  "doberman-pinscher": ["large_active"],
+  "boxer": ["large_active", "brachycephalic"],
+  "weimaraner": ["large_active"],
+  "akita": ["large_active", "double_coat"],
+  "irish-setter": ["large_active"],
+  "dalmatian": ["large_active"],
+  "pit-bull-terrier": ["large_active"],
+  "australian-cattle-dog": ["large_active"],
+  "vizsla": ["large_active"],
+  "german-shorthaired-pointer": ["large_active"],
+  "english-springer-spaniel": ["large_active", "double_coat"],
+  "brittany": ["large_active"],
+  "yorkshire-terrier": ["small_breed"],
+  "pomeranian": ["small_breed", "double_coat"],
+  "havanese": ["small_breed"],
+  "maltese": ["small_breed"],
+  "chihuahua": ["small_breed"],
+  "bichon-frise": ["small_breed"],
+  "west-highland-white-terrier": ["small_breed"],
+  "miniature-schnauzer": ["small_breed"],
+  "dachshund": ["small_breed", "senior_prone"],
+  "pembroke-welsh-corgi": ["double_coat", "senior_prone"],
+  "shetland-sheepdog": ["double_coat", "small_breed"],
+  "cocker-spaniel": ["double_coat"],
+  "poodle": [],
+  "goldendoodle": [],
+  "labradoodle": [],
+  "basset-hound": ["senior_prone"],
+  "beagle": [],
+};
+
 export function generateStaticParams() { return breeds.map(b => ({ slug: b.slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -192,6 +298,65 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
                 </Link>
               </p>
             </section>
+
+            {/* What Owners Should Know — breed trait products */}
+            {(() => {
+              const traits = BREED_TRAITS[breed.slug] || [];
+              if (traits.length === 0) return null;
+              const primaryTrait = BREED_TRAIT_MAP[traits[0]];
+              if (!primaryTrait) return null;
+              const allProducts = traits.flatMap(t => BREED_TRAIT_MAP[t]?.products || []);
+              const seen = new Set<string>();
+              const uniqueProducts = allProducts.filter(p => { if (seen.has(p.category)) return false; seen.add(p.category); return true; }).slice(0, 4);
+              return (
+                <section>
+                  <h2 className="text-2xl font-bold text-[#1A1A1A] mb-3">What {breed.name} Owners Should Know</h2>
+                  <p className="text-[#1A1A1A]/60 leading-relaxed mb-6">{primaryTrait.healthNote}</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {uniqueProducts.map((p, i) => (
+                      <Link key={i} href={p.category} className="group bg-white rounded-2xl p-4 flex items-start gap-3 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                        <span className="text-2xl flex-shrink-0 mt-0.5">{p.icon}</span>
+                        <div>
+                          <p className="text-[#1A1A1A] text-sm font-semibold group-hover:text-[#D35400] transition">{p.label}</p>
+                          <span className="text-[#D35400] text-xs font-bold mt-1 inline-block">Shop &rarr;</span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              );
+            })()}
+
+            {/* Health Concerns → Product Links */}
+            {breed.healthIssues.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold text-[#1A1A1A] mb-5">Health Concerns &amp; What Helps</h2>
+                <div className="space-y-3">
+                  {breed.healthIssues.slice(0, 4).map((issue, i) => {
+                    const il = issue.toLowerCase();
+                    let product = { label: "Browse all products", href: "/best" };
+                    if (il.includes("hip") || il.includes("dysplasia") || il.includes("joint") || il.includes("elbow")) product = { label: "Joint Supplements", href: "/best/dog-supplements" };
+                    else if (il.includes("dental") || il.includes("teeth")) product = { label: "Dental Care Products", href: "/best/dental-care" };
+                    else if (il.includes("obesity") || il.includes("weight")) product = { label: "Slow Feeder Bowls", href: "/best/dog-bowls" };
+                    else if (il.includes("eye") || il.includes("skin") || il.includes("allerg")) product = { label: "Grooming & Cleanup", href: "/best/dog-grooming" };
+                    else if (il.includes("bloat") || il.includes("gastric")) product = { label: "Slow Feeder Bowls", href: "/best/dog-bowls" };
+                    else if (il.includes("back") || il.includes("ivdd") || il.includes("spinal")) product = { label: "Dog Ramps & Support", href: "/best/senior-dog-products" };
+                    else if (il.includes("heart") || il.includes("cancer")) product = { label: "Health Supplements", href: "/best/dog-supplements" };
+                    else if (il.includes("anxiety") || il.includes("separat")) product = { label: "Calming Products", href: "/best/anxious-dogs" };
+                    else if (il.includes("trachea") || il.includes("collar")) product = { label: "No-Pull Harnesses", href: "/best/dog-harnesses" };
+                    return (
+                      <div key={i} className="bg-white rounded-2xl p-5 flex items-center justify-between gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                        <div className="flex items-center gap-3">
+                          <span className="w-6 h-6 rounded-full bg-amber-50 flex items-center justify-center flex-shrink-0 text-amber-500 text-sm">&#9888;</span>
+                          <span className="text-[#1A1A1A]/70 text-sm font-medium">{issue}</span>
+                        </div>
+                        <Link href={product.href} className="text-[#D35400] text-xs font-bold whitespace-nowrap hover:underline">{product.label} &rarr;</Link>
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
           </div>
 
           {/* Right Column — 35% Sticky Sidebar */}

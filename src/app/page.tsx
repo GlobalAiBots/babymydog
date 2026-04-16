@@ -73,19 +73,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SOCIAL PROOF */}
+      <section className="py-3 text-center" style={{ background: '#FFF8F0' }}>
+        <p className="text-[#D35400] font-bold text-sm tracking-wide">&#11088;&#11088;&#11088;&#11088;&#11088; 260+ Products Reviewed by Dog Owners Like You</p>
+      </section>
+
       {/* TRUST BAR */}
-      <section className="py-6" style={{ background: '#3D5A40' }}>
+      <section className="py-8" style={{ background: '#2D2006' }}>
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-2 md:flex md:justify-center md:gap-16 gap-6 text-white text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { num: String(breeds.length), label: "Breed Guides", icon: "🐕" },
-              { num: "260+", label: "Products Reviewed", icon: "⭐" },
-              { num: "Expert", label: "Picked", icon: "🏆" },
-              { num: "Veteran", label: "Owned", icon: "🇺🇸" },
+              { num: "260+", label: "Products Reviewed" },
+              { num: String(breeds.length), label: "Breed Guides" },
+              { num: "20", label: "Categories Covered" },
+              { num: "45+", label: "Expert Reviews" },
             ].map((s) => (
               <div key={s.label}>
-                <p className="text-2xl md:text-4xl font-bold">{s.icon} {s.num}</p>
-                <p className="text-white/60 text-xs uppercase tracking-wider mt-1">{s.label}</p>
+                <p className="text-[36px] md:text-[44px] font-extrabold text-[#F39C12] leading-none">{s.num}</p>
+                <p className="text-white/50 text-[13px] uppercase tracking-widest mt-2 font-semibold">{s.label}</p>
               </div>
             ))}
           </div>
@@ -101,6 +106,31 @@ export default function Home() {
             <p className="text-[#8B7355] text-base mb-5">Answer 5 quick questions and get personalized product recommendations.</p>
             <span className="inline-block text-white font-bold px-8 py-4 rounded-xl text-lg group-hover:shadow-lg group-hover:-translate-y-0.5 transition-all duration-300" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 6px 20px rgba(211,84,0,0.3)' }}>Take the Quiz &rarr;</span>
           </Link>
+        </div>
+      </section>
+
+      {/* SHOP BY OCCASION */}
+      <section className="py-12" style={{ background: '#FFF8F0' }}>
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="flex items-end justify-between mb-6">
+            <h2 className="text-[22px] md:text-[28px] font-extrabold text-[#2D2006]">Shop by Occasion</h2>
+            <Link href="/collections" className="text-[#D35400] text-sm font-bold hover:underline hidden sm:block">All collections &rarr;</Link>
+          </div>
+          <div className="flex gap-4 overflow-x-auto pb-3">
+            {[
+              { slug: "summer-essentials", title: "Summer Essentials", icon: "☀️", desc: "Beat the heat" },
+              { slug: "new-puppy", title: "New Puppy Kit", icon: "🐶", desc: "First-week must-haves" },
+              { slug: "senior-dog", title: "Senior Comfort", icon: "🤍", desc: "Gentle care for aging pups" },
+              { slug: "dog-birthday", title: "Birthday Party", icon: "🎂", desc: "Treats, toys & cake" },
+              { slug: "road-trip", title: "Road Trip Ready", icon: "🚗", desc: "Travel safe & comfy" },
+            ].map((c) => (
+              <Link key={c.slug} href={`/collections/${c.slug}`} className="flex-shrink-0 group bg-white rounded-2xl p-5 text-center hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border border-[#2D2006]/5" style={{ minWidth: 160, boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
+                <span className="text-3xl block mb-2">{c.icon}</span>
+                <p className="font-bold text-[#2D2006] text-sm group-hover:text-[#D35400] transition">{c.title}</p>
+                <p className="text-[#8B7355] text-xs mt-1">{c.desc}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

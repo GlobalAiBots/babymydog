@@ -21,17 +21,17 @@ function amazonLink(asin: string): string {
   return `https://www.amazon.com/dp/${asin}?tag=babymydog03-20`;
 }
 
-function StarRating({ rating }: { rating: number }) {
+function StarRating({ rating, size = "sm" }: { rating: number; size?: "sm" | "lg" }) {
   const fullStars = Math.floor(rating);
   const hasHalf = rating % 1 >= 0.3;
+  const cls = size === "lg" ? "w-5 h-5" : "w-4 h-4";
   return (
     <span className="inline-flex items-center gap-0.5 text-amber-400" aria-label={`${rating} out of 5 stars`}>
       {[...Array(5)].map((_, i) => (
-        <svg key={i} className="w-4 h-4" fill={i < fullStars ? "currentColor" : (i === fullStars && hasHalf ? "currentColor" : "none")} stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+        <svg key={i} className={cls} fill={i < fullStars ? "currentColor" : (i === fullStars && hasHalf ? "currentColor" : "none")} stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
           <path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
         </svg>
       ))}
-      <span className="text-[#1A1A1A]/50 text-sm ml-1">{rating}</span>
     </span>
   );
 }
@@ -119,12 +119,19 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         <p className="text-[#8B7355] text-lg mb-3 max-w-2xl">{cat.description}</p>
         <p className="text-xs text-[#1A1A1A]/30 font-medium uppercase tracking-wider mb-4">Last Updated: April 2026</p>
 
+        {/* Trust Badge */}
+        <div className="inline-flex items-center gap-2 bg-[#F39C12]/10 border border-[#F39C12]/20 rounded-full px-4 py-2 mb-6">
+          <span className="text-amber-400 text-sm">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+          <span className="text-[#2D2006] text-xs font-bold">Reviewed by real dog owners</span>
+          <span className="text-[#8B7355] text-xs">&middot; {cat.picks.length} expert picks</span>
+        </div>
+
         {/* Reviewer Byline */}
         <div className="flex items-center gap-3 mb-14">
           <div className="w-10 h-10 rounded-full bg-[#D35400]/10 flex items-center justify-center text-[#D35400] font-bold text-sm">BM</div>
           <div>
-            <p className="text-sm font-semibold text-[#1A1A1A]">Reviewed by the <BrandName /> Team</p>
-            <p className="text-xs text-[#1A1A1A]/40">Retired AKC breeder &amp; U.S. military veteran &middot; 20+ years with dogs</p>
+            <p className="text-sm font-semibold text-[#2D2006]">Reviewed by the <BrandName /> Team</p>
+            <p className="text-xs text-[#8B7355]">Retired AKC breeder &amp; U.S. military veteran &middot; 20+ years with dogs</p>
           </div>
         </div>
 
@@ -165,10 +172,11 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 <div className="p-6 text-center">
                   <span className="inline-block text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
                   <h3 className="font-bold text-[#2D2006] text-xl mb-2">{pick.name}</h3>
-                  <div className="flex items-center justify-center gap-2 mb-3">
-                    <StarRating rating={pick.rating} />
-                    <span className="text-[#8B7355] text-xs">({pick.reviewCount})</span>
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <StarRating rating={pick.rating} size="lg" />
+                    <span className="text-[#2D2006] text-lg font-extrabold">{pick.rating}</span>
                   </div>
+                  <p className="text-[#8B7355] text-xs mb-3">{pick.reviewCount} verified reviews</p>
                   {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
                   <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block text-white font-bold text-base px-6 py-3.5 rounded-xl transition-all duration-300 w-full hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
                     Check Price on Amazon &rarr;
