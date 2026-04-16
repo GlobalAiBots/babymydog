@@ -85,6 +85,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* QUIZ CTA */}
+      <section className="py-8" style={{ background: '#FAF8F5' }}>
+        <div className="max-w-[1200px] mx-auto px-6">
+          <Link href="/quiz" className="group block bg-white rounded-2xl p-6 md:p-8 text-center hover:shadow-lg transition-all duration-300 border-2 border-[#C4704B]/20 hover:border-[#C4704B]" style={{ boxShadow: '0 2px 12px rgba(196,112,75,0.08)' }}>
+            <span className="text-3xl block mb-2">&#129300;</span>
+            <h2 className="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-1">What does YOUR dog need?</h2>
+            <p className="text-[#1A1A1A]/50 text-sm mb-4">Answer 5 quick questions and get personalized product recommendations.</p>
+            <span className="inline-block bg-[#C4704B] text-white font-bold px-6 py-3 rounded-full text-sm group-hover:bg-[#b5623f] transition">Take the Quiz &rarr;</span>
+          </Link>
+        </div>
+      </section>
+
       {/* SHOP BY CATEGORY */}
       <section className="py-20" style={{ background: '#F0EEEB' }}>
         <div className="max-w-[1200px] mx-auto px-6">

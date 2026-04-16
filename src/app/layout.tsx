@@ -39,6 +39,7 @@ function Nav() {
         <div className="flex items-center gap-6 sm:gap-8 text-sm">
           <Link href="/breeds" className="text-charcoal/60 hover:text-terra transition">Breeds</Link>
           <Link href="/best" className="text-charcoal/60 hover:text-terra transition">Products</Link>
+          <Link href="/quiz" className="text-charcoal/60 hover:text-terra transition">Quiz</Link>
           <Link href="/gifts" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Gifts</Link>
           <Link href="/blog" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Blog</Link>
           <Link href="/best" className="hidden sm:inline-flex items-center gap-1.5 bg-[#C4704B] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#b5623f] transition">

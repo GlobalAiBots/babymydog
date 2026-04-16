@@ -269,6 +269,16 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
         </div>
       </div>
 
+      {/* Quiz CTA */}
+      <div className="max-w-[1200px] mx-auto px-6 pb-12">
+        <Link href="/quiz" className="group block bg-[#C4704B]/5 border-2 border-[#C4704B]/20 hover:border-[#C4704B] rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-lg">
+          <span className="text-2xl block mb-2">&#129300;</span>
+          <h3 className="text-lg font-bold text-[#1A1A1A] mb-1">Get personalized picks for your {breed.name}</h3>
+          <p className="text-[#1A1A1A]/50 text-sm mb-3">Take our 5-question quiz and get product recommendations tailored to your dog.</p>
+          <span className="inline-block bg-[#C4704B] text-white font-bold px-5 py-2.5 rounded-full text-sm group-hover:bg-[#b5623f] transition">Take the Quiz &rarr;</span>
+        </Link>
+      </div>
+
       {/* Related Breeds */}
       {relatedBreeds.length > 0 && (
         <div className="max-w-[1200px] mx-auto px-6 pb-16">
