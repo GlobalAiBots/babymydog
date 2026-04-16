@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     images: ["https://babymydog.com/opengraph-image"],
   },
   alternates: { canonical: "https://babymydog.com" },
+  other: {
+    "impact-site-verification": "fe2b8b37-d426-4354-b0b0-e6bbdc5856ac",
+  },
 };
 
 function Nav() {
