@@ -105,23 +105,23 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
 
         {/* Breadcrumbs */}
         <nav className="text-sm text-[#1A1A1A]/40 mb-6 flex flex-wrap gap-2">
-          <Link href="/" className="hover:text-[#C4704B] transition">Home</Link><span>/</span>
-          <Link href="/best" className="hover:text-[#C4704B] transition">Best Products</Link><span>/</span>
+          <Link href="/" className="hover:text-[#D35400] transition">Home</Link><span>/</span>
+          <Link href="/best" className="hover:text-[#D35400] transition">Best Products</Link><span>/</span>
           <span className="text-[#1A1A1A] font-medium">{cat.title}</span>
         </nav>
 
         {/* Back link */}
-        <Link href="/best" className="inline-flex items-center gap-1 text-sm text-[#C4704B] font-semibold hover:underline mb-6">
+        <Link href="/best" className="inline-flex items-center gap-1 text-sm text-[#D35400] font-semibold hover:underline mb-6">
           &larr; Back to All Products
         </Link>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] mb-4">{cat.title}</h1>
-        <p className="text-[#1A1A1A]/60 text-lg mb-3 max-w-2xl">{cat.description}</p>
+        <h1 className="text-[28px] md:text-[44px] font-extrabold text-[#2D2006] mb-4 leading-tight">{cat.title}</h1>
+        <p className="text-[#8B7355] text-lg mb-3 max-w-2xl">{cat.description}</p>
         <p className="text-xs text-[#1A1A1A]/30 font-medium uppercase tracking-wider mb-4">Last Updated: April 2026</p>
 
         {/* Reviewer Byline */}
         <div className="flex items-center gap-3 mb-14">
-          <div className="w-10 h-10 rounded-full bg-[#C4704B]/10 flex items-center justify-center text-[#C4704B] font-bold text-sm">BM</div>
+          <div className="w-10 h-10 rounded-full bg-[#D35400]/10 flex items-center justify-center text-[#D35400] font-bold text-sm">BM</div>
           <div>
             <p className="text-sm font-semibold text-[#1A1A1A]">Reviewed by the <BrandName /> Team</p>
             <p className="text-xs text-[#1A1A1A]/40">Retired AKC breeder &amp; U.S. military veteran &middot; 20+ years with dogs</p>
@@ -142,13 +142,13 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             </thead>
             <tbody>
               {cat.picks.map((pick, i) => (
-                <tr key={i} className={`border-b border-[#F0EEEB] ${i === 0 ? 'bg-[#C4704B]/5' : ''}`}>
-                  <td className="py-4 px-4 font-bold text-[#C4704B]">#{i + 1}</td>
+                <tr key={i} className={`border-b border-[#F0EEEB] ${i === 0 ? 'bg-[#D35400]/5' : ''}`}>
+                  <td className="py-4 px-4 font-bold text-[#D35400]">#{i + 1}</td>
                   <td className="py-4 px-4 font-semibold text-[#1A1A1A]">{pick.name}</td>
                   <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
-                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] text-xs font-semibold hover:underline whitespace-nowrap">View on Amazon &rarr;</a>
+                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">View on Amazon &rarr;</a>
                   </td>
                 </tr>
               ))}
@@ -158,19 +158,19 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
 
         {/* Our Top Picks */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">Our Top Picks</h2>
+          <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#2D2006] mb-8">Our Top Picks</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cat.picks.slice(0, 3).map((pick, i) => (
-              <div key={i} className="bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <div key={i} className="bg-white rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
                 <div className="p-6 text-center">
-                  <span className="inline-block text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
-                  <h3 className="font-bold text-[#1A1A1A] text-lg mb-2">{pick.name}</h3>
+                  <span className="inline-block text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
+                  <h3 className="font-bold text-[#2D2006] text-xl mb-2">{pick.name}</h3>
                   <div className="flex items-center justify-center gap-2 mb-3">
                     <StarRating rating={pick.rating} />
-                    <span className="text-[#1A1A1A]/40 text-xs">({pick.reviewCount})</span>
+                    <span className="text-[#8B7355] text-xs">({pick.reviewCount})</span>
                   </div>
                   {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
-                  <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-6 py-2.5 rounded-full transition w-full">
+                  <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block text-white font-bold text-base px-6 py-3.5 rounded-xl transition-all duration-300 w-full hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
                     Check Price on Amazon &rarr;
                   </a>
                 </div>
@@ -182,36 +182,36 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         {/* Detailed Reviews */}
         <section className="space-y-8 mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-[#1A1A1A]">Detailed Reviews</h2>
+            <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#2D2006]">Detailed Reviews</h2>
             <span className="text-xs text-[#1A1A1A]/40 bg-[#F0EEEB] px-3 py-1.5 rounded-full">Sorted by: Our Ranking</span>
           </div>
           {cat.picks.map((pick, i) => (
-            <div key={i} className="bg-white rounded-2xl overflow-hidden" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+            <div key={i} className="bg-white rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
               <div className="p-8 md:p-10">
                 <div className="flex items-start justify-between mb-2 flex-wrap gap-3">
                   <div>
                     <div className="flex items-center gap-3 mb-1">
-                      <span className="bg-[#C4704B] text-white text-xs font-bold px-3 py-1 rounded-full">#{i + 1}</span>
-                      <h3 className="font-bold text-[#1A1A1A] text-xl">{pick.name}</h3>
+                      <span className="text-white text-xs font-bold px-3 py-1 rounded-full" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)' }}>#{i + 1}</span>
+                      <h3 className="font-bold text-[#2D2006] text-xl">{pick.name}</h3>
                     </div>
                     <div className="flex flex-wrap items-center gap-3 mt-1.5">
                       <StarRating rating={pick.rating} />
-                      <span className="text-[#1A1A1A]/40 text-sm">({pick.reviewCount} reviews)</span>
+                      <span className="text-[#8B7355] text-sm">({pick.reviewCount} reviews)</span>
                       {pick.prime && <PrimeBadge />}
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-3 py-1 rounded-full">{pick.badge}</span>
+                  <span className="text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full">{pick.badge}</span>
                 </div>
-                <p className="text-[#1A1A1A]/60 leading-relaxed mb-5 mt-4">{pick.description}</p>
+                <p className="text-[#8B7355] leading-relaxed mb-5 mt-4">{pick.description}</p>
                 <ul className="space-y-2 mb-6">
                   {pick.features.map((f, j) => (
-                    <li key={j} className="text-[#1A1A1A]/50 text-sm flex items-start gap-3">
+                    <li key={j} className="text-[#8B7355] text-sm flex items-start gap-3">
                       <span className="w-5 h-5 rounded-full bg-[#5B7B5E]/10 flex items-center justify-center flex-shrink-0 text-[#5B7B5E] text-xs font-bold">{'\u2713'}</span>
                       {f}
                     </li>
                   ))}
                 </ul>
-                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block w-full sm:w-auto bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition text-center">
+                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block w-full sm:w-auto text-white font-bold text-base px-8 py-3.5 rounded-xl transition-all duration-300 text-center hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
                   Check Price on Amazon &rarr;
                 </a>
               </div>
@@ -221,11 +221,11 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
 
         {/* How We Choose */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-8 text-center">How We Choose</h2>
+          <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#2D2006] mb-8 text-center">How We Choose</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-2xl p-8 text-center" style={{ backgroundColor: '#F0EEEB' }}>
-              <div className="w-12 h-12 rounded-full bg-[#C4704B]/10 flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#C4704B] text-xl">&#128269;</span>
+              <div className="w-12 h-12 rounded-full bg-[#D35400]/10 flex items-center justify-center mx-auto mb-4">
+                <span className="text-[#D35400] text-xl">&#128269;</span>
               </div>
               <h3 className="font-bold text-[#1A1A1A] mb-2">Research</h3>
               <p className="text-[#1A1A1A]/60 text-sm">We analyze thousands of verified owner reviews and compare specs across every major brand in the category.</p>
@@ -335,7 +335,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 {posts.map(post => (
                   <Link key={post.href} href={post.href} className="block bg-white rounded-xl p-5 hover:shadow-md transition border border-[#D4C5A9]/30">
                     <p className="font-semibold text-[#1A1A1A] text-sm">{post.title}</p>
-                    <p className="text-[#C4704B] text-xs mt-1">Read more &rarr;</p>
+                    <p className="text-[#D35400] text-xs mt-1">Read more &rarr;</p>
                   </Link>
                 ))}
               </div>
@@ -349,7 +349,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <p className="text-[#1A1A1A]/60 mb-6 max-w-md mx-auto">Join dog parents who get our best product finds, breed tips, and exclusive deals every Thursday.</p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input type="email" placeholder="Enter your email" className="flex-1 px-5 py-3 rounded-full border border-[#D4C5A9] text-sm focus:outline-none focus:border-[#C4704B] bg-white" />
-            <button className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition whitespace-nowrap">Join the Pack</button>
+            <button className="bg-[#D35400] hover:bg-[#b5623f] text-white font-semibold text-sm px-7 py-3 rounded-full transition whitespace-nowrap">Join the Pack</button>
           </div>
           <p className="text-xs text-[#1A1A1A]/30 mt-3">No spam, ever. Unsubscribe anytime.</p>
         </section>
@@ -364,7 +364,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <p className="text-xs text-[#1A1A1A]/40 truncate">Our #1 Pick</p>
           <p className="text-sm font-bold text-[#1A1A1A] truncate">{cat.picks[0].name}</p>
         </div>
-        <a href={amazonLink(cat.picks[0].asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
+        <a href={amazonLink(cat.picks[0].asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#D35400] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
           Check Price
         </a>
       </div>

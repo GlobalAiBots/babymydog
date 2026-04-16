@@ -187,40 +187,40 @@ export default function QuizPage() {
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Header */}
         <div className="text-center mb-8">
-          <p className="text-[#C4704B] text-sm font-bold tracking-wider uppercase mb-2">Personalized Picks</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] tracking-tight">
+          <p className="text-[#D35400] text-sm font-bold tracking-wider uppercase mb-2">Personalized Picks</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#2D2006] tracking-tight">
             {done ? "Your Personalized Picks" : "What Does Your Dog Need?"}
           </h1>
-          <p className="text-[#1A1A1A]/50 mt-2">
+          <p className="text-[#2D2006]/50 mt-2">
             {done ? "Based on your answers, here's what we recommend." : "Answer 5 quick questions and we'll recommend the perfect products."}
           </p>
         </div>
 
         {/* Progress bar */}
-        <div className="w-full bg-[#1A1A1A]/10 rounded-full h-2 mb-10 overflow-hidden">
-          <div className="h-full bg-[#C4704B] rounded-full transition-all duration-500 ease-out" style={{ width: `${progress}%` }} />
+        <div className="w-full bg-[#2D2006]/10 rounded-full h-2 mb-10 overflow-hidden">
+          <div className="h-full bg-[#D35400] rounded-full transition-all duration-500 ease-out" style={{ width: `${progress}%` }} />
         </div>
 
         {!done ? (
           /* Question */
           <div key={step} className="animate-fade-in">
-            <p className="text-sm text-[#1A1A1A]/40 mb-2 font-semibold">Question {step + 1} of {questions.length}</p>
-            <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">{questions[step].question}</h2>
+            <p className="text-sm text-[#2D2006]/40 mb-2 font-semibold">Question {step + 1} of {questions.length}</p>
+            <h2 className="text-2xl font-bold text-[#2D2006] mb-6">{questions[step].question}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {questions[step].options.map((opt) => (
                 <button
                   key={opt.value}
                   onClick={() => handleAnswer(questions[step].id, opt.value)}
-                  className="group text-left bg-white rounded-2xl p-5 border-2 border-transparent hover:border-[#C4704B] hover:shadow-lg transition-all duration-200 cursor-pointer"
+                  className="group text-left bg-white rounded-2xl p-5 border-2 border-transparent hover:border-[#D35400] hover:shadow-lg transition-all duration-200 cursor-pointer"
                   style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}
                 >
                   <span className="text-2xl block mb-2">{opt.icon}</span>
-                  <span className="font-bold text-[#1A1A1A] text-sm group-hover:text-[#C4704B] transition">{opt.label}</span>
+                  <span className="font-bold text-[#2D2006] text-sm group-hover:text-[#D35400] transition">{opt.label}</span>
                 </button>
               ))}
             </div>
             {step > 0 && (
-              <button onClick={() => setStep(step - 1)} className="mt-6 text-sm text-[#1A1A1A]/40 hover:text-[#C4704B] transition">
+              <button onClick={() => setStep(step - 1)} className="mt-6 text-sm text-[#2D2006]/40 hover:text-[#D35400] transition">
                 &larr; Back
               </button>
             )}
@@ -233,26 +233,26 @@ export default function QuizPage() {
                 <Link
                   key={rec.slug}
                   href={`/best/${rec.slug}`}
-                  className="group bg-white rounded-2xl p-6 border-2 border-transparent hover:border-[#C4704B] hover:shadow-lg transition-all duration-200"
+                  className="group bg-white rounded-2xl p-6 border-2 border-transparent hover:border-[#D35400] hover:shadow-lg transition-all duration-200"
                   style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}
                 >
                   <span className="text-3xl block mb-3">{rec.icon}</span>
-                  <h3 className="font-bold text-[#1A1A1A] group-hover:text-[#C4704B] transition mb-1">{rec.category}</h3>
-                  <p className="text-sm text-[#1A1A1A]/50 leading-relaxed">{rec.reason}</p>
-                  <span className="inline-block mt-3 text-[#C4704B] text-sm font-bold group-hover:translate-x-1 transition-transform">See our picks &rarr;</span>
+                  <h3 className="font-bold text-[#2D2006] group-hover:text-[#D35400] transition mb-1">{rec.category}</h3>
+                  <p className="text-sm text-[#2D2006]/50 leading-relaxed">{rec.reason}</p>
+                  <span className="inline-block mt-3 text-[#D35400] text-sm font-bold group-hover:translate-x-1 transition-transform">See our picks &rarr;</span>
                 </Link>
               ))}
             </div>
 
             <div className="bg-white rounded-2xl p-6 mb-8 text-center" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
-              <p className="text-[#1A1A1A]/50 text-sm mb-3">Want breed-specific recommendations?</p>
+              <p className="text-[#2D2006]/50 text-sm mb-3">Want breed-specific recommendations?</p>
               <Link href="/breeds" className="inline-block bg-[#5B7B5E] text-white font-bold px-6 py-3 rounded-full text-sm hover:bg-[#4a6a4d] transition">
                 Browse 50 Breed Guides &rarr;
               </Link>
             </div>
 
             <div className="text-center">
-              <button onClick={restart} className="text-sm text-[#1A1A1A]/40 hover:text-[#C4704B] transition">
+              <button onClick={restart} className="text-sm text-[#2D2006]/40 hover:text-[#D35400] transition">
                 Retake quiz &rarr;
               </button>
             </div>
@@ -260,8 +260,8 @@ export default function QuizPage() {
         )}
 
         {/* Bottom nav */}
-        <div className="mt-16 pt-8 border-t border-[#1A1A1A]/10 text-center">
-          <p className="text-[#1A1A1A]/30 text-xs mb-3">Or browse directly:</p>
+        <div className="mt-16 pt-8 border-t border-[#2D2006]/10 text-center">
+          <p className="text-[#2D2006]/30 text-xs mb-3">Or browse directly:</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
               { label: "Beds", slug: "dog-beds" }, { label: "Food", slug: "dog-food" },
@@ -270,7 +270,7 @@ export default function QuizPage() {
               { label: "Training", slug: "dog-training" }, { label: "Supplements", slug: "dog-supplements" },
               { label: "Anxiety", slug: "dog-anxiety" }, { label: "Car Safety", slug: "dog-car-seats" },
             ].map((c) => (
-              <Link key={c.slug} href={`/best/${c.slug}`} className="text-xs bg-white border border-[#1A1A1A]/10 rounded-full px-3 py-1.5 text-[#1A1A1A]/50 hover:text-[#C4704B] hover:border-[#C4704B] transition">
+              <Link key={c.slug} href={`/best/${c.slug}`} className="text-xs bg-white border border-[#2D2006]/10 rounded-full px-3 py-1.5 text-[#2D2006]/50 hover:text-[#D35400] hover:border-[#D35400] transition">
                 {c.label}
               </Link>
             ))}

@@ -42,7 +42,7 @@ function Nav() {
           <Link href="/quiz" className="text-charcoal/60 hover:text-terra transition">Quiz</Link>
           <Link href="/gifts" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Gifts</Link>
           <Link href="/blog" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Blog</Link>
-          <Link href="/best" className="hidden sm:inline-flex items-center gap-1.5 bg-[#C4704B] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#b5623f] transition">
+          <Link href="/best" className="hidden sm:inline-flex items-center gap-1.5 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)' }}>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
             Shop Now
           </Link>

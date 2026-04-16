@@ -56,15 +56,15 @@ export default function Home() {
       {/* HERO — Full-bleed dramatic */}
       <section className="relative min-h-[60vh] md:min-h-[85vh] flex items-end overflow-hidden">
         <img src="/images/happy-dog-owner-hugging-golden-retriever.jpg" alt="Happy dog owner with golden retriever" className="absolute inset-0 w-full h-full object-cover" loading="eager" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/70 via-[#1A1A1A]/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2D2006]/80 via-[#2D2006]/30 to-transparent" />
         <div className="relative max-w-[1200px] mx-auto px-6 pb-16 md:pb-24 w-full z-10">
-          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1]">
+          <h1 className="text-4xl md:text-[56px] font-black text-white tracking-tight leading-[1.1]" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.15)' }}>
             Spoil Your<br />Best Friend.
           </h1>
-          <p className="text-white/80 mt-4 text-lg md:text-xl max-w-lg">Expert-picked products, breed guides, and honest reviews &mdash; because your dog deserves the best.</p>
+          <p className="text-white/85 mt-4 text-lg md:text-xl max-w-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>Expert-picked products, breed guides, and honest reviews &mdash; because your dog deserves the best.</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/best" className="bg-white text-[#C4704B] font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-[#FAF8F5] hover:shadow-lg text-sm">Shop Products</Link>
-            <Link href="/breeds" className="border-2 border-white text-white font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-white hover:text-[#C4704B] text-sm">Find Your Breed</Link>
+            <Link href="/best" className="text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 6px 20px rgba(211,84,0,0.3)', minHeight: '48px' }}>Shop Products</Link>
+            <Link href="/breeds" className="border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:bg-white hover:text-[#D35400] hover:shadow-xl hover:-translate-y-0.5" style={{ minHeight: '48px' }}>Find Your Breed</Link>
           </div>
         </div>
         {/* Bounce arrow */}
@@ -74,35 +74,42 @@ export default function Home() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="py-5" style={{ background: '#3D5A40' }}>
+      <section className="py-6" style={{ background: '#3D5A40' }}>
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-2 md:flex md:justify-center md:gap-12 gap-4 text-sm font-semibold text-white text-center">
-            <span>&#128021; {breeds.length} Breed Guides</span>
-            <span>&#11088; 260+ Products Reviewed</span>
-            <span>&#127942; Expert-Picked</span>
-            <span>&#127482;&#127480; Veteran Owned</span>
+          <div className="grid grid-cols-2 md:flex md:justify-center md:gap-16 gap-6 text-white text-center">
+            {[
+              { num: String(breeds.length), label: "Breed Guides", icon: "🐕" },
+              { num: "260+", label: "Products Reviewed", icon: "⭐" },
+              { num: "Expert", label: "Picked", icon: "🏆" },
+              { num: "Veteran", label: "Owned", icon: "🇺🇸" },
+            ].map((s) => (
+              <div key={s.label}>
+                <p className="text-2xl md:text-4xl font-bold">{s.icon} {s.num}</p>
+                <p className="text-white/60 text-xs uppercase tracking-wider mt-1">{s.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* QUIZ CTA */}
-      <section className="py-8" style={{ background: '#FAF8F5' }}>
+      <section className="py-10" style={{ background: '#FFF8F0' }}>
         <div className="max-w-[1200px] mx-auto px-6">
-          <Link href="/quiz" className="group block bg-white rounded-2xl p-6 md:p-8 text-center hover:shadow-lg transition-all duration-300 border-2 border-[#C4704B]/20 hover:border-[#C4704B]" style={{ boxShadow: '0 2px 12px rgba(196,112,75,0.08)' }}>
-            <span className="text-3xl block mb-2">&#129300;</span>
-            <h2 className="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-1">What does YOUR dog need?</h2>
-            <p className="text-[#1A1A1A]/50 text-sm mb-4">Answer 5 quick questions and get personalized product recommendations.</p>
-            <span className="inline-block bg-[#C4704B] text-white font-bold px-6 py-3 rounded-full text-sm group-hover:bg-[#b5623f] transition">Take the Quiz &rarr;</span>
+          <Link href="/quiz" className="group block bg-white rounded-2xl p-8 md:p-10 text-center hover:shadow-xl transition-all duration-300 border-2 border-[#D35400]/15 hover:border-[#D35400]" style={{ boxShadow: '0 4px 20px rgba(211,84,0,0.08)' }}>
+            <span className="text-4xl block mb-3">&#129300;</span>
+            <h2 className="text-2xl md:text-[36px] font-extrabold text-[#2D2006] mb-2 leading-tight">What does YOUR dog need?</h2>
+            <p className="text-[#8B7355] text-base mb-5">Answer 5 quick questions and get personalized product recommendations.</p>
+            <span className="inline-block text-white font-bold px-8 py-4 rounded-xl text-lg group-hover:shadow-lg group-hover:-translate-y-0.5 transition-all duration-300" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 6px 20px rgba(211,84,0,0.3)' }}>Take the Quiz &rarr;</span>
           </Link>
         </div>
       </section>
 
       {/* SHOP BY CATEGORY */}
-      <section className="py-20" style={{ background: '#F0EEEB' }}>
+      <section className="py-20" style={{ background: '#FFECD2' }}>
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A]">Shop by Category</h2>
-            <p className="text-[#1A1A1A]/40 mt-3">Expert-reviewed picks in every category</p>
+            <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#2D2006]">Shop by Category</h2>
+            <p className="text-[#8B7355] mt-3">Expert-reviewed picks in every category</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
             {categories.map((c) => (
@@ -231,22 +238,22 @@ export default function Home() {
       {/* FROM THE BLOG */}
       <section className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="flex items-end justify-between mb-10">
-          <h2 className="text-3xl font-bold text-[#1A1A1A]">From the Blog</h2>
-          <Link href="/blog" className="text-[#C4704B] text-sm font-semibold hover:text-[#b5623f] transition hidden sm:block">All posts &rarr;</Link>
+          <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#2D2006]">From the Blog</h2>
+          <Link href="/blog" className="text-[#D35400] text-sm font-bold hover:text-[#A04000] transition hidden sm:block">All posts &rarr;</Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {blogPosts.slice(0, 3).map((p) => (
             <Link key={p.slug} href={`/blog/${p.slug}`} className="group block">
-              <div className="bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <div className="bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                 {blogImages[p.slug] && (
                   <div className="overflow-hidden">
                     <img src={blogImages[p.slug]} alt={p.title} loading="lazy" decoding="async" className="w-full aspect-[16/9] object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                 )}
                 <div className="p-6">
-                  <p className="text-[#1A1A1A]/30 text-xs mb-2">{p.date}</p>
-                  <h3 className="font-bold text-[#1A1A1A] leading-snug group-hover:text-[#C4704B] transition-all duration-300">{p.title}</h3>
-                  <p className="text-[#1A1A1A]/40 text-sm mt-2 line-clamp-2">{p.description}</p>
+                  <span className="inline-block text-xs font-bold text-[#D35400] bg-[#F39C12]/15 px-2.5 py-0.5 rounded-full mb-2">{p.category}</span>
+                  <h3 className="font-bold text-[#2D2006] text-xl leading-snug group-hover:text-[#D35400] transition-all duration-300">{p.title}</h3>
+                  <p className="text-[#8B7355] text-sm mt-2 line-clamp-2">{p.description}</p>
                 </div>
               </div>
             </Link>
@@ -255,10 +262,10 @@ export default function Home() {
       </section>
 
       {/* NEWSLETTER */}
-      <section className="py-20" style={{ background: '#C4704B' }}>
+      <section className="py-20" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)' }}>
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">Join the Pack &#128062;</h2>
+            <h2 className="text-[28px] md:text-[40px] font-extrabold text-white">Join the Pack &#128062;</h2>
             <p className="text-white/80 mt-4 leading-relaxed max-w-md mx-auto">Join dog parents who get our best picks, breed tips, and deals every week.</p>
             <div className="flex flex-col sm:flex-row gap-3 mt-8 max-w-md mx-auto">
               <input type="email" placeholder="your@email.com" className="flex-1 px-5 py-3.5 rounded-full text-sm outline-none border-0 bg-white/20 text-white placeholder-white/50" />
