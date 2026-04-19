@@ -139,7 +139,7 @@ export default function BulldogPage() {
                 <a key={prod.name} href={`https://www.amazon.com/dp/${prod.asin}?tag=${TAG}`} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                   <h3 className="font-bold text-[#1A1A1A] text-sm">{prod.name}</h3>
                   <p className="text-[#1A1A1A]/50 text-xs mt-1 leading-relaxed">{prod.why}</p>
-                  <span className="inline-block mt-3 bg-[#C4704B] text-white text-xs font-semibold px-4 py-2 rounded-full">Shop on Amazon &rarr;</span>
+                  <span className="inline-block mt-3 bg-[#C4704B] text-white text-xs font-semibold px-4 py-2 rounded-full">&#9733; Our Pick &mdash; Shop on Amazon</span>
                 </a>
               ))}
             </div>

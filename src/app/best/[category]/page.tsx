@@ -155,7 +155,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
-                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">View on Amazon &rarr;</a>
+                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">&#9733; Our Pick &mdash; View on Amazon</a>
                   </td>
                 </tr>
               ))}
