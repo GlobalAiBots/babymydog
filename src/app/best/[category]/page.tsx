@@ -17,8 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   };
 }
 
-function amazonLink(asin: string): string {
-  return `https://www.amazon.com/dp/${asin}?tag=babymydog03-20`;
+function amazonLink(pick: { asin?: string; searchQuery?: string }): string {
+  // Prefer a search query (brand + model) — always lands on relevant products even if a specific ASIN changes.
+  // Fall back to /dp/{asin} for legacy picks.
+  if (pick.searchQuery) {
+    return `https://www.amazon.com/s?k=${encodeURIComponent(pick.searchQuery)}&tag=babymydog03-20`;
+  }
+  return `https://www.amazon.com/dp/${pick.asin}?tag=babymydog03-20`;
 }
 
 function StarRating({ rating, size = "sm" }: { rating: number; size?: "sm" | "lg" }) {
@@ -80,7 +85,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           },
           "offers": {
             "@type": "Offer",
-            "url": `https://www.amazon.com/dp/${pick.asin}?tag=babymydog03-20`,
+            "url": amazonLink(pick),
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
             "seller": { "@type": "Organization", "name": "Amazon" },
@@ -155,7 +160,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
-                    <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">&#9733; Our Pick &mdash; View on Amazon</a>
+                    <a href={amazonLink(pick)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">&#9733; Our Pick &mdash; View on Amazon</a>
                   </td>
                 </tr>
               ))}
@@ -178,7 +183,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   </div>
                   <p className="text-[#8B7355] text-xs mb-3">{pick.reviewCount} verified reviews</p>
                   {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
-                  <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block text-white font-bold text-base px-6 py-3.5 rounded-xl transition-all duration-300 w-full hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
+                  <a href={amazonLink(pick)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block text-white font-bold text-base px-6 py-3.5 rounded-xl transition-all duration-300 w-full hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
                     Check Price on Amazon &rarr;
                   </a>
                 </div>
@@ -219,7 +224,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     </li>
                   ))}
                 </ul>
-                <a href={amazonLink(pick.asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block w-full sm:w-auto text-white font-bold text-base px-8 py-3.5 rounded-xl transition-all duration-300 text-center hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
+                <a href={amazonLink(pick)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block w-full sm:w-auto text-white font-bold text-base px-8 py-3.5 rounded-xl transition-all duration-300 text-center hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
                   Check Price on Amazon &rarr;
                 </a>
               </div>
@@ -372,7 +377,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           <p className="text-xs text-[#1A1A1A]/40 truncate">Our #1 Pick</p>
           <p className="text-sm font-bold text-[#1A1A1A] truncate">{cat.picks[0].name}</p>
         </div>
-        <a href={amazonLink(cat.picks[0].asin)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#D35400] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
+        <a href={amazonLink(cat.picks[0])} target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#D35400] hover:bg-[#b5623f] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition whitespace-nowrap flex-shrink-0">
           Check Price
         </a>
       </div>
