@@ -122,7 +122,8 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
 
         <h1 className="text-[28px] md:text-[44px] font-extrabold text-[#2D2006] mb-4 leading-tight">{cat.title}</h1>
         <p className="text-[#8B7355] text-lg mb-3 max-w-2xl">{cat.description}</p>
-        <p className="text-xs text-[#1A1A1A]/30 font-medium uppercase tracking-wider mb-4">Last Updated: April 2026</p>
+        <p className="text-xs text-[#1A1A1A]/30 font-medium uppercase tracking-wider mb-2">Last Updated: April 2026</p>
+        <p className="text-xs text-[#1A1A1A]/40 mb-4 italic">Prices accurate as of April 2026. Subject to change — always verify on Amazon before purchase.</p>
 
         {/* Trust Badge */}
         <div className="inline-flex items-center gap-2 bg-[#F39C12]/10 border border-[#F39C12]/20 rounded-full px-4 py-2 mb-6">
@@ -163,6 +164,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Rank</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Product</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Best For</th>
+                <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Price</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium">Rating</th>
                 <th className="text-left py-3 px-4 text-[#1A1A1A]/40 font-medium"></th>
               </tr>
@@ -173,6 +175,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   <td className="py-4 px-4 font-bold text-[#D35400]">#{i + 1}</td>
                   <td className="py-4 px-4 font-semibold text-[#1A1A1A]">{pick.name}</td>
                   <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge || "—"}</td>
+                  <td className="py-4 px-4 font-semibold text-[#2D6A4F] whitespace-nowrap">{pick.price || "—"}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
                     <a href={amazonLink(pick)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">&#9733; Our Pick &mdash; View on Amazon</a>
@@ -192,6 +195,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 <div className="p-6 text-center">
                   {pick.badge && <span className="inline-block text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>}
                   <h3 className="font-bold text-[#2D2006] text-xl mb-2">{pick.name}</h3>
+                  {pick.price && <p className="font-extrabold text-[#2D6A4F] text-2xl mb-2">{pick.price}</p>}
                   <div className="flex items-center justify-center gap-2 mb-1">
                     <StarRating rating={pick.rating} size="lg" />
                     <span className="text-[#2D2006] text-lg font-extrabold">{pick.rating}</span>
@@ -226,6 +230,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                       <StarRating rating={pick.rating} />
                       <span className="text-[#8B7355] text-sm">({pick.reviewCount} reviews)</span>
                       {pick.prime && <PrimeBadge />}
+                      {pick.price && <span className="font-extrabold text-[#2D6A4F] text-lg">{pick.price}</span>}
                     </div>
                   </div>
                   {pick.badge && <span className="text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full">{pick.badge}</span>}
@@ -246,6 +251,27 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             </div>
           ))}
         </section>
+
+        {/* Best For These Breeds */}
+        {cat.recommendedBreeds && cat.recommendedBreeds.length > 0 && (() => {
+          const breedNames: Record<string, string> = {
+            "golden-retriever":"Golden Retriever","labrador-retriever":"Labrador","french-bulldog":"French Bulldog","german-shepherd":"German Shepherd","poodle":"Poodle","bulldog":"Bulldog","beagle":"Beagle","rottweiler":"Rottweiler","dachshund":"Dachshund","german-shorthaired-pointer":"GSP","pembroke-welsh-corgi":"Corgi","australian-shepherd":"Aussie","yorkshire-terrier":"Yorkie","cavalier-king-charles-spaniel":"Cavalier","doberman-pinscher":"Doberman","boxer":"Boxer","miniature-schnauzer":"Mini Schnauzer","cane-corso":"Cane Corso","great-dane":"Great Dane","shih-tzu":"Shih Tzu","siberian-husky":"Husky","bernese-mountain-dog":"Bernese","pomeranian":"Pomeranian","boston-terrier":"Boston Terrier","havanese":"Havanese","english-springer-spaniel":"Springer","shetland-sheepdog":"Sheltie","brittany":"Brittany","cocker-spaniel":"Cocker","border-collie":"Border Collie","vizsla":"Vizsla","goldendoodle":"Goldendoodle","labradoodle":"Labradoodle","maltese":"Maltese","chihuahua":"Chihuahua","pug":"Pug","weimaraner":"Weimaraner","rhodesian-ridgeback":"Ridgeback","belgian-malinois":"Belgian Malinois","newfoundland":"Newfoundland","west-highland-white-terrier":"Westie","bichon-frise":"Bichon","akita":"Akita","basset-hound":"Basset","irish-setter":"Irish Setter","dalmatian":"Dalmatian","pit-bull-terrier":"Pit Bull","australian-cattle-dog":"Blue Heeler","samoyed":"Samoyed","alaskan-malamute":"Malamute",
+          };
+          return (
+            <section className="mb-16 bg-white rounded-2xl p-6 md:p-8 border border-[#F0EEEB]" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+              <h2 className="text-xl md:text-2xl font-extrabold text-[#2D2006] mb-2">Best For These Breeds</h2>
+              <p className="text-[#8B7355] text-sm mb-5">Breed-specific guides with matching product recommendations.</p>
+              <div className="flex flex-wrap gap-2">
+                {cat.recommendedBreeds.map((slug) => (
+                  <Link key={slug} href={`/breeds/${slug}`} className="inline-flex items-center gap-1 bg-[#D35400]/5 hover:bg-[#D35400]/15 text-[#D35400] text-sm font-semibold px-4 py-2 rounded-full transition-all">
+                    {breedNames[slug] || slug}
+                    <span className="text-xs">&rarr;</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
 
         {/* How We Choose */}
         <section className="mb-16">
