@@ -142,17 +142,29 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         </div>
 
         {/* Buying Guide */}
-        {cat.buyingGuide && cat.buyingGuide.length > 0 && (
+        {(cat.intro || (cat.buyingGuide && cat.buyingGuide.length > 0)) && (
           <section className="mb-12 bg-white rounded-2xl p-6 md:p-8 border border-[#F0EEEB]" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-            <h2 className="text-xl md:text-2xl font-extrabold text-[#2D2006] mb-4">What to Look for in a {cat.title.replace(/^Best\s|\s\(\d+\)$/g, "").replace(/s$/, "")}</h2>
-            <dl className="space-y-3">
-              {cat.buyingGuide.map((g, i) => (
-                <div key={i} className="flex gap-3">
-                  <dt className="font-bold text-[#D35400] text-sm min-w-[110px] flex-shrink-0">{g.title}:</dt>
-                  <dd className="text-[#8B7355] text-sm leading-relaxed">{g.detail}</dd>
-                </div>
-              ))}
-            </dl>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#2D2006] mb-4">How to Choose {cat.title.replace(/^Best\s/, "the Right ").replace(/\s\(\d+\)$/, "")}</h2>
+            {cat.intro && (
+              <div className="text-[#8B7355] leading-relaxed space-y-3 mb-6">
+                {cat.intro.split(/\n\n+/).map((para, i) => (
+                  <p key={i}>{para.trim()}</p>
+                ))}
+              </div>
+            )}
+            {cat.buyingGuide && cat.buyingGuide.length > 0 && (
+              <>
+                <h3 className="text-base font-bold text-[#2D2006] mb-3 uppercase tracking-wide">Quick Checklist</h3>
+                <dl className="space-y-3">
+                  {cat.buyingGuide.map((g, i) => (
+                    <div key={i} className="flex gap-3">
+                      <dt className="font-bold text-[#D35400] text-sm min-w-[110px] flex-shrink-0">{g.title}:</dt>
+                      <dd className="text-[#8B7355] text-sm leading-relaxed">{g.detail}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </>
+            )}
           </section>
         )}
 
@@ -202,6 +214,12 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                   </div>
                   <p className="text-[#8B7355] text-xs mb-3">{pick.reviewCount} verified reviews</p>
                   {pick.prime && <div className="mb-3"><PrimeBadge /></div>}
+                  {pick.whyWePicked && (
+                    <div className="text-left bg-[#F39C12]/5 border-l-2 border-[#D35400] px-3 py-2 mb-3 rounded-r">
+                      <p className="text-[10px] font-bold tracking-widest uppercase text-[#D35400] mb-1">Why we picked this</p>
+                      <p className="text-[#8B7355] text-xs leading-relaxed">{pick.whyWePicked}</p>
+                    </div>
+                  )}
                   <a href={amazonLink(pick)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="inline-block text-white font-bold text-base px-6 py-3.5 rounded-xl transition-all duration-300 w-full hover:shadow-lg hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 4px 16px rgba(211,84,0,0.25)' }}>
                     Check Price on Amazon &rarr;
                   </a>
