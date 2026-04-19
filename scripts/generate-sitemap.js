@@ -52,7 +52,7 @@ function main() {
   for (const route of staticRoutes) {
     // Home priority handled above; lower priority for privacy/terms/disclosure
     const low = ["/privacy", "/terms", "/disclosure"].includes(route);
-    const hub = ["/blog", "/breeds", "/best", "/collections", "/gifts", "/quiz", "/about"].includes(route);
+    const hub = ["/blog", "/breeds", "/best", "/collections", "/gifts", "/quiz", "/about", "/compare"].includes(route);
     const priority = low ? "0.3" : hub ? "0.8" : "0.7";
     urls.push(urlEntry(`${BASE}${route}`, priority, "weekly"));
   }
@@ -69,6 +69,9 @@ function main() {
 
   const productCategorySlugs = extractSlugs("products.ts", "productCategories");
   for (const slug of productCategorySlugs) urls.push(urlEntry(`${BASE}/best/${slug}`, "0.8", "weekly"));
+
+  const comparisonSlugs = extractSlugs("comparisons.ts", "comparisons");
+  for (const slug of comparisonSlugs) urls.push(urlEntry(`${BASE}/compare/${slug}`, "0.8", "monthly"));
 
   // Dedup (some static-file routes overlap dynamic-param routes, e.g. /breeds/bulldog)
   const seen = new Set();

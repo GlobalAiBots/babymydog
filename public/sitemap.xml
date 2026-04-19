@@ -65,6 +65,7 @@
   <url><loc>https://babymydog.com/collections/road-trip</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://babymydog.com/collections/senior-dog</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://babymydog.com/collections/summer-essentials</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://babymydog.com/compare</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://babymydog.com/disclosure</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
   <url><loc>https://babymydog.com/gifts</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://babymydog.com/privacy</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
@@ -149,4 +150,9 @@
   <url><loc>https://babymydog.com/best/dog-anxiety</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://babymydog.com/best/dog-car-seats</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://babymydog.com/best/dog-puzzle-toys</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babymydog.com/compare/kong-classic-vs-extreme</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babymydog.com/compare/blue-buffalo-vs-purina-pro-plan</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babymydog.com/compare/orthopedic-vs-standard-bed</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babymydog.com/compare/harness-vs-collar</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babymydog.com/compare/raw-vs-kibble</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
