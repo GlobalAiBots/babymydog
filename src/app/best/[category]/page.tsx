@@ -140,6 +140,21 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           </div>
         </div>
 
+        {/* Buying Guide */}
+        {cat.buyingGuide && cat.buyingGuide.length > 0 && (
+          <section className="mb-12 bg-white rounded-2xl p-6 md:p-8 border border-[#F0EEEB]" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#2D2006] mb-4">What to Look for in a {cat.title.replace(/^Best\s|\s\(\d+\)$/g, "").replace(/s$/, "")}</h2>
+            <dl className="space-y-3">
+              {cat.buyingGuide.map((g, i) => (
+                <div key={i} className="flex gap-3">
+                  <dt className="font-bold text-[#D35400] text-sm min-w-[110px] flex-shrink-0">{g.title}:</dt>
+                  <dd className="text-[#8B7355] text-sm leading-relaxed">{g.detail}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
+
         {/* Comparison Table */}
         <div className="overflow-x-auto mb-12">
           <table className="w-full text-sm">
@@ -157,7 +172,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 <tr key={i} className={`border-b border-[#F0EEEB] ${i === 0 ? 'bg-[#D35400]/5' : ''}`}>
                   <td className="py-4 px-4 font-bold text-[#D35400]">#{i + 1}</td>
                   <td className="py-4 px-4 font-semibold text-[#1A1A1A]">{pick.name}</td>
-                  <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge}</td>
+                  <td className="py-4 px-4 text-[#1A1A1A]/60">{pick.badge || "—"}</td>
                   <td className="py-4 px-4"><StarRating rating={pick.rating} /></td>
                   <td className="py-4 px-4">
                     <a href={amazonLink(pick)} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#D35400] text-xs font-semibold hover:underline whitespace-nowrap">&#9733; Our Pick &mdash; View on Amazon</a>
@@ -175,7 +190,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             {cat.picks.slice(0, 3).map((pick, i) => (
               <div key={i} className="bg-white rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
                 <div className="p-6 text-center">
-                  <span className="inline-block text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>
+                  {pick.badge && <span className="inline-block text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full mb-3">{pick.badge}</span>}
                   <h3 className="font-bold text-[#2D2006] text-xl mb-2">{pick.name}</h3>
                   <div className="flex items-center justify-center gap-2 mb-1">
                     <StarRating rating={pick.rating} size="lg" />
@@ -213,7 +228,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                       {pick.prime && <PrimeBadge />}
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full">{pick.badge}</span>
+                  {pick.badge && <span className="text-xs font-bold text-[#D35400] bg-[#D35400]/10 px-3 py-1 rounded-full">{pick.badge}</span>}
                 </div>
                 <p className="text-[#8B7355] leading-relaxed mb-5 mt-4">{pick.description}</p>
                 <ul className="space-y-2 mb-6">
