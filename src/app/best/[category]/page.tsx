@@ -291,6 +291,31 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
           );
         })()}
 
+        {/* Related Comparisons */}
+        {cat.relatedComparisons && cat.relatedComparisons.length > 0 && (() => {
+          const compTitles: Record<string, string> = {
+            "kong-classic-vs-extreme": "KONG Classic vs KONG Extreme",
+            "blue-buffalo-vs-purina-pro-plan": "Blue Buffalo vs Purina Pro Plan",
+            "orthopedic-vs-standard-bed": "Orthopedic vs Standard Dog Beds",
+            "harness-vs-collar": "Dog Harness vs Collar",
+            "raw-vs-kibble": "Raw Diet vs Kibble",
+          };
+          return (
+            <section className="mb-16 bg-white rounded-2xl p-6 md:p-8 border border-[#F0EEEB]" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+              <h2 className="text-xl md:text-2xl font-extrabold text-[#2D2006] mb-2">Still Deciding?</h2>
+              <p className="text-[#8B7355] text-sm mb-5">Head-to-head comparisons with clear verdicts.</p>
+              <div className="flex flex-wrap gap-2">
+                {cat.relatedComparisons.map((slug) => (
+                  <Link key={slug} href={`/compare/${slug}`} className="inline-flex items-center gap-1 bg-[#5B7B5E]/10 hover:bg-[#5B7B5E]/20 text-[#5B7B5E] text-sm font-semibold px-4 py-2 rounded-full transition">
+                    {compTitles[slug] || slug}
+                    <span className="text-xs">&rarr;</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
+
         {/* How We Choose */}
         <section className="mb-16">
           <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#2D2006] mb-8 text-center">How We Choose</h2>
