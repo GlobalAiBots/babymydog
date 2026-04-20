@@ -2,6 +2,10 @@ import Link from "next/link";
 import BrandName from "@/components/BrandName";
 import { breeds } from "@/data/breeds";
 import { blogPosts } from "@/data/blog-posts";
+import { productCategories } from "@/data/products";
+
+const totalProducts = productCategories.reduce((sum, c) => sum + (c.picks?.length || 0), 0);
+const totalCategories = productCategories.length;
 
 /* eslint-disable @next/next/no-img-element */
 
@@ -44,7 +48,7 @@ export default function Home() {
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "WebSite", "name": "BabyMyDog", "url": "https://www.babymydog.com",
-        "description": "Premium products and care guides for dog lovers. 50 breed guides, 27 product categories, expert reviews.",
+        "description": `Premium products and care guides for dog lovers. ${breeds.length} breed guides, ${totalCategories} product categories, expert reviews.`,
         "potentialAction": { "@type": "SearchAction", "target": "https://www.babymydog.com/breeds?q={search_term_string}", "query-input": "required name=search_term_string" },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -75,7 +79,7 @@ export default function Home() {
 
       {/* SOCIAL PROOF */}
       <section className="py-3 text-center" style={{ background: '#FFF8F0' }}>
-        <p className="text-[#D35400] font-bold text-sm tracking-wide">&#11088;&#11088;&#11088;&#11088;&#11088; 260+ Products Reviewed by Dog Owners Like You</p>
+        <p className="text-[#D35400] font-bold text-sm tracking-wide">&#11088;&#11088;&#11088;&#11088;&#11088; {totalProducts}+ Products Reviewed by Dog Owners Like You</p>
       </section>
 
       {/* TRUST BAR */}
@@ -83,9 +87,9 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
             {[
-              { num: "260+", label: "Products Reviewed" },
+              { num: `${totalProducts}+`, label: "Products Reviewed" },
               { num: String(breeds.length), label: "Breed Guides" },
-              { num: "20", label: "Categories Covered" },
+              { num: String(totalCategories), label: "Categories Covered" },
               { num: "45+", label: "Expert Reviews" },
               { num: "🇺🇸", label: "Veteran Owned" },
             ].map((s) => (
