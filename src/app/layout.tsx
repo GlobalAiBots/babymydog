@@ -83,6 +83,7 @@ function Footer() {
               <Link href="/about" className="hover:text-white transition">About</Link>
               <Link href="/breeds" className="hover:text-white transition">Breed Guides</Link>
               <Link href="/blog" className="hover:text-white transition">Blog</Link>
+              <Link href="/advertise" className="hover:text-white transition">Advertise With Us</Link>
               <Link href="/privacy" className="hover:text-white transition">Privacy</Link>
               <Link href="/terms" className="hover:text-white transition">Terms</Link>
               <Link href="/disclosure" className="hover:text-white transition">Affiliate Disclosure</Link>
