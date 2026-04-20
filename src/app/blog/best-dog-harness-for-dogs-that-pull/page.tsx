@@ -6,20 +6,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Harness for Dogs That Pull: No-Pull Picks for 2026 | BabyMyDog",
   description: "Stop the pulling without harsh corrections. Our top no-pull harness picks and training tips for every size dog.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-harness-for-dogs-that-pull" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-harness-for-dogs-that-pull" },
   openGraph: {
     title: "Best Dog Harness for Dogs That Pull: No-Pull Picks for 2026",
     description: "Stop the pulling without harsh corrections. Our top no-pull harness picks and training tips for every size dog.",
-    url: "https://babymydog.com/blog/best-dog-harness-for-dogs-that-pull",
+    url: "https://www.babymydog.com/blog/best-dog-harness-for-dogs-that-pull",
     siteName: "BabyMyDog",
     type: "article",
-    images: [{ url: "https://babymydog.com/images/goldendoodle-wearing-red-harness-and-leash.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://www.babymydog.com/images/goldendoodle-wearing-red-harness-and-leash.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Dog Harness for Dogs That Pull: No-Pull Picks for 2026",
     description: "Stop the pulling without harsh corrections. Our top no-pull harness picks and training tips for every size dog.",
-    images: ["https://babymydog.com/images/goldendoodle-wearing-red-harness-and-leash.jpg"],
+    images: ["https://www.babymydog.com/images/goldendoodle-wearing-red-harness-and-leash.jpg"],
   },
 };
 
@@ -28,12 +28,12 @@ const jsonLd = {
   "@type": "Article",
   headline: "Best Dog Harness for Dogs That Pull: No-Pull Picks for 2026",
   description: "Stop the pulling without harsh corrections. Our top no-pull harness picks and training tips for every size dog.",
-  image: "https://babymydog.com/images/goldendoodle-wearing-red-harness-and-leash.jpg",
+  image: "https://www.babymydog.com/images/goldendoodle-wearing-red-harness-and-leash.jpg",
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog Team" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: "https://babymydog.com/blog/best-dog-harness-for-dogs-that-pull",
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: "https://www.babymydog.com/blog/best-dog-harness-for-dogs-that-pull",
 };
 
 export default function BestDogHarnessForDogsThatPull() {
@@ -43,9 +43,9 @@ export default function BestDogHarnessForDogsThatPull() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "best dog harness for dogs that pull", "item": "https://babymydog.com/blog/best-dog-harness-for-dogs-that-pull" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "best dog harness for dogs that pull", "item": "https://www.babymydog.com/blog/best-dog-harness-for-dogs-that-pull" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

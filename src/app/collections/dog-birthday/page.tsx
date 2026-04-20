@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Throw your pup the ultimate birthday bash with dog-safe cake mixes, birthday toys, special treats, and party supplies. Everything you need for a tail-wagging celebration.",
   alternates: {
-    canonical: "https://babymydog.com/collections/dog-birthday",
+    canonical: "https://www.babymydog.com/collections/dog-birthday",
   },
 };
 
@@ -147,19 +147,19 @@ export default function DogBirthdayPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://babymydog.com",
+        item: "https://www.babymydog.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: "https://babymydog.com/collections",
+        item: "https://www.babymydog.com/collections",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Dog Birthday Party",
-        item: "https://babymydog.com/collections/dog-birthday",
+        item: "https://www.babymydog.com/collections/dog-birthday",
       },
     ],
   };

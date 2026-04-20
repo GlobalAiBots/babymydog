@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Do Dog Joint Supplements Actually Work? What Vets Say in 2026 | BabyMyDog",
   description: "The science behind glucosamine, chondroitin, and MSM for dogs — and which supplements vets actually recommend.",
-  alternates: { canonical: "https://babymydog.com/blog/dog-joint-supplements-do-they-work" },
+  alternates: { canonical: "https://www.babymydog.com/blog/dog-joint-supplements-do-they-work" },
   openGraph: {
     title: "Do Dog Joint Supplements Actually Work? What Vets Say in 2026",
     description: "The science behind glucosamine, chondroitin, and MSM for dogs — and which supplements vets actually recommend.",
-    url: "https://babymydog.com/blog/dog-joint-supplements-do-they-work",
+    url: "https://www.babymydog.com/blog/dog-joint-supplements-do-they-work",
     type: "article",
   },
   twitter: {
@@ -28,8 +28,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/dog-joint-supplements-do-they-work" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/dog-joint-supplements-do-they-work" },
 };
 
 export default function DogJointSupplements() {
@@ -39,9 +39,9 @@ export default function DogJointSupplements() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Do Dog Joint Supplements Actually Work?", "item": "https://babymydog.com/blog/dog-joint-supplements-do-they-work" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Do Dog Joint Supplements Actually Work?", "item": "https://www.babymydog.com/blog/dog-joint-supplements-do-they-work" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

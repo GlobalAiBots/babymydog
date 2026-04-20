@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Sensitive Stomachs: Vet-Approved Picks for 2026 | BabyMyDog",
   description: "If your dog has digestive issues, the right food makes all the difference. Vet-approved picks for sensitive tummies.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-sensitive-stomach" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-sensitive-stomach" },
   openGraph: {
     title: "Best Dog Food for Sensitive Stomachs: Vet-Approved Picks for 2026",
     description: "If your dog has digestive issues, the right food makes all the difference. Vet-approved picks for sensitive tummies.",
-    url: "https://babymydog.com/blog/best-dog-food-for-sensitive-stomach",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-sensitive-stomach",
     type: "article",
   },
   twitter: {
@@ -28,8 +28,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-sensitive-stomach" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-sensitive-stomach" },
 };
 
 export default function BestDogFoodSensitiveStomach() {
@@ -39,9 +39,9 @@ export default function BestDogFoodSensitiveStomach() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Sensitive Stomachs", "item": "https://babymydog.com/blog/best-dog-food-for-sensitive-stomach" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Sensitive Stomachs", "item": "https://www.babymydog.com/blog/best-dog-food-for-sensitive-stomach" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

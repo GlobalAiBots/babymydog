@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Toys for Labrador Retrievers in 2026: Lab-Proof Picks | BabyMyDog",
   description: "Labs destroy most toys in minutes. These actually survive \u2014 our top picks for fetch, water play, enrichment, and heavy chewing.",
-  alternates: { canonical: "https://babymydog.com/blog/best-toys-for-labrador-retriever" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-toys-for-labrador-retriever" },
   openGraph: {
     title: "Best Toys for Labrador Retrievers in 2026: Lab-Proof Picks",
     description: "Labs destroy most toys in minutes. These actually survive \u2014 our top picks for fetch, water play, enrichment, and heavy chewing.",
-    url: "https://babymydog.com/blog/best-toys-for-labrador-retriever",
+    url: "https://www.babymydog.com/blog/best-toys-for-labrador-retriever",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Labs destroy most toys in minutes. These actually survive \u2014 our top picks for fetch, water play, enrichment, and heavy chewing.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-toys-for-labrador-retriever" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-toys-for-labrador-retriever" },
 };
 
 export default function BestToysForLabradorRetriever() {
@@ -30,9 +30,9 @@ export default function BestToysForLabradorRetriever() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Toys for Labrador Retrievers", "item": "https://babymydog.com/blog/best-toys-for-labrador-retriever" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Toys for Labrador Retrievers", "item": "https://www.babymydog.com/blog/best-toys-for-labrador-retriever" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

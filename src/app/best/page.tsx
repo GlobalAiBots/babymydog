@@ -61,8 +61,8 @@ const filterGroups = [
 ];
 
 const curatedPages = [
-  { slug: "toys-for-chewers", title: "Chew Toys for Destroyers", desc: "For dogs that demolish everything" },
-  { slug: "fetch-toys", title: "Fetch Toys for Active Dogs", desc: "Balls, frisbees, and launchers" },
+  { slug: "toys-for-heavy-chewers", title: "Chew Toys for Destroyers", desc: "For dogs that demolish everything" },
+  { slug: "toys-for-fetch", title: "Fetch Toys for Active Dogs", desc: "Balls, frisbees, and launchers" },
   { slug: "puppy-essentials", title: "Puppy Starter Kit", desc: "Everything for a new puppy" },
   { slug: "senior-dog-products", title: "Senior Dog Comfort", desc: "Beds, ramps, and joint care" },
   { slug: "large-dog-products", title: "Large & Giant Breeds", desc: "XL beds, crates, and gear" },

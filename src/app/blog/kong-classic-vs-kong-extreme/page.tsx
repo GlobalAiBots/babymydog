@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "KONG Classic vs KONG Extreme: Which Is Right for Your Dog? | BabyMyDog",
   description: "A detailed comparison of the KONG Classic (red) and KONG Extreme (black) dog toys. Learn which rubber hardness, size, and durability level matches your dog.",
-  alternates: { canonical: "https://babymydog.com/blog/kong-classic-vs-kong-extreme" },
+  alternates: { canonical: "https://www.babymydog.com/blog/kong-classic-vs-kong-extreme" },
   openGraph: {
     title: "KONG Classic vs KONG Extreme: Which Is Right for Your Dog?",
     description: "A detailed comparison of the KONG Classic (red) and KONG Extreme (black) dog toys. Learn which rubber hardness, size, and durability level matches your dog.",
-    url: "https://babymydog.com/blog/kong-classic-vs-kong-extreme",
+    url: "https://www.babymydog.com/blog/kong-classic-vs-kong-extreme",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "A detailed comparison of the KONG Classic (red) and KONG Extreme (black) dog toys. Learn which rubber hardness, size, and durability level matches your dog.",
   datePublished: "2026-04-10", dateModified: "2026-04-10",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/kong-classic-vs-kong-extreme" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/kong-classic-vs-kong-extreme" },
 };
 
 export default function KongClassicVsExtreme() {
@@ -30,9 +30,9 @@ export default function KongClassicVsExtreme() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "KONG Classic vs KONG Extreme", "item": "https://babymydog.com/blog/kong-classic-vs-kong-extreme" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "KONG Classic vs KONG Extreme", "item": "https://www.babymydog.com/blog/kong-classic-vs-kong-extreme" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

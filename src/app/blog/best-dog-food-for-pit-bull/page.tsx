@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Pit Bulls in 2026: High Protein, Healthy Skin | BabyMyDog",
   description: "Pit bulls need high-protein food for muscle mass and skin-friendly formulas for their allergy-prone coats. Our top 5 picks for every budget.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-pit-bull" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-pit-bull" },
   openGraph: {
     title: "Best Dog Food for Pit Bulls in 2026: High Protein, Healthy Skin",
     description: "Pit bulls need high-protein food for muscle mass and skin-friendly formulas for their allergy-prone coats. Our top 5 picks for every budget.",
-    url: "https://babymydog.com/blog/best-dog-food-for-pit-bull",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-pit-bull",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Pit bulls need high-protein food for muscle mass and skin-friendly formulas for their allergy-prone coats. Our top 5 picks for every budget.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-pit-bull" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-pit-bull" },
 };
 
 export default function BestDogFoodForPitBull() {
@@ -30,9 +30,9 @@ export default function BestDogFoodForPitBull() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Pit Bulls", "item": "https://babymydog.com/blog/best-dog-food-for-pit-bull" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Pit Bulls", "item": "https://www.babymydog.com/blog/best-dog-food-for-pit-bull" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

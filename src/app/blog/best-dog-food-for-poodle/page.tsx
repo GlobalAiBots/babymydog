@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Poodles in 2026: Standard, Miniature & Toy | BabyMyDog",
   description: "Poodles need food that fuels their active minds and nourishes their curly coats. Our top picks for standard, miniature, and toy poodles.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-poodle" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-poodle" },
   openGraph: {
     title: "Best Dog Food for Poodles in 2026: Standard, Miniature & Toy",
     description: "Poodles need food that fuels their active minds and nourishes their curly coats. Our top picks for standard, miniature, and toy poodles.",
-    url: "https://babymydog.com/blog/best-dog-food-for-poodle",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-poodle",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Poodles need food that fuels their active minds and nourishes their curly coats. Our top picks for standard, miniature, and toy poodles.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-poodle" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-poodle" },
 };
 
 export default function BestDogFoodForPoodle() {
@@ -30,9 +30,9 @@ export default function BestDogFoodForPoodle() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Poodles", "item": "https://babymydog.com/blog/best-dog-food-for-poodle" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Poodles", "item": "https://www.babymydog.com/blog/best-dog-food-for-poodle" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

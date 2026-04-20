@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blue Buffalo vs Purina Pro Plan: Honest Comparison | BabyMyDog",
   description: "An in-depth comparison of Blue Buffalo and Purina Pro Plan dog food covering ingredients, protein sources, price, recall history, and breed-specific options.",
-  alternates: { canonical: "https://babymydog.com/blog/blue-buffalo-vs-purina-pro-plan" },
+  alternates: { canonical: "https://www.babymydog.com/blog/blue-buffalo-vs-purina-pro-plan" },
   openGraph: {
     title: "Blue Buffalo vs Purina Pro Plan: Honest Comparison",
     description: "An in-depth comparison of Blue Buffalo and Purina Pro Plan dog food covering ingredients, protein sources, price, recall history, and breed-specific options.",
-    url: "https://babymydog.com/blog/blue-buffalo-vs-purina-pro-plan",
+    url: "https://www.babymydog.com/blog/blue-buffalo-vs-purina-pro-plan",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "An in-depth comparison of Blue Buffalo and Purina Pro Plan dog food covering ingredients, protein sources, price, recall history, and breed-specific options.",
   datePublished: "2026-04-10", dateModified: "2026-04-10",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/blue-buffalo-vs-purina-pro-plan" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/blue-buffalo-vs-purina-pro-plan" },
 };
 
 export default function BlueBuffaloVsPurina() {
@@ -30,9 +30,9 @@ export default function BlueBuffaloVsPurina() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Blue Buffalo vs Purina Pro Plan", "item": "https://babymydog.com/blog/blue-buffalo-vs-purina-pro-plan" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Blue Buffalo vs Purina Pro Plan", "item": "https://www.babymydog.com/blog/blue-buffalo-vs-purina-pro-plan" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

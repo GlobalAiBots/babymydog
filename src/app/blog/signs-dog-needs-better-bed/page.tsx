@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "10 Signs Your Dog Needs a Better Bed | BabyMyDog", alternates: { canonical: "https://babymydog.com/blog/signs-dog-needs-better-bed" } };
+export const metadata: Metadata = { title: "10 Signs Your Dog Needs a Better Bed | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/blog/signs-dog-needs-better-bed" } };
 export default function Post() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-12">
@@ -12,9 +12,9 @@ export default function Post() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "signs dog needs better bed", "item": "https://babymydog.com/blog/signs-dog-needs-better-bed" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "signs dog needs better bed", "item": "https://www.babymydog.com/blog/signs-dog-needs-better-bed" },
         ],
       }) }} />
       <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed space-y-6">

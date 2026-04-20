@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Keep your dog safe and cool this summer with our vet-approved picks for cooling mats, portable water bottles, paw protection boots, and more. Shop the best summer dog gear of 2026.",
   alternates: {
-    canonical: "https://babymydog.com/collections/summer-essentials",
+    canonical: "https://www.babymydog.com/collections/summer-essentials",
   },
 };
 
@@ -162,19 +162,19 @@ export default function SummerEssentialsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://babymydog.com",
+        item: "https://www.babymydog.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: "https://babymydog.com/collections",
+        item: "https://www.babymydog.com/collections",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Summer Essentials",
-        item: "https://babymydog.com/collections/summer-essentials",
+        item: "https://www.babymydog.com/collections/summer-essentials",
       },
     ],
   };

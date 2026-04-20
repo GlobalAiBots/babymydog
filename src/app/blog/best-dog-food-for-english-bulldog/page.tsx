@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for English Bulldogs in 2026: A Breeder\u2019s Guide | BabyMyDog",
   description: "Expert picks for English Bulldog food — sensitive stomach formulas, proper kibble size, weight management, and the brands we trust after 20+ years of breeding.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-english-bulldog" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-english-bulldog" },
   openGraph: {
     title: "Best Dog Food for English Bulldogs in 2026: A Breeder\u2019s Guide",
     description: "Expert picks for English Bulldog food — sensitive stomach formulas, proper kibble size, weight management, and the brands we trust after 20+ years of breeding.",
-    url: "https://babymydog.com/blog/best-dog-food-for-english-bulldog",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-english-bulldog",
     type: "article",
   },
 };
@@ -21,8 +21,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-english-bulldog" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-english-bulldog" },
 };
 
 export default function BestDogFoodEnglishBulldog() {
@@ -32,9 +32,9 @@ export default function BestDogFoodEnglishBulldog() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for English Bulldogs", "item": "https://babymydog.com/blog/best-dog-food-for-english-bulldog" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for English Bulldogs", "item": "https://www.babymydog.com/blog/best-dog-food-for-english-bulldog" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

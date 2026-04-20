@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Help your aging dog live comfortably with orthopedic beds, joint supplements, ramps, and senior-specific nutrition. Vet-recommended products for senior dogs in 2026.",
   alternates: {
-    canonical: "https://babymydog.com/collections/senior-dog",
+    canonical: "https://www.babymydog.com/collections/senior-dog",
   },
 };
 
@@ -162,19 +162,19 @@ export default function SeniorDogPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://babymydog.com",
+        item: "https://www.babymydog.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: "https://babymydog.com/collections",
+        item: "https://www.babymydog.com/collections",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Senior Dog Comfort",
-        item: "https://babymydog.com/collections/senior-dog",
+        item: "https://www.babymydog.com/collections/senior-dog",
       },
     ],
   };

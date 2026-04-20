@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Harness for Dachshunds in 2026: Protect Their Spine | BabyMyDog",
   description: "Why dachshunds should always wear a harness, not a collar. Our top picks for IVDD prevention, long-body fit, and everyday comfort.",
-  alternates: { canonical: "https://babymydog.com/blog/best-harness-for-dachshund" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-harness-for-dachshund" },
   openGraph: {
     title: "Best Harness for Dachshunds in 2026: Protect Their Spine",
     description: "Why dachshunds should always wear a harness, not a collar. Our top picks for IVDD prevention, long-body fit, and everyday comfort.",
-    url: "https://babymydog.com/blog/best-harness-for-dachshund",
+    url: "https://www.babymydog.com/blog/best-harness-for-dachshund",
     type: "article",
   },
 };
@@ -21,8 +21,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-harness-for-dachshund" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-harness-for-dachshund" },
 };
 
 export default function BestHarnessForDachshund() {
@@ -32,9 +32,9 @@ export default function BestHarnessForDachshund() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Harness for Dachshunds", "item": "https://babymydog.com/blog/best-harness-for-dachshund" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Harness for Dachshunds", "item": "https://www.babymydog.com/blog/best-harness-for-dachshund" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

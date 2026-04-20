@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Curated Collections — Themed Product Picks for Dogs | BabyMyDog",
   description: "Shop curated product collections for every occasion: summer essentials, new puppy kits, senior dog comfort, birthday parties, and road trip gear.",
-  alternates: { canonical: "https://babymydog.com/collections" },
+  alternates: { canonical: "https://www.babymydog.com/collections" },
 };
 
 const collections = [
@@ -21,8 +21,8 @@ export default function CollectionsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://babymydog.com" },
-          { "@type": "ListItem", position: 2, name: "Collections", item: "https://babymydog.com/collections" },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.babymydog.com" },
+          { "@type": "ListItem", position: 2, name: "Collections", item: "https://www.babymydog.com/collections" },
         ],
       }) }} />
       <div className="max-w-[1200px] mx-auto px-6 py-20">

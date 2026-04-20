@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import BrandName from "@/components/BrandName";
-export const metadata: Metadata = { title: "Affiliate Disclosure | BabyMyDog", alternates: { canonical: "https://babymydog.com/disclosure" } };
+export const metadata: Metadata = { title: "Affiliate Disclosure | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/disclosure" } };
 export default function DisclosurePage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">

@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Crate Train a Puppy: Step-by-Step Schedule | BabyMyDog",
   description: "A breeder\u2019s step-by-step crate training schedule from day one through week four. Learn the right way to crate train without stress or setbacks.",
-  alternates: { canonical: "https://babymydog.com/blog/how-to-crate-train-puppy" },
-  openGraph: { title: "How to Crate Train a Puppy: Step-by-Step Schedule", description: "A breeder\u2019s step-by-step crate training schedule from day one through week four. Learn the right way to crate train without stress or setbacks.", url: "https://babymydog.com/blog/how-to-crate-train-puppy", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-to-crate-train-puppy" },
+  openGraph: { title: "How to Crate Train a Puppy: Step-by-Step Schedule", description: "A breeder\u2019s step-by-step crate training schedule from day one through week four. Learn the right way to crate train without stress or setbacks.", url: "https://www.babymydog.com/blog/how-to-crate-train-puppy", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How to Crate Train a Puppy: Step-by-Step Schedule", description: "A breeder\u2019s step-by-step crate training schedule from day one through week four. Learn the right way to crate train without stress or setbacks.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/how-to-crate-train-puppy" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How to Crate Train a Puppy: Step-by-Step Schedule", description: "A breeder\u2019s step-by-step crate training schedule from day one through week four. Learn the right way to crate train without stress or setbacks.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/how-to-crate-train-puppy" } };
 
 export default function HowToCrateTrainPuppy() {
   return (
@@ -17,9 +17,9 @@ export default function HowToCrateTrainPuppy() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "How to Crate Train a Puppy", "item": "https://babymydog.com/blog/how-to-crate-train-puppy" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How to Crate Train a Puppy", "item": "https://www.babymydog.com/blog/how-to-crate-train-puppy" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

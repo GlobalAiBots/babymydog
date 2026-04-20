@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Yorkshire Terriers in 2026: Tiny Dog, Big Needs | BabyMyDog",
   description: "Yorkies need calorie-dense food in tiny kibble with omega fatty acids for their silky coat. Our top picks plus hypoglycemia prevention tips.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-yorkshire-terrier" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-yorkshire-terrier" },
   openGraph: {
     title: "Best Dog Food for Yorkshire Terriers in 2026: Tiny Dog, Big Needs",
     description: "Yorkies need calorie-dense food in tiny kibble with omega fatty acids for their silky coat. Our top picks plus hypoglycemia prevention tips.",
-    url: "https://babymydog.com/blog/best-dog-food-for-yorkshire-terrier",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-yorkshire-terrier",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Yorkies need calorie-dense food in tiny kibble with omega fatty acids for their silky coat. Our top picks plus hypoglycemia prevention tips.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-yorkshire-terrier" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-yorkshire-terrier" },
 };
 
 export default function BestDogFoodForYorkshireTerrier() {
@@ -30,9 +30,9 @@ export default function BestDogFoodForYorkshireTerrier() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Yorkshire Terriers", "item": "https://babymydog.com/blog/best-dog-food-for-yorkshire-terrier" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Yorkshire Terriers", "item": "https://www.babymydog.com/blog/best-dog-food-for-yorkshire-terrier" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

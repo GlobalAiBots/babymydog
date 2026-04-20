@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Toys for Australian Shepherds in 2026: Mental Stimulation Picks | BabyMyDog",
   description: "Aussies need toys that challenge their herding brain. Our top picks for herding balls, puzzle toys, flirt poles, and fetch \u2014 plus DIY enrichment ideas.",
-  alternates: { canonical: "https://babymydog.com/blog/best-toys-for-australian-shepherd" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-toys-for-australian-shepherd" },
   openGraph: {
     title: "Best Toys for Australian Shepherds in 2026: Mental Stimulation Picks",
     description: "Aussies need toys that challenge their herding brain. Our top picks for herding balls, puzzle toys, flirt poles, and fetch \u2014 plus DIY enrichment ideas.",
-    url: "https://babymydog.com/blog/best-toys-for-australian-shepherd",
+    url: "https://www.babymydog.com/blog/best-toys-for-australian-shepherd",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Aussies need toys that challenge their herding brain. Our top picks for herding balls, puzzle toys, flirt poles, and fetch \u2014 plus DIY enrichment ideas.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-toys-for-australian-shepherd" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-toys-for-australian-shepherd" },
 };
 
 export default function BestToysForAustralianShepherd() {
@@ -30,9 +30,9 @@ export default function BestToysForAustralianShepherd() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Toys for Australian Shepherds", "item": "https://babymydog.com/blog/best-toys-for-australian-shepherd" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Toys for Australian Shepherds", "item": "https://www.babymydog.com/blog/best-toys-for-australian-shepherd" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

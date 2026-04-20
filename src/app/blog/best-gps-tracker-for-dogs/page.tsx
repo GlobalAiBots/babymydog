@@ -6,20 +6,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best GPS Tracker for Dogs in 2026: Keep Your Pup Safe | BabyMyDog",
   description: "AirTags, Fi collars, and dedicated pet trackers compared. Find the best GPS solution for your dog's safety.",
-  alternates: { canonical: "https://babymydog.com/blog/best-gps-tracker-for-dogs" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-gps-tracker-for-dogs" },
   openGraph: {
     title: "Best GPS Tracker for Dogs in 2026: Keep Your Pup Safe",
     description: "AirTags, Fi collars, and dedicated pet trackers compared. Find the best GPS solution for your dog's safety.",
-    url: "https://babymydog.com/blog/best-gps-tracker-for-dogs",
+    url: "https://www.babymydog.com/blog/best-gps-tracker-for-dogs",
     siteName: "BabyMyDog",
     type: "article",
-    images: [{ url: "https://babymydog.com/images/woman-hiking-with-dog-ocean-cliffs.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://www.babymydog.com/images/woman-hiking-with-dog-ocean-cliffs.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best GPS Tracker for Dogs in 2026: Keep Your Pup Safe",
     description: "AirTags, Fi collars, and dedicated pet trackers compared. Find the best GPS solution for your dog's safety.",
-    images: ["https://babymydog.com/images/woman-hiking-with-dog-ocean-cliffs.jpg"],
+    images: ["https://www.babymydog.com/images/woman-hiking-with-dog-ocean-cliffs.jpg"],
   },
 };
 
@@ -28,12 +28,12 @@ const jsonLd = {
   "@type": "Article",
   headline: "Best GPS Tracker for Dogs in 2026: Keep Your Pup Safe",
   description: "AirTags, Fi collars, and dedicated pet trackers compared. Find the best GPS solution for your dog's safety.",
-  image: "https://babymydog.com/images/woman-hiking-with-dog-ocean-cliffs.jpg",
+  image: "https://www.babymydog.com/images/woman-hiking-with-dog-ocean-cliffs.jpg",
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog Team" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: "https://babymydog.com/blog/best-gps-tracker-for-dogs",
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: "https://www.babymydog.com/blog/best-gps-tracker-for-dogs",
 };
 
 export default function BestGpsTrackerForDogs() {
@@ -43,9 +43,9 @@ export default function BestGpsTrackerForDogs() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "best gps tracker for dogs", "item": "https://babymydog.com/blog/best-gps-tracker-for-dogs" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "best gps tracker for dogs", "item": "https://www.babymydog.com/blog/best-gps-tracker-for-dogs" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

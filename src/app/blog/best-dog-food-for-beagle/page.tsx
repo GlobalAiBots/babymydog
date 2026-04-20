@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Beagles in 2026: Control Weight, Maximize Health | BabyMyDog",
   description: "Beagles will eat anything and everything. Here\u2019s how to feed them right \u2014 portion control, weight management formulas, and our top food picks.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-beagle" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-beagle" },
   openGraph: {
     title: "Best Dog Food for Beagles in 2026: Control Weight, Maximize Health",
     description: "Beagles will eat anything and everything. Here\u2019s how to feed them right \u2014 portion control, weight management formulas, and our top food picks.",
-    url: "https://babymydog.com/blog/best-dog-food-for-beagle",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-beagle",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Beagles will eat anything and everything. Here\u2019s how to feed them right \u2014 portion control, weight management formulas, and our top food picks.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-beagle" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-beagle" },
 };
 
 export default function BestDogFoodForBeagle() {
@@ -30,9 +30,9 @@ export default function BestDogFoodForBeagle() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Beagles", "item": "https://babymydog.com/blog/best-dog-food-for-beagle" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Beagles", "item": "https://www.babymydog.com/blog/best-dog-food-for-beagle" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

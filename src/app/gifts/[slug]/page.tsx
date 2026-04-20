@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGiftGuideBySlug(slug);
   if (!guide) return { title: "Not Found" };
-  return { title: `${guide.title} | BabyMyDog`, alternates: { canonical: `https://babymydog.com/gifts/${guide.slug}` } };
+  return { title: `${guide.title} | BabyMyDog`, alternates: { canonical: `https://www.babymydog.com/gifts/${guide.slug}` } };
 }
 
 const guideImages: Record<string, string> = {
@@ -34,9 +34,9 @@ export default async function GiftPage({ params }: { params: Promise<{ slug: str
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Gift Guides", "item": "https://babymydog.com/gifts" },
-          { "@type": "ListItem", "position": 3, "name": guide.title, "item": `https://babymydog.com/gifts/${guide.slug}` },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Gift Guides", "item": "https://www.babymydog.com/gifts" },
+          { "@type": "ListItem", "position": 3, "name": guide.title, "item": `https://www.babymydog.com/gifts/${guide.slug}` },
         ],
       }) }} />
       <div className="max-w-[900px] mx-auto px-6 py-12">

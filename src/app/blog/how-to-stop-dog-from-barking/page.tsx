@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Stop a Dog From Barking: 6 Proven Methods | BabyMyDog",
   description: "Dogs bark for different reasons and each cause needs a different solution. A breeder\u2019s guide to identifying why your dog barks and how to fix it.",
-  alternates: { canonical: "https://babymydog.com/blog/how-to-stop-dog-from-barking" },
-  openGraph: { title: "How to Stop a Dog From Barking: 6 Proven Methods", description: "Dogs bark for different reasons and each cause needs a different solution. A breeder\u2019s guide to identifying why your dog barks and how to fix it.", url: "https://babymydog.com/blog/how-to-stop-dog-from-barking", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-to-stop-dog-from-barking" },
+  openGraph: { title: "How to Stop a Dog From Barking: 6 Proven Methods", description: "Dogs bark for different reasons and each cause needs a different solution. A breeder\u2019s guide to identifying why your dog barks and how to fix it.", url: "https://www.babymydog.com/blog/how-to-stop-dog-from-barking", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How to Stop a Dog From Barking: 6 Proven Methods", description: "Dogs bark for different reasons and each cause needs a different solution. A breeder\u2019s guide to identifying why your dog barks and how to fix it.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/how-to-stop-dog-from-barking" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How to Stop a Dog From Barking: 6 Proven Methods", description: "Dogs bark for different reasons and each cause needs a different solution. A breeder\u2019s guide to identifying why your dog barks and how to fix it.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/how-to-stop-dog-from-barking" } };
 
 export default function HowToStopDogFromBarking() {
   return (
@@ -17,9 +17,9 @@ export default function HowToStopDogFromBarking() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "How to Stop Dog From Barking", "item": "https://babymydog.com/blog/how-to-stop-dog-from-barking" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How to Stop Dog From Barking", "item": "https://www.babymydog.com/blog/how-to-stop-dog-from-barking" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

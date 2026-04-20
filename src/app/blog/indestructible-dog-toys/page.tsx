@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Best Dog Toys That Actually Last | BabyMyDog", alternates: { canonical: "https://babymydog.com/blog/indestructible-dog-toys" } };
+export const metadata: Metadata = { title: "Best Dog Toys That Actually Last | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/blog/indestructible-dog-toys" } };
 export default function Post() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-12">
@@ -12,9 +12,9 @@ export default function Post() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "indestructible dog toys", "item": "https://babymydog.com/blog/indestructible-dog-toys" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "indestructible dog toys", "item": "https://www.babymydog.com/blog/indestructible-dog-toys" },
         ],
       }) }} />
       <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed space-y-6">

@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Harness for German Shepherds in 2026: Heavy-Duty Picks | BabyMyDog",
   description: "German Shepherds need a harness that can handle their power. Our top picks for no-pull training, working dogs, and everyday walks.",
-  alternates: { canonical: "https://babymydog.com/blog/best-harness-for-german-shepherd" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-harness-for-german-shepherd" },
   openGraph: {
     title: "Best Harness for German Shepherds in 2026: Heavy-Duty Picks",
     description: "German Shepherds need a harness that can handle their power. Our top picks for no-pull training, working dogs, and everyday walks.",
-    url: "https://babymydog.com/blog/best-harness-for-german-shepherd",
+    url: "https://www.babymydog.com/blog/best-harness-for-german-shepherd",
     type: "article",
   },
 };
@@ -21,8 +21,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-harness-for-german-shepherd" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-harness-for-german-shepherd" },
 };
 
 export default function BestHarnessForGermanShepherd() {
@@ -32,9 +32,9 @@ export default function BestHarnessForGermanShepherd() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Harness for German Shepherds", "item": "https://babymydog.com/blog/best-harness-for-german-shepherd" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Harness for German Shepherds", "item": "https://www.babymydog.com/blog/best-harness-for-german-shepherd" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

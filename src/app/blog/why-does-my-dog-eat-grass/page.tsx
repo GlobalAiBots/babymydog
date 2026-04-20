@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Why Does My Dog Eat Grass? A Vet-Informed Guide | BabyMyDog",
   description: "Dogs eat grass for surprising reasons ranging from instinct to stomach upset. A breeder\u2019s vet-informed guide to when it\u2019s normal and when to worry.",
-  alternates: { canonical: "https://babymydog.com/blog/why-does-my-dog-eat-grass" },
-  openGraph: { title: "Why Does My Dog Eat Grass? A Vet-Informed Guide", description: "Dogs eat grass for surprising reasons ranging from instinct to stomach upset. A breeder\u2019s vet-informed guide to when it\u2019s normal and when to worry.", url: "https://babymydog.com/blog/why-does-my-dog-eat-grass", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/why-does-my-dog-eat-grass" },
+  openGraph: { title: "Why Does My Dog Eat Grass? A Vet-Informed Guide", description: "Dogs eat grass for surprising reasons ranging from instinct to stomach upset. A breeder\u2019s vet-informed guide to when it\u2019s normal and when to worry.", url: "https://www.babymydog.com/blog/why-does-my-dog-eat-grass", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "Why Does My Dog Eat Grass? A Vet-Informed Guide", description: "Dogs eat grass for surprising reasons ranging from instinct to stomach upset. A breeder\u2019s vet-informed guide to when it\u2019s normal and when to worry.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/why-does-my-dog-eat-grass" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "Why Does My Dog Eat Grass? A Vet-Informed Guide", description: "Dogs eat grass for surprising reasons ranging from instinct to stomach upset. A breeder\u2019s vet-informed guide to when it\u2019s normal and when to worry.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/why-does-my-dog-eat-grass" } };
 
 export default function WhyDoesMyDogEatGrass() {
   return (
@@ -17,9 +17,9 @@ export default function WhyDoesMyDogEatGrass() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Why Does My Dog Eat Grass", "item": "https://babymydog.com/blog/why-does-my-dog-eat-grass" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Why Does My Dog Eat Grass", "item": "https://www.babymydog.com/blog/why-does-my-dog-eat-grass" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

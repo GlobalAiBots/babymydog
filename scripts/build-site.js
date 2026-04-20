@@ -18,9 +18,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
   description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides. Because your dog deserves to be spoiled.",
-  openGraph: { title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers", url: "https://babymydog.com", siteName: "BabyMyDog", type: "website" },
+  openGraph: { title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers", url: "https://www.babymydog.com", siteName: "BabyMyDog", type: "website" },
   twitter: { card: "summary", title: "BabyMyDog" },
-  alternates: { canonical: "https://babymydog.com" },
+  alternates: { canonical: "https://www.babymydog.com" },
   other: { "google-adsense-account": "ca-pub-4822220549367368" },
 };
 
@@ -247,8 +247,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: \`\${breed.name} — Care Guide, Products & Tips | BabyMyDog\`,
     description: \`Complete \${breed.name} guide: care tips, health info, and the best products for your \${breed.name}.\`,
-    openGraph: { title: \`\${breed.name} Guide — BabyMyDog\`, url: \`https://babymydog.com/breeds/\${breed.slug}\` },
-    alternates: { canonical: \`https://babymydog.com/breeds/\${breed.slug}\` },
+    openGraph: { title: \`\${breed.name} Guide — BabyMyDog\`, url: \`https://www.babymydog.com/breeds/\${breed.slug}\` },
+    alternates: { canonical: \`https://www.babymydog.com/breeds/\${breed.slug}\` },
   };
 }
 
@@ -336,7 +336,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Products (2026) — Expert Reviews | BabyMyDog",
   description: "Expert-reviewed dog products across 15 categories. Find the best beds, food, toys, grooming tools, and more for your dog.",
-  alternates: { canonical: "https://babymydog.com/best" },
+  alternates: { canonical: "https://www.babymydog.com/best" },
 };
 
 export default function BestPage() {
@@ -374,7 +374,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   return {
     title: \`\${cat.title} — Expert Picks | BabyMyDog\`,
     description: cat.description,
-    alternates: { canonical: \`https://babymydog.com/best/\${cat.slug}\` },
+    alternates: { canonical: \`https://www.babymydog.com/best/\${cat.slug}\` },
   };
 }
 
@@ -419,7 +419,7 @@ ensureDir(path.join(appDir, 'gifts'));
 fs.writeFileSync(path.join(appDir, 'gifts', 'page.tsx'), `import Link from "next/link";
 import { giftGuides } from "@/data/gifts";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Dog Gift Guides — BabyMyDog", alternates: { canonical: "https://babymydog.com/gifts" } };
+export const metadata: Metadata = { title: "Dog Gift Guides — BabyMyDog", alternates: { canonical: "https://www.babymydog.com/gifts" } };
 export default function GiftsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
@@ -448,7 +448,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGiftGuideBySlug(slug);
   if (!guide) return { title: "Not Found" };
-  return { title: \`\${guide.title} | BabyMyDog\`, alternates: { canonical: \`https://babymydog.com/gifts/\${guide.slug}\` } };
+  return { title: \`\${guide.title} | BabyMyDog\`, alternates: { canonical: \`https://www.babymydog.com/gifts/\${guide.slug}\` } };
 }
 export default async function GiftPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -478,7 +478,7 @@ ensureDir(path.join(appDir, 'blog'));
 fs.writeFileSync(path.join(appDir, 'blog', 'page.tsx'), `import Link from "next/link";
 import { blogPosts } from "@/data/blog-posts";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Blog — Dog Care Tips & Product Reviews | BabyMyDog", alternates: { canonical: "https://babymydog.com/blog" } };
+export const metadata: Metadata = { title: "Blog — Dog Care Tips & Product Reviews | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/blog" } };
 export default function BlogPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
@@ -506,7 +506,7 @@ blogSlugs.forEach((slug, i) => {
   ensureDir(path.join(appDir, 'blog', slug));
   fs.writeFileSync(path.join(appDir, 'blog', slug, 'page.tsx'), `import Link from "next/link";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "${blogTitles[i]} | BabyMyDog", alternates: { canonical: "https://babymydog.com/blog/${slug}" } };
+export const metadata: Metadata = { title: "${blogTitles[i]} | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/blog/${slug}" } };
 export default function Post() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-12">
@@ -537,7 +537,7 @@ console.log('Created blog posts');
 });
 
 fs.writeFileSync(path.join(appDir, 'about', 'page.tsx'), `import type { Metadata } from "next";
-export const metadata: Metadata = { title: "About BabyMyDog", alternates: { canonical: "https://babymydog.com/about" } };
+export const metadata: Metadata = { title: "About BabyMyDog", alternates: { canonical: "https://www.babymydog.com/about" } };
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -554,7 +554,7 @@ export default function AboutPage() {
 `);
 
 fs.writeFileSync(path.join(appDir, 'privacy', 'page.tsx'), `import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Privacy Policy | BabyMyDog", alternates: { canonical: "https://babymydog.com/privacy" } };
+export const metadata: Metadata = { title: "Privacy Policy | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/privacy" } };
 export default function PrivacyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -575,7 +575,7 @@ export default function PrivacyPage() {
 `);
 
 fs.writeFileSync(path.join(appDir, 'terms', 'page.tsx'), `import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Terms of Service | BabyMyDog", alternates: { canonical: "https://babymydog.com/terms" } };
+export const metadata: Metadata = { title: "Terms of Service | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/terms" } };
 export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -591,7 +591,7 @@ export default function TermsPage() {
 `);
 
 fs.writeFileSync(path.join(appDir, 'disclosure', 'page.tsx'), `import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Affiliate Disclosure | BabyMyDog", alternates: { canonical: "https://babymydog.com/disclosure" } };
+export const metadata: Metadata = { title: "Affiliate Disclosure | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/disclosure" } };
 export default function DisclosurePage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -611,7 +611,7 @@ console.log('Created supporting pages');
 // ==================== ROBOTS.TXT ====================
 fs.writeFileSync(path.join(__dirname, '..', 'public', 'robots.txt'), `User-agent: *
 Allow: /
-Sitemap: https://babymydog.com/sitemap.xml
+Sitemap: https://www.babymydog.com/sitemap.xml
 `);
 
 // ==================== SITEMAP ====================
@@ -630,7 +630,7 @@ blogSlugs.forEach(s => urls.push(`blog/${s}`));
 
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 urls.forEach(u => {
-  xml += `  <url><loc>https://babymydog.com/${u}</loc><lastmod>${d}</lastmod><changefreq>weekly</changefreq><priority>${u === '' ? '1.0' : '0.8'}</priority></url>\n`;
+  xml += `  <url><loc>https://www.babymydog.com/${u}</loc><lastmod>${d}</lastmod><changefreq>weekly</changefreq><priority>${u === '' ? '1.0' : '0.8'}</priority></url>\n`;
 });
 xml += '</urlset>\n';
 fs.writeFileSync(path.join(__dirname, '..', 'public', 'sitemap.xml'), xml);

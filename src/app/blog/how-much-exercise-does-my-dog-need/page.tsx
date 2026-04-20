@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How Much Exercise Does My Dog Need? A Breed-by-Breed Guide | BabyMyDog",
   description: "Exercise needs vary dramatically by breed, age, and health. A retired breeder breaks down exactly how much activity your dog needs and the best ways to provide it.",
-  alternates: { canonical: "https://babymydog.com/blog/how-much-exercise-does-my-dog-need" },
-  openGraph: { title: "How Much Exercise Does My Dog Need? A Breed-by-Breed Guide", description: "Exercise needs vary dramatically by breed, age, and health. A retired breeder breaks down exactly how much activity your dog needs and the best ways to provide it.", url: "https://babymydog.com/blog/how-much-exercise-does-my-dog-need", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-much-exercise-does-my-dog-need" },
+  openGraph: { title: "How Much Exercise Does My Dog Need? A Breed-by-Breed Guide", description: "Exercise needs vary dramatically by breed, age, and health. A retired breeder breaks down exactly how much activity your dog needs and the best ways to provide it.", url: "https://www.babymydog.com/blog/how-much-exercise-does-my-dog-need", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How Much Exercise Does My Dog Need? A Breed-by-Breed Guide", description: "Exercise needs vary dramatically by breed, age, and health. A retired breeder breaks down exactly how much activity your dog needs and the best ways to provide it.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/how-much-exercise-does-my-dog-need" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How Much Exercise Does My Dog Need? A Breed-by-Breed Guide", description: "Exercise needs vary dramatically by breed, age, and health. A retired breeder breaks down exactly how much activity your dog needs and the best ways to provide it.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/how-much-exercise-does-my-dog-need" } };
 
 export default function HowMuchExerciseDoesMyDogNeed() {
   return (
@@ -17,9 +17,9 @@ export default function HowMuchExerciseDoesMyDogNeed() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "How Much Exercise Does My Dog Need?", "item": "https://babymydog.com/blog/how-much-exercise-does-my-dog-need" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How Much Exercise Does My Dog Need?", "item": "https://www.babymydog.com/blog/how-much-exercise-does-my-dog-need" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

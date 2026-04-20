@@ -5,11 +5,11 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "How to Choose a Reputable Dog Breeder: Red Flags and Green Flags | BabyMyDog",
   description: "Learn how to spot a reputable dog breeder vs a puppy mill. Green flags, red flags, questions to ask, and what to expect from a breeder who does it right.",
-  alternates: { canonical: "https://babymydog.com/blog/how-to-choose-dog-breeder" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-to-choose-dog-breeder" },
   openGraph: {
     title: "How to Choose a Reputable Dog Breeder: Red Flags and Green Flags",
     description: "Learn how to spot a reputable dog breeder vs a puppy mill. Green flags, red flags, questions to ask, and what to expect from a breeder who does it right.",
-    url: "https://babymydog.com/blog/how-to-choose-dog-breeder",
+    url: "https://www.babymydog.com/blog/how-to-choose-dog-breeder",
     type: "article",
   },
   twitter: {
@@ -27,8 +27,8 @@ const jsonLd = {
   datePublished: "2026-04-06",
   dateModified: "2026-04-06",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/how-to-choose-dog-breeder" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/how-to-choose-dog-breeder" },
 };
 
 export default function HowToChooseDogBreeder() {
@@ -38,9 +38,9 @@ export default function HowToChooseDogBreeder() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "How to Choose a Reputable Dog Breeder", "item": "https://babymydog.com/blog/how-to-choose-dog-breeder" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How to Choose a Reputable Dog Breeder", "item": "https://www.babymydog.com/blog/how-to-choose-dog-breeder" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

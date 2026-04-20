@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Stop Your Dog From Pulling on the Leash: A Trainer's Guide | BabyMyDog",
   description: "Positive reinforcement techniques, equipment recommendations, and common mistakes to avoid on your daily walks.",
-  alternates: { canonical: "https://babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash" },
   openGraph: {
     title: "How to Stop Your Dog From Pulling on the Leash: A Trainer's Guide",
     description: "Positive reinforcement techniques, equipment recommendations, and common mistakes to avoid on your daily walks.",
-    url: "https://babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash",
+    url: "https://www.babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash",
     type: "article",
   },
   twitter: {
@@ -28,8 +28,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash" },
 };
 
 export default function HowToStopDogPullingOnLeash() {
@@ -39,9 +39,9 @@ export default function HowToStopDogPullingOnLeash() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "How to Stop Your Dog From Pulling on the Leash", "item": "https://babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How to Stop Your Dog From Pulling on the Leash", "item": "https://www.babymydog.com/blog/how-to-stop-dog-from-pulling-on-leash" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

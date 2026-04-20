@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Crate for Puppy Training: Size Guide & Top Picks | BabyMyDog",
   description: "The right crate makes house training easier. Our sizing guide and top picks for every breed and budget.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-crate-for-puppy-training" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-crate-for-puppy-training" },
   openGraph: {
     title: "Best Dog Crate for Puppy Training: Size Guide & Top Picks",
     description: "The right crate makes house training easier. Our sizing guide and top picks for every breed and budget.",
-    url: "https://babymydog.com/blog/best-dog-crate-for-puppy-training",
+    url: "https://www.babymydog.com/blog/best-dog-crate-for-puppy-training",
     type: "article",
   },
   twitter: {
@@ -28,8 +28,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-crate-for-puppy-training" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-crate-for-puppy-training" },
 };
 
 export default function BestDogCratePuppyTraining() {
@@ -39,9 +39,9 @@ export default function BestDogCratePuppyTraining() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Crate for Puppy Training", "item": "https://babymydog.com/blog/best-dog-crate-for-puppy-training" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Crate for Puppy Training", "item": "https://www.babymydog.com/blog/best-dog-crate-for-puppy-training" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

@@ -52,7 +52,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "large-dog-bed",
       "deshedding-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "joint-supplements",
     ],
   },
@@ -81,7 +81,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "large-dog-bed",
       "deshedding-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "slow-feeder",
     ],
   },
@@ -332,7 +332,7 @@ export const breeds: Breed[] = [
     healthIssues: ["Hip dysplasia", "Bloat (GDV)", "Lymphedema"],
     recommendedProducts: [
       "large-dog-bed",
-      "fetch-toys",
+      "toys-for-fetch",
       "harness",
       "elevated-bowl",
     ],
@@ -399,7 +399,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "medium-dog-bed",
       "deshedding-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "puzzle-toys",
     ],
   },
@@ -497,7 +497,7 @@ export const breeds: Breed[] = [
     ],
     recommendedProducts: [
       "large-dog-bed",
-      "fetch-toys",
+      "toys-for-fetch",
       "harness",
       "joint-supplements",
     ],
@@ -845,7 +845,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "medium-dog-bed",
       "slicker-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "ear-cleaner",
     ],
   },
@@ -906,7 +906,7 @@ export const breeds: Breed[] = [
     healthIssues: ["Hip dysplasia", "Epilepsy", "Hypothyroidism"],
     recommendedProducts: [
       "medium-dog-bed",
-      "fetch-toys",
+      "toys-for-fetch",
       "harness",
       "ear-cleaner",
     ],
@@ -974,7 +974,7 @@ export const breeds: Breed[] = [
       "medium-dog-bed",
       "deshedding-brush",
       "puzzle-toys",
-      "fetch-toys",
+      "toys-for-fetch",
     ],
   },
   {
@@ -1001,7 +1001,7 @@ export const breeds: Breed[] = [
     healthIssues: ["Hip dysplasia", "Epilepsy", "Lymphosarcoma"],
     recommendedProducts: [
       "medium-dog-bed",
-      "fetch-toys",
+      "toys-for-fetch",
       "harness",
       "winter-coat",
     ],
@@ -1032,7 +1032,7 @@ export const breeds: Breed[] = [
       "large-dog-bed",
       "slicker-brush",
       "ear-cleaner",
-      "fetch-toys",
+      "toys-for-fetch",
     ],
   },
   {
@@ -1064,7 +1064,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "large-dog-bed",
       "slicker-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "ear-cleaner",
     ],
   },
@@ -1191,7 +1191,7 @@ export const breeds: Breed[] = [
     healthIssues: ["Bloat (GDV)", "Hip dysplasia", "Hypertrophic osteodystrophy"],
     recommendedProducts: [
       "large-dog-bed",
-      "fetch-toys",
+      "toys-for-fetch",
       "crate",
       "elevated-bowl",
     ],
@@ -1221,7 +1221,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "large-dog-bed",
       "harness",
-      "fetch-toys",
+      "toys-for-fetch",
       "joint-supplements",
     ],
   },
@@ -1440,7 +1440,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "large-dog-bed",
       "slicker-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "elevated-bowl",
     ],
   },
@@ -1469,7 +1469,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "large-dog-bed",
       "deshedding-brush",
-      "fetch-toys",
+      "toys-for-fetch",
       "harness",
     ],
   },
@@ -1499,7 +1499,7 @@ export const breeds: Breed[] = [
       "medium-dog-bed",
       "chew-toys",
       "harness",
-      "fetch-toys",
+      "toys-for-fetch",
     ],
   },
   {
@@ -1531,7 +1531,7 @@ export const breeds: Breed[] = [
     recommendedProducts: [
       "medium-dog-bed",
       "puzzle-toys",
-      "fetch-toys",
+      "toys-for-fetch",
       "harness",
     ],
   },
@@ -1561,7 +1561,7 @@ export const breeds: Breed[] = [
       "medium-dog-bed",
       "deshedding-brush",
       "cooling-vest",
-      "fetch-toys",
+      "toys-for-fetch",
     ],
   },
   {

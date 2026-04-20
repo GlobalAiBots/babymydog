@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "The ultimate new puppy checklist for 2026. From crates and training pads to food and toys, here are the essential products every puppy parent needs on day one.",
   alternates: {
-    canonical: "https://babymydog.com/collections/new-puppy",
+    canonical: "https://www.babymydog.com/collections/new-puppy",
   },
 };
 
@@ -177,19 +177,19 @@ export default function NewPuppyPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://babymydog.com",
+        item: "https://www.babymydog.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: "https://babymydog.com/collections",
+        item: "https://www.babymydog.com/collections",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "New Puppy Starter Kit",
-        item: "https://babymydog.com/collections/new-puppy",
+        item: "https://www.babymydog.com/collections/new-puppy",
       },
     ],
   };

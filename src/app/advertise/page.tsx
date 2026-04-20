@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Advertise With BabyMyDog — Reach Engaged Dog Product Shoppers",
   description: "Advertise on BabyMyDog. Reach engaged dog owners actively researching products, comparisons, and buying guides. Featured placements, sponsored posts, and banner ads.",
-  alternates: { canonical: "https://babymydog.com/advertise" },
+  alternates: { canonical: "https://www.babymydog.com/advertise" },
   openGraph: {
     title: "Advertise With BabyMyDog",
     description: "Reach dog owners actively researching products and buying guides.",
-    url: "https://babymydog.com/advertise",
+    url: "https://www.babymydog.com/advertise",
     siteName: "BabyMyDog",
   },
 };
@@ -18,8 +18,8 @@ export default function AdvertisePage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://babymydog.com" },
-      { "@type": "ListItem", position: 2, name: "Advertise", item: "https://babymydog.com/advertise" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.babymydog.com" },
+      { "@type": "ListItem", position: 2, name: "Advertise", item: "https://www.babymydog.com/advertise" },
     ],
   };
 

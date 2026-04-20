@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: cmp.metaTitle,
     description: cmp.metaDescription,
-    alternates: { canonical: `https://babymydog.com/compare/${cmp.slug}` },
-    openGraph: { title: cmp.metaTitle, description: cmp.metaDescription, url: `https://babymydog.com/compare/${cmp.slug}`, siteName: "BabyMyDog", type: "article" },
+    alternates: { canonical: `https://www.babymydog.com/compare/${cmp.slug}` },
+    openGraph: { title: cmp.metaTitle, description: cmp.metaDescription, url: `https://www.babymydog.com/compare/${cmp.slug}`, siteName: "BabyMyDog", type: "article" },
   };
 }
 
@@ -82,9 +82,9 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://babymydog.com" },
-      { "@type": "ListItem", position: 2, name: "Compare", item: "https://babymydog.com/compare" },
-      { "@type": "ListItem", position: 3, name: cmp.title, item: `https://babymydog.com/compare/${cmp.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.babymydog.com" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.babymydog.com/compare" },
+      { "@type": "ListItem", position: 3, name: cmp.title, item: `https://www.babymydog.com/compare/${cmp.slug}` },
     ],
   };
 
@@ -105,7 +105,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
     description: cmp.metaDescription,
     datePublished: "2026-04-19",
     author: { "@type": "Organization", name: "BabyMyDog" },
-    publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
+    publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
   };
 
   return (

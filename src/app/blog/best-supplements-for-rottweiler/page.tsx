@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Supplements for Rottweilers in 2026: Joint, Heart & Coat | BabyMyDog",
   description: "Rottweilers need targeted supplements for joint health, hip dysplasia prevention, and heart support. Our vet-informed picks for every budget.",
-  alternates: { canonical: "https://babymydog.com/blog/best-supplements-for-rottweiler" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-supplements-for-rottweiler" },
   openGraph: {
     title: "Best Supplements for Rottweilers in 2026: Joint, Heart & Coat",
     description: "Rottweilers need targeted supplements for joint health, hip dysplasia prevention, and heart support. Our vet-informed picks for every budget.",
-    url: "https://babymydog.com/blog/best-supplements-for-rottweiler",
+    url: "https://www.babymydog.com/blog/best-supplements-for-rottweiler",
     type: "article",
   },
 };
@@ -21,8 +21,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-supplements-for-rottweiler" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-supplements-for-rottweiler" },
 };
 
 export default function BestSupplementsForRottweiler() {
@@ -32,9 +32,9 @@ export default function BestSupplementsForRottweiler() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Supplements for Rottweilers", "item": "https://babymydog.com/blog/best-supplements-for-rottweiler" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Supplements for Rottweilers", "item": "https://www.babymydog.com/blog/best-supplements-for-rottweiler" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

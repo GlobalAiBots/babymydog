@@ -10,18 +10,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
     description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
-    url: "https://babymydog.com",
+    url: "https://www.babymydog.com",
     siteName: "BabyMyDog",
     type: "website",
-    images: [{ url: "https://babymydog.com/opengraph-image", width: 1200, height: 630, alt: "BabyMyDog — Premium Products for Dog Lovers" }],
+    images: [{ url: "https://www.babymydog.com/opengraph-image", width: 1200, height: 630, alt: "BabyMyDog — Premium Products for Dog Lovers" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "BabyMyDog | Premium Products & Care Guides for Dog Lovers",
     description: "Find the best products for your dog. Breed-specific recommendations, expert reviews, gift guides.",
-    images: ["https://babymydog.com/opengraph-image"],
+    images: ["https://www.babymydog.com/opengraph-image"],
   },
-  alternates: { canonical: "https://babymydog.com" },
+  alternates: { canonical: "https://www.babymydog.com" },
   other: {
     "impact-site-verification": "65ddf468-c89d-4868-9024-864b43a9d3eb",
   },

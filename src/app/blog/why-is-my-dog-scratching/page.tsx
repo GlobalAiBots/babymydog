@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Why Is My Dog Scratching So Much? Causes and Fixes | BabyMyDog",
   description: "From fleas to food allergies, there are many reasons your dog won't stop scratching. A breeder's guide to identifying the cause and finding relief.",
-  alternates: { canonical: "https://babymydog.com/blog/why-is-my-dog-scratching" },
-  openGraph: { title: "Why Is My Dog Scratching So Much? Causes and Fixes", description: "From fleas to food allergies, there are many reasons your dog won't stop scratching. A breeder's guide to identifying the cause and finding relief.", url: "https://babymydog.com/blog/why-is-my-dog-scratching", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/why-is-my-dog-scratching" },
+  openGraph: { title: "Why Is My Dog Scratching So Much? Causes and Fixes", description: "From fleas to food allergies, there are many reasons your dog won't stop scratching. A breeder's guide to identifying the cause and finding relief.", url: "https://www.babymydog.com/blog/why-is-my-dog-scratching", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "Why Is My Dog Scratching So Much? Causes and Fixes", description: "From fleas to food allergies, there are many reasons your dog won't stop scratching. A breeder's guide to identifying the cause and finding relief.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/why-is-my-dog-scratching" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "Why Is My Dog Scratching So Much? Causes and Fixes", description: "From fleas to food allergies, there are many reasons your dog won't stop scratching. A breeder's guide to identifying the cause and finding relief.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/why-is-my-dog-scratching" } };
 
 export default function WhyIsMyDogScratching() {
   return (
@@ -17,9 +17,9 @@ export default function WhyIsMyDogScratching() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Why Is My Dog Scratching So Much?", "item": "https://babymydog.com/blog/why-is-my-dog-scratching" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Why Is My Dog Scratching So Much?", "item": "https://www.babymydog.com/blog/why-is-my-dog-scratching" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

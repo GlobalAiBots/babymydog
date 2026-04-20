@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Grooming Tools for Goldendoodles in 2026: Prevent Matting | BabyMyDog",
   description: "Essential grooming tools every Goldendoodle owner needs. Slicker brushes, dematting combs, clippers, and a step-by-step home grooming routine.",
-  alternates: { canonical: "https://babymydog.com/blog/best-grooming-tools-for-goldendoodle" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-grooming-tools-for-goldendoodle" },
   openGraph: {
     title: "Best Grooming Tools for Goldendoodles in 2026: Prevent Matting",
     description: "Essential grooming tools every Goldendoodle owner needs. Slicker brushes, dematting combs, clippers, and a step-by-step home grooming routine.",
-    url: "https://babymydog.com/blog/best-grooming-tools-for-goldendoodle",
+    url: "https://www.babymydog.com/blog/best-grooming-tools-for-goldendoodle",
     type: "article",
   },
 };
@@ -21,8 +21,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-grooming-tools-for-goldendoodle" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-grooming-tools-for-goldendoodle" },
 };
 
 export default function BestGroomingToolsGoldendoodle() {
@@ -32,9 +32,9 @@ export default function BestGroomingToolsGoldendoodle() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Grooming Tools for Goldendoodles", "item": "https://babymydog.com/blog/best-grooming-tools-for-goldendoodle" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Grooming Tools for Goldendoodles", "item": "https://www.babymydog.com/blog/best-grooming-tools-for-goldendoodle" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Plan the perfect road trip with your dog. From crash-tested harnesses and car seat covers to calming chews and collapsible bowls, these are the best dog travel products for 2026.",
   alternates: {
-    canonical: "https://babymydog.com/collections/road-trip",
+    canonical: "https://www.babymydog.com/collections/road-trip",
   },
 };
 
@@ -177,19 +177,19 @@ export default function RoadTripPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://babymydog.com",
+        item: "https://www.babymydog.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: "https://babymydog.com/collections",
+        item: "https://www.babymydog.com/collections",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Road Trip Essentials",
-        item: "https://babymydog.com/collections/road-trip",
+        item: "https://www.babymydog.com/collections/road-trip",
       },
     ],
   };

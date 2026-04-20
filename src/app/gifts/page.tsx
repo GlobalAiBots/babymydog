@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Dog Gift Guides — Handpicked for Dog People | BabyMyDog",
   description: "Curated gift guides for dog lovers, new puppy parents, dog moms, dog dads, and holiday gifting. 8 picks per guide.",
-  alternates: { canonical: "https://babymydog.com/gifts" },
+  alternates: { canonical: "https://www.babymydog.com/gifts" },
 };
 
 const guideImages: Record<string, string> = {

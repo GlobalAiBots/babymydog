@@ -6,7 +6,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const BASE = "https://babymydog.com";
+const BASE = "https://www.babymydog.com";
 const TODAY = new Date().toISOString().split("T")[0];
 const OUT = path.join(__dirname, "..", "public", "sitemap.xml");
 const APP = path.join(__dirname, "..", "src", "app");

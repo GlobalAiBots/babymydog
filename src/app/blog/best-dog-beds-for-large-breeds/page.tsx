@@ -6,20 +6,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026 | BabyMyDog",
   description: "Large dogs need extra support. We tested the best orthopedic beds for German Shepherds, Great Danes, and other big breeds.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-beds-for-large-breeds" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-beds-for-large-breeds" },
   openGraph: {
     title: "Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026",
     description: "Large dogs need extra support. We tested the best orthopedic beds for German Shepherds, Great Danes, and other big breeds.",
-    url: "https://babymydog.com/blog/best-dog-beds-for-large-breeds",
+    url: "https://www.babymydog.com/blog/best-dog-beds-for-large-breeds",
     siteName: "BabyMyDog",
     type: "article",
-    images: [{ url: "https://babymydog.com/images/dog-relaxing-premium-gray-bed-with-plants.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://www.babymydog.com/images/dog-relaxing-premium-gray-bed-with-plants.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026",
     description: "Large dogs need extra support. We tested the best orthopedic beds for German Shepherds, Great Danes, and other big breeds.",
-    images: ["https://babymydog.com/images/dog-relaxing-premium-gray-bed-with-plants.jpg"],
+    images: ["https://www.babymydog.com/images/dog-relaxing-premium-gray-bed-with-plants.jpg"],
   },
 };
 
@@ -28,12 +28,12 @@ const jsonLd = {
   "@type": "Article",
   headline: "Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026",
   description: "Large dogs need extra support. We tested the best orthopedic beds for German Shepherds, Great Danes, and other big breeds.",
-  image: "https://babymydog.com/images/dog-relaxing-premium-gray-bed-with-plants.jpg",
+  image: "https://www.babymydog.com/images/dog-relaxing-premium-gray-bed-with-plants.jpg",
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog Team" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: "https://babymydog.com/blog/best-dog-beds-for-large-breeds",
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: "https://www.babymydog.com/blog/best-dog-beds-for-large-breeds",
 };
 
 export default function BestDogBedsForLargeBreeds() {
@@ -43,9 +43,9 @@ export default function BestDogBedsForLargeBreeds() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "best dog beds for large breeds", "item": "https://babymydog.com/blog/best-dog-beds-for-large-breeds" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "best dog beds for large breeds", "item": "https://www.babymydog.com/blog/best-dog-beds-for-large-breeds" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

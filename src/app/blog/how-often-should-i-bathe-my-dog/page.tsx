@@ -6,20 +6,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How Often Should I Bathe My Dog? A Breed-by-Breed Guide | BabyMyDog",
   description: "The answer depends on your dog's breed, coat type, and lifestyle. Here's a complete bathing schedule.",
-  alternates: { canonical: "https://babymydog.com/blog/how-often-should-i-bathe-my-dog" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-often-should-i-bathe-my-dog" },
   openGraph: {
     title: "How Often Should I Bathe My Dog? A Breed-by-Breed Guide",
     description: "The answer depends on your dog's breed, coat type, and lifestyle. Here's a complete bathing schedule.",
-    url: "https://babymydog.com/blog/how-often-should-i-bathe-my-dog",
+    url: "https://www.babymydog.com/blog/how-often-should-i-bathe-my-dog",
     siteName: "BabyMyDog",
     type: "article",
-    images: [{ url: "https://babymydog.com/images/poodle-professional-grooming-salon.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://www.babymydog.com/images/poodle-professional-grooming-salon.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "How Often Should I Bathe My Dog? A Breed-by-Breed Guide",
     description: "The answer depends on your dog's breed, coat type, and lifestyle. Here's a complete bathing schedule.",
-    images: ["https://babymydog.com/images/poodle-professional-grooming-salon.jpg"],
+    images: ["https://www.babymydog.com/images/poodle-professional-grooming-salon.jpg"],
   },
 };
 
@@ -28,12 +28,12 @@ const jsonLd = {
   "@type": "Article",
   headline: "How Often Should I Bathe My Dog? A Breed-by-Breed Guide",
   description: "The answer depends on your dog's breed, coat type, and lifestyle. Here's a complete bathing schedule.",
-  image: "https://babymydog.com/images/poodle-professional-grooming-salon.jpg",
+  image: "https://www.babymydog.com/images/poodle-professional-grooming-salon.jpg",
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog Team" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: "https://babymydog.com/blog/how-often-should-i-bathe-my-dog",
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: "https://www.babymydog.com/blog/how-often-should-i-bathe-my-dog",
 };
 
 export default function HowOftenShouldIBatheMyDog() {
@@ -43,9 +43,9 @@ export default function HowOftenShouldIBatheMyDog() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "how often should i bathe my dog", "item": "https://babymydog.com/blog/how-often-should-i-bathe-my-dog" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "how often should i bathe my dog", "item": "https://www.babymydog.com/blog/how-often-should-i-bathe-my-dog" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

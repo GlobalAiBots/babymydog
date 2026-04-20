@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   return {
     title: `${cat.title} — Expert Picks | BabyMyDog`,
     description: cat.description,
-    alternates: { canonical: `https://babymydog.com/best/${cat.slug}` },
+    alternates: { canonical: `https://www.babymydog.com/best/${cat.slug}` },
   };
 }
 
@@ -101,9 +101,9 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Best Products", "item": "https://babymydog.com/best" },
-          { "@type": "ListItem", "position": 3, "name": cat.title, "item": `https://babymydog.com/best/${cat.slug}` },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Best Products", "item": "https://www.babymydog.com/best" },
+          { "@type": "ListItem", "position": 3, "name": cat.title, "item": `https://www.babymydog.com/best/${cat.slug}` },
         ],
       }) }} />
       <div className="max-w-[1200px] mx-auto px-6 py-20">

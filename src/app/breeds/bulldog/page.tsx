@@ -8,8 +8,8 @@ const breed = getBreedBySlug("bulldog")!;
 export const metadata: Metadata = {
   title: "English Bulldog — Care Guide, Products & Breeder Tips | BabyMyDog",
   description: "Complete English Bulldog guide from a former AKC breeder. Expert care tips, health info, and the best products for your Bulldog.",
-  openGraph: { title: "English Bulldog Guide — BabyMyDog", url: "https://babymydog.com/breeds/bulldog" },
-  alternates: { canonical: "https://babymydog.com/breeds/bulldog" },
+  openGraph: { title: "English Bulldog Guide — BabyMyDog", url: "https://www.babymydog.com/breeds/bulldog" },
+  alternates: { canonical: "https://www.babymydog.com/breeds/bulldog" },
 };
 
 const TAG = "babymydog03-20";

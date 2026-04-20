@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog — Dog Care Tips & Product Reviews | BabyMyDog",
   description: "Expert tips, product reviews, and breed guides from a retired AKC breeder and dog lover.",
-  alternates: { canonical: "https://babymydog.com/blog" },
+  alternates: { canonical: "https://www.babymydog.com/blog" },
 };
 
 const postImages: Record<string, string> = {

@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Orthopedic vs Standard Dog Beds: Does Your Dog Need One? | BabyMyDog",
   description: "When should you upgrade to an orthopedic dog bed? Compare memory foam, egg crate, and fiber fill options. Signs your dog needs better joint support.",
-  alternates: { canonical: "https://babymydog.com/blog/orthopedic-vs-standard-dog-bed" },
+  alternates: { canonical: "https://www.babymydog.com/blog/orthopedic-vs-standard-dog-bed" },
   openGraph: {
     title: "Orthopedic vs Standard Dog Beds: Does Your Dog Need One?",
     description: "When should you upgrade to an orthopedic dog bed? Compare memory foam, egg crate, and fiber fill options. Signs your dog needs better joint support.",
-    url: "https://babymydog.com/blog/orthopedic-vs-standard-dog-bed",
+    url: "https://www.babymydog.com/blog/orthopedic-vs-standard-dog-bed",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "When should you upgrade to an orthopedic dog bed? Compare memory foam, egg crate, and fiber fill options. Signs your dog needs better joint support.",
   datePublished: "2026-04-10", dateModified: "2026-04-10",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/orthopedic-vs-standard-dog-bed" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/orthopedic-vs-standard-dog-bed" },
 };
 
 export default function OrthopedicVsStandardBed() {
@@ -30,9 +30,9 @@ export default function OrthopedicVsStandardBed() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Orthopedic vs Standard Dog Beds", "item": "https://babymydog.com/blog/orthopedic-vs-standard-dog-bed" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Orthopedic vs Standard Dog Beds", "item": "https://www.babymydog.com/blog/orthopedic-vs-standard-dog-bed" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

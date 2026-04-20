@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Chew Toys for Aggressive Chewers: Indestructible Picks | BabyMyDog",
   description: "Our top 5 nearly indestructible chew toys tested on power chewers. KONG Extreme, Benebone, Nylabone, and more picks that actually survive.",
-  alternates: { canonical: "https://babymydog.com/blog/best-chew-toys-aggressive-chewers" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-chew-toys-aggressive-chewers" },
   openGraph: {
     title: "Best Chew Toys for Aggressive Chewers: Indestructible Picks",
     description: "Our top 5 nearly indestructible chew toys tested on power chewers. KONG Extreme, Benebone, Nylabone, and more picks that actually survive.",
-    url: "https://babymydog.com/blog/best-chew-toys-aggressive-chewers",
+    url: "https://www.babymydog.com/blog/best-chew-toys-aggressive-chewers",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Our top 5 nearly indestructible chew toys tested on power chewers. KONG Extreme, Benebone, Nylabone, and more picks that actually survive.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-chew-toys-aggressive-chewers" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-chew-toys-aggressive-chewers" },
 };
 
 export default function BestChewToysAggressiveChewers() {
@@ -30,9 +30,9 @@ export default function BestChewToysAggressiveChewers() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Chew Toys for Aggressive Chewers", "item": "https://babymydog.com/blog/best-chew-toys-aggressive-chewers" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Chew Toys for Aggressive Chewers", "item": "https://www.babymydog.com/blog/best-chew-toys-aggressive-chewers" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

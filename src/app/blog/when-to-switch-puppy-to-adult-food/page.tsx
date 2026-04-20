@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "When to Switch From Puppy Food to Adult Food | BabyMyDog",
   description: "Learn exactly when to transition your puppy to adult dog food based on breed size, plus a step-by-step 7-10 day switching schedule from a retired AKC breeder.",
-  alternates: { canonical: "https://babymydog.com/blog/when-to-switch-puppy-to-adult-food" },
+  alternates: { canonical: "https://www.babymydog.com/blog/when-to-switch-puppy-to-adult-food" },
   openGraph: {
     title: "When to Switch From Puppy Food to Adult Food",
     description: "Learn exactly when to transition your puppy to adult dog food based on breed size, plus a step-by-step 7-10 day switching schedule from a retired AKC breeder.",
-    url: "https://babymydog.com/blog/when-to-switch-puppy-to-adult-food",
+    url: "https://www.babymydog.com/blog/when-to-switch-puppy-to-adult-food",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Learn exactly when to transition your puppy to adult dog food based on breed size, plus a step-by-step 7-10 day switching schedule from a retired AKC breeder.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/when-to-switch-puppy-to-adult-food" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/when-to-switch-puppy-to-adult-food" },
 };
 
 export default function WhenToSwitchPuppyToAdultFood() {
@@ -30,9 +30,9 @@ export default function WhenToSwitchPuppyToAdultFood() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "When to Switch Puppy to Adult Food", "item": "https://babymydog.com/blog/when-to-switch-puppy-to-adult-food" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "When to Switch Puppy to Adult Food", "item": "https://www.babymydog.com/blog/when-to-switch-puppy-to-adult-food" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

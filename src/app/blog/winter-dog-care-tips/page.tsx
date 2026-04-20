@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Winter Dog Care: How to Keep Your Dog Safe and Warm | BabyMyDog",
   description: "Cold weather dangers every dog owner should know — plus the best coats, paw protection, and indoor exercise ideas.",
-  alternates: { canonical: "https://babymydog.com/blog/winter-dog-care-tips" },
+  alternates: { canonical: "https://www.babymydog.com/blog/winter-dog-care-tips" },
   openGraph: {
     title: "Winter Dog Care: How to Keep Your Dog Safe and Warm",
     description: "Cold weather dangers every dog owner should know — plus the best coats, paw protection, and indoor exercise ideas.",
-    url: "https://babymydog.com/blog/winter-dog-care-tips",
+    url: "https://www.babymydog.com/blog/winter-dog-care-tips",
     type: "article",
   },
   twitter: {
@@ -28,8 +28,8 @@ const jsonLd = {
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/winter-dog-care-tips" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/winter-dog-care-tips" },
 };
 
 export default function WinterDogCareTips() {
@@ -39,9 +39,9 @@ export default function WinterDogCareTips() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Winter Dog Care Tips", "item": "https://babymydog.com/blog/winter-dog-care-tips" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Winter Dog Care Tips", "item": "https://www.babymydog.com/blog/winter-dog-care-tips" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

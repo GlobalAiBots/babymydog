@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import BrandName from "@/components/BrandName";
-export const metadata: Metadata = { title: "Terms of Service | BabyMyDog", alternates: { canonical: "https://babymydog.com/terms" } };
+export const metadata: Metadata = { title: "Terms of Service | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/terms" } };
 export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">

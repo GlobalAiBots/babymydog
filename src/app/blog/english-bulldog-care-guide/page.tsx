@@ -5,11 +5,11 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "English Bulldog Care Guide: What Every Owner Needs to Know | BabyMyDog",
   description: "A breeder\u2019s honest guide to English Bulldog care \u2014 health issues, wrinkle care, heat safety, feeding tips, and the best products every bulldog owner needs.",
-  alternates: { canonical: "https://babymydog.com/blog/english-bulldog-care-guide" },
+  alternates: { canonical: "https://www.babymydog.com/blog/english-bulldog-care-guide" },
   openGraph: {
     title: "English Bulldog Care Guide: What Every Owner Needs to Know",
     description: "A breeder\u2019s honest guide to English Bulldog care \u2014 health issues, wrinkle care, heat safety, feeding tips, and the best products every bulldog owner needs.",
-    url: "https://babymydog.com/blog/english-bulldog-care-guide",
+    url: "https://www.babymydog.com/blog/english-bulldog-care-guide",
     type: "article",
   },
   twitter: {
@@ -27,8 +27,8 @@ const jsonLd = {
   datePublished: "2026-04-06",
   dateModified: "2026-04-06",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/english-bulldog-care-guide" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/english-bulldog-care-guide" },
 };
 
 export default function EnglishBulldogCareGuide() {
@@ -38,9 +38,9 @@ export default function EnglishBulldogCareGuide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "English Bulldog Care Guide", "item": "https://babymydog.com/blog/english-bulldog-care-guide" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "English Bulldog Care Guide", "item": "https://www.babymydog.com/blog/english-bulldog-care-guide" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

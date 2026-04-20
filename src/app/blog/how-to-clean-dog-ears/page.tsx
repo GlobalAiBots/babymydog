@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Clean Dog Ears at Home: Step-by-Step Guide | BabyMyDog",
   description: "Learn the right way to clean your dog's ears at home, how often to do it, and the warning signs of infection. A breeder's step-by-step guide.",
-  alternates: { canonical: "https://babymydog.com/blog/how-to-clean-dog-ears" },
-  openGraph: { title: "How to Clean Dog Ears at Home: Step-by-Step Guide", description: "Learn the right way to clean your dog's ears at home, how often to do it, and the warning signs of infection. A breeder's step-by-step guide.", url: "https://babymydog.com/blog/how-to-clean-dog-ears", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/how-to-clean-dog-ears" },
+  openGraph: { title: "How to Clean Dog Ears at Home: Step-by-Step Guide", description: "Learn the right way to clean your dog's ears at home, how often to do it, and the warning signs of infection. A breeder's step-by-step guide.", url: "https://www.babymydog.com/blog/how-to-clean-dog-ears", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How to Clean Dog Ears at Home: Step-by-Step Guide", description: "Learn the right way to clean your dog's ears at home, how often to do it, and the warning signs of infection. A breeder's step-by-step guide.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/how-to-clean-dog-ears" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "How to Clean Dog Ears at Home: Step-by-Step Guide", description: "Learn the right way to clean your dog's ears at home, how often to do it, and the warning signs of infection. A breeder's step-by-step guide.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/how-to-clean-dog-ears" } };
 
 export default function HowToCleanDogEars() {
   return (
@@ -17,9 +17,9 @@ export default function HowToCleanDogEars() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "How to Clean Dog Ears", "item": "https://babymydog.com/blog/how-to-clean-dog-ears" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How to Clean Dog Ears", "item": "https://www.babymydog.com/blog/how-to-clean-dog-ears" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

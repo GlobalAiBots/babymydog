@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Crate for Husky Puppies in 2026: Escape-Proof Picks | BabyMyDog",
   description: "Huskies are master escape artists. Our top crate picks for husky puppies \u2014 heavy-duty wire, escape-proof latches, and sizing for growth.",
-  alternates: { canonical: "https://babymydog.com/blog/best-crate-for-husky-puppy" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-crate-for-husky-puppy" },
   openGraph: {
     title: "Best Crate for Husky Puppies in 2026: Escape-Proof Picks",
     description: "Huskies are master escape artists. Our top crate picks for husky puppies \u2014 heavy-duty wire, escape-proof latches, and sizing for growth.",
-    url: "https://babymydog.com/blog/best-crate-for-husky-puppy",
+    url: "https://www.babymydog.com/blog/best-crate-for-husky-puppy",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Huskies are master escape artists. Our top crate picks for husky puppies \u2014 heavy-duty wire, escape-proof latches, and sizing for growth.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-crate-for-husky-puppy" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-crate-for-husky-puppy" },
 };
 
 export default function BestCrateForHuskyPuppy() {
@@ -30,9 +30,9 @@ export default function BestCrateForHuskyPuppy() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Crate for Husky Puppies", "item": "https://babymydog.com/blog/best-crate-for-husky-puppy" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Crate for Husky Puppies", "item": "https://www.babymydog.com/blog/best-crate-for-husky-puppy" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

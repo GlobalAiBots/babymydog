@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Weight Loss in 2026: Vet-Approved Picks | BabyMyDog",
   description: "Help your overweight dog shed pounds safely with our top 5 weight management dog foods, portion control tips, and exercise strategies from a retired AKC breeder.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-weight-loss" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-weight-loss" },
   openGraph: {
     title: "Best Dog Food for Weight Loss in 2026: Vet-Approved Picks",
     description: "Help your overweight dog shed pounds safely with our top 5 weight management dog foods, portion control tips, and exercise strategies from a retired AKC breeder.",
-    url: "https://babymydog.com/blog/best-dog-food-for-weight-loss",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-weight-loss",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Help your overweight dog shed pounds safely with our top 5 weight management dog foods, portion control tips, and exercise strategies from a retired AKC breeder.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-food-for-weight-loss" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-food-for-weight-loss" },
 };
 
 export default function BestDogFoodForWeightLoss() {
@@ -30,9 +30,9 @@ export default function BestDogFoodForWeightLoss() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Weight Loss", "item": "https://babymydog.com/blog/best-dog-food-for-weight-loss" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Food for Weight Loss", "item": "https://www.babymydog.com/blog/best-dog-food-for-weight-loss" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

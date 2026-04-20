@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Age to Neuter a Dog: What the Research Says in 2026 | BabyMyDog",
   description: "The best age to neuter depends on breed and size. A breeder\u2019s guide to the latest UC Davis research, size-specific recommendations, and recovery tips.",
-  alternates: { canonical: "https://babymydog.com/blog/best-age-to-neuter-dog" },
-  openGraph: { title: "Best Age to Neuter a Dog: What the Research Says in 2026", description: "The best age to neuter depends on breed and size. A breeder\u2019s guide to the latest UC Davis research, size-specific recommendations, and recovery tips.", url: "https://babymydog.com/blog/best-age-to-neuter-dog", type: "article" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-age-to-neuter-dog" },
+  openGraph: { title: "Best Age to Neuter a Dog: What the Research Says in 2026", description: "The best age to neuter depends on breed and size. A breeder\u2019s guide to the latest UC Davis research, size-specific recommendations, and recovery tips.", url: "https://www.babymydog.com/blog/best-age-to-neuter-dog", type: "article" },
 };
 
-const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "Best Age to Neuter a Dog: What the Research Says in 2026", description: "The best age to neuter depends on breed and size. A breeder\u2019s guide to the latest UC Davis research, size-specific recommendations, and recovery tips.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-age-to-neuter-dog" } };
+const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: "Best Age to Neuter a Dog: What the Research Says in 2026", description: "The best age to neuter depends on breed and size. A breeder\u2019s guide to the latest UC Davis research, size-specific recommendations, and recovery tips.", datePublished: "2026-04-07", dateModified: "2026-04-07", author: { "@type": "Organization", name: "BabyMyDog" }, publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-age-to-neuter-dog" } };
 
 export default function BestAgeToNeuterDog() {
   return (
@@ -17,9 +17,9 @@ export default function BestAgeToNeuterDog() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Age to Neuter a Dog", "item": "https://babymydog.com/blog/best-age-to-neuter-dog" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Age to Neuter a Dog", "item": "https://www.babymydog.com/blog/best-age-to-neuter-dog" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Slow Feeder for Labs in 2026: Stop the Inhaling | BabyMyDog",
   description: "Labs eat too fast, causing bloat and vomiting. Our top slow feeders, snuffle mats, and puzzle bowls that extend mealtime 5-10x.",
-  alternates: { canonical: "https://babymydog.com/blog/best-slow-feeder-for-labs" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-slow-feeder-for-labs" },
   openGraph: {
     title: "Best Slow Feeder for Labs in 2026: Stop the Inhaling",
     description: "Labs eat too fast, causing bloat and vomiting. Our top slow feeders, snuffle mats, and puzzle bowls that extend mealtime 5-10x.",
-    url: "https://babymydog.com/blog/best-slow-feeder-for-labs",
+    url: "https://www.babymydog.com/blog/best-slow-feeder-for-labs",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Labs eat too fast, causing bloat and vomiting. Our top slow feeders, snuffle mats, and puzzle bowls that extend mealtime 5-10x.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-slow-feeder-for-labs" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-slow-feeder-for-labs" },
 };
 
 export default function BestSlowFeederForLabs() {
@@ -30,9 +30,9 @@ export default function BestSlowFeederForLabs() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Slow Feeder for Labs", "item": "https://babymydog.com/blog/best-slow-feeder-for-labs" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Slow Feeder for Labs", "item": "https://www.babymydog.com/blog/best-slow-feeder-for-labs" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

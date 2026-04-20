@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Bed for Corgis in 2026: Orthopedic, Cooling & Cozy | BabyMyDog",
   description: "Corgis need low-entry orthopedic beds that support their long spines and cool their double coats. Our top 5 picks for every budget.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-bed-for-corgi" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-bed-for-corgi" },
   openGraph: {
     title: "Best Dog Bed for Corgis in 2026: Orthopedic, Cooling & Cozy",
     description: "Corgis need low-entry orthopedic beds that support their long spines and cool their double coats. Our top 5 picks for every budget.",
-    url: "https://babymydog.com/blog/best-dog-bed-for-corgi",
+    url: "https://www.babymydog.com/blog/best-dog-bed-for-corgi",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Corgis need low-entry orthopedic beds that support their long spines and cool their double coats. Our top 5 picks for every budget.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-dog-bed-for-corgi" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-dog-bed-for-corgi" },
 };
 
 export default function BestDogBedForCorgi() {
@@ -30,9 +30,9 @@ export default function BestDogBedForCorgi() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Dog Bed for Corgis", "item": "https://babymydog.com/blog/best-dog-bed-for-corgi" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Dog Bed for Corgis", "item": "https://www.babymydog.com/blog/best-dog-bed-for-corgi" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

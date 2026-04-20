@@ -43,13 +43,13 @@ export default function Home() {
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org", "@type": "WebSite", "name": "BabyMyDog", "url": "https://babymydog.com",
+        "@context": "https://schema.org", "@type": "WebSite", "name": "BabyMyDog", "url": "https://www.babymydog.com",
         "description": "Premium products and care guides for dog lovers. 50 breed guides, 27 product categories, expert reviews.",
-        "potentialAction": { "@type": "SearchAction", "target": "https://babymydog.com/breeds?q={search_term_string}", "query-input": "required name=search_term_string" },
+        "potentialAction": { "@type": "SearchAction", "target": "https://www.babymydog.com/breeds?q={search_term_string}", "query-input": "required name=search_term_string" },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org", "@type": "Organization", "name": "BabyMyDog", "url": "https://babymydog.com",
-        "logo": "https://babymydog.com/favicon.svg",
+        "@context": "https://schema.org", "@type": "Organization", "name": "BabyMyDog", "url": "https://www.babymydog.com",
+        "logo": "https://www.babymydog.com/favicon.svg",
         "description": "Expert-picked products for pampered pups. Honest reviews, no sponsored rankings.",
       }) }} />
 

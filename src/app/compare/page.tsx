@@ -5,11 +5,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Dog Product Comparisons — Side-by-Side Expert Picks | BabyMyDog",
   description: "Honest head-to-head comparisons of dog products and diets. KONG Classic vs Extreme, Blue Buffalo vs Pro Plan, orthopedic vs standard beds, harness vs collar, raw vs kibble.",
-  alternates: { canonical: "https://babymydog.com/compare" },
+  alternates: { canonical: "https://www.babymydog.com/compare" },
   openGraph: {
     title: "Dog Product Comparisons — Side-by-Side Expert Picks",
     description: "Honest head-to-head comparisons of dog products. Which one should you buy?",
-    url: "https://babymydog.com/compare",
+    url: "https://www.babymydog.com/compare",
     siteName: "BabyMyDog",
   },
 };
@@ -19,8 +19,8 @@ export default function CompareIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://babymydog.com" },
-      { "@type": "ListItem", position: 2, name: "Compare", item: "https://babymydog.com/compare" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.babymydog.com" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.babymydog.com/compare" },
     ],
   };
 

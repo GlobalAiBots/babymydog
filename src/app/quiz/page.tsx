@@ -179,8 +179,8 @@ export default function QuizPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://babymydog.com" },
-          { "@type": "ListItem", position: 2, name: "Product Quiz", item: "https://babymydog.com/quiz" },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.babymydog.com" },
+          { "@type": "ListItem", position: 2, name: "Product Quiz", item: "https://www.babymydog.com/quiz" },
         ],
       }) }} />
 

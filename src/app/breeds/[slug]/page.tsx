@@ -25,10 +25,10 @@ const BREED_TRAIT_MAP: Record<string, TraitGroup> = {
   },
   large_active: {
     products: [
-      { label: "Heavy-duty chew toys — built for powerful jaws", category: "/best/toys-for-chewers", icon: "🦴" },
+      { label: "Heavy-duty chew toys — built for powerful jaws", category: "/best/toys-for-heavy-chewers", icon: "🦴" },
       { label: "Joint supplements — protect hips and knees early", category: "/best/dog-supplements", icon: "💊" },
       { label: "XL orthopedic beds — proper support for big dogs", category: "/best/large-dog-products", icon: "🛏️" },
-      { label: "Fetch toys — burn off that high energy", category: "/best/fetch-toys", icon: "🎾" },
+      { label: "Fetch toys — burn off that high energy", category: "/best/toys-for-fetch", icon: "🎾" },
     ],
     healthNote: "Large active breeds need joint protection starting early in life. Heavy chewing is normal — redirect to appropriate toys rather than trying to stop it.",
   },
@@ -123,8 +123,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${breed.name} — Care Guide, Products & Tips | BabyMyDog`,
     description: `Complete ${breed.name} guide: care tips, health info, and the best products for your ${breed.name}.`,
-    openGraph: { title: `${breed.name} Guide — BabyMyDog`, url: `https://babymydog.com/breeds/${breed.slug}` },
-    alternates: { canonical: `https://babymydog.com/breeds/${breed.slug}` },
+    openGraph: { title: `${breed.name} Guide — BabyMyDog`, url: `https://www.babymydog.com/breeds/${breed.slug}` },
+    alternates: { canonical: `https://www.babymydog.com/breeds/${breed.slug}` },
   };
 }
 
@@ -198,7 +198,7 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
     "headline": `${breed.name} — Care Guide, Products & Tips`,
     "description": breed.description,
     "author": { "@type": "Organization", "name": "BabyMyDog" },
-    "publisher": { "@type": "Organization", "name": "BabyMyDog", "url": "https://babymydog.com" },
+    "publisher": { "@type": "Organization", "name": "BabyMyDog", "url": "https://www.babymydog.com" },
     "datePublished": "2026-04-01",
     "dateModified": "2026-04-06",
   };
@@ -209,9 +209,9 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Breeds", "item": "https://babymydog.com/breeds" },
-          { "@type": "ListItem", "position": 3, "name": breed.name, "item": `https://babymydog.com/breeds/${breed.slug}` },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Breeds", "item": "https://www.babymydog.com/breeds" },
+          { "@type": "ListItem", "position": 3, "name": breed.name, "item": `https://www.babymydog.com/breeds/${breed.slug}` },
         ],
       }) }} />
 

@@ -1,7 +1,7 @@
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import BrandName from "@/components/BrandName";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "About BabyMyDog", alternates: { canonical: "https://babymydog.com/about" } };
+export const metadata: Metadata = { title: "About BabyMyDog", alternates: { canonical: "https://www.babymydog.com/about" } };
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">

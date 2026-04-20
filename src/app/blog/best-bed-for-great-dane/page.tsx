@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Bed for Great Danes in 2026: XL Orthopedic Picks | BabyMyDog",
   description: "Great Danes need beds built for 100-150+ lbs. Our top picks for orthopedic foam, elevated cots, and giant-breed beds that won\u2019t flatten.",
-  alternates: { canonical: "https://babymydog.com/blog/best-bed-for-great-dane" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-bed-for-great-dane" },
   openGraph: {
     title: "Best Dog Bed for Great Danes in 2026: XL Orthopedic Picks",
     description: "Great Danes need beds built for 100-150+ lbs. Our top picks for orthopedic foam, elevated cots, and giant-breed beds that won\u2019t flatten.",
-    url: "https://babymydog.com/blog/best-bed-for-great-dane",
+    url: "https://www.babymydog.com/blog/best-bed-for-great-dane",
     type: "article",
   },
 };
@@ -19,8 +19,8 @@ const jsonLd = {
   description: "Great Danes need beds built for 100-150+ lbs. Our top picks for orthopedic foam, elevated cots, and giant-breed beds that won\u2019t flatten.",
   datePublished: "2026-04-07", dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://babymydog.com/blog/best-bed-for-great-dane" },
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.babymydog.com/blog/best-bed-for-great-dane" },
 };
 
 export default function BestBedForGreatDane() {
@@ -30,9 +30,9 @@ export default function BestBedForGreatDane() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Best Bed for Great Danes", "item": "https://babymydog.com/blog/best-bed-for-great-dane" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Best Bed for Great Danes", "item": "https://www.babymydog.com/blog/best-bed-for-great-dane" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">

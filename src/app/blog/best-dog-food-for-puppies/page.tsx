@@ -6,20 +6,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dog Food for Puppies in 2026: What to Feed Your New Pup | BabyMyDog",
   description: "Everything you need to know about puppy nutrition — from choosing the right formula to reading ingredient labels like a pro.",
-  alternates: { canonical: "https://babymydog.com/blog/best-dog-food-for-puppies" },
+  alternates: { canonical: "https://www.babymydog.com/blog/best-dog-food-for-puppies" },
   openGraph: {
     title: "Best Dog Food for Puppies in 2026: What to Feed Your New Pup",
     description: "Everything you need to know about puppy nutrition — from choosing the right formula to reading ingredient labels like a pro.",
-    url: "https://babymydog.com/blog/best-dog-food-for-puppies",
+    url: "https://www.babymydog.com/blog/best-dog-food-for-puppies",
     siteName: "BabyMyDog",
     type: "article",
-    images: [{ url: "https://babymydog.com/images/golden-retriever-puppies-in-red-wagon.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://www.babymydog.com/images/golden-retriever-puppies-in-red-wagon.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Dog Food for Puppies in 2026: What to Feed Your New Pup",
     description: "Everything you need to know about puppy nutrition — from choosing the right formula to reading ingredient labels like a pro.",
-    images: ["https://babymydog.com/images/golden-retriever-puppies-in-red-wagon.jpg"],
+    images: ["https://www.babymydog.com/images/golden-retriever-puppies-in-red-wagon.jpg"],
   },
 };
 
@@ -28,12 +28,12 @@ const jsonLd = {
   "@type": "Article",
   headline: "Best Dog Food for Puppies in 2026: What to Feed Your New Pup",
   description: "Everything you need to know about puppy nutrition — from choosing the right formula to reading ingredient labels like a pro.",
-  image: "https://babymydog.com/images/golden-retriever-puppies-in-red-wagon.jpg",
+  image: "https://www.babymydog.com/images/golden-retriever-puppies-in-red-wagon.jpg",
   datePublished: "2026-04-07",
   dateModified: "2026-04-07",
   author: { "@type": "Organization", name: "BabyMyDog Team" },
-  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://babymydog.com" },
-  mainEntityOfPage: "https://babymydog.com/blog/best-dog-food-for-puppies",
+  publisher: { "@type": "Organization", name: "BabyMyDog", url: "https://www.babymydog.com" },
+  mainEntityOfPage: "https://www.babymydog.com/blog/best-dog-food-for-puppies",
 };
 
 export default function BestDogFoodForPuppies() {
@@ -43,9 +43,9 @@ export default function BestDogFoodForPuppies() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://babymydog.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": "best dog food for puppies", "item": "https://babymydog.com/blog/best-dog-food-for-puppies" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.babymydog.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "best dog food for puppies", "item": "https://www.babymydog.com/blog/best-dog-food-for-puppies" },
         ],
       }) }} />
       <article className="max-w-3xl mx-auto px-4 py-12">
