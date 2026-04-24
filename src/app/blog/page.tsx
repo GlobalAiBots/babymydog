@@ -1,6 +1,6 @@
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
-import { blogPosts } from "@/data/blog-posts";
+import { blogPosts, type BlogPost } from "@/data/blog-posts";
 import type { Metadata } from "next";
 
 /* eslint-disable @next/next/no-img-element */
@@ -31,12 +31,66 @@ const postImages: Record<string, string> = {
   "how-to-stop-dog-from-pulling-on-leash": "/images/english-springer-spaniel-holding-leash-field.jpg",
 };
 
-export default function BlogPage() {
-  const featured = blogPosts[0];
-  const rest = blogPosts.slice(1);
+// Parse "April 21, 2026" → Date for sorting. Falls back to 0 if
+// malformed so a bad date doesn't crash the sort.
+function parseDate(s: string): number {
+  const t = Date.parse(s);
+  return Number.isFinite(t) ? t : 0;
+}
 
+// Sort newest first so the hub self-maintains as posts are added.
+const sorted = [...blogPosts].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+const featured: BlogPost = sorted[0];
+const recentPair: BlogPost[] = sorted.slice(1, 3);
+const earlier: BlogPost[] = sorted.slice(3);
+
+// Light cross-site promo — BabyMyDog (product recs) + BarkSeeker
+// (directory) are sister sites in the same pet network.
+const networkPosts = [
+  {
+    url: "https://www.barkseeker.com/blog/how-to-find-good-dog-groomer",
+    title: "How to Find a Good Dog Groomer",
+    excerpt: "What to look for in a groomer — certifications, setup, red flags, and where to find reputable options near you.",
+    tag: "Grooming",
+  },
+  {
+    url: "https://www.barkseeker.com/blog/how-to-find-good-veterinarian",
+    title: "How to Find a Good Veterinarian",
+    excerpt: "AAHA accreditation, what to ask on the first visit, and how to evaluate the vet you already have.",
+    tag: "Vets",
+  },
+  {
+    url: "https://www.barkseeker.com",
+    title: "Find Groomers, Vets &amp; Parks Near You",
+    excerpt: "BarkSeeker is our directory of 32K+ groomers, vets, and dog parks across the US. Free to search.",
+    tag: "Directory",
+  },
+];
+
+function PostCard({ post, compact = false }: { post: BlogPost; compact?: boolean }) {
+  const hasImage = !!postImages[post.slug];
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FAF8F5' }}>
+    <Link href={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform flex flex-col" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
+      {hasImage && (
+        <div className="aspect-[16/9] overflow-hidden">
+          <img src={postImages[post.slug]} alt={post.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </div>
+      )}
+      <div className={compact ? "p-5" : "p-6"}>
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <span className="text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-2.5 py-0.5 rounded-full">{post.category}</span>
+          <span className="text-[#1A1A1A]/30 text-xs">{post.date}</span>
+        </div>
+        <h2 className={`font-bold text-[#1A1A1A] group-hover:text-[#C4704B] transition leading-snug ${compact ? "text-base" : "text-lg"}`}>{post.title}</h2>
+        <p className={`text-[#1A1A1A]/50 mt-2 line-clamp-2 ${compact ? "text-xs" : "text-sm"}`}>{post.description}</p>
+      </div>
+    </Link>
+  );
+}
+
+export default function BlogPage() {
+  return (
+    <div className="min-h-screen" style={{ backgroundColor: "#FAF8F5" }}>
       <div className="max-w-[1200px] mx-auto px-6 py-20">
 
         <div className="mb-14">
@@ -44,18 +98,30 @@ export default function BlogPage() {
           <p className="text-[#1A1A1A]/50 text-lg max-w-2xl">Expert tips, product reviews, and breed guides from a retired AKC breeder and dog lover.</p>
         </div>
 
-        {/* Featured Post */}
-        <Link href={`/blog/${featured.slug}`} className="group block bg-white rounded-2xl overflow-hidden mb-10 hover:scale-[1.01] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+        {/* Recently Published label */}
+        <div className="flex items-baseline justify-between mb-6 flex-wrap gap-2">
+          <h2 className="text-xl font-bold text-[#1A1A1A]">
+            <span aria-hidden="true">✨ </span>Recently Published
+          </h2>
+          <span className="text-sm text-[#1A1A1A]/40">{Math.min(3, sorted.length)} newest posts</span>
+        </div>
+
+        {/* Featured post (full-width split card) */}
+        <Link href={`/blog/${featured.slug}`} className="group block bg-white rounded-2xl overflow-hidden mb-6 hover:scale-[1.01] transition-transform" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="aspect-[16/9] md:aspect-auto overflow-hidden">
-              <img src={postImages[featured.slug]} alt={featured.title} loading="eager" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              {postImages[featured.slug] ? (
+                <img src={postImages[featured.slug]} alt={featured.title} loading="eager" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              ) : (
+                <div className="w-full h-full" style={{ background: featured.gradient }} />
+              )}
             </div>
             <div className="p-8 md:p-10 flex flex-col justify-center">
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-center gap-2 mb-3 flex-wrap">
                 <span className="text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-2.5 py-0.5 rounded-full">{featured.category}</span>
                 <span className="text-[#1A1A1A]/30 text-xs">{featured.date} &middot; {featured.readTime}</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] group-hover:text-[#C4704B] transition leading-tight">{featured.title}</h2>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] group-hover:text-[#C4704B] transition leading-tight">{featured.title}</h3>
               <p className="text-[#1A1A1A]/50 mt-3 leading-relaxed line-clamp-3">{featured.description}</p>
               <p className="text-[#C4704B] text-sm font-semibold mt-4 inline-flex items-center gap-1">
                 Read More <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
@@ -64,26 +130,40 @@ export default function BlogPage() {
           </div>
         </Link>
 
-        {/* Post Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {rest.map(p => (
-            <Link key={p.slug} href={`/blog/${p.slug}`} className="group bg-white rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
-              {postImages[p.slug] && (
-                <div className="aspect-[16/9] overflow-hidden">
-                  <img src={postImages[p.slug]} alt={p.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-              )}
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-bold text-[#C4704B] bg-[#C4704B]/10 px-2.5 py-0.5 rounded-full">{p.category}</span>
-                  <span className="text-[#1A1A1A]/30 text-xs">{p.date}</span>
-                </div>
-                <h2 className="font-bold text-[#1A1A1A] text-lg group-hover:text-[#C4704B] transition leading-snug">{p.title}</h2>
-                <p className="text-[#1A1A1A]/50 text-sm mt-2 line-clamp-2">{p.description}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        {/* #2 and #3 newest posts */}
+        {recentPair.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+            {recentPair.map((p) => <PostCard key={p.slug} post={p} />)}
+          </div>
+        )}
+
+        {/* Earlier posts */}
+        {earlier.length > 0 && (
+          <>
+            <h2 className="text-xl font-bold text-[#1A1A1A] mb-6">Earlier Posts</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {earlier.map((p) => <PostCard key={p.slug} post={p} />)}
+            </div>
+          </>
+        )}
+
+        {/* Cross-site — BarkSeeker network */}
+        <section className="mt-20">
+          <div className="flex items-baseline justify-between mb-2 flex-wrap gap-2">
+            <h2 className="text-xl font-bold text-[#1A1A1A]">More from our network</h2>
+          </div>
+          <p className="text-sm text-[#1A1A1A]/50 mb-6">BabyMyDog covers products. <a href="https://www.barkseeker.com" className="text-[#C4704B] hover:underline">BarkSeeker</a> is our sister directory for finding groomers, vets, and dog parks near you.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {networkPosts.map((p) => (
+              <a key={p.url} href={p.url} className="group bg-white rounded-2xl p-5 hover:scale-[1.02] transition-transform flex flex-col" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#C4704B] mb-2">{p.tag} <span aria-hidden="true">↗</span></span>
+                <h3 className="font-bold text-[#1A1A1A] leading-snug group-hover:text-[#C4704B] transition" dangerouslySetInnerHTML={{ __html: p.title }} />
+                <p className="text-[#1A1A1A]/50 text-xs mt-2 leading-relaxed">{p.excerpt}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+
       </div>
     </div>
   );
