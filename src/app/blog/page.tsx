@@ -21,7 +21,6 @@ const postImages: Record<string, string> = {
   "best-dog-food-for-allergies": "/images/best-dog-food-for-allergies.jpg",
   "best-dog-food-for-beagle": "/images/best-dog-food-for-beagle.jpg",
   "best-dog-food-for-english-bulldog": "/images/best-dog-food-for-english-bulldog.jpg",
-  "best-dog-food-for-pit-bull": "/images/best-dog-food-for-pit-bull.jpg",
   "best-dog-food-for-poodle": "/images/best-dog-food-for-poodle.jpg",
   "best-dog-food-for-puppies": "/images/golden-retriever-puppies-in-red-wagon.jpg",
   "best-dog-food-for-senior-dogs": "/images/best-dog-food-for-senior-dogs.jpg",
