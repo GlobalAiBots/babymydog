@@ -26,6 +26,7 @@ export interface AffiliatePartner {
   name: string;
   shortDescription: string;
   longDescription: string;
+  logo?: string;
   links: Record<AffiliateLinkKey, string>;
   banners: Record<AffiliateBannerKey, { url: string; w: number; h: number; click: string }>;
 }
@@ -36,6 +37,7 @@ export const REVIVAL: AffiliatePartner = {
   shortDescription: "Vet-grade pet supplies since 1987.",
   longDescription:
     "Revival Animal Health has supplied breeders, shelters, and pet owners with vet-grade vitamins, supplements, and care products for nearly 40 years. Free shipping on orders $149+.",
+  logo: "/images/affiliates/revival-logo.png",
 
   links: {
     jointCare: "https://www.jdoqocy.com/click-101726471-15167292",

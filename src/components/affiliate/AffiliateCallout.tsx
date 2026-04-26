@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import type { AffiliatePartner, AffiliateLinkKey } from "@/data/affiliates/revival";
@@ -34,10 +35,23 @@ export default function AffiliateCallout({
     <aside
       className={`not-prose ${margin} rounded-2xl border border-[#C4704B]/20 bg-[#FFF9F0] p-6 md:p-7`}
     >
-      <div className="flex items-baseline justify-between gap-3 flex-wrap mb-2">
-        <p className="text-[10px] font-bold uppercase tracking-wider text-[#C4704B]">
-          Recommended Partner &middot; {partner.name}
-        </p>
+      <div className="flex items-start justify-between gap-3 flex-wrap mb-2">
+        <div className="flex items-center gap-3">
+          {partner.logo && (
+            <img
+              src={partner.logo}
+              alt={`${partner.name} logo`}
+              width={48}
+              height={48}
+              loading="lazy"
+              decoding="async"
+              className="rounded-md flex-shrink-0"
+            />
+          )}
+          <p className="text-[10px] font-bold uppercase tracking-wider text-[#C4704B]">
+            Recommended Partner &middot; {partner.name}
+          </p>
+        </div>
         <p className="text-[10px] text-gray-400 uppercase tracking-wider">Affiliate Link</p>
       </div>
       <h3 className="text-lg md:text-xl font-bold text-[#1A1A1A] mb-2 leading-snug font-display">
