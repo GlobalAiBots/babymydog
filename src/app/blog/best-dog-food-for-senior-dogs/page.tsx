@@ -1,6 +1,11 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
 
+const POST_SLUG = "best-dog-food-for-senior-dogs";
 const TITLE = "Best Senior Dog Food in 2026: Vet-Recommended Picks by Size";
 const DESC = "When dogs become senior (varies by size), nutritional shifts for older dogs (lower calorie, joint support, higher fiber), wet vs dry for seniors, and our top 5 picks.";
 const URL = "https://www.babymydog.com/blog/best-dog-food-for-senior-dogs";
@@ -45,6 +50,8 @@ export default function Post() {
         <p className="text-gray-500 text-sm">Updated April 21, 2026 &middot; 10 min read &middot; BabyMyDog Team</p>
       </header>
 
+      <AffiliateDisclosure />
+
       <div className="space-y-6 text-gray-700 leading-relaxed">
         <p>By the time your dog&apos;s muzzle starts to gray and they sleep a little longer between walks, their nutritional needs have shifted meaningfully. The same food that built up their muscle at 4 now causes creeping weight gain at 11 — and that extra weight compounds joint problems, heart strain, and diabetes risk. <strong className="text-[#1A1A1A]">The right senior food is the single biggest quality-of-life lever in the last 3-5 years of a dog&apos;s life.</strong></p>
         <p>This guide covers when to switch, what to look for, which brands actually deliver on their marketing, and the warning signs that mean you should talk to your vet before changing anything.</p>
@@ -70,6 +77,7 @@ export default function Post() {
           <li><strong className="text-[#1A1A1A]">Antioxidants</strong>: vitamin E, vitamin C, beta-carotene. Combat cellular aging.</li>
           <li><strong className="text-[#1A1A1A]">Omega-3 fatty acids</strong>: joint, coat, cognitive, and cardiac benefits. Look for EPA/DHA on the label.</li>
         </ul>
+        <p>If your senior&apos;s food doesn&apos;t hit those targets, a targeted multivitamin from a vet-supply company like <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health</AffiliateInlineLink> can fill the gaps without rewriting their whole feeding routine.</p>
 
         <h2 className="font-[Cabin] text-2xl font-bold text-[#1A1A1A] mt-10">Our Top 5 Senior Food Picks</h2>
         <div className="grid grid-cols-1 gap-4 not-prose my-6">
@@ -98,7 +106,7 @@ export default function Post() {
 
         <h2 className="font-[Cabin] text-2xl font-bold text-[#1A1A1A] mt-10">Common Senior Health Issues &amp; Food</h2>
         <h3 className="font-[Cabin] text-xl font-bold text-[#1A1A1A] mt-6">Arthritis / Joint Pain</h3>
-        <p>Look for: glucosamine (1,000+ mg/kg), chondroitin (800+ mg/kg), omega-3 (EPA+DHA &gt;0.3% of diet). Hill&apos;s Science Diet 7+ and Royal Canin Mobility Support formulas hit these thresholds.</p>
+        <p>Look for: glucosamine (1,000+ mg/kg), chondroitin (800+ mg/kg), omega-3 (EPA+DHA &gt;0.3% of diet). Hill&apos;s Science Diet 7+ and Royal Canin Mobility Support formulas hit these thresholds. For seniors who need more than what&apos;s already in their food, <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival&apos;s vet-grade joint care line</AffiliateInlineLink> stacks cleanly on top of any senior diet.</p>
 
         <h3 className="font-[Cabin] text-xl font-bold text-[#1A1A1A] mt-6">Kidney Disease (vet-diagnosed)</h3>
         <p>Prescription-only territory: Hill&apos;s k/d, Royal Canin Renal, Purina NF Kidney Function. Don&apos;t try to manage kidney disease with OTC food &mdash; phosphorus restriction needs to be medically precise.</p>
@@ -151,6 +159,16 @@ export default function Post() {
           <li><Link href="/blog/choose-right-dog-food" className="text-[#D35400] hover:underline">How to Choose the Right Dog Food</Link></li>
           <li><Link href="/best" className="text-[#D35400] hover:underline">All product categories</Link></li>
         </ul>
+
+        <AffiliateCallout
+          partner={REVIVAL}
+          linkKey="autoShip"
+          postSlug={POST_SLUG}
+          variant="footer"
+          heading="Set Up AutoShip for Senior Supplements"
+          body="Senior nutrition is a long game — joint support, omega-3s, and multivitamins work best when given consistently for months, not weeks. Revival's AutoShip schedules recurring deliveries so you never run out, with free shipping on orders over $149."
+          ctaLabel="Browse Senior AutoShip Options"
+        />
       </div>
     </article>
   );

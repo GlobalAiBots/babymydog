@@ -1,5 +1,11 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-supplements-for-rottweiler";
 
 export const metadata: Metadata = {
   title: "Best Supplements for Rottweilers in 2026: Joint, Heart & Coat | BabyMyDog",
@@ -47,7 +53,9 @@ export default function BestSupplementsForRottweiler() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">
           Best Supplements for Rottweilers in 2026: Joint, Heart &amp; Coat
         </h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/rottweiler-smiling-happy-outdoors.jpg" alt="Happy Rottweiler outdoors" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
 
@@ -66,7 +74,7 @@ export default function BestSupplementsForRottweiler() {
             The statistics for this breed are sobering. Studies suggest that nearly 20 percent of Rottweilers will develop hip dysplasia, with elbow dysplasia affecting a similar proportion. Their rapid growth phase &mdash; they can gain 10 pounds per month as puppies &mdash; puts enormous stress on developing joints. And their above-average risk of heart conditions means cardiovascular support is something to think about proactively, not just reactively.
           </p>
           <p>
-            The four supplement categories that matter most for Rottweilers: joint support (glucosamine, chondroitin, MSM), omega-3 fatty acids for inflammation and heart health, probiotics for digestive health and immune function, and multivitamins to fill gaps in their diet. For a deeper look at the science behind joint supplements, read our article on <Link href="/blog/dog-joint-supplements-do-they-work" className="text-[#C4704B] hover:underline font-semibold">whether dog joint supplements actually work</Link>.
+            The four supplement categories that matter most for Rottweilers: joint support (glucosamine, chondroitin, MSM), omega-3 fatty acids for inflammation and heart health, probiotics for digestive health and immune function, and multivitamins to fill gaps in their diet. For a deeper look at the science behind joint supplements, read our article on <Link href="/blog/dog-joint-supplements-do-they-work" className="text-[#C4704B] hover:underline font-semibold">whether dog joint supplements actually work</Link>. Breeders raising large-breed litters often source their full supplement stack through <AffiliateInlineLink partner={REVIVAL} linkKey="supplementsDog" postSlug={POST_SLUG}>Revival Animal Health&apos;s vet-grade catalog</AffiliateInlineLink>, which carries professional formulations that aren&apos;t typically stocked at retail pet stores.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Our Top 5 Picks</h2>
@@ -107,6 +115,9 @@ export default function BestSupplementsForRottweiler() {
             <li><strong>Adults (3 to 7 years):</strong> Full supplement stack. This is when proactive joint support pays the biggest dividends for quality of life later.</li>
             <li><strong>Seniors (7+ years):</strong> Maximum doses of joint supplements. Consider adding CoQ10 separately for heart support if not already in the multivitamin. Discuss with your vet about prescription-strength joint support.</li>
           </ul>
+          <p>
+            For a vet-grade alternative to retail joint formulas, <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival&apos;s joint care line</AffiliateInlineLink> stocks the same glucosamine and chondroitin formulations used by breeder kennels and rescue operations &mdash; useful when you&apos;re committing to a multi-year supplement plan for a large breed.
+          </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Signs Your Rottweiler Needs Joint Support</h2>
 
@@ -127,6 +138,16 @@ export default function BestSupplementsForRottweiler() {
           <p>
             For the full Rottweiler breed profile, visit our <Link href="/breeds/rottweiler" className="text-[#C4704B] hover:underline font-semibold">Rottweiler breed guide</Link>. And browse our complete <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> roundup for more options across all breeds.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="discount10Off"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="New to Revival? Save $10 on Your First Order"
+            body="A multi-year supplement plan for a Rottweiler is a meaningful commitment — joint care, fish oil, and multivitamins for an 8-to-10-year stretch. Revival's $10-off-first-order is a low-friction way to test their formulations before committing to a full stack."
+            ctaLabel="Claim $10 Off"
+          />
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">

@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "winter-dog-care-tips";
 
 export const metadata: Metadata = {
   title: "Winter Dog Care: How to Keep Your Dog Safe and Warm | BabyMyDog",
@@ -55,7 +61,9 @@ export default function WinterDogCareTips() {
           Winter Dog Care: How to Keep Your Dog Safe and Warm
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; Seasonal &middot; 9 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; Seasonal &middot; 9 min read</p>
+
+        <AffiliateDisclosure />
 
         <img
           src="/images/poodle-wearing-red-coat-boots-snow.jpg"
@@ -101,7 +109,7 @@ export default function WinterDogCareTips() {
           <ul className="list-disc pl-6 space-y-2">
             <li><strong>Small breeds</strong> &mdash; Chihuahuas, Italian Greyhounds, Miniature Pinschers, Yorkshire Terriers, and similar small dogs have high surface-area-to-body-mass ratios, which means they lose heat fast.</li>
             <li><strong>Single-coated breeds</strong> &mdash; <Link href="/breeds/greyhound" className="text-[#C4704B] hover:underline font-semibold">Greyhounds</Link>, Whippets, Boxers, Vizslas, and Dalmatians lack the insulating undercoat that double-coated breeds have. They get cold quickly.</li>
-            <li><strong>Senior dogs</strong> &mdash; Older dogs regulate body temperature less efficiently and often have arthritis that worsens in cold weather. A coat provides both warmth and comfort.</li>
+            <li><strong>Senior dogs</strong> &mdash; Older dogs regulate body temperature less efficiently and often have arthritis that worsens in cold weather. A coat provides both warmth and comfort, and a vet-grade <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>joint supplement from Revival Animal Health</AffiliateInlineLink> can blunt the cold-weather joint stiffness that flares this time of year.</li>
             <li><strong>Very lean dogs</strong> &mdash; Dogs with low body fat have less natural insulation. Sighthounds are the classic example.</li>
             <li><strong>Dogs with clipped coats</strong> &mdash; Poodles, Bichon Frises, and other breeds that are typically groomed short may need a coat in winter even though their full natural coat would provide adequate protection.</li>
           </ul>
@@ -172,6 +180,16 @@ export default function WinterDogCareTips() {
           <p>
             Pay attention to your dog&apos;s behavior in cold weather. They&apos;ll tell you when they&apos;re uncomfortable if you know what to look for. And when in doubt, bring them inside. No walk is worth risking your dog&apos;s health. Stay warm out there.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="freeShipping"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Stocking Up for Winter? Free Shipping Over $149"
+            body="Winter is a stock-up season — joint supplements, paw balms, vitamins, and cold-weather essentials add up fast. Revival ships free on orders over $149, which makes a single bulk order more economical than four small ones across the season."
+            ctaLabel="Shop Revival Free Shipping"
+          />
 
         </div>
       </article>
