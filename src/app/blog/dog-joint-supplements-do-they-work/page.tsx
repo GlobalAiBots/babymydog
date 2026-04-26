@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "dog-joint-supplements-do-they-work";
 
 export const metadata: Metadata = {
   title: "Do Dog Joint Supplements Actually Work? What Vets Say in 2026 | BabyMyDog",
@@ -55,7 +61,9 @@ export default function DogJointSupplements() {
           Do Dog Joint Supplements Actually Work? What Vets Say in 2026
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; Health &middot; 9 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; Health &middot; 9 min read</p>
+
+        <AffiliateDisclosure />
 
         <img
           src="/images/english-bulldog-at-vet-checkup.jpg"
@@ -72,6 +80,16 @@ export default function DogJointSupplements() {
           <p>
             I spent weeks digging into veterinary research, talking to board-certified veterinary orthopedic specialists, and reviewing clinical studies. Here&apos;s what I found &mdash; and what I now recommend to every dog owner I know.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="jointCare"
+            postSlug={POST_SLUG}
+            variant="hero"
+            heading="Vet-Grade Joint Support from Revival Animal Health"
+            body="Revival has supplied breeders and shelters with veterinary-grade glucosamine, chondroitin, and MSM formulations for nearly 40 years. Browse their full joint care lineup — the same products our breeder network has used for decades."
+            ctaLabel="Shop Joint Care at Revival"
+          />
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">The Science Behind Glucosamine and Chondroitin</h2>
 
@@ -139,7 +157,7 @@ export default function DogJointSupplements() {
             The two supplements I hear veterinarians recommend most consistently are <a href="https://www.amazon.com/dp/B003ULL1NQ?tag=babymydog03-20" target="_blank" rel="noopener noreferrer" className="text-[#C4704B] hover:underline font-semibold">Nutramax Cosequin DS Plus with MSM</a>, which has been the gold standard in veterinary joint care for over two decades and has actual clinical research behind it, and <a href="https://www.amazon.com/dp/B071WCV19B?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Zesty Paws Mobility Bites</a>, which combines glucosamine with OptiMSM and has become popular for dogs who refuse tablets but will happily eat a soft chew. Both are manufactured under quality controls that many cheaper alternatives skip.
           </p>
           <p>
-            For a more comprehensive breakdown of options at different price points, check out our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link>.
+            For a more comprehensive breakdown of options at different price points, check out our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link>. Breeders and shelter operators we&apos;ve worked with also lean heavily on <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival Animal Health&apos;s joint care line</AffiliateInlineLink>, which has been a quiet workhorse in the veterinary supply world since 1987.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Dosage Considerations and Safety</h2>
@@ -167,6 +185,16 @@ export default function DogJointSupplements() {
           <p>
             Your dog can&apos;t tell you their joints hurt, but they can show you &mdash; if you know what to look for. Pay attention, start early when you can, and work with your vet to build a joint health plan that gives your dog the best shot at comfortable, active years ahead.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="discount10Off"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="New to Revival? Save $10 on Your First Order"
+            body="Revival offers $10 off for first-time customers, plus free shipping on orders over $149. A reasonable on-ramp if you want to try a vet-grade joint formula without committing to a year's supply."
+            ctaLabel="Claim $10 Off"
+          />
 
         </div>
       </article>
