@@ -203,7 +203,7 @@ export default function Home() {
 
       {/* BREED SPOTLIGHT — Full-width split */}
       <section className="relative overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[50vh] md:min-h-[60vh]">
           <div className="relative overflow-hidden">
             <img src="/images/golden-retriever-holding-flower-outdoors.jpg" alt="Golden Retriever portrait" loading="lazy" decoding="async" className="w-full h-full object-cover min-h-[300px]" />
           </div>
