@@ -93,7 +93,7 @@ export default function BlueBuffaloVsPurina() {
 
           <p>Choose Purina Pro Plan if you trust science-backed formulation, want a food recommended by most veterinary professionals, need specialized formulas for specific health conditions, or want strong nutrition at a more accessible price point. The research behind Pro Plan is genuinely impressive, and the feeding trial data provides a level of confidence that ingredient lists alone cannot offer.</p>
 
-          <p>Ultimately, the best food is the one your dog eats consistently, digests well, and thrives on. Look for firm stools, a shiny coat, steady energy, and healthy weight as indicators that a food is working. For more detailed food comparisons and breed-specific recommendations, visit our <Link href="/best/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food</Link> guide.</p>
+          <p>Ultimately, the best food is the one your dog eats consistently, digests well, and thrives on. Look for firm stools, a shiny coat, steady energy, and healthy weight as indicators that a food is working. For more detailed food comparisons and breed-specific recommendations, visit our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food</Link> guide.</p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>

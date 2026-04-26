@@ -105,7 +105,7 @@ export default function BestDogFoodForAllergies() {
             People throw around the word &quot;allergy&quot; for any food-related reaction, but a true allergy and a food intolerance are not the same thing. A food allergy is an immune system response &mdash; your dog&apos;s body identifies a specific protein as a threat and launches an inflammatory reaction. The symptoms are usually skin-related: itching, hives, ear infections, hot spots, and recurring paw licking.
           </p>
           <p>
-            A food intolerance, on the other hand, is a digestive issue. The dog can&apos;t break down a particular ingredient efficiently, leading to gas, soft stools, vomiting, or general gut upset. Intolerances are more common than true allergies, and they&apos;re usually easier to manage with a switch to a sensitive-stomach formula. If your dog&apos;s primary symptoms are GI-related, head to our <Link href="/best/dog-food-for-sensitive-stomach" className="text-[#C4704B] hover:underline font-semibold">best dog food for sensitive stomachs guide</Link> first.
+            A food intolerance, on the other hand, is a digestive issue. The dog can&apos;t break down a particular ingredient efficiently, leading to gas, soft stools, vomiting, or general gut upset. Intolerances are more common than true allergies, and they&apos;re usually easier to manage with a switch to a sensitive-stomach formula. If your dog&apos;s primary symptoms are GI-related, head to our <Link href="/products/dog-food-for-sensitive-stomach" className="text-[#C4704B] hover:underline font-semibold">best dog food for sensitive stomachs guide</Link> first.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">The Most Common Food Allergens in Dogs</h2>
@@ -182,7 +182,7 @@ export default function BestDogFoodForAllergies() {
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Supplements That Actually Help</h2>
 
           <p>
-            Diet alone often isn&apos;t enough for severely itchy dogs. Omega-3 fish oil supplements (specifically EPA and DHA) reduce skin inflammation and improve coat quality, and probiotics help reset the gut microbiome that immune dysfunction frequently disrupts. Browse our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> for the omega-3s and probiotics I trust most. Pairing the right food with a quality omega-3 is one of the most reliable combinations for chronic skin issues.
+            Diet alone often isn&apos;t enough for severely itchy dogs. Omega-3 fish oil supplements (specifically EPA and DHA) reduce skin inflammation and improve coat quality, and probiotics help reset the gut microbiome that immune dysfunction frequently disrupts. Browse our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> for the omega-3s and probiotics I trust most. Pairing the right food with a quality omega-3 is one of the most reliable combinations for chronic skin issues.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>
@@ -191,7 +191,7 @@ export default function BestDogFoodForAllergies() {
             Dog food allergies are frustrating, but they are solvable. Start by identifying whether you&apos;re dealing with a true allergy (skin symptoms) or a food intolerance (gut symptoms). Skip the at-home allergy tests &mdash; they&apos;re inaccurate. Run a proper elimination trial with a single novel protein for at least 8 weeks, and don&apos;t cheat with treats or flavored medications. If OTC limited-ingredient food doesn&apos;t cut it, go prescription.
           </p>
           <p>
-            For a broader look at top-rated formulas across all categories, our <Link href="/best/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food guide</Link> covers picks for every budget and life stage. The right formula often takes a couple of tries to find, but the relief on your dog&apos;s face when the itching finally stops is worth every minute of the search.
+            For a broader look at top-rated formulas across all categories, our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food guide</Link> covers picks for every budget and life stage. The right formula often takes a couple of tries to find, but the relief on your dog&apos;s face when the itching finally stops is worth every minute of the search.
           </p>
 
         </div>

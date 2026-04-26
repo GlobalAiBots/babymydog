@@ -157,7 +157,7 @@ export default function Post() {
           <li><Link href="/blog/best-dog-food-for-sensitive-stomach" className="text-[#D35400] hover:underline">Best Food for Sensitive Stomachs</Link></li>
           <li><Link href="/blog/dog-joint-supplements-do-they-work" className="text-[#D35400] hover:underline">Do Joint Supplements Work?</Link></li>
           <li><Link href="/blog/choose-right-dog-food" className="text-[#D35400] hover:underline">How to Choose the Right Dog Food</Link></li>
-          <li><Link href="/best" className="text-[#D35400] hover:underline">All product categories</Link></li>
+          <li><Link href="/products" className="text-[#D35400] hover:underline">All product categories</Link></li>
         </ul>
 
         <AffiliateCallout

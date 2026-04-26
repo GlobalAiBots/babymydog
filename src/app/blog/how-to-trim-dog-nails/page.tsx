@@ -146,7 +146,7 @@ export default function Post() {
           <li><Link href="/blog/dog-grooming-at-home" className="text-[#D35400] hover:underline">Dog Grooming at Home</Link></li>
           <li><Link href="/blog/best-grooming-tools-for-goldendoodle" className="text-[#D35400] hover:underline">Best Grooming Tools for Goldendoodles</Link></li>
           <li><Link href="/blog/how-often-should-i-bathe-my-dog" className="text-[#D35400] hover:underline">How Often Should I Bathe My Dog?</Link></li>
-          <li><Link href="/best" className="text-[#D35400] hover:underline">All Product Categories</Link></li>
+          <li><Link href="/products" className="text-[#D35400] hover:underline">All Product Categories</Link></li>
         </ul>
       </div>
     </article>

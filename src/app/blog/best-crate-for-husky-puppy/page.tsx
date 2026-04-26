@@ -50,7 +50,7 @@ export default function BestCrateForHuskyPuppy() {
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Let me be honest with you: crate training a Siberian Husky is one of the most challenging experiences in dog ownership. Huskies are independent, dramatic, and remarkably intelligent escape artists. They can open standard slide-bolt latches, bend wire panels, squeeze through gaps you would not think physically possible, and vocalize their displeasure at volumes that will have your neighbors considering a noise complaint. If you approach crate training a husky the same way you would a Labrador or a Golden Retriever, you will fail. They require a different crate, a different approach, and significantly more patience.</p>
-          <p>The good news is that it absolutely can be done. The key is the right equipment paired with a gradual, positive introduction that never uses the crate as punishment. Here is what works. For our full crate guide across all breeds, see our <Link href="/best/dog-crates" className="text-[#C4704B] hover:underline font-semibold">best dog crates guide</Link>.</p>
+          <p>The good news is that it absolutely can be done. The key is the right equipment paired with a gradual, positive introduction that never uses the crate as punishment. Here is what works. For our full crate guide across all breeds, see our <Link href="/products/dog-crates" className="text-[#C4704B] hover:underline font-semibold">best dog crates guide</Link>.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">What to Look for in a Husky Crate</h2>
           <ul className="list-disc pl-6 space-y-2">

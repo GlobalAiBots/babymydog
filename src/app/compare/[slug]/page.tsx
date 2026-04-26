@@ -217,7 +217,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
               <p className="text-xs font-bold tracking-widest uppercase text-[#D35400] mb-3">See Our Top Picks</p>
               <div className="flex flex-wrap gap-2">
                 {cmp.relatedCategories.map((slug) => (
-                  <Link key={slug} href={`/best/${slug}`} className="inline-flex items-center gap-1 bg-[#D35400]/5 hover:bg-[#D35400]/15 text-[#D35400] text-sm font-semibold px-4 py-2 rounded-full transition">
+                  <Link key={slug} href={`/products/${slug}`} className="inline-flex items-center gap-1 bg-[#D35400]/5 hover:bg-[#D35400]/15 text-[#D35400] text-sm font-semibold px-4 py-2 rounded-full transition">
                     Best {CATEGORY_NAMES[slug] || slug} &rarr;
                   </Link>
                 ))}

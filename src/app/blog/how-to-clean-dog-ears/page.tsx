@@ -121,7 +121,7 @@ export default function HowToCleanDogEars() {
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>
           <p>Ear cleaning is a two-minute task that can save you hundreds of dollars in veterinary bills and &mdash; more importantly &mdash; spare your dog the pain of chronic ear infections. The key is consistency: clean on a regular schedule, clean after every exposure to water, and inspect the ears every time you groom. Catching a problem early, when there is just a little extra wax or a faint smell, is infinitely better than dealing with a full-blown infection that requires weeks of medicated drops and vet rechecks.</p>
-          <p>For a complete rundown on at-home grooming routines including brushing, nail trimming, and dental care, see our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">best dog grooming tools</Link> guide. For ear cleansers, drying solutions, and the medicated wipes used in working kennels, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink>.</p>
+          <p>For a complete rundown on at-home grooming routines including brushing, nail trimming, and dental care, see our <Link href="/products/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">best dog grooming tools</Link> guide. For ear cleansers, drying solutions, and the medicated wipes used in working kennels, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink>.</p>
 
           <AffiliateCallout
             partner={REVIVAL}

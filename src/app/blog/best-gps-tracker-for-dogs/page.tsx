@@ -136,7 +136,7 @@ export default function BestGpsTrackerForDogs() {
             A GPS tracker is one of the most important safety investments you can make for your dog. Whether you choose a $29 AirTag or a full-featured cellular collar, the goal is the same: ensuring that a lost dog becomes a found dog as quickly as possible. For high-flight-risk breeds like <Link href="/breeds/siberian-husky" className="text-rose hover:underline font-semibold">Siberian Huskies</Link>, Beagles, and Jack Russell Terriers, a cellular tracker is essential. For lower-risk dogs in urban areas, a Bluetooth tracker provides meaningful protection at minimal cost.
           </p>
           <p>
-            For our full comparison of every GPS tracker on the market, visit our <Link href="/best/dog-gps-trackers" className="text-rose hover:underline font-semibold">best dog GPS trackers guide</Link>. Pair your new tracker with a quality harness or collar to make sure it stays securely attached during every adventure.
+            For our full comparison of every GPS tracker on the market, visit our <Link href="/products/dog-gps-trackers" className="text-rose hover:underline font-semibold">best dog GPS trackers guide</Link>. Pair your new tracker with a quality harness or collar to make sure it stays securely attached during every adventure.
           </p>
           <p>
             Looking for safe, fenced dog parks to let your pup run free? Check out <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline font-semibold">BarkSeeker</a> for dog parks near you.

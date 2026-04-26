@@ -390,7 +390,7 @@ export default function RoadTripPage() {
                 Labrador Retriever Breed Guide
               </Link>
               <Link
-                href="/best/dog-car-seats"
+                href="/products/dog-car-seats"
                 className="inline-block text-sm font-medium px-4 py-2 rounded-lg border hover:shadow-md transition-shadow"
                 style={{ borderColor: "#F0E6D6", color: "#D35400" }}
               >

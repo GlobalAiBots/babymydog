@@ -158,7 +158,7 @@ export default function BestPage() {
               return (
                 <Link
                   key={p.slug}
-                  href={`/best/${p.slug}`}
+                  href={`/products/${p.slug}`}
                   className="group bg-white rounded-2xl border border-[#2D2006]/8 hover:border-[#D35400]/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col"
                 >
                   <div className={`h-20 bg-gradient-to-br ${p.gradient} flex items-center justify-center`}>
@@ -222,7 +222,7 @@ export default function BestPage() {
             const avgRating = (c.picks.reduce((sum, p) => sum + p.rating, 0) / c.picks.length).toFixed(1);
             const img = categoryImages[c.slug];
             return (
-              <Link key={c.slug} href={`/best/${c.slug}`} className="group bg-white rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
+              <Link key={c.slug} href={`/products/${c.slug}`} className="group bg-white rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
                 {img && (
                   <div className="aspect-[16/9] overflow-hidden">
                     <img src={img} alt={c.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />

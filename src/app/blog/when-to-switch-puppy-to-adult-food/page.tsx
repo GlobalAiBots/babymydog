@@ -118,13 +118,13 @@ export default function WhenToSwitchPuppyToAdultFood() {
 
           <p><a href="https://www.amazon.com/dp/B001FV4862?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Blue Buffalo Life Protection</a> is another excellent choice, especially if your dog did well on Blue Buffalo&apos;s puppy formula. Staying within the same brand family during the puppy-to-adult transition can reduce digestive disruption because the base ingredients are similar. The adult formula leads with deboned chicken and includes LifeSource Bits &mdash; a proprietary blend of antioxidants, vitamins, and minerals cold-formed to preserve potency.</p>
 
-          <p>For a full breakdown of the best adult dog foods across all budgets and breed sizes, visit our <Link href="/best/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food guide</Link>. If you are still in the puppy stage and want to make sure you are feeding the right formula now, check out our <Link href="/blog/best-dog-food-for-puppies" className="text-[#C4704B] hover:underline font-semibold">best puppy food picks</Link>.</p>
+          <p>For a full breakdown of the best adult dog foods across all budgets and breed sizes, visit our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food guide</Link>. If you are still in the puppy stage and want to make sure you are feeding the right formula now, check out our <Link href="/blog/best-dog-food-for-puppies" className="text-[#C4704B] hover:underline font-semibold">best puppy food picks</Link>.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>
 
           <p>The puppy-to-adult food transition is one of those milestones that feels small but has lasting implications. Get the timing right based on your dog&apos;s breed size, follow the gradual 7-10 day mixing schedule, and choose a high-quality adult formula with real protein and balanced nutrition. If you are ever unsure whether your dog is ready, your veterinarian can assess body condition and growth status in a single office visit.</p>
 
-          <p>For everything else your growing pup needs during this stage, browse our <Link href="/best/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials checklist</Link> &mdash; it covers gear, nutrition, and training basics all in one place.</p>
+          <p>For everything else your growing pup needs during this stage, browse our <Link href="/products/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials checklist</Link> &mdash; it covers gear, nutrition, and training basics all in one place.</p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>

@@ -81,7 +81,7 @@ export default function BestDogFoodEnglishBulldog() {
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">2. Purina Pro Plan Sensitive Skin &amp; Stomach &mdash; Best for Sensitive Stomachs</h3>
           <p>
-            For bulldogs with chronic digestive issues or food allergies, <a href="https://www.amazon.com/dp/B001VNEIFY?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Purina Pro Plan Sensitive Skin &amp; Stomach</a> ($65, 30 lbs) is my go-to recommendation. The salmon-based formula avoids common allergens like chicken and corn, and includes prebiotic fiber specifically for digestive health. Purina is one of the few pet food companies that actually employs board-certified veterinary nutritionists and conducts real feeding trials &mdash; which matters more than fancy marketing. If you want more detail on sensitive stomach options, see our <Link href="/best/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food guide</Link>.
+            For bulldogs with chronic digestive issues or food allergies, <a href="https://www.amazon.com/dp/B001VNEIFY?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Purina Pro Plan Sensitive Skin &amp; Stomach</a> ($65, 30 lbs) is my go-to recommendation. The salmon-based formula avoids common allergens like chicken and corn, and includes prebiotic fiber specifically for digestive health. Purina is one of the few pet food companies that actually employs board-certified veterinary nutritionists and conducts real feeding trials &mdash; which matters more than fancy marketing. If you want more detail on sensitive stomach options, see our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food guide</Link>.
           </p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">3. Taste of the Wild Pacific Stream &mdash; Best Grain-Free Option</h3>
@@ -111,7 +111,7 @@ export default function BestDogFoodEnglishBulldog() {
             <li><strong>1 year and up:</strong> Two meals per day of adult formula. Most bulldogs do well on 1 to 1.5 cups per meal, but adjust based on your dog&apos;s weight and your vet&apos;s guidance.</li>
           </ul>
           <p>
-            A <Link href="/best/dog-bowls" className="text-[#C4704B] hover:underline font-semibold">slow feeder bowl</Link> is practically mandatory for bulldogs. They inhale their food, which causes gas, bloating, and occasionally vomiting. A maze-pattern slow feeder extends mealtime from 30 seconds to 5 or 10 minutes and dramatically improves digestion.
+            A <Link href="/products/dog-bowls" className="text-[#C4704B] hover:underline font-semibold">slow feeder bowl</Link> is practically mandatory for bulldogs. They inhale their food, which causes gas, bloating, and occasionally vomiting. A maze-pattern slow feeder extends mealtime from 30 seconds to 5 or 10 minutes and dramatically improves digestion.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Foods to Avoid</h2>
@@ -132,7 +132,7 @@ export default function BestDogFoodEnglishBulldog() {
             Feeding an English Bulldog isn&apos;t complicated once you understand their unique needs. Start with a breed-specific or sensitive stomach formula, measure every meal, use a slow feeder, and monitor their weight closely. If something isn&apos;t working &mdash; persistent loose stools, itchy skin, ear infections &mdash; change the protein source before you change the brand. And always transition gradually over 7 to 10 days by mixing old and new food.
           </p>
           <p>
-            For our complete bulldog owner&apos;s guide, visit our <Link href="/breeds/bulldog" className="text-[#C4704B] hover:underline font-semibold">Bulldog breed page</Link>. And browse all our <Link href="/best/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food picks</Link> for more options across every budget.
+            For our complete bulldog owner&apos;s guide, visit our <Link href="/breeds/bulldog" className="text-[#C4704B] hover:underline font-semibold">Bulldog breed page</Link>. And browse all our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food picks</Link> for more options across every budget.
           </p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">

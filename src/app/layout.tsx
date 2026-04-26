@@ -38,13 +38,13 @@ function Nav() {
         </Link>
         <div className="flex items-center gap-6 sm:gap-8 text-sm">
           <Link href="/breeds" className="text-charcoal/60 hover:text-terra transition">Breeds</Link>
-          <Link href="/best" className="text-charcoal/60 hover:text-terra transition">Products</Link>
+          <Link href="/products" className="text-charcoal/60 hover:text-terra transition">Products</Link>
           <Link href="/quiz" className="text-charcoal/60 hover:text-terra transition">Quiz</Link>
           <Link href="/collections" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Collections</Link>
           <Link href="/gifts" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Gifts</Link>
           <Link href="/compare" className="text-charcoal/60 hover:text-terra transition hidden md:block">Compare</Link>
           <Link href="/blog" className="text-charcoal/60 hover:text-terra transition hidden sm:block">Blog</Link>
-          <Link href="/best" className="hidden sm:inline-flex items-center gap-1.5 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)' }}>
+          <Link href="/products" className="hidden sm:inline-flex items-center gap-1.5 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)' }}>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
             Shop Now
           </Link>
@@ -70,10 +70,10 @@ function Footer() {
           <div>
             <p className="text-white/60 font-semibold mb-4 text-xs uppercase tracking-wider">Shop</p>
             <div className="flex flex-col gap-2 text-white/40">
-              <Link href="/best/dog-beds" className="hover:text-white transition">Dog Beds</Link>
-              <Link href="/best/dog-food" className="hover:text-white transition">Dog Food</Link>
-              <Link href="/best/dog-toys" className="hover:text-white transition">Dog Toys</Link>
-              <Link href="/best/dog-grooming" className="hover:text-white transition">Grooming</Link>
+              <Link href="/products/dog-beds" className="hover:text-white transition">Dog Beds</Link>
+              <Link href="/products/dog-food" className="hover:text-white transition">Dog Food</Link>
+              <Link href="/products/dog-toys" className="hover:text-white transition">Dog Toys</Link>
+              <Link href="/products/dog-grooming" className="hover:text-white transition">Grooming</Link>
               <Link href="/gifts" className="hover:text-white transition">Gift Guides</Link>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased min-h-screen flex flex-col" style={{background:'#FAF8F5', fontFamily:"'DM Sans', sans-serif"}}>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-5MB60LVFB2" strategy="afterInteractive" />
         <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5MB60LVFB2');`}</Script>
-        <a href="/best" className="block w-full bg-[#C4704B] text-white text-center py-2 text-xs sm:text-sm font-medium hover:bg-[#b5623f] transition">
+        <a href="/products" className="block w-full bg-[#C4704B] text-white text-center py-2 text-xs sm:text-sm font-medium hover:bg-[#b5623f] transition">
           &#128062; New for 2026 &mdash; Our team just dropped fresh picks across all 20 product categories &rarr;
         </a>
         <Nav />

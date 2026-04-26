@@ -136,7 +136,7 @@ export default function BestSupplementsForRottweiler() {
             If you notice any of these signs, see your vet for an evaluation and start joint supplements if you haven&apos;t already.
           </p>
           <p>
-            For the full Rottweiler breed profile, visit our <Link href="/breeds/rottweiler" className="text-[#C4704B] hover:underline font-semibold">Rottweiler breed guide</Link>. And browse our complete <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> roundup for more options across all breeds.
+            For the full Rottweiler breed profile, visit our <Link href="/breeds/rottweiler" className="text-[#C4704B] hover:underline font-semibold">Rottweiler breed guide</Link>. And browse our complete <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> roundup for more options across all breeds.
           </p>
 
           <AffiliateCallout

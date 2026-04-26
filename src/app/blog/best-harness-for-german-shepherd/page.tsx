@@ -73,7 +73,7 @@ export default function BestHarnessForGermanShepherd() {
             <li><strong>Reflective stitching:</strong> If you walk early morning or evening, reflective elements are a safety requirement, not a luxury.</li>
           </ul>
           <p>
-            For a full comparison of harness types and brands, see our <Link href="/best/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link>.
+            For a full comparison of harness types and brands, see our <Link href="/products/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link>.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Our Top 5 Picks</h2>

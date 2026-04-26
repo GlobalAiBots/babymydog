@@ -382,7 +382,7 @@ export default function SeniorDogPage() {
                 Dachshund Breed Guide
               </Link>
               <Link
-                href="/best/senior-dog-products"
+                href="/products/senior-dog-products"
                 className="inline-block text-sm font-medium px-4 py-2 rounded-lg border hover:shadow-md transition-shadow"
                 style={{ borderColor: "#F0E6D6", color: "#D35400" }}
               >

@@ -127,7 +127,7 @@ export default function HowToBrushDogsTeeth() {
             <li><strong>A treat your dog loves.</strong> The session ends with a high-value reward every single time. This is non-negotiable for building the habit.</li>
           </ul>
           <p>
-            For a curated list of the dental products I actually recommend, browse our <Link href="/best/dog-dental" className="text-[#C4704B] hover:underline font-semibold">best dog dental care products guide</Link>. For the vet-supply side of the catalog &mdash; chlorhexidine rinses, dental gels, and the brushes most groomers actually use &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="dentalDog" postSlug={POST_SLUG}>Revival Animal Health&apos;s dental category</AffiliateInlineLink> stocks the professional-grade options.
+            For a curated list of the dental products I actually recommend, browse our <Link href="/products/dog-dental" className="text-[#C4704B] hover:underline font-semibold">best dog dental care products guide</Link>. For the vet-supply side of the catalog &mdash; chlorhexidine rinses, dental gels, and the brushes most groomers actually use &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="dentalDog" postSlug={POST_SLUG}>Revival Animal Health&apos;s dental category</AffiliateInlineLink> stocks the professional-grade options.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Step-by-Step: The First Session</h2>
@@ -206,7 +206,7 @@ export default function HowToBrushDogsTeeth() {
             The dogs whose owners brush their teeth regularly almost never need expensive dental work. The dogs whose owners don&apos;t are the ones racking up $1,500 cleaning bills and losing teeth at age seven. Two minutes a day, 3 to 4 times a week. That&apos;s the entire ask, and it pays back massively over your dog&apos;s lifetime.
           </p>
           <p>
-            Start slow, treat generously, and be patient. If you&apos;re building these habits in with a brand-new puppy, our <Link href="/best/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials checklist</Link> covers the rest of the gear that should land at your house in the first month. The earlier you start, the easier the lifetime habit becomes.
+            Start slow, treat generously, and be patient. If you&apos;re building these habits in with a brand-new puppy, our <Link href="/products/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials checklist</Link> covers the rest of the gear that should land at your house in the first month. The earlier you start, the easier the lifetime habit becomes.
           </p>
 
           <AffiliateCallout

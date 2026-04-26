@@ -83,7 +83,7 @@ export default function OrthopedicVsStandardBed() {
 
           <p>If your dog is young, healthy, under 40 pounds, and shows no signs of joint discomfort, a quality standard bed or elevated cot is perfectly fine. Save your money for now and upgrade later when age or size demands it. If your dog is over seven years old, weighs more than 50 pounds, belongs to a breed prone to hip or elbow dysplasia, is recovering from surgery, or shows any signs of joint stiffness, invest in a memory foam orthopedic bed today. The earlier you provide proper support, the better the long-term outcome for your dog&apos;s mobility and comfort.</p>
 
-          <p>For detailed reviews and our top picks across every price point, visit our <Link href="/best/dog-beds" className="text-[#C4704B] hover:underline font-semibold">best dog beds</Link> guide.</p>
+          <p>For detailed reviews and our top picks across every price point, visit our <Link href="/products/dog-beds" className="text-[#C4704B] hover:underline font-semibold">best dog beds</Link> guide.</p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>

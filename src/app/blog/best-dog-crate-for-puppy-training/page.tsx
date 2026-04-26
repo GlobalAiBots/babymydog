@@ -120,7 +120,7 @@ export default function BestDogCratePuppyTraining() {
             <strong>Soft-sided crates</strong> are lightweight and great for travel, but I don&apos;t recommend them for puppies. A determined puppy can chew through the mesh in minutes, and they offer zero containment for a dog who wants out. Save these for adult dogs who are already crate trained and calm.
           </p>
           <p>
-            If you&apos;re on a tighter budget, the <a href="https://www.amazon.com/dp/B00QAVNWSK?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Amazon Basics folding metal crate</a> is a solid alternative that costs less while still including a divider and double-door design. For a full comparison, visit our <Link href="/best/dog-crates" className="text-[#C4704B] hover:underline font-semibold">best dog crates guide</Link>.
+            If you&apos;re on a tighter budget, the <a href="https://www.amazon.com/dp/B00QAVNWSK?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Amazon Basics folding metal crate</a> is a solid alternative that costs less while still including a divider and double-door design. For a full comparison, visit our <Link href="/products/dog-crates" className="text-[#C4704B] hover:underline font-semibold">best dog crates guide</Link>.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">The Crate Training Schedule That Actually Works</h2>
@@ -162,7 +162,7 @@ export default function BestDogCratePuppyTraining() {
             Don&apos;t rush the process. A few extra days of patience at the beginning will save you months of frustration later. And remember, every single well-adjusted adult dog you see calmly lying in a crate at the vet&apos;s office or on an airplane started exactly where your puppy is now &mdash; sniffing a strange metal box and wondering what&apos;s in it for them.
           </p>
           <p>
-            For a complete list of everything else your new puppy needs, browse our <Link href="/best/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials guide</Link> with our top picks for food, toys, beds, and more.
+            For a complete list of everything else your new puppy needs, browse our <Link href="/products/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials guide</Link> with our top picks for food, toys, beds, and more.
           </p>
 
         </div>

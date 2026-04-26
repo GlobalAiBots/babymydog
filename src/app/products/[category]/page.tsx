@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   return {
     title: `${cat.title} — Expert Picks | BabyMyDog`,
     description: cat.description,
-    alternates: { canonical: `https://www.babymydog.com/best/${cat.slug}` },
+    alternates: { canonical: `https://www.babymydog.com/products/${cat.slug}` },
   };
 }
 
@@ -102,8 +102,8 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babymydog.com" },
-          { "@type": "ListItem", "position": 2, "name": "Best Products", "item": "https://www.babymydog.com/best" },
-          { "@type": "ListItem", "position": 3, "name": cat.title, "item": `https://www.babymydog.com/best/${cat.slug}` },
+          { "@type": "ListItem", "position": 2, "name": "Best Products", "item": "https://www.babymydog.com/products" },
+          { "@type": "ListItem", "position": 3, "name": cat.title, "item": `https://www.babymydog.com/products/${cat.slug}` },
         ],
       }) }} />
       <div className="max-w-[1200px] mx-auto px-6 py-20">
@@ -111,12 +111,12 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         {/* Breadcrumbs */}
         <nav className="text-sm text-[#1A1A1A]/40 mb-6 flex flex-wrap gap-2">
           <Link href="/" className="hover:text-[#D35400] transition">Home</Link><span>/</span>
-          <Link href="/best" className="hover:text-[#D35400] transition">Best Products</Link><span>/</span>
+          <Link href="/products" className="hover:text-[#D35400] transition">Best Products</Link><span>/</span>
           <span className="text-[#1A1A1A] font-medium">{cat.title}</span>
         </nav>
 
         {/* Back link */}
-        <Link href="/best" className="inline-flex items-center gap-1 text-sm text-[#D35400] font-semibold hover:underline mb-6">
+        <Link href="/products" className="inline-flex items-center gap-1 text-sm text-[#D35400] font-semibold hover:underline mb-6">
           &larr; Back to All Products
         </Link>
 

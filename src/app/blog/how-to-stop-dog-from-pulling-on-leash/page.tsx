@@ -127,7 +127,7 @@ export default function HowToStopDogPullingOnLeash() {
             <strong>A front-clip harness</strong> is the single best training aid for pullers. Unlike a collar, which puts all the pressure on your dog&apos;s neck, a harness distributes force across the chest and shoulders. A front-clip design (where the leash attaches at the dog&apos;s chest) gently redirects your dog toward you when they pull, making it physically harder for them to forge straight ahead. The <a href="https://www.amazon.com/dp/B01M8JT6FT?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Rabbitgoo No-Pull Harness</a> is our top pick &mdash; it&apos;s affordable, adjustable at four points for a custom fit, and has both front and back clip options so you can transition to a back clip once your dog walks reliably.
           </p>
           <p>
-            For our complete equipment roundups, check out our <Link href="/best/dog-leashes" className="text-[#C4704B] hover:underline font-semibold">best dog leashes guide</Link> and <Link href="/best/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link>.
+            For our complete equipment roundups, check out our <Link href="/products/dog-leashes" className="text-[#C4704B] hover:underline font-semibold">best dog leashes guide</Link> and <Link href="/products/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link>.
           </p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">What to Avoid</h3>

@@ -86,7 +86,7 @@ export default function BestDogFoodForPoodle() {
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">4. Wellness CORE Grain-Free Ocean &mdash; Best for Coat Health</h3>
           <p>
-            If your poodle&apos;s coat is your top priority, <a href="https://www.amazon.com/dp/B003VIWB3W?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Wellness CORE Ocean</a> ($65, 22 lbs) provides the most concentrated omega-3 profile of any food on this list. Whitefish and herring deliver EPA and DHA directly, supported by flaxseed and salmon oil. The 34 percent protein and zero grains make it both coat-nourishing and easy to digest. Every poodle groomer I know recommends a fish-based diet for maximum coat quality. For grooming tools to match, visit our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">best grooming tools</Link> guide.
+            If your poodle&apos;s coat is your top priority, <a href="https://www.amazon.com/dp/B003VIWB3W?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Wellness CORE Ocean</a> ($65, 22 lbs) provides the most concentrated omega-3 profile of any food on this list. Whitefish and herring deliver EPA and DHA directly, supported by flaxseed and salmon oil. The 34 percent protein and zero grains make it both coat-nourishing and easy to digest. Every poodle groomer I know recommends a fish-based diet for maximum coat quality. For grooming tools to match, visit our <Link href="/products/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">best grooming tools</Link> guide.
           </p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">5. Diamond Naturals Small Breed &mdash; Best Budget</h3>
@@ -111,7 +111,7 @@ export default function BestDogFoodForPoodle() {
             Even with excellent food, many poodle owners see additional coat benefits from targeted supplementation:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Fish oil:</strong> An additional omega-3 supplement boosts coat shine and reduces skin dryness. See our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> for picks.</li>
+            <li><strong>Fish oil:</strong> An additional omega-3 supplement boosts coat shine and reduces skin dryness. See our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> for picks.</li>
             <li><strong>Biotin:</strong> Supports coat strength and growth. Often included in quality multivitamins.</li>
             <li><strong>Probiotics:</strong> A healthy gut absorbs nutrients more efficiently, directly impacting coat quality.</li>
           </ul>

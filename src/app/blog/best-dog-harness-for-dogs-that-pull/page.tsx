@@ -131,7 +131,7 @@ export default function BestDogHarnessForDogsThatPull() {
             The right no-pull harness can mean the difference between dreading walks and looking forward to them. Start with a front-clip harness, make sure it fits properly, and pair it with consistent training. Your arms, shoulders, and your dog will all thank you.
           </p>
           <p>
-            For our full breakdown of every harness style, visit our <Link href="/best/dog-harnesses" className="text-rose hover:underline font-semibold">best dog harnesses guide</Link>. You&apos;ll find size-specific recommendations, comparison charts, and picks for every budget.
+            For our full breakdown of every harness style, visit our <Link href="/products/dog-harnesses" className="text-rose hover:underline font-semibold">best dog harnesses guide</Link>. You&apos;ll find size-specific recommendations, comparison charts, and picks for every budget.
           </p>
           <p>
             Looking for a dog park to practice loose-leash walking? Check out <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline font-semibold">BarkSeeker</a> for dog parks near you.

@@ -37,7 +37,7 @@ export interface ComparisonPage {
   verdict: string;
   verdictWinner: "a" | "b" | "both";
   faqs: ComparisonFaq[];
-  relatedCategories: string[]; // /best/<slug>
+  relatedCategories: string[]; // /products/<slug>
   relatedBreeds: string[]; // /breeds/<slug>
 }
 

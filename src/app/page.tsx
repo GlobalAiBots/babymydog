@@ -67,7 +67,7 @@ export default function Home() {
           </h1>
           <p className="text-white/85 mt-4 text-lg md:text-xl max-w-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>Expert-picked products, breed guides, and honest reviews &mdash; because your dog deserves the best.</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/best" className="text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 6px 20px rgba(211,84,0,0.3)', minHeight: '48px' }}>Shop Products</Link>
+            <Link href="/products" className="text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #F39C12, #D35400)', boxShadow: '0 6px 20px rgba(211,84,0,0.3)', minHeight: '48px' }}>Shop Products</Link>
             <Link href="/breeds" className="border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:bg-white hover:text-[#D35400] hover:shadow-xl hover:-translate-y-0.5" style={{ minHeight: '48px' }}>Find Your Breed</Link>
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
             {categories.map((c) => (
-              <Link key={c.slug} href={c.slug.startsWith('/') ? c.slug : `/best/${c.slug}`} className="group block">
+              <Link key={c.slug} href={c.slug.startsWith('/') ? c.slug : `/products/${c.slug}`} className="group block">
                 <div className="relative overflow-hidden rounded-2xl bg-white transition-all duration-300 hover:shadow-xl" style={{ borderTop: `3px solid ${c.color}` }}>
                   <div className="relative overflow-hidden">
                     <img src={c.img} alt={c.alt} loading="lazy" decoding="async" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -191,7 +191,7 @@ export default function Home() {
                 { slug: "dog-collars", name: "Collars & Tags", icon: "\u{1F4DB}" },
                 { slug: "dog-training", name: "Training Tools", icon: "\u{1F3AF}" },
               ].map((c) => (
-                <Link key={c.slug} href={`/best/${c.slug}`} className="flex items-center gap-2 bg-white rounded-xl p-3 hover:shadow-md hover:-translate-y-0.5 transition-all border border-[#D4C5A9]/30">
+                <Link key={c.slug} href={`/products/${c.slug}`} className="flex items-center gap-2 bg-white rounded-xl p-3 hover:shadow-md hover:-translate-y-0.5 transition-all border border-[#D4C5A9]/30">
                   <span className="text-lg">{c.icon}</span>
                   <span className="text-sm font-semibold text-[#1A1A1A]">{c.name}</span>
                 </Link>

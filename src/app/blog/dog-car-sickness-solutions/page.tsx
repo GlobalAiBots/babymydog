@@ -140,7 +140,7 @@ export default function DogCarSicknessSolutions() {
             <a href="https://www.amazon.com/dp/B071X4LJVN?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Kurgo Skybox Backseat Booster</a> sits a bit lower than the K&amp;H but has the best stability of the bunch and a built-in tether. Good middle-ground option.
           </p>
           <p>
-            <a href="https://www.amazon.com/dp/B07GVVSKSF?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">PetSafe Happy Ride Car Harness</a> is the right choice for medium-to-large dogs who can&apos;t fit in a booster. Crash-tested attachment to the seat belt, keeps your dog facing forward and prevents the lateral sliding during turns that triggers motion sickness. Pair with our <Link href="/best/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link> for daily-walk options.
+            <a href="https://www.amazon.com/dp/B07GVVSKSF?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">PetSafe Happy Ride Car Harness</a> is the right choice for medium-to-large dogs who can&apos;t fit in a booster. Crash-tested attachment to the seat belt, keeps your dog facing forward and prevents the lateral sliding during turns that triggers motion sickness. Pair with our <Link href="/products/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link> for daily-walk options.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Anti-Nausea Medications (When You Need Them)</h2>
@@ -174,7 +174,7 @@ export default function DogCarSicknessSolutions() {
             <li><strong>Week 3 onward:</strong> Build trip length gradually. Stop and play before any sign of nausea appears.</li>
           </ol>
           <p>
-            The cardinal rule is to end every session before stress shows up. The moment you push past your dog&apos;s tolerance, you reset progress. Patience here pays off massively. For dogs with broader anxiety patterns affecting more than just car rides, browse our <Link href="/best/dog-anxiety" className="text-[#C4704B] hover:underline font-semibold">best dog anxiety products guide</Link> for ThunderShirts, calming sprays, and pheromone diffusers.
+            The cardinal rule is to end every session before stress shows up. The moment you push past your dog&apos;s tolerance, you reset progress. Patience here pays off massively. For dogs with broader anxiety patterns affecting more than just car rides, browse our <Link href="/products/dog-anxiety" className="text-[#C4704B] hover:underline font-semibold">best dog anxiety products guide</Link> for ThunderShirts, calming sprays, and pheromone diffusers.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">When Medication Is the Right Call</h2>
@@ -192,7 +192,7 @@ export default function DogCarSicknessSolutions() {
             Dog car sickness is one of the most fixable behavioral and physical issues you&apos;ll encounter as an owner. Most puppies grow out of it. Most adult dogs respond to a combination of an elevated car seat, an empty stomach, short positive trips, and (when needed) a Cerenia prescription. Within a few weeks, you can usually go from cleaning vomit at every red light to a dog who happily hops in the car for adventures.
           </p>
           <p>
-            For the gear side of the equation, our <Link href="/best/dog-car-seats" className="text-[#C4704B] hover:underline font-semibold">best dog car seats guide</Link> covers our full review of boosters, harnesses, and barriers across price points and dog sizes. The right setup pays for itself the first weekend you make it to the trailhead without a roadside cleanup stop.
+            For the gear side of the equation, our <Link href="/products/dog-car-seats" className="text-[#C4704B] hover:underline font-semibold">best dog car seats guide</Link> covers our full review of boosters, harnesses, and barriers across price points and dog sizes. The right setup pays for itself the first weekend you make it to the trailhead without a roadside cleanup stop.
           </p>
 
         </div>

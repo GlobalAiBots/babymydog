@@ -73,7 +73,7 @@ export default function BestHarnessForDachshund() {
             <li><strong>Lightweight material:</strong> Dachshunds are small dogs. A heavy, padded tactical harness designed for a German Shepherd will overwhelm them.</li>
           </ul>
           <p>
-            For a deeper comparison of all harness types, check our <Link href="/best/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link>.
+            For a deeper comparison of all harness types, check our <Link href="/products/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses guide</Link>.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Our Top 5 Picks</h2>
@@ -123,7 +123,7 @@ export default function BestHarnessForDachshund() {
             Let me be clear: your dachshund should still wear a collar with ID tags at all times. Collars are for identification. But the leash should <em>never</em> attach to the collar. Research estimates that 1 in 4 dachshunds will experience some form of IVDD during their lifetime. Disc herniation can cause pain, paralysis, and in severe cases requires surgery costing $5,000 to $10,000. Anything that reduces stress on the spine is worth the investment, and a $15 to $20 harness is the simplest thing you can do.
           </p>
           <p>
-            For more on the dachshund breed and their unique care needs, visit our <Link href="/breeds/dachshund" className="text-[#C4704B] hover:underline font-semibold">Dachshund breed guide</Link>. And for leash recommendations to pair with your new harness, see our <Link href="/best/dog-leashes" className="text-[#C4704B] hover:underline font-semibold">best dog leashes</Link> roundup.
+            For more on the dachshund breed and their unique care needs, visit our <Link href="/breeds/dachshund" className="text-[#C4704B] hover:underline font-semibold">Dachshund breed guide</Link>. And for leash recommendations to pair with your new harness, see our <Link href="/products/dog-leashes" className="text-[#C4704B] hover:underline font-semibold">best dog leashes</Link> roundup.
           </p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">

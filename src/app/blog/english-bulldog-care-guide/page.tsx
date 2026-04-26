@@ -123,7 +123,7 @@ export default function EnglishBulldogCareGuide() {
             I feed my bulldogs measured meals twice a day &mdash; no free-feeding, ever. Free-feeding (leaving food out all day) is a fast track to an overweight bulldog, and an overweight bulldog is an unhealthy bulldog. Talk to your vet about the right calorie count for your dog&apos;s age, size, and activity level. Most adult bulldogs do well on about two to three cups of high-quality food per day, split into two meals.
           </p>
           <p>
-            Look for foods with limited ingredients if your bulldog has allergies, and avoid foods with lots of fillers. Slow-feeder bowls are also a great idea &mdash; bulldogs tend to inhale their food, which can lead to bloating and digestive issues. Browse our <Link href="/best" className="text-[#C4704B] hover:underline font-semibold">best product recommendations</Link> for food and feeding accessories.
+            Look for foods with limited ingredients if your bulldog has allergies, and avoid foods with lots of fillers. Slow-feeder bowls are also a great idea &mdash; bulldogs tend to inhale their food, which can lead to bloating and digestive issues. Browse our <Link href="/products" className="text-[#C4704B] hover:underline font-semibold">best product recommendations</Link> for food and feeding accessories.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Best Products Every Bulldog Owner Needs</h2>

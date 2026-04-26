@@ -107,13 +107,13 @@ export default function BestDogFoodForBeagle() {
             <li><strong>Overweight beagle:</strong> Reduce by 10 to 15 percent and reassess in 2 weeks</li>
           </ul>
           <p>
-            Weigh your beagle monthly and adjust. Use a measuring cup &mdash; eyeballing is how beagles get fat. A slow feeder bowl is also worth the investment since beagles inhale food. Browse our <Link href="/best/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food</Link> guide for more options across every budget.
+            Weigh your beagle monthly and adjust. Use a measuring cup &mdash; eyeballing is how beagles get fat. A slow feeder bowl is also worth the investment since beagles inhale food. Browse our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food</Link> guide for more options across every budget.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Treats Without Overfeeding</h2>
 
           <p>
-            Beagles need treats for training &mdash; their food motivation makes them incredibly responsive to reward-based training. The key is accounting for treat calories in the daily total. Treats should make up no more than 10 percent of daily calories. Use small, low-calorie training treats (2 to 5 calories each) rather than large biscuits. Baby carrots, blueberries, and apple slices are excellent zero-guilt treat alternatives that most beagles love. For treat recommendations, visit our <Link href="/best/dog-treats" className="text-[#C4704B] hover:underline font-semibold">best dog treats</Link> page.
+            Beagles need treats for training &mdash; their food motivation makes them incredibly responsive to reward-based training. The key is accounting for treat calories in the daily total. Treats should make up no more than 10 percent of daily calories. Use small, low-calorie training treats (2 to 5 calories each) rather than large biscuits. Baby carrots, blueberries, and apple slices are excellent zero-guilt treat alternatives that most beagles love. For treat recommendations, visit our <Link href="/products/dog-treats" className="text-[#C4704B] hover:underline font-semibold">best dog treats</Link> page.
           </p>
           <p>
             For the full beagle breed profile, visit our <Link href="/breeds/beagle" className="text-[#C4704B] hover:underline font-semibold">Beagle breed guide</Link>.

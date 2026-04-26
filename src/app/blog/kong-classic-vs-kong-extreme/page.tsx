@@ -87,7 +87,7 @@ export default function KongClassicVsExtreme() {
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Verdict</h2>
 
-          <p>Both KONGs are excellent toys &mdash; there is a reason they have been the top recommendation from trainers and veterinarians for over forty years. The Classic is perfect for the majority of dogs who chew at a normal intensity. The Extreme is essential for power chewers who would tear through the red rubber. When in doubt, go black. For more toy recommendations across all chewing styles, explore our <Link href="/best/dog-toys" className="text-[#C4704B] hover:underline font-semibold">best dog toys</Link> guide.</p>
+          <p>Both KONGs are excellent toys &mdash; there is a reason they have been the top recommendation from trainers and veterinarians for over forty years. The Classic is perfect for the majority of dogs who chew at a normal intensity. The Extreme is essential for power chewers who would tear through the red rubber. When in doubt, go black. For more toy recommendations across all chewing styles, explore our <Link href="/products/dog-toys" className="text-[#C4704B] hover:underline font-semibold">best dog toys</Link> guide.</p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>

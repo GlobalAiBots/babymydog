@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className="text-[#1A1A1A]/50 mb-8 max-w-md">Looks like this page wandered off. Let&apos;s get you back on the trail.</p>
       <div className="flex gap-4">
         <Link href="/" className="bg-[#C4704B] hover:bg-[#b5623f] text-white font-semibold text-sm px-6 py-3 rounded-full transition">Go Home</Link>
-        <Link href="/best" className="border border-[#C4704B] text-[#C4704B] hover:bg-[#C4704B]/5 font-semibold text-sm px-6 py-3 rounded-full transition">Shop Products</Link>
+        <Link href="/products" className="border border-[#C4704B] text-[#C4704B] hover:bg-[#C4704B]/5 font-semibold text-sm px-6 py-3 rounded-full transition">Shop Products</Link>
       </div>
     </div>
   );

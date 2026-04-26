@@ -16,46 +16,46 @@ interface TraitGroup {
 const BREED_TRAIT_MAP: Record<string, TraitGroup> = {
   brachycephalic: {
     products: [
-      { label: "Cooling mats — flat-faced breeds overheat easily", category: "/best/dog-cooling", icon: "❄️" },
-      { label: "Harnesses — safer than collars for short-nosed breeds", category: "/best/dog-harnesses", icon: "🦺" },
-      { label: "Grooming wipes — for cleaning skin folds daily", category: "/best/dog-grooming", icon: "🧴" },
-      { label: "Slow feeder bowls — prevents eating too fast", category: "/best/dog-bowls", icon: "🥣" },
+      { label: "Cooling mats — flat-faced breeds overheat easily", category: "/products/dog-cooling", icon: "❄️" },
+      { label: "Harnesses — safer than collars for short-nosed breeds", category: "/products/dog-harnesses", icon: "🦺" },
+      { label: "Grooming wipes — for cleaning skin folds daily", category: "/products/dog-grooming", icon: "🧴" },
+      { label: "Slow feeder bowls — prevents eating too fast", category: "/products/dog-bowls", icon: "🥣" },
     ],
     healthNote: "Brachycephalic breeds are prone to breathing difficulties, joint issues, and skin fold infections. Temperature regulation is critical — avoid exercise in hot weather and always have water available.",
   },
   large_active: {
     products: [
-      { label: "Heavy-duty chew toys — built for powerful jaws", category: "/best/toys-for-heavy-chewers", icon: "🦴" },
-      { label: "Joint supplements — protect hips and knees early", category: "/best/dog-supplements", icon: "💊" },
-      { label: "XL orthopedic beds — proper support for big dogs", category: "/best/large-dog-products", icon: "🛏️" },
-      { label: "Fetch toys — burn off that high energy", category: "/best/toys-for-fetch", icon: "🎾" },
+      { label: "Heavy-duty chew toys — built for powerful jaws", category: "/products/toys-for-heavy-chewers", icon: "🦴" },
+      { label: "Joint supplements — protect hips and knees early", category: "/products/dog-supplements", icon: "💊" },
+      { label: "XL orthopedic beds — proper support for big dogs", category: "/products/large-dog-products", icon: "🛏️" },
+      { label: "Fetch toys — burn off that high energy", category: "/products/toys-for-fetch", icon: "🎾" },
     ],
     healthNote: "Large active breeds need joint protection starting early in life. Heavy chewing is normal — redirect to appropriate toys rather than trying to stop it.",
   },
   small_breed: {
     products: [
-      { label: "Small dental chews — sized for tiny mouths", category: "/best/dental-care", icon: "🦷" },
-      { label: "Cozy beds — small dogs love to burrow", category: "/best/small-dog-products", icon: "🛏️" },
-      { label: "Harnesses — protects fragile tracheas", category: "/best/dog-harnesses", icon: "🦺" },
-      { label: "Training treats — small, low-calorie bites", category: "/best/dog-treats", icon: "🦴" },
+      { label: "Small dental chews — sized for tiny mouths", category: "/products/dental-care", icon: "🦷" },
+      { label: "Cozy beds — small dogs love to burrow", category: "/products/small-dog-products", icon: "🛏️" },
+      { label: "Harnesses — protects fragile tracheas", category: "/products/dog-harnesses", icon: "🦺" },
+      { label: "Training treats — small, low-calorie bites", category: "/products/dog-treats", icon: "🦴" },
     ],
     healthNote: "Small breeds are prone to dental disease, luxating patella, and tracheal collapse. Always use a harness instead of a collar to protect the neck and trachea.",
   },
   double_coat: {
     products: [
-      { label: "De-shedding brushes — manage that undercoat", category: "/best/dog-grooming", icon: "🪮" },
-      { label: "Deshedding shampoo — reduce loose fur", category: "/best/dog-grooming", icon: "🧴" },
-      { label: "Cooling products — double coats trap heat", category: "/best/dog-coats", icon: "❄️" },
-      { label: "Heavy-duty vacuum — you'll need one", category: "/best/dog-grooming", icon: "🧹" },
+      { label: "De-shedding brushes — manage that undercoat", category: "/products/dog-grooming", icon: "🪮" },
+      { label: "Deshedding shampoo — reduce loose fur", category: "/products/dog-grooming", icon: "🧴" },
+      { label: "Cooling products — double coats trap heat", category: "/products/dog-coats", icon: "❄️" },
+      { label: "Heavy-duty vacuum — you'll need one", category: "/products/dog-grooming", icon: "🧹" },
     ],
     healthNote: "Double-coated breeds shed heavily twice a year (\"blowing coat\"). Regular brushing 2-3x per week prevents matting. Never shave a double coat — it damages the fur and removes insulation.",
   },
   senior_prone: {
     products: [
-      { label: "Joint supplements with glucosamine & chondroitin", category: "/best/senior-dog-products", icon: "💊" },
-      { label: "Orthopedic memory foam beds", category: "/best/senior-dog-products", icon: "🛏️" },
-      { label: "Soft toys — gentle on aging teeth", category: "/best/dog-toys", icon: "🧸" },
-      { label: "Dog ramps — easy on joints for cars & furniture", category: "/best/senior-dog-products", icon: "📐" },
+      { label: "Joint supplements with glucosamine & chondroitin", category: "/products/senior-dog-products", icon: "💊" },
+      { label: "Orthopedic memory foam beds", category: "/products/senior-dog-products", icon: "🛏️" },
+      { label: "Soft toys — gentle on aging teeth", category: "/products/dog-toys", icon: "🧸" },
+      { label: "Dog ramps — easy on joints for cars & furniture", category: "/products/senior-dog-products", icon: "📐" },
     ],
     healthNote: "As dogs age, joint support becomes critical. Start supplements before symptoms appear. Softer toys and ramps reduce strain on aging bodies.",
   },
@@ -130,23 +130,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 function getProductInfo(rec: string): { image: string; link: string; label: string } {
   const r = rec.toLowerCase();
-  if (r.includes("bed")) return { image: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", link: "/best/dog-beds", label: "Dog Beds" };
-  if (r.includes("food") || r.includes("kibble")) return { image: "/images/border-collie-looking-at-food-bowl-kibble.jpg", link: "/best/dog-food", label: "Dog Food" };
-  if (r.includes("toy") || r.includes("fetch") || r.includes("chew") || r.includes("puzzle")) return { image: "/images/golden-retriever-holding-stuffed-toy.jpg", link: "/best/dog-toys", label: "Dog Toys" };
-  if (r.includes("brush") || r.includes("groom") || r.includes("deshed")) return { image: "/images/poodle-professional-grooming-salon.jpg", link: "/best/dog-grooming", label: "Grooming Tools" };
-  if (r.includes("harness")) return { image: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", link: "/best/dog-harnesses", label: "Dog Harnesses" };
-  if (r.includes("leash") || r.includes("collar")) return { image: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", link: "/best/dog-leashes", label: "Dog Leashes" };
-  if (r.includes("crate") || r.includes("kennel")) return { image: "/images/hound-dog-resting-on-bed-in-doorway.jpg", link: "/best/dog-crates", label: "Dog Crates" };
-  if (r.includes("supplement") || r.includes("joint") || r.includes("vitamin")) return { image: "/images/english-bulldog-at-vet-checkup.jpg", link: "/best/dog-supplements", label: "Supplements" };
-  if (r.includes("coat") || r.includes("jacket") || r.includes("cooling") || r.includes("vest") || r.includes("winter")) return { image: "/images/poodle-wearing-red-coat-boots-snow.jpg", link: "/best/dog-coats", label: "Dog Coats" };
-  if (r.includes("shampoo")) return { image: "/images/white-dog-getting-groomed-with-scissors.jpg", link: "/best/dog-grooming", label: "Dog Shampoo" };
-  if (r.includes("treat")) return { image: "/images/chocolate-lab-licking-lips-hungry.jpg", link: "/best/dog-treats", label: "Dog Treats" };
-  if (r.includes("dental")) return { image: "/images/vet-examining-english-bulldog-ear.jpg", link: "/best/dog-dental", label: "Dental Care" };
-  if (r.includes("camera") || r.includes("monitor")) return { image: "/images/happy-dog-owner-hugging-golden-retriever.jpg", link: "/best/dog-cameras", label: "Dog Cameras" };
-  if (r.includes("tracker") || r.includes("gps")) return { image: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", link: "/best/dog-gps-trackers", label: "GPS Trackers" };
-  if (r.includes("bowl") || r.includes("feeder")) return { image: "/images/excited-husky-getting-fed-dog-bowl.jpg", link: "/best/dog-bowls", label: "Bowls & Feeders" };
-  if (r.includes("nail") || r.includes("ear")) return { image: "/images/poodle-professional-grooming-salon.jpg", link: "/best/dog-grooming", label: "Grooming Tools" };
-  return { image: "/images/golden-retriever-with-stuffed-toy-grass.jpg", link: "/best", label: "Dog Products" };
+  if (r.includes("bed")) return { image: "/images/dog-relaxing-premium-gray-bed-with-plants.jpg", link: "/products/dog-beds", label: "Dog Beds" };
+  if (r.includes("food") || r.includes("kibble")) return { image: "/images/border-collie-looking-at-food-bowl-kibble.jpg", link: "/products/dog-food", label: "Dog Food" };
+  if (r.includes("toy") || r.includes("fetch") || r.includes("chew") || r.includes("puzzle")) return { image: "/images/golden-retriever-holding-stuffed-toy.jpg", link: "/products/dog-toys", label: "Dog Toys" };
+  if (r.includes("brush") || r.includes("groom") || r.includes("deshed")) return { image: "/images/poodle-professional-grooming-salon.jpg", link: "/products/dog-grooming", label: "Grooming Tools" };
+  if (r.includes("harness")) return { image: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", link: "/products/dog-harnesses", label: "Dog Harnesses" };
+  if (r.includes("leash") || r.includes("collar")) return { image: "/images/goldendoodle-wearing-red-harness-and-leash.jpg", link: "/products/dog-leashes", label: "Dog Leashes" };
+  if (r.includes("crate") || r.includes("kennel")) return { image: "/images/hound-dog-resting-on-bed-in-doorway.jpg", link: "/products/dog-crates", label: "Dog Crates" };
+  if (r.includes("supplement") || r.includes("joint") || r.includes("vitamin")) return { image: "/images/english-bulldog-at-vet-checkup.jpg", link: "/products/dog-supplements", label: "Supplements" };
+  if (r.includes("coat") || r.includes("jacket") || r.includes("cooling") || r.includes("vest") || r.includes("winter")) return { image: "/images/poodle-wearing-red-coat-boots-snow.jpg", link: "/products/dog-coats", label: "Dog Coats" };
+  if (r.includes("shampoo")) return { image: "/images/white-dog-getting-groomed-with-scissors.jpg", link: "/products/dog-grooming", label: "Dog Shampoo" };
+  if (r.includes("treat")) return { image: "/images/chocolate-lab-licking-lips-hungry.jpg", link: "/products/dog-treats", label: "Dog Treats" };
+  if (r.includes("dental")) return { image: "/images/vet-examining-english-bulldog-ear.jpg", link: "/products/dog-dental", label: "Dental Care" };
+  if (r.includes("camera") || r.includes("monitor")) return { image: "/images/happy-dog-owner-hugging-golden-retriever.jpg", link: "/products/dog-cameras", label: "Dog Cameras" };
+  if (r.includes("tracker") || r.includes("gps")) return { image: "/images/woman-hiking-with-dog-ocean-cliffs.jpg", link: "/products/dog-gps-trackers", label: "GPS Trackers" };
+  if (r.includes("bowl") || r.includes("feeder")) return { image: "/images/excited-husky-getting-fed-dog-bowl.jpg", link: "/products/dog-bowls", label: "Bowls & Feeders" };
+  if (r.includes("nail") || r.includes("ear")) return { image: "/images/poodle-professional-grooming-salon.jpg", link: "/products/dog-grooming", label: "Grooming Tools" };
+  return { image: "/images/golden-retriever-with-stuffed-toy-grass.jpg", link: "/products", label: "Dog Products" };
 }
 
 function getCareIcon(tip: string): string {
@@ -163,19 +163,19 @@ function getCareIcon(tip: string): string {
 function getInternalLinks(breed: { name: string; size: string; groomingNeeds: string; exerciseNeeds: string; healthIssues: string[] }): React.ReactNode {
   const links: React.ReactNode[] = [];
   if (breed.groomingNeeds === "high") {
-    links.push(<span key="groom">our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline">top grooming tools</Link></span>);
+    links.push(<span key="groom">our <Link href="/products/dog-grooming" className="text-[#C4704B] hover:underline">top grooming tools</Link></span>);
   }
   if (breed.size === "large" || breed.size === "giant") {
-    links.push(<span key="bed">our <Link href="/best/dog-beds" className="text-[#C4704B] hover:underline">best beds for large breeds</Link></span>);
+    links.push(<span key="bed">our <Link href="/products/dog-beds" className="text-[#C4704B] hover:underline">best beds for large breeds</Link></span>);
   }
   if (breed.exerciseNeeds === "high") {
-    links.push(<span key="toy">our <Link href="/best/dog-toys" className="text-[#C4704B] hover:underline">favorite toys for active dogs</Link></span>);
+    links.push(<span key="toy">our <Link href="/products/dog-toys" className="text-[#C4704B] hover:underline">favorite toys for active dogs</Link></span>);
   }
   if (breed.healthIssues.some(h => h.toLowerCase().includes("hip") || h.toLowerCase().includes("dysplasia"))) {
-    links.push(<span key="supp">our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline">recommended joint supplements</Link></span>);
+    links.push(<span key="supp">our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline">recommended joint supplements</Link></span>);
   }
   if (links.length === 0) {
-    links.push(<span key="all">our <Link href="/best" className="text-[#C4704B] hover:underline">expert-reviewed product picks</Link></span>);
+    links.push(<span key="all">our <Link href="/products" className="text-[#C4704B] hover:underline">expert-reviewed product picks</Link></span>);
   }
   const display = links.slice(0, 2);
   return (
@@ -334,16 +334,16 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
                 <div className="space-y-3">
                   {breed.healthIssues.slice(0, 4).map((issue, i) => {
                     const il = issue.toLowerCase();
-                    let product = { label: "Browse all products", href: "/best" };
-                    if (il.includes("hip") || il.includes("dysplasia") || il.includes("joint") || il.includes("elbow")) product = { label: "Joint Supplements", href: "/best/dog-supplements" };
-                    else if (il.includes("dental") || il.includes("teeth")) product = { label: "Dental Care Products", href: "/best/dental-care" };
-                    else if (il.includes("obesity") || il.includes("weight")) product = { label: "Slow Feeder Bowls", href: "/best/dog-bowls" };
-                    else if (il.includes("eye") || il.includes("skin") || il.includes("allerg")) product = { label: "Grooming & Cleanup", href: "/best/dog-grooming" };
-                    else if (il.includes("bloat") || il.includes("gastric")) product = { label: "Slow Feeder Bowls", href: "/best/dog-bowls" };
-                    else if (il.includes("back") || il.includes("ivdd") || il.includes("spinal")) product = { label: "Dog Ramps & Support", href: "/best/senior-dog-products" };
-                    else if (il.includes("heart") || il.includes("cancer")) product = { label: "Health Supplements", href: "/best/dog-supplements" };
-                    else if (il.includes("anxiety") || il.includes("separat")) product = { label: "Calming Products", href: "/best/anxious-dogs" };
-                    else if (il.includes("trachea") || il.includes("collar")) product = { label: "No-Pull Harnesses", href: "/best/dog-harnesses" };
+                    let product = { label: "Browse all products", href: "/products" };
+                    if (il.includes("hip") || il.includes("dysplasia") || il.includes("joint") || il.includes("elbow")) product = { label: "Joint Supplements", href: "/products/dog-supplements" };
+                    else if (il.includes("dental") || il.includes("teeth")) product = { label: "Dental Care Products", href: "/products/dental-care" };
+                    else if (il.includes("obesity") || il.includes("weight")) product = { label: "Slow Feeder Bowls", href: "/products/dog-bowls" };
+                    else if (il.includes("eye") || il.includes("skin") || il.includes("allerg")) product = { label: "Grooming & Cleanup", href: "/products/dog-grooming" };
+                    else if (il.includes("bloat") || il.includes("gastric")) product = { label: "Slow Feeder Bowls", href: "/products/dog-bowls" };
+                    else if (il.includes("back") || il.includes("ivdd") || il.includes("spinal")) product = { label: "Dog Ramps & Support", href: "/products/senior-dog-products" };
+                    else if (il.includes("heart") || il.includes("cancer")) product = { label: "Health Supplements", href: "/products/dog-supplements" };
+                    else if (il.includes("anxiety") || il.includes("separat")) product = { label: "Calming Products", href: "/products/anxious-dogs" };
+                    else if (il.includes("trachea") || il.includes("collar")) product = { label: "No-Pull Harnesses", href: "/products/dog-harnesses" };
                     return (
                       <div key={i} className="bg-white rounded-2xl p-5 flex items-center justify-between gap-4" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                         <div className="flex items-center gap-3">
@@ -423,7 +423,7 @@ export default async function BreedPage({ params }: { params: Promise<{ slug: st
               recs.push({ slug: "dog-harnesses", label: "No-Pull Harness", desc: "Safer than collars for this breed", icon: "\uD83E\uDDBA" });
             }
             return recs.slice(0, 6).map((r) => (
-              <Link key={r.slug} href={`/best/${r.slug}`} className="group bg-white rounded-2xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <Link key={r.slug} href={`/products/${r.slug}`} className="group bg-white rounded-2xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                 <span className="text-3xl block mb-3">{r.icon}</span>
                 <h3 className="font-bold text-[#1A1A1A] text-sm group-hover:text-[#C4704B] transition">{r.label}</h3>
                 <p className="text-[#1A1A1A]/50 text-xs mt-1">{r.desc}</p>

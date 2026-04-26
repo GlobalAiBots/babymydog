@@ -232,7 +232,7 @@ export default function QuizPage() {
               {recommendations.map((rec) => (
                 <Link
                   key={rec.slug}
-                  href={`/best/${rec.slug}`}
+                  href={`/products/${rec.slug}`}
                   className="group bg-white rounded-2xl p-6 border-2 border-transparent hover:border-[#D35400] hover:shadow-lg transition-all duration-200"
                   style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}
                 >
@@ -270,7 +270,7 @@ export default function QuizPage() {
               { label: "Training", slug: "dog-training" }, { label: "Supplements", slug: "dog-supplements" },
               { label: "Anxiety", slug: "dog-anxiety" }, { label: "Car Safety", slug: "dog-car-seats" },
             ].map((c) => (
-              <Link key={c.slug} href={`/best/${c.slug}`} className="text-xs bg-white border border-[#2D2006]/10 rounded-full px-3 py-1.5 text-[#2D2006]/50 hover:text-[#D35400] hover:border-[#D35400] transition">
+              <Link key={c.slug} href={`/products/${c.slug}`} className="text-xs bg-white border border-[#2D2006]/10 rounded-full px-3 py-1.5 text-[#2D2006]/50 hover:text-[#D35400] hover:border-[#D35400] transition">
                 {c.label}
               </Link>
             ))}
