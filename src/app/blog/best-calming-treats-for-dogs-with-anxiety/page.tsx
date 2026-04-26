@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-calming-treats-for-dogs-with-anxiety";
 
 export const metadata: Metadata = {
   title: "Best Calming Treats for Dogs with Anxiety (2026) | BabyMyDog",
@@ -88,7 +94,9 @@ export default function BestCalmingTreatsForDogsWithAnxiety() {
           Best Calming Treats for Dogs with Anxiety (2026)
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 20, 2026 &middot; Anxiety &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 20, 2026 &middot; Anxiety &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
@@ -188,8 +196,18 @@ export default function BestCalmingTreatsForDogsWithAnxiety() {
             Calming treats fill a real but narrow niche in canine anxiety management. For mild situational stress in an otherwise stable dog, the right product can be remarkably effective. For severe anxiety, panic, or chronic phobic behavior, treats are at best an adjunct and at worst a delay to actual treatment.
           </p>
           <p>
-            Match the tool to the problem. For a fuller toolkit including ThunderShirts, calming beds, pheromone diffusers, and lickmats, browse our <Link href="/best/dog-anxiety" className="text-[#C4704B] hover:underline font-semibold">best dog anxiety products guide</Link>. For training treats and high-value rewards (which you&apos;ll need for behavioral counter-conditioning work), see our <Link href="/best/dog-treats" className="text-[#C4704B] hover:underline font-semibold">best dog treats guide</Link>. And for daily supplements that support overall calmness through nutritional support, check our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link>.
+            Match the tool to the problem. For a fuller toolkit including ThunderShirts, calming beds, pheromone diffusers, and lickmats, browse our <Link href="/best/dog-anxiety" className="text-[#C4704B] hover:underline font-semibold">best dog anxiety products guide</Link>. For training treats and high-value rewards (which you&apos;ll need for behavioral counter-conditioning work), see our <Link href="/best/dog-treats" className="text-[#C4704B] hover:underline font-semibold">best dog treats guide</Link>. And for daily supplements that support overall calmness through nutritional support, check our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> or browse the <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>vet-grade vitamin and behavior-support catalog at Revival Animal Health</AffiliateInlineLink>.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="discount10Off"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Trying Daily Calming Supplements? Save $10 on Your First Order"
+            body="If you're moving past situational treats into a daily anxiety-support routine, the cost adds up fast &mdash; L-theanine, alpha-casozepine, and B-vitamin formulas all run on a recurring cadence. Revival's $10-off-first-order makes the first month substantially cheaper, with free shipping over $149."
+            ctaLabel="Claim $10 Off"
+          />
 
         </div>
       </article>

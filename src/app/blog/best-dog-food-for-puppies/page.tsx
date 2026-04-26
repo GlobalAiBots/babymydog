@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-dog-food-for-puppies";
 
 export const metadata: Metadata = {
   title: "Best Dog Food for Puppies in 2026: What to Feed Your New Pup | BabyMyDog",
@@ -59,7 +65,9 @@ export default function BestDogFoodForPuppies() {
           Best Dog Food for Puppies in 2026: What to Feed Your New Pup
         </h1>
         <p className="text-gray-400 text-sm mb-2">April 7, 2026 &middot; Nutrition &middot; 8 min read</p>
-        <p className="text-sm text-gray-500 mb-8 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+        <p className="text-sm text-gray-500 mb-4 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+
+        <AffiliateDisclosure />
 
         <img
           src="/images/golden-retriever-puppies-in-red-wagon.jpg"
@@ -137,11 +145,21 @@ export default function BestDogFoodForPuppies() {
             Choosing the right puppy food is one of the most impactful decisions you&apos;ll make as a new dog owner. Focus on named protein sources, appropriate fat and calcium levels for your puppy&apos;s size, and DHA for brain development. Stick to a consistent feeding schedule and resist the urge to free-feed, which can lead to obesity and make house training harder.
           </p>
           <p>
-            For a deeper dive into dog food options across all life stages, visit our <Link href="/best/dog-food" className="text-rose hover:underline font-semibold">best dog food guide</Link>. And if you&apos;re just getting started with your new pup, don&apos;t miss our <Link href="/best/puppy-essentials" className="text-rose hover:underline font-semibold">puppy essentials checklist</Link> to make sure you have everything covered.
+            For a deeper dive into dog food options across all life stages, visit our <Link href="/best/dog-food" className="text-rose hover:underline font-semibold">best dog food guide</Link>. And if you&apos;re just getting started with your new pup, don&apos;t miss our <Link href="/best/puppy-essentials" className="text-rose hover:underline font-semibold">puppy essentials checklist</Link> to make sure you have everything covered. Beyond the kibble itself, breeders typically pair puppy food with vitamins, dewormers, and weaning aids from <AffiliateInlineLink partner={REVIVAL} linkKey="puppyNeeds" postSlug={POST_SLUG}>Revival Animal Health&apos;s puppy supply category</AffiliateInlineLink>.
           </p>
           <p>
             Looking for a dog park to socialize your new puppy? Check out <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline font-semibold">BarkSeeker</a> for dog parks near you.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="discount10Off"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Stocking the Puppy Pantry? Save $10 on First Revival Order"
+            body="Puppy food is just the start &mdash; the first six months also bring DHA supplements, deworming, probiotics, and a stack of vet-grade items most pet stores don't carry. Revival's $10-off-first-order takes the edge off that initial bundle, with free shipping over $149."
+            ctaLabel="Claim $10 Off"
+          />
         </div>
       </article>
     </>

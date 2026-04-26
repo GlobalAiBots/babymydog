@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "how-often-should-i-bathe-my-dog";
 
 export const metadata: Metadata = {
   title: "How Often Should I Bathe My Dog? A Breed-by-Breed Guide | BabyMyDog",
@@ -59,7 +65,9 @@ export default function HowOftenShouldIBatheMyDog() {
           How Often Should I Bathe My Dog? A Breed-by-Breed Guide
         </h1>
         <p className="text-gray-400 text-sm mb-2">April 7, 2026 &middot; Grooming &middot; 8 min read</p>
-        <p className="text-sm text-gray-500 mb-8 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+        <p className="text-sm text-gray-500 mb-4 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+
+        <AffiliateDisclosure />
 
         <img
           src="/images/poodle-professional-grooming-salon.jpg"
@@ -117,7 +125,7 @@ export default function HowOftenShouldIBatheMyDog() {
             Human shampoo is too acidic for dogs. Human skin has a pH of around 5.5, while dog skin ranges from 6.2 to 7.4. Using human products disrupts your dog&apos;s acid mantle, leaving them vulnerable to bacterial and fungal infections. Always use a shampoo formulated specifically for dogs.
           </p>
           <p>
-            For most dogs, <strong><a href="https://www.amazon.com/dp/B00CSNQRI0?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow" className="text-rose hover:underline font-semibold">Burt&apos;s Bees Oatmeal Shampoo for Dogs</a></strong> is our top recommendation. It&apos;s made with colloidal oatmeal and honey to soothe sensitive skin, is pH-balanced specifically for dogs, and contains no sulfates, colorants, or harsh chemicals. It rinses clean without residue and leaves a subtle, natural scent that won&apos;t overwhelm your dog&apos;s sensitive nose. At under $10 for a 16-ounce bottle, it&apos;s also one of the best values on the market.
+            For most dogs, <strong><a href="https://www.amazon.com/dp/B00CSNQRI0?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow" className="text-rose hover:underline font-semibold">Burt&apos;s Bees Oatmeal Shampoo for Dogs</a></strong> is our top recommendation. It&apos;s made with colloidal oatmeal and honey to soothe sensitive skin, is pH-balanced specifically for dogs, and contains no sulfates, colorants, or harsh chemicals. It rinses clean without residue and leaves a subtle, natural scent that won&apos;t overwhelm your dog&apos;s sensitive nose. At under $10 for a 16-ounce bottle, it&apos;s also one of the best values on the market. For breeders bathing entire litters or shelter operators running daily intake baths, <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink> stocks the gallon-size shampoos and conditioners that are dramatically cheaper per ounce than retail bottles.
           </p>
           <p>
             For dogs with specific skin conditions, medicated shampoos containing chlorhexidine (for bacterial infections), ketoconazole (for yeast infections), or benzoyl peroxide (for deep-cleaning oily coats) may be needed. Always use medicated shampoos under veterinary guidance, as they can cause irritation if used incorrectly or too frequently.
@@ -147,6 +155,16 @@ export default function HowOftenShouldIBatheMyDog() {
           <p>
             Looking for a dog park to let your freshly bathed pup show off? Check out <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline font-semibold">BarkSeeker</a> for dog parks near you.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="evergreen"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Browse Vet-Grade Bathing Essentials at Revival"
+            body="Revival Animal Health has been the bathing-supply backbone of professional kennels and shelters since 1987. If you're past the Burt's-Bees-from-the-pet-aisle phase and want what working groomers actually use, the Revival catalog is worth a slow browse."
+            ctaLabel="Visit Revival"
+          />
         </div>
       </article>
     </>

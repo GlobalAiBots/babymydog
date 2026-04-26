@@ -1,5 +1,11 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "how-to-clean-dog-ears";
 
 export const metadata: Metadata = {
   title: "How to Clean Dog Ears at Home: Step-by-Step Guide | BabyMyDog",
@@ -29,7 +35,9 @@ export default function HowToCleanDogEars() {
           <span className="text-[#1A1A1A] font-medium">How to Clean Dog Ears</span>
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How to Clean Dog Ears at Home: Step-by-Step Guide</h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 7 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/vet-examining-english-bulldog-ear.jpg" alt="Vet cleaning dog ears" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
@@ -113,7 +121,17 @@ export default function HowToCleanDogEars() {
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>
           <p>Ear cleaning is a two-minute task that can save you hundreds of dollars in veterinary bills and &mdash; more importantly &mdash; spare your dog the pain of chronic ear infections. The key is consistency: clean on a regular schedule, clean after every exposure to water, and inspect the ears every time you groom. Catching a problem early, when there is just a little extra wax or a faint smell, is infinitely better than dealing with a full-blown infection that requires weeks of medicated drops and vet rechecks.</p>
-          <p>For a complete rundown on at-home grooming routines including brushing, nail trimming, and dental care, see our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">best dog grooming tools</Link> guide.</p>
+          <p>For a complete rundown on at-home grooming routines including brushing, nail trimming, and dental care, see our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">best dog grooming tools</Link> guide. For ear cleansers, drying solutions, and the medicated wipes used in working kennels, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink>.</p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="freeShipping"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Stock Up on Ear Care — Free Shipping at Revival Over $149"
+            body="If you have multiple floppy-eared dogs or you're maintaining a kennel, ear care supplies disappear fast. Bulk-stocking cleansers, drying powder, and medicated wipes through Revival's free-shipping threshold ($149) tends to be cheaper per unit than monthly retail re-orders."
+            ctaLabel="Shop Revival with Free Shipping"
+          />
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>

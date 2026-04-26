@@ -1,5 +1,11 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "why-is-my-dog-scratching";
 
 export const metadata: Metadata = {
   title: "Why Is My Dog Scratching So Much? Causes and Fixes | BabyMyDog",
@@ -29,7 +35,9 @@ export default function WhyIsMyDogScratching() {
           <span className="text-[#1A1A1A] font-medium">Why Is My Dog Scratching So Much?</span>
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Why Is My Dog Scratching So Much? Causes and Fixes</h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 9 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 9 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/vet-examining-english-bulldog-ear.jpg" alt="Vet examining dog" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
@@ -42,7 +50,7 @@ export default function WhyIsMyDogScratching() {
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">1. Fleas</h3>
           <p>Fleas remain the number one cause of scratching in dogs, and it only takes a single flea to make an allergic dog miserable. Flea allergy dermatitis (FAD) is actually a reaction to proteins in flea saliva, and dogs with this allergy scratch, chew, and bite obsessively &mdash; especially around the base of the tail, the lower back, the groin, and the inner thighs. You may not even see fleas on the dog because they scratch and chew so aggressively that they remove the evidence. Instead, look for &quot;flea dirt&quot; &mdash; tiny black specks in the fur that turn reddish-brown when placed on a wet paper towel. That reddish color is digested blood, and it confirms fleas are present even when you cannot find a live one.</p>
-          <p>The fix is straightforward: get your dog on a quality flea preventative and treat your home and yard simultaneously. One round of treatment is rarely enough because flea eggs can survive in carpet and upholstery for months. You need to break the lifecycle by treating continuously for at least three months.</p>
+          <p>The fix is straightforward: get your dog on a quality flea preventative and treat your home and yard simultaneously. One round of treatment is rarely enough because flea eggs can survive in carpet and upholstery for months. You need to break the lifecycle by treating continuously for at least three months. <AffiliateInlineLink partner={REVIVAL} linkKey="fleaTickDog" postSlug={POST_SLUG}>Revival Animal Health&apos;s flea and tick category</AffiliateInlineLink> stocks the topicals and oral preventatives most breeders rotate through, including the larger-volume packs that are cheaper per dose than the retail blister packs.</p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">2. Food Allergies</h3>
           <p>True food allergies account for roughly 10 to 15 percent of all allergy cases in dogs, but they are widely over-diagnosed by well-meaning pet store employees and under-diagnosed by owners who assume it must be something environmental. The telltale signs are year-round itching (not seasonal), chronic ear infections, paw licking and chewing, and gastrointestinal symptoms like soft stools or excessive gas. The most common culprits are chicken, beef, dairy, wheat, and soy &mdash; not grain in general, despite what marketing would have you believe.</p>
@@ -54,7 +62,7 @@ export default function WhyIsMyDogScratching() {
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">4. Dry Skin</h3>
           <p>Dry skin is especially common in winter when indoor heating sucks moisture from the air, and in arid climates year-round. You will notice dandruff-like flakes in the coat, a dull or rough texture to the fur, and mild to moderate scratching that is generalized rather than focused on one area. Dogs that are bathed too frequently or with harsh shampoos are also prone to dry skin because the bathing strips protective oils faster than the skin can replace them.</p>
-          <p>The fix often starts from the inside out. Adding an omega-3 fatty acid supplement to your dog&apos;s diet is one of the most effective things you can do for skin health. <strong><a href="https://www.amazon.com/dp/B007M09TLE?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Nordic Naturals Omega-3 Pet</a></strong> is our top pick because it uses wild-caught fish oil in triglyceride form, which dogs absorb far more efficiently than the ethyl ester form found in cheaper supplements. Most dogs show improvement in coat quality within four to six weeks. You can also run a humidifier in the rooms where your dog spends the most time and switch to a moisturizing shampoo. For more supplement options, see our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> guide.</p>
+          <p>The fix often starts from the inside out. Adding an omega-3 fatty acid supplement to your dog&apos;s diet is one of the most effective things you can do for skin health. <strong><a href="https://www.amazon.com/dp/B007M09TLE?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Nordic Naturals Omega-3 Pet</a></strong> is our top pick because it uses wild-caught fish oil in triglyceride form, which dogs absorb far more efficiently than the ethyl ester form found in cheaper supplements. Most dogs show improvement in coat quality within four to six weeks. You can also run a humidifier in the rooms where your dog spends the most time and switch to a moisturizing shampoo. For more supplement options, see our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> guide, or browse <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival&apos;s skin-and-coat vitamin lineup</AffiliateInlineLink> for the higher-potency formulations breeders use during litter weaning and adult coat blowouts.</p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">5. Hot Spots (Acute Moist Dermatitis)</h3>
           <p>Hot spots are angry, red, oozing patches that seem to appear overnight and spread alarmingly fast. They are caused by bacteria that invade skin damaged by scratching, licking, or moisture. Thick-coated breeds like Golden Retrievers and German Shepherds are especially prone because their dense undercoats trap moisture against the skin. Hot spots are painful, not just itchy, and most dogs will flinch or snap if you touch one.</p>
@@ -104,6 +112,16 @@ export default function WhyIsMyDogScratching() {
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>
           <p>Scratching is a symptom, not a diagnosis. The most important thing you can do is resist the urge to throw random products at the problem and instead take a systematic approach: rule out fleas first (it is the easiest to check and treat), evaluate dietary factors, consider seasonal patterns, and see your vet if home remedies do not bring relief within two weeks. Most scratching problems are very treatable once you identify the cause, and your dog does not have to suffer while you figure it out.</p>
           <p>For more on keeping your dog comfortable and healthy, explore our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best supplements guide</Link> and our <Link href="/best/dog-grooming" className="text-[#C4704B] hover:underline font-semibold">top grooming tools</Link>.</p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="discount10Off"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Skin & Coat Supplements at Revival — $10 Off First Order"
+            body="If you're starting an omega-3 + skin vitamin stack to manage chronic itching, the first month adds up fast. Revival's $10-off-first-order applies to their full skin and coat catalog, with free shipping over $149."
+            ctaLabel="Claim $10 Off"
+          />
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>

@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "how-to-brush-dogs-teeth";
 
 export const metadata: Metadata = {
   title: "How to Brush Your Dog's Teeth: A Step-by-Step Guide | BabyMyDog",
@@ -88,7 +94,9 @@ export default function HowToBrushDogsTeeth() {
           How to Brush Your Dog&apos;s Teeth: A Step-by-Step Guide
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 20, 2026 &middot; Dental Care &middot; 7 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 20, 2026 &middot; Dental Care &middot; 7 min read</p>
+
+        <AffiliateDisclosure />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
@@ -119,7 +127,7 @@ export default function HowToBrushDogsTeeth() {
             <li><strong>A treat your dog loves.</strong> The session ends with a high-value reward every single time. This is non-negotiable for building the habit.</li>
           </ul>
           <p>
-            For a curated list of the dental products I actually recommend, browse our <Link href="/best/dog-dental" className="text-[#C4704B] hover:underline font-semibold">best dog dental care products guide</Link>.
+            For a curated list of the dental products I actually recommend, browse our <Link href="/best/dog-dental" className="text-[#C4704B] hover:underline font-semibold">best dog dental care products guide</Link>. For the vet-supply side of the catalog &mdash; chlorhexidine rinses, dental gels, and the brushes most groomers actually use &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="dentalDog" postSlug={POST_SLUG}>Revival Animal Health&apos;s dental category</AffiliateInlineLink> stocks the professional-grade options.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Step-by-Step: The First Session</h2>
@@ -200,6 +208,16 @@ export default function HowToBrushDogsTeeth() {
           <p>
             Start slow, treat generously, and be patient. If you&apos;re building these habits in with a brand-new puppy, our <Link href="/best/puppy-essentials" className="text-[#C4704B] hover:underline font-semibold">puppy essentials checklist</Link> covers the rest of the gear that should land at your house in the first month. The earlier you start, the easier the lifetime habit becomes.
           </p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="catDental"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Got a Cat Too? Revival Stocks Feline Dental Care"
+            body="Many dog households also have a cat &mdash; and feline dental disease is even more common than canine. Revival's cat-specific dental line carries the toothpastes, finger brushes, and water additives that a typical pet store skips. Worth a look while you're already on a dental kick."
+            ctaLabel="Browse Cat Dental at Revival"
+          />
 
         </div>
       </article>
