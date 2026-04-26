@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-dog-beds-for-large-breeds";
 
 export const metadata: Metadata = {
   title: "Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026 | BabyMyDog",
@@ -59,7 +64,9 @@ export default function BestDogBedsForLargeBreeds() {
           Best Dog Beds for Large Breeds: Top Picks for Big Dogs in 2026
         </h1>
         <p className="text-gray-400 text-sm mb-2">April 7, 2026 &middot; Products &middot; 8 min read</p>
-        <p className="text-sm text-gray-500 mb-8 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+        <p className="text-sm text-gray-500 mb-4 italic">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
+
+        <AffiliateDisclosure />
 
         <img
           src="/images/dog-relaxing-premium-gray-bed-with-plants.jpg"
@@ -74,7 +81,7 @@ export default function BestDogBedsForLargeBreeds() {
             Large-breed dogs spend 12 to 14 hours a day sleeping, and every one of those hours puts pressure on joints that are already working harder than nature intended. A 90-pound <Link href="/breeds/german-shepherd" className="text-rose hover:underline font-semibold">German Shepherd</Link> concentrates roughly four times more weight per square inch on their hips and elbows than a 20-pound Cocker Spaniel. Without proper support, that constant pressure accelerates joint degradation, worsens arthritis, and creates painful calluses on bony pressure points.
           </p>
           <p>
-            After years of watching large-breed dogs sleep on everything from cheap poly-fill beds to premium orthopedic mattresses, the difference in their mobility and comfort is unmistakable. A quality bed is not a luxury for big dogs — it&apos;s a medical necessity that can add years to their active life. Here&apos;s what to look for and our top picks for 2026.
+            After years of watching large-breed dogs sleep on everything from cheap poly-fill beds to premium orthopedic mattresses, the difference in their mobility and comfort is unmistakable. A quality bed is not a luxury for big dogs — it&apos;s a medical necessity that can add years to their active life. Here&apos;s what to look for and our top picks for 2026. A bed alone won&apos;t fix everything — pairing the right bed with a vet-grade <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>joint supplement from Revival Animal Health</AffiliateInlineLink> is what most veterinary orthopedic specialists recommend for large breeds prone to hip and elbow issues.
           </p>
 
           <h2 className="text-2xl font-bold text-charcoal mt-10 mb-4" style={{ fontFamily: "Playfair Display,serif" }}>What Large-Breed Dogs Need in a Bed</h2>

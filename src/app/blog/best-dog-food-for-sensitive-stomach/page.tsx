@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-dog-food-for-sensitive-stomach";
 
 export const metadata: Metadata = {
   title: "Best Dog Food for Sensitive Stomachs: Vet-Approved Picks for 2026 | BabyMyDog",
@@ -55,7 +60,9 @@ export default function BestDogFoodSensitiveStomach() {
           Best Dog Food for Sensitive Stomachs: Vet-Approved Picks for 2026
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; Nutrition &middot; 9 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; Nutrition &middot; 9 min read</p>
+
+        <AffiliateDisclosure />
 
         <img
           src="/images/chocolate-lab-licking-lips-hungry.jpg"
@@ -171,7 +178,7 @@ export default function BestDogFoodSensitiveStomach() {
             Some dogs benefit from ongoing probiotic supplementation in addition to a sensitive stomach formula. Probiotics introduce beneficial bacteria into the gut, which helps crowd out harmful bacteria, improves nutrient absorption, and supports the intestinal lining. They&apos;re particularly helpful during and after antibiotic treatment, which can wipe out both bad and good gut bacteria.
           </p>
           <p>
-            Digestive enzymes are another option for dogs who seem to struggle with breaking down food properly. These supplements contain lipase, protease, and amylase &mdash; the same enzymes your dog&apos;s pancreas produces &mdash; and can help dogs who aren&apos;t producing enough on their own. Your vet can run tests to determine if enzyme supplementation would be beneficial. Browse our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> for our top probiotic and enzyme picks.
+            Digestive enzymes are another option for dogs who seem to struggle with breaking down food properly. These supplements contain lipase, protease, and amylase &mdash; the same enzymes your dog&apos;s pancreas produces &mdash; and can help dogs who aren&apos;t producing enough on their own. Your vet can run tests to determine if enzyme supplementation would be beneficial. Browse our <Link href="/best/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> for our top probiotic and enzyme picks, or browse <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s digestive vitamin lineup</AffiliateInlineLink> for the kennel-grade probiotic and enzyme formulations breeders typically use during diet transitions.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>

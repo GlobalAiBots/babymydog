@@ -1,6 +1,9 @@
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
 import { blogPosts, type BlogPost } from "@/data/blog-posts";
+import AffiliateBanner from "@/components/affiliate/AffiliateBanner";
+import PartnerCard from "@/components/affiliate/PartnerCard";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
 
 /* eslint-disable @next/next/no-img-element */
@@ -162,6 +165,16 @@ export default function BlogPage() {
           </div>
         )}
 
+        {/* Sponsored banner — Revival Animal Health */}
+        <div className="my-10">
+          <div className="hidden md:block">
+            <AffiliateBanner partner={REVIVAL} bannerKey="evergreen728" postSlug="blog-hub" />
+          </div>
+          <div className="md:hidden">
+            <AffiliateBanner partner={REVIVAL} bannerKey="evergreen300" postSlug="blog-hub" />
+          </div>
+        </div>
+
         {/* Earlier posts */}
         {earlier.length > 0 && (
           <>
@@ -171,6 +184,23 @@ export default function BlogPage() {
             </div>
           </>
         )}
+
+        {/* Recommended Partners */}
+        <section className="mt-20">
+          <div className="mb-6">
+            <h2 className="text-xl font-bold text-[#1A1A1A]">Recommended Partners</h2>
+            <p className="text-sm text-[#1A1A1A]/50 mt-1">Trusted suppliers we use ourselves and recommend to fellow dog owners.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <PartnerCard
+              partner={REVIVAL}
+              tagline="Vet-Grade Supplies Since 1987"
+              description="From joint supplements to vaccines, dental care, and grooming — Revival has the supplies vets and breeders trust. Free shipping over $149 and $10 off for first-time customers."
+              primary={{ label: "Shop Joint Care", linkKey: "jointCare" }}
+              secondary={{ label: "Get $10 Off First Order", linkKey: "discount10Off" }}
+            />
+          </div>
+        </section>
 
         {/* Cross-site — BarkSeeker network */}
         <section className="mt-20">

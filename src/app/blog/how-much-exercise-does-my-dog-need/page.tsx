@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "how-much-exercise-does-my-dog-need";
 
 export const metadata: Metadata = {
   title: "How Much Exercise Does My Dog Need? A Breed-by-Breed Guide | BabyMyDog",
@@ -29,7 +34,9 @@ export default function HowMuchExerciseDoesMyDogNeed() {
           <span className="text-[#1A1A1A] font-medium">How Much Exercise Does My Dog Need?</span>
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How Much Exercise Does My Dog Need? A Breed-by-Breed Guide</h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 9 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 9 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/dalmatian-running-autumn-field.jpg" alt="Dalmatian running in field" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
@@ -124,6 +131,16 @@ export default function HowMuchExerciseDoesMyDogNeed() {
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>
           <p>The right amount of exercise is the amount that leaves your dog calm, content, and able to settle at home without destroying things or driving you crazy. That number is wildly different depending on breed, age, and individual temperament. Start with the guidelines for your breed group, adjust based on what you observe, and remember that mental stimulation counts just as much as physical miles. A tired dog is a good dog, but an overtired or injured dog is a vet bill. Find the sweet spot and stay consistent &mdash; your dog&apos;s behavior, weight, and overall health will thank you for it.</p>
           <p>For safe, comfortable gear that makes daily exercise easier, explore our <Link href="/best/dog-harnesses" className="text-[#C4704B] hover:underline font-semibold">best dog harnesses</Link> and <Link href="/best/dog-gps-trackers" className="text-[#C4704B] hover:underline font-semibold">best GPS trackers</Link> guides.</p>
+
+          <AffiliateCallout
+            partner={REVIVAL}
+            linkKey="jointCare"
+            postSlug={POST_SLUG}
+            variant="footer"
+            heading="Active Dogs Earn Joint Wear — Get Ahead of It"
+            body="Hours of fetch, hiking, and trail miles are wonderful for a dog's mind and body, but they also accelerate joint wear. Starting a quality joint supplement before clinical signs appear is what veterinary orthopedic specialists actually recommend. Revival's vet-grade joint care is the same line that breeders and shelter operators have used for decades."
+            ctaLabel="Shop Joint Care at Revival"
+          />
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">
             <p className="text-xs text-[#1A1A1A]/40 italic">As an Amazon Associate, BabyMyDog earns from qualifying purchases. Prices are approximate and may change. This does not influence our recommendations.</p>
