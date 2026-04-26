@@ -3,6 +3,18 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { productCategories } from "@/data/products";
+import {
+  Bone,
+  Zap,
+  Baby,
+  Heart,
+  PawPrint,
+  Sparkles,
+  Wind,
+  Smile,
+  ArrowRight,
+  type LucideIcon,
+} from "lucide-react";
 
 /* eslint-disable @next/next/no-img-element */
 
@@ -60,15 +72,23 @@ const filterGroups = [
   { key: "health", label: "Health Concern", options: ["joint", "dental", "anxiety", "weight", "allergies"] },
 ];
 
-const curatedPages = [
-  { slug: "toys-for-heavy-chewers", title: "Chew Toys for Destroyers", desc: "For dogs that demolish everything" },
-  { slug: "toys-for-fetch", title: "Fetch Toys for Active Dogs", desc: "Balls, frisbees, and launchers" },
-  { slug: "puppy-essentials", title: "Puppy Starter Kit", desc: "Everything for a new puppy" },
-  { slug: "senior-dog-products", title: "Senior Dog Comfort", desc: "Beds, ramps, and joint care" },
-  { slug: "large-dog-products", title: "Large & Giant Breeds", desc: "XL beds, crates, and gear" },
-  { slug: "small-dog-products", title: "Small Dog & Toy Breeds", desc: "Sized-down picks for little pups" },
-  { slug: "anxious-dogs", title: "Calming & Anxiety Relief", desc: "Thunder shirts, diffusers, and chews" },
-  { slug: "dental-care", title: "Dental Care & Hygiene", desc: "Toothpaste, chews, and rinses" },
+interface CuratedPage {
+  slug: string;
+  title: string;
+  desc: string;
+  icon: LucideIcon;
+  gradient: string;
+}
+
+const curatedPages: CuratedPage[] = [
+  { slug: "toys-for-heavy-chewers", title: "Chew Toys for Destroyers", desc: "For dogs that demolish everything", icon: Bone, gradient: "from-orange-500 to-red-600" },
+  { slug: "toys-for-fetch", title: "Fetch Toys for Active Dogs", desc: "Balls, frisbees, and launchers", icon: Zap, gradient: "from-emerald-500 to-teal-600" },
+  { slug: "puppy-essentials", title: "Puppy Starter Kit", desc: "Everything for a new puppy", icon: Baby, gradient: "from-amber-400 to-orange-500" },
+  { slug: "senior-dog-products", title: "Senior Dog Comfort", desc: "Beds, ramps, and joint care", icon: Heart, gradient: "from-rose-400 to-pink-600" },
+  { slug: "large-dog-products", title: "Large & Giant Breeds", desc: "XL beds, crates, and gear", icon: PawPrint, gradient: "from-slate-500 to-slate-700" },
+  { slug: "small-dog-products", title: "Small Dog & Toy Breeds", desc: "Sized-down picks for little pups", icon: Sparkles, gradient: "from-fuchsia-500 to-purple-600" },
+  { slug: "anxious-dogs", title: "Calming & Anxiety Relief", desc: "Thunder shirts, diffusers, and chews", icon: Wind, gradient: "from-blue-400 to-indigo-600" },
+  { slug: "dental-care", title: "Dental Care & Hygiene", desc: "Toothpaste, chews, and rinses", icon: Smile, gradient: "from-cyan-400 to-blue-500" },
 ];
 
 function Chip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
@@ -121,26 +141,58 @@ export default function BestPage() {
       <div className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="mb-10">
           <h1 className="text-[28px] md:text-[44px] font-extrabold text-[#2D2006] mb-4 leading-tight">Best Dog Products (2026)</h1>
-          <p className="text-[#8B7355] text-lg max-w-2xl">Expert-reviewed picks across {productCategories.length} categories — updated monthly.</p>
+          <p className="text-[#8B7355] text-lg max-w-2xl mb-4">Expert-reviewed picks across {productCategories.length} categories — updated monthly.</p>
+          <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" aria-hidden="true" />
+            Updated April 2026
+          </span>
         </div>
 
-        {/* Curated Collections */}
-        <div className="mb-10">
-          <h2 className="text-xl font-bold text-[#2D2006] mb-4">Shop by Need</h2>
-          <div className="flex gap-3 overflow-x-auto pb-3">
-            {curatedPages.map((p) => (
-              <Link key={p.slug} href={`/best/${p.slug}`} className="flex-shrink-0 bg-white rounded-xl px-5 py-3 border border-[#2D2006]/8 hover:border-[#D35400] hover:shadow-md transition-all duration-200 group" style={{ minWidth: 160 }}>
-                <p className="font-bold text-[#2D2006] text-sm group-hover:text-[#D35400] transition">{p.title}</p>
-                <p className="text-[#8B7355] text-xs mt-0.5">{p.desc}</p>
-              </Link>
-            ))}
+        {/* Curated Collections — Shop by Need */}
+        <div className="mb-12">
+          <h2 className="text-xl md:text-2xl font-bold text-[#2D2006] mb-1">Shop by Need</h2>
+          <p className="text-[#8B7355] text-sm mb-5">Curated picks for the most common dog-parent missions.</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {curatedPages.map((p) => {
+              const Icon = p.icon;
+              return (
+                <Link
+                  key={p.slug}
+                  href={`/best/${p.slug}`}
+                  className="group bg-white rounded-2xl border border-[#2D2006]/8 hover:border-[#D35400]/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col"
+                >
+                  <div className={`h-20 bg-gradient-to-br ${p.gradient} flex items-center justify-center`}>
+                    <Icon className="w-9 h-9 text-white group-hover:scale-110 transition-transform duration-200" strokeWidth={1.75} aria-hidden="true" />
+                  </div>
+                  <div className="p-4 flex flex-col flex-1">
+                    <h3 className="font-bold text-[#2D2006] text-sm md:text-base leading-tight mb-1 group-hover:text-[#D35400] transition">{p.title}</h3>
+                    <p className="text-[#8B7355] text-xs leading-relaxed line-clamp-2 mb-3 flex-1">{p.desc}</p>
+                    <span className="inline-flex items-center text-xs font-semibold text-[#D35400]">
+                      Shop now
+                      <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
 
-        {/* Filter Bar */}
-        <div className="bg-white rounded-2xl p-5 mb-10 border border-[#2D2006]/5" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-bold text-[#2D2006] text-sm">Filter Products</h2>
+        {/* Refine Your Picks — Filter Section */}
+        <div className="mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#2D2006] mb-1">Refine Your Picks</h2>
+          <p className="text-[#8B7355] text-sm">Use filters to narrow down products that match your dog&apos;s specific needs.</p>
+        </div>
+        <div className="bg-white rounded-2xl p-5 mb-6 border border-[#2D2006]/5" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
+          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <h3 className="font-bold text-[#2D2006] text-sm">
+              Filter Products
+              {hasFilters && (
+                <span className="ml-2 text-xs font-semibold text-[#D35400]">
+                  ({Object.values(filters).reduce((sum, s) => sum + s.size, 0)} active)
+                </span>
+              )}
+            </h3>
             {hasFilters && (
               <button onClick={() => setFilters({})} className="text-xs text-[#D35400] font-semibold hover:underline">Clear all</button>
             )}
