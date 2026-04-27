@@ -2,7 +2,13 @@
 // Approved partner config. URLs are real CJ click-tracking links;
 // do not modify without re-pulling from CJ dashboard.
 
-export type AffiliateLinkKey =
+// Generic link/banner key types — any string accepted so components stay
+// partner-agnostic. Per-partner configs can narrow these via their own
+// strict union types (see RevivalLinkKey below) for autocomplete.
+export type AffiliateLinkKey = string;
+export type AffiliateBannerKey = string;
+
+export type RevivalLinkKey =
   | "jointCare"
   | "autoShip"
   | "freeShipping"
@@ -19,7 +25,7 @@ export type AffiliateLinkKey =
   | "supplementsDog"
   | "vaccinesDog";
 
-export type AffiliateBannerKey = "logo250" | "evergreen970" | "evergreen728" | "evergreen300";
+export type RevivalBannerKey = "logo250" | "evergreen970" | "evergreen728" | "evergreen300";
 
 export interface AffiliatePartner {
   id: string;
@@ -27,11 +33,16 @@ export interface AffiliatePartner {
   shortDescription: string;
   longDescription: string;
   logo?: string;
-  links: Record<AffiliateLinkKey, string>;
-  banners: Record<AffiliateBannerKey, { url: string; w: number; h: number; click: string }>;
+  links: Record<string, string>;
+  banners?: Record<string, { url: string; w: number; h: number; click: string }>;
 }
 
-export const REVIVAL: AffiliatePartner = {
+interface RevivalConfig extends AffiliatePartner {
+  links: Record<RevivalLinkKey, string>;
+  banners: Record<RevivalBannerKey, { url: string; w: number; h: number; click: string }>;
+}
+
+export const REVIVAL: RevivalConfig = {
   id: "revival",
   name: "Revival Animal Health",
   shortDescription: "Vet-grade pet supplies since 1987.",

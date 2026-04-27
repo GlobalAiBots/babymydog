@@ -3,6 +3,7 @@ import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
 import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
 import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
 import { REVIVAL } from "@/data/affiliates/revival";
+import { BUDGET_PET_CARE } from "@/data/affiliates/budgetpetcare";
 import type { Metadata } from "next";
 
 const POST_SLUG = "best-supplements-for-rottweiler";
@@ -117,6 +118,9 @@ export default function BestSupplementsForRottweiler() {
           </ul>
           <p>
             For a vet-grade alternative to retail joint formulas, <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival&apos;s joint care line</AffiliateInlineLink> stocks the same glucosamine and chondroitin formulations used by breeder kennels and rescue operations &mdash; useful when you&apos;re committing to a multi-year supplement plan for a large breed.
+          </p>
+          <p>
+            Active large breeds like Rottweilers also need consistent heartworm prevention &mdash; missing a single month can have serious consequences. <AffiliateInlineLink partner={BUDGET_PET_CARE} linkKey="heartgardPlus" postSlug={POST_SLUG}>Heartgard Plus through Budget Pet Care</AffiliateInlineLink> is meaningfully cheaper than buying it through a vet clinic, with the same brand-name product and same dosing.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Signs Your Rottweiler Needs Joint Support</h2>

@@ -1,7 +1,9 @@
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
 import AffiliateCallout from "@/components/affiliate/AffiliateCallout";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
 import { REVIVAL } from "@/data/affiliates/revival";
+import { BUDGET_PET_CARE } from "@/data/affiliates/budgetpetcare";
 import type { Metadata } from "next";
 
 const POST_SLUG = "how-much-exercise-does-my-dog-need";
@@ -114,7 +116,7 @@ export default function HowMuchExerciseDoesMyDogNeed() {
             <li><strong>Tug of war:</strong> Excellent for building strength and burning energy indoors. Contrary to popular myth, tug does not create aggression &mdash; it builds impulse control when played with rules.</li>
             <li><strong>Agility:</strong> Combines physical exercise with problem-solving. Great for high-energy, intelligent breeds. You can set up a basic backyard course with household items.</li>
             <li><strong>Nose work and scent games:</strong> Hide treats around the house or yard and let your dog find them. Twenty minutes of nose work can tire a dog as much as an hour of walking because it engages the brain intensely.</li>
-            <li><strong>Hiking and trail running:</strong> Excellent for high-energy breeds that need distance. Consider a <Link href="/products/dog-gps-trackers" className="text-[#C4704B] hover:underline font-semibold">GPS tracker</Link> for off-leash adventures in remote areas.</li>
+            <li><strong>Hiking and trail running:</strong> Excellent for high-energy breeds that need distance. Consider a <Link href="/products/dog-gps-trackers" className="text-[#C4704B] hover:underline font-semibold">GPS tracker</Link> for off-leash adventures in remote areas. More outdoor time also means more exposure to fleas, ticks, and disease-carrying mosquitoes &mdash; brand-name flea and tick preventatives at significant discount are available through <AffiliateInlineLink partner={BUDGET_PET_CARE} linkKey="fleaTickGeneral" postSlug={POST_SLUG}>Budget Pet Care</AffiliateInlineLink>.</li>
           </ul>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Exercising in Extreme Weather</h2>

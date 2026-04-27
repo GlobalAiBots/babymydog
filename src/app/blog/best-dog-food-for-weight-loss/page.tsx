@@ -2,6 +2,7 @@ import Link from "next/link";
 import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
 import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
 import { REVIVAL } from "@/data/affiliates/revival";
+import { BUDGET_PET_CARE } from "@/data/affiliates/budgetpetcare";
 import type { Metadata } from "next";
 
 const POST_SLUG = "best-dog-food-for-weight-loss";
@@ -129,7 +130,7 @@ export default function BestDogFoodForWeightLoss() {
             <li>Puzzle feeders and food-dispensing toys turn mealtime into physical activity. Scatter kibble in the yard for nose work on nice days.</li>
             <li>Avoid strenuous exercise immediately after meals to reduce bloat risk, especially in deep-chested breeds.</li>
           </ul>
-          <p>For a complete breakdown of activity needs by breed and age, read our <Link href="/blog/how-much-exercise-does-my-dog-need" className="text-[#C4704B] hover:underline font-semibold">exercise guide</Link>. Overweight dogs in a calorie-restricted diet can also benefit from baseline multivitamin support to make sure reduced food intake doesn&apos;t mean reduced micronutrients &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s vitamin lineup</AffiliateInlineLink> covers the formats vets recommend for weight-management protocols.</p>
+          <p>For a complete breakdown of activity needs by breed and age, read our <Link href="/blog/how-much-exercise-does-my-dog-need" className="text-[#C4704B] hover:underline font-semibold">exercise guide</Link>. Overweight dogs in a calorie-restricted diet can also benefit from baseline multivitamin support to make sure reduced food intake doesn&apos;t mean reduced micronutrients &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s vitamin lineup</AffiliateInlineLink> covers the formats vets recommend for weight-management protocols. And if comprehensive preventive care fits the broader healthy-dog plan, <AffiliateInlineLink partner={BUDGET_PET_CARE} linkKey="evergreen" postSlug={POST_SLUG}>Budget Pet Care&apos;s parasiticide catalog</AffiliateInlineLink> covers brand-name flea, tick, and heartworm preventatives at substantial savings versus clinic pricing.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Safe Weight Loss Rate</h2>
 
