@@ -1,12 +1,20 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "signs-dog-needs-better-bed";
+
 export const metadata: Metadata = { title: "10 Signs Your Dog Needs a Better Bed | BabyMyDog", alternates: { canonical: "https://www.babymydog.com/blog/signs-dog-needs-better-bed" } };
 export default function Post() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-12">
       <nav className="text-sm text-gray-400 mb-6 flex flex-wrap gap-2"><Link href="/" className="hover:text-rose transition">Home</Link><span>/</span><Link href="/blog" className="hover:text-rose transition">Blog</Link><span>/</span><span className="text-charcoal font-medium">10 Signs Your Dog Needs a Bett...</span></nav>
       <h1 className="text-3xl font-bold text-charcoal mb-4 leading-tight" style={{fontFamily:'Playfair Display,serif'}}>10 Signs Your Dog Needs a Better Bed</h1>
-      <p className="text-gray-400 text-sm mb-8">April 4, 2026 &middot; 6 min read</p>
+      <p className="text-gray-400 text-sm mb-4">April 4, 2026 &middot; 6 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/dog-relaxing-premium-gray-bed-with-plants.jpg" alt="Dog relaxing on premium bed" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -23,7 +31,7 @@ export default function Post() {
         <p>Your dog&apos;s health, happiness, and comfort depend on the products and care you provide. Making informed decisions means a happier dog and fewer vet visits. We&apos;ve researched hundreds of options to bring you the very best recommendations.</p>
         <h2 className="text-2xl font-bold text-charcoal mt-10 mb-4" style={{fontFamily:'Playfair Display,serif'}}>Our Top Recommendations</h2>
         <p>Based on extensive research, veterinary consultations, and real dog owner feedback, here are our top picks. Each product has been evaluated for quality, durability, safety, and value.</p>
-        <p>For breed-specific recommendations, check out our <Link href="/breeds" className="text-rose hover:underline font-semibold">breed guides</Link> where we match products to your specific dog&apos;s needs. You can also browse all our <Link href="/products" className="text-rose hover:underline font-semibold">best product reviews</Link> for detailed comparisons.</p>
+        <p>For breed-specific recommendations, check out our <Link href="/breeds" className="text-rose hover:underline font-semibold">breed guides</Link> where we match products to your specific dog&apos;s needs. You can also browse all our <Link href="/products" className="text-rose hover:underline font-semibold">best product reviews</Link> for detailed comparisons. If your dog&apos;s discomfort is joint-related rather than bed-related, a vet-grade glucosamine supplement from <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival Animal Health&apos;s joint care line</AffiliateInlineLink> often makes a meaningful difference within 4-6 weeks &mdash; pair it with the right bed for the best outcome.</p>
         <h2 className="text-2xl font-bold text-charcoal mt-10 mb-4" style={{fontFamily:'Playfair Display,serif'}}>Final Thoughts</h2>
         <p>Remember, every dog is different. What works for one breed may not work for another. Always consult with your veterinarian for specific health concerns, and start with small quantities when trying new products. Your dog will thank you for the extra care and attention.</p>
         <p>Looking for a dog park to test out your new gear? Check out <a href="https://barkseeker.com" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline font-semibold">BarkSeeker</a> for dog parks near you.</p>

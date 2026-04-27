@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "orthopedic-vs-standard-dog-bed";
 
 export const metadata: Metadata = {
   title: "Orthopedic vs Standard Dog Beds: Does Your Dog Need One? | BabyMyDog",
@@ -43,7 +48,9 @@ export default function OrthopedicVsStandardBed() {
         </nav>
 
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Orthopedic vs Standard Dog Beds: Does Your Dog Need One?</h1>
-        <p className="text-gray-400 text-sm mb-8">April 10, 2026 &middot; 7 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 10, 2026 &middot; 7 min read</p>
+
+        <AffiliateDisclosure />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
@@ -71,7 +78,7 @@ export default function OrthopedicVsStandardBed() {
 
           <p>Standard fiber-fill dog beds typically run $15 to $40 for a large size. Elevated cots fall in the $25 to $50 range. Orthopedic memory foam beds start around $40 for basic models and range up to $150 or more for premium options with high-density foam, waterproof liners, and removable washable covers. The price gap is real but narrower than most people expect &mdash; quality orthopedic beds have become much more affordable in recent years.</p>
 
-          <p>The value calculation shifts when you factor in longevity. A $25 fiber-fill bed that flattens in three months needs replacing four times a year &mdash; $100 annually. A $60 memory foam bed that maintains its shape for two to three years costs $20 to $30 per year. Beyond the dollar math, there is the veterinary cost of managing joint pain that could have been partially prevented or reduced by proper sleep support. Anti-inflammatory medications, joint supplements, and physical therapy sessions add up quickly. An orthopedic bed is one of the cheapest interventions available for dogs with joint issues.</p>
+          <p>The value calculation shifts when you factor in longevity. A $25 fiber-fill bed that flattens in three months needs replacing four times a year &mdash; $100 annually. A $60 memory foam bed that maintains its shape for two to three years costs $20 to $30 per year. Beyond the dollar math, there is the veterinary cost of managing joint pain that could have been partially prevented or reduced by proper sleep support. Anti-inflammatory medications, joint supplements, and physical therapy sessions add up quickly. An orthopedic bed is one of the cheapest interventions available for dogs with joint issues &mdash; pair it with a vet-grade glucosamine and chondroitin supplement from <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival Animal Health&apos;s joint care line</AffiliateInlineLink> for the layered preventive stack most veterinary orthopedic specialists recommend.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Signs Your Dog Needs Orthopedic Support</h2>
 

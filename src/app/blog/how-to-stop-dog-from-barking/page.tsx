@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "how-to-stop-dog-from-barking";
 
 export const metadata: Metadata = {
   title: "How to Stop a Dog From Barking: 6 Proven Methods | BabyMyDog",
@@ -29,7 +34,9 @@ export default function HowToStopDogFromBarking() {
           <span className="text-[#1A1A1A] font-medium">How to Stop Dog From Barking</span>
         </nav>
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">How to Stop a Dog From Barking: 6 Proven Methods</h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 7 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/scruffy-terrier-looking-up-outdoors.jpg" alt="Dog looking up outdoors" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
@@ -65,7 +72,7 @@ export default function HowToStopDogFromBarking() {
           <p>This is the most underused solution for barking. Dogs that bark from boredom often have plenty of physical exercise but no mental outlet. <a href="https://www.amazon.com/dp/B0711Y9Y8W?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Puzzle toys</a> that require problem-solving, snuffle mats for mealtime, training sessions that teach new commands, and nose-work games all engage the brain and reduce the urge to bark. Fifteen minutes of puzzle work can be as tiring as a 30-minute walk for intelligent breeds. Browse our <Link href="/products/dog-puzzle-toys" className="text-[#C4704B] hover:underline font-semibold">best puzzle toys</Link> for specific recommendations.</p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">6. Address Separation Anxiety Directly</h3>
-          <p>Anxiety-driven barking is the hardest to fix because it is rooted in emotion, not behavior. Calming supplements like <a href="https://www.amazon.com/dp/B07GFN8TM5?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Zesty Paws Calming Bites</a> can help take the edge off, and adaptil pheromone diffusers create a calming environment. But the real fix is systematic desensitization to departures: practice leaving for 1 second, then 5 seconds, then 30 seconds, building up gradually over weeks. Never make departures or arrivals dramatic. If the anxiety is severe, consult a veterinary behaviorist &mdash; medication may be needed alongside behavior modification. See our <Link href="/products/dog-anxiety" className="text-[#C4704B] hover:underline font-semibold">best anxiety products</Link> for more options.</p>
+          <p>Anxiety-driven barking is the hardest to fix because it is rooted in emotion, not behavior. Calming supplements like <a href="https://www.amazon.com/dp/B07GFN8TM5?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">Zesty Paws Calming Bites</a> can help take the edge off, and adaptil pheromone diffusers create a calming environment. For higher-potency formulations breeders use on chronic anxiety cases, look at the L-theanine and B-vitamin behavior-support supplements in <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s vitamin lineup</AffiliateInlineLink>. But the real fix is systematic desensitization to departures: practice leaving for 1 second, then 5 seconds, then 30 seconds, building up gradually over weeks. Never make departures or arrivals dramatic. If the anxiety is severe, consult a veterinary behaviorist &mdash; medication may be needed alongside behavior modification. See our <Link href="/products/dog-anxiety" className="text-[#C4704B] hover:underline font-semibold">best anxiety products</Link> for more options.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">When Barking Is a Medical Concern</h2>
           <p>See your vet if barking starts suddenly in a dog that was previously quiet, if barking is accompanied by limping or flinching when touched, if the bark sounds different than normal (hoarse, weak, or strained), or if the barking is accompanied by cognitive changes in senior dogs (confusion, circling, staring at walls). These can indicate pain, cognitive dysfunction, or other medical issues that training alone will not address.</p>

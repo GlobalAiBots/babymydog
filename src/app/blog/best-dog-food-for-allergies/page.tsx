@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-dog-food-for-allergies";
 
 export const metadata: Metadata = {
   title: "Best Dog Food for Allergies (2026): Limited-Ingredient and Novel-Protein Picks | BabyMyDog",
@@ -88,7 +93,9 @@ export default function BestDogFoodForAllergies() {
           Best Dog Food for Allergies (2026): Limited-Ingredient and Novel-Protein Picks
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 20, 2026 &middot; Nutrition &middot; 9 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 20, 2026 &middot; Nutrition &middot; 9 min read</p>
+
+        <AffiliateDisclosure />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
@@ -182,7 +189,7 @@ export default function BestDogFoodForAllergies() {
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Supplements That Actually Help</h2>
 
           <p>
-            Diet alone often isn&apos;t enough for severely itchy dogs. Omega-3 fish oil supplements (specifically EPA and DHA) reduce skin inflammation and improve coat quality, and probiotics help reset the gut microbiome that immune dysfunction frequently disrupts. Browse our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> for the omega-3s and probiotics I trust most. Pairing the right food with a quality omega-3 is one of the most reliable combinations for chronic skin issues.
+            Diet alone often isn&apos;t enough for severely itchy dogs. Omega-3 fish oil supplements (specifically EPA and DHA) reduce skin inflammation and improve coat quality, and probiotics help reset the gut microbiome that immune dysfunction frequently disrupts. Browse our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements guide</Link> for the omega-3s and probiotics I trust most, or look at <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s skin-and-coat vitamin lineup</AffiliateInlineLink> for the higher-potency formulations breeders use during allergy flares. Pairing the right food with a quality omega-3 is one of the most reliable combinations for chronic skin issues.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Final Thoughts</h2>

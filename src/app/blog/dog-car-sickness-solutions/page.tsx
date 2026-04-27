@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import BrandName from "@/components/BrandName";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "dog-car-sickness-solutions";
 
 export const metadata: Metadata = {
   title: "Dog Car Sickness: Solutions That Actually Work (2026) | BabyMyDog",
@@ -88,7 +93,9 @@ export default function DogCarSicknessSolutions() {
           Dog Car Sickness: Solutions That Actually Work (2026)
         </h1>
         <p className="text-gray-400 text-sm mb-2">By the <BrandName /> Team &middot; Retired AKC breeder &amp; U.S. military veteran</p>
-        <p className="text-gray-400 text-sm mb-8">April 20, 2026 &middot; Travel &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 20, 2026 &middot; Travel &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
@@ -158,7 +165,7 @@ export default function DogCarSicknessSolutions() {
             <strong>Trazodone</strong> is occasionally prescribed when the underlying issue is anxiety rather than motion. Works well for the dog who white-knuckles every car ride.
           </p>
           <p>
-            <strong>Ginger</strong> (in fresh, capsule, or treat form) has mild evidence for nausea reduction. Worth trying as a supplement before reaching for prescriptions on mild cases.
+            <strong>Ginger</strong> (in fresh, capsule, or treat form) has mild evidence for nausea reduction. Worth trying as a supplement before reaching for prescriptions on mild cases. For broader calming and anti-nausea support &mdash; B-vitamins, ginger root, L-theanine &mdash; the kennel-grade formats from <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s vitamin lineup</AffiliateInlineLink> tend to be cheaper per dose than retail-bottle calming chews and equally effective.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Conditioning a Carsick Dog</h2>

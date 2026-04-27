@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-dog-food-for-pit-bull";
 
 export const metadata: Metadata = {
   title: "Best Dog Food for Pit Bulls in 2026: High Protein, Healthy Skin | BabyMyDog",
@@ -45,7 +50,9 @@ export default function BestDogFoodForPitBull() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">
           Best Dog Food for Pit Bulls in 2026: High Protein, Healthy Skin
         </h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/pit-bull-terrier-jumping-for-ball.jpg" alt="Pit Bull playing" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
 
@@ -107,7 +114,7 @@ export default function BestDogFoodForPitBull() {
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Identifying Food Allergies</h2>
 
           <p>
-            If your pit bull has persistent itching, ear infections, hot spots, or chronic loose stools, food allergies should be near the top of your suspect list. The gold standard for diagnosis is an elimination diet: switch to a single novel protein (like venison or duck) and a single carbohydrate for 8 to 12 weeks. If symptoms improve, you know food was the trigger. Then reintroduce ingredients one at a time to identify the specific allergen. Your vet can guide this process. For more on supplements that support skin health, see our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> guide.
+            If your pit bull has persistent itching, ear infections, hot spots, or chronic loose stools, food allergies should be near the top of your suspect list. The gold standard for diagnosis is an elimination diet: switch to a single novel protein (like venison or duck) and a single carbohydrate for 8 to 12 weeks. If symptoms improve, you know food was the trigger. Then reintroduce ingredients one at a time to identify the specific allergen. Your vet can guide this process. For more on supplements that support skin health, see our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best dog supplements</Link> guide, or look at <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s skin-and-coat vitamin lineup</AffiliateInlineLink> for the higher-potency formulations breeders use on allergy-prone bully breeds.
           </p>
           <p>
             For the full pit bull breed profile, visit our <Link href="/breeds/pit-bull-terrier" className="text-[#C4704B] hover:underline font-semibold">Pit Bull Terrier breed guide</Link>. And browse all our <Link href="/products/dog-food" className="text-[#C4704B] hover:underline font-semibold">best dog food picks</Link> for more options.

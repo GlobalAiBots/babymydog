@@ -1,6 +1,11 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+
+const POST_SLUG = "english-bulldog-care-guide";
 
 export const metadata: Metadata = {
   title: "English Bulldog Care Guide: What Every Owner Needs to Know | BabyMyDog",
@@ -53,7 +58,9 @@ export default function EnglishBulldogCareGuide() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">
           English Bulldog Care Guide: What Every Owner Needs to Know
         </h1>
-        <p className="text-gray-400 text-sm mb-8">April 6, 2026 &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 6, 2026 &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <ImagePlaceholder id="blog-bulldog-care" alt="English Bulldog care guide" aspect="wide" className="rounded-2xl mb-10" />
 
@@ -111,7 +118,7 @@ export default function EnglishBulldogCareGuide() {
             My routine is simple: I use <a href="https://www.amazon.com/dp/B07PMN6RQN?tag=babymydog03-20" target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-[#C4704B] hover:underline font-semibold">wrinkle wipes</a> to clean between every fold, making sure I get into the nose rope (that big fold over the nose) and the folds around the tail pocket. After wiping, I dry the area thoroughly with a soft cloth. Moisture left behind is the enemy &mdash; that&apos;s what leads to yeast infections and bacterial growth.
           </p>
           <p>
-            Watch for redness, a funky smell, or brown discharge. Those are signs an infection is brewing, and you&apos;ll want to see your vet for a medicated wipe or cream. Prevention is so much easier than treatment, so stay on top of it. I also recommend checking their ears weekly, as bulldogs are prone to ear infections too. The same wipe-and-dry approach works well for ears.
+            Watch for redness, a funky smell, or brown discharge. Those are signs an infection is brewing, and you&apos;ll want to see your vet for a medicated wipe or cream. Prevention is so much easier than treatment, so stay on top of it. I also recommend checking their ears weekly, as bulldogs are prone to ear infections too. The same wipe-and-dry approach works well for ears. For breeders raising multiple bulldogs, the chlorhexidine wipes and skin-fold cleansers stocked through <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health</AffiliateInlineLink> are the same formats most bulldog kennels use &mdash; meaningfully cheaper per ounce than retail bottles.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Feeding Tips for Bulldogs</h2>

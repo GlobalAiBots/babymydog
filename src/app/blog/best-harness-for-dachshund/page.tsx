@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-harness-for-dachshund";
 
 export const metadata: Metadata = {
   title: "Best Harness for Dachshunds in 2026: Protect Their Spine | BabyMyDog",
@@ -47,7 +52,9 @@ export default function BestHarnessForDachshund() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">
           Best Harness for Dachshunds in 2026: Protect Their Spine
         </h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 7 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/dachshund-puppy-jumping-mid-air.jpg" alt="Dachshund puppy jumping" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
 
@@ -57,7 +64,7 @@ export default function BestHarnessForDachshund() {
             If you own a dachshund and you&apos;re still walking them on a collar, please stop. I mean that with all the kindness in the world, but it&apos;s one of those things I feel strongly enough about to be blunt. Dachshunds have the longest spinal columns relative to body size of any dog breed, and that adorable elongated body comes with a serious vulnerability: intervertebral disc disease, or IVDD. It&apos;s the number one health concern for the breed, and anything that puts pressure on their neck and cervical spine increases risk.
           </p>
           <p>
-            A collar concentrates all leash pressure on the neck. When a dachshund pulls, lunges at a squirrel, or reaches the end of the leash suddenly, that force transmits straight to the cervical vertebrae. A harness distributes that same force across the chest and shoulders, keeping the spine safe. It&apos;s not optional for this breed. It&apos;s a medical necessity.
+            A collar concentrates all leash pressure on the neck. When a dachshund pulls, lunges at a squirrel, or reaches the end of the leash suddenly, that force transmits straight to the cervical vertebrae. A harness distributes that same force across the chest and shoulders, keeping the spine safe. It&apos;s not optional for this breed. It&apos;s a medical necessity. The other side of IVDD prevention is keeping the discs themselves resilient &mdash; vet-grade glucosamine and chondroitin from <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival Animal Health&apos;s joint care line</AffiliateInlineLink> is the standard preventive layer most veterinary neurologists recommend for dachshunds from age two onward.
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">What to Look for in a Dachshund Harness</h2>

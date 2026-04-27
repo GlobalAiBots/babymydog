@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-bed-for-great-dane";
 
 export const metadata: Metadata = {
   title: "Best Dog Bed for Great Danes in 2026: XL Orthopedic Picks | BabyMyDog",
@@ -43,7 +48,9 @@ export default function BestBedForGreatDane() {
         </nav>
 
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Dog Bed for Great Danes in 2026: XL Orthopedic Picks</h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/great-dane-merle-portrait-autumn.jpg" alt="Great Dane portrait" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
 
@@ -87,7 +94,7 @@ export default function BestBedForGreatDane() {
           </ul>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Why Cheap Beds Cost More Long-Term</h2>
-          <p>A $40 bed that flattens in 8 weeks under a Dane costs roughly $260 per year in replacements. A $280 Big Barker with a 10-year guarantee costs $28 per year. Beyond the financial math, a flat bed provides zero joint support, and Great Danes are already at high risk for hip dysplasia, osteochondritis, and Wobbler syndrome. Preventive orthopedic support is one of the most cost-effective investments you can make in a giant breed&apos;s long-term health. For supplement recommendations to support those joints, see our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best supplements guide</Link>.</p>
+          <p>A $40 bed that flattens in 8 weeks under a Dane costs roughly $260 per year in replacements. A $280 Big Barker with a 10-year guarantee costs $28 per year. Beyond the financial math, a flat bed provides zero joint support, and Great Danes are already at high risk for hip dysplasia, osteochondritis, and Wobbler syndrome. Preventive orthopedic support is one of the most cost-effective investments you can make in a giant breed&apos;s long-term health. For supplement recommendations to support those joints, see our <Link href="/products/dog-supplements" className="text-[#C4704B] hover:underline font-semibold">best supplements guide</Link> &mdash; or for the vet-grade glucosamine and chondroitin formulations breeders use on giant-breed kennels, browse <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival Animal Health&apos;s joint care line</AffiliateInlineLink>.</p>
           <p>For the full breed profile, visit our <Link href="/breeds/great-dane" className="text-[#C4704B] hover:underline font-semibold">Great Dane breed guide</Link>. Browse all our <Link href="/products/dog-beds" className="text-[#C4704B] hover:underline font-semibold">best dog beds</Link> for more options.</p>
 
           <div className="bg-[#FAF3EB] border border-[#D4C5A9]/40 rounded-2xl p-6 mt-10">

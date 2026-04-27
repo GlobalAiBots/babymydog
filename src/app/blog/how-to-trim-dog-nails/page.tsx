@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "how-to-trim-dog-nails";
 
 const TITLE = "How to Trim Your Dog's Nails at Home: Step-by-Step Guide (2026)";
 const DESC = "Why nail length matters for joints, clippers vs grinder, how to avoid the quick (and what to do if you hit it), desensitization training, and when to pay a groomer instead.";
@@ -44,8 +49,10 @@ export default function Post() {
         <p className="text-gray-500 text-sm">Updated April 21, 2026 &middot; 9 min read &middot; BabyMyDog Team</p>
       </header>
 
+      <AffiliateDisclosure />
+
       <div className="space-y-6 text-gray-700 leading-relaxed">
-        <p>Most dog owners either never trim their dog&apos;s nails (letting a groomer do it every 6 weeks), or have one bad experience quicking a nail and never try again. Neither is great. <strong className="text-[#1A1A1A]">Long nails cause joint problems, posture changes, and eventually arthritis</strong> — and paying $15 every month for 15 years of dog life adds up to $2,700+. Learning a 5-minute routine saves the money and keeps nails at the right length between groomer visits.</p>
+        <p>Most dog owners either never trim their dog&apos;s nails (letting a groomer do it every 6 weeks), or have one bad experience quicking a nail and never try again. Neither is great. <strong className="text-[#1A1A1A]">Long nails cause joint problems, posture changes, and eventually arthritis</strong> — and paying $15 every month for 15 years of dog life adds up to $2,700+. Learning a 5-minute routine saves the money and keeps nails at the right length between groomer visits. (For pro-grade nail clippers, grinders, and styptic powder used in working salons, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink> &mdash; same formats most groomers buy from, at vet-supply prices.)</p>
         <p>This guide covers why nail length matters, the tools worth owning, the technique, and the desensitization training that turns nail day from a fight into a routine.</p>
 
         <h2 className="font-[Cabin] text-2xl font-bold text-[#1A1A1A] mt-10">Why Nail Length Actually Matters</h2>

@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-dog-bed-for-corgi";
 
 export const metadata: Metadata = {
   title: "Best Dog Bed for Corgis in 2026: Orthopedic, Cooling & Cozy | BabyMyDog",
@@ -43,14 +48,16 @@ export default function BestDogBedForCorgi() {
         </nav>
 
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">Best Dog Bed for Corgis in 2026: Orthopedic, Cooling &amp; Cozy</h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 7 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 7 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/pembroke-welsh-corgi-smiling-crater-lake.jpg" alt="Happy Corgi outdoors" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>Corgis look like they were assembled from spare parts &mdash; a big dog&apos;s head and chest on two-inch legs &mdash; and that unique proportions create real bedding challenges. Like dachshunds, Pembroke and Cardigan Welsh Corgis have elongated spines relative to their leg length, which makes them susceptible to intervertebral disc disease (IVDD). Proper spinal support while sleeping is not a luxury for this breed, it is a medical consideration.</p>
-          <p>Add to that a thick double coat that traps heat like insulation (because it literally is insulation, bred for Welsh winters), and you have a dog that needs a bed offering orthopedic support, cooling properties, and a low enough entry point that those stubby legs can actually get in and out without jumping. That last point matters more than people think &mdash; repeated jumping in and out of a high-sided bed puts exactly the kind of impact stress on the spine that contributes to disc problems over time.</p>
+          <p>Add to that a thick double coat that traps heat like insulation (because it literally is insulation, bred for Welsh winters), and you have a dog that needs a bed offering orthopedic support, cooling properties, and a low enough entry point that those stubby legs can actually get in and out without jumping. That last point matters more than people think &mdash; repeated jumping in and out of a high-sided bed puts exactly the kind of impact stress on the spine that contributes to disc problems over time. For the disc-and-joint side of corgi care, vet-grade glucosamine and chondroitin from <AffiliateInlineLink partner={REVIVAL} linkKey="jointCare" postSlug={POST_SLUG}>Revival Animal Health&apos;s joint care line</AffiliateInlineLink> pairs naturally with the right bed &mdash; the layered approach veterinary orthopedic specialists recommend for predisposed breeds.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">What to Look for in a Corgi Bed</h2>
           <ul className="list-disc pl-6 space-y-2">

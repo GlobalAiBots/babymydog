@@ -1,5 +1,10 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/affiliate/AffiliateDisclosure";
+import AffiliateInlineLink from "@/components/affiliate/AffiliateInlineLink";
+import { REVIVAL } from "@/data/affiliates/revival";
 import type { Metadata } from "next";
+
+const POST_SLUG = "best-grooming-tools-for-goldendoodle";
 
 export const metadata: Metadata = {
   title: "Best Grooming Tools for Goldendoodles in 2026: Prevent Matting | BabyMyDog",
@@ -47,14 +52,16 @@ export default function BestGroomingToolsGoldendoodle() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 leading-tight font-display">
           Best Grooming Tools for Goldendoodles in 2026: Prevent Matting
         </h1>
-        <p className="text-gray-400 text-sm mb-8">April 7, 2026 &middot; 8 min read</p>
+        <p className="text-gray-400 text-sm mb-4">April 7, 2026 &middot; 8 min read</p>
+
+        <AffiliateDisclosure />
 
         <img src="/images/goldendoodle-wearing-red-harness-and-leash.jpg" alt="Goldendoodle outdoors" className="w-full rounded-2xl mb-10 max-h-[400px] object-cover" />
 
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>
-            If there&apos;s one thing every Goldendoodle owner learns the hard way, it&apos;s that those beautiful curly coats don&apos;t maintain themselves. Goldendoodles were bred to be low-shedding, and they largely deliver on that promise &mdash; but the trade-off is a coat that mats faster than almost any other breed. Those loose hairs that would normally fall out on a Golden Retriever get trapped in a Goldendoodle&apos;s curls, creating tangles that quickly turn into painful mats if you don&apos;t stay on top of them.
+            If there&apos;s one thing every Goldendoodle owner learns the hard way, it&apos;s that those beautiful curly coats don&apos;t maintain themselves. Goldendoodles were bred to be low-shedding, and they largely deliver on that promise &mdash; but the trade-off is a coat that mats faster than almost any other breed. Those loose hairs that would normally fall out on a Golden Retriever get trapped in a Goldendoodle&apos;s curls, creating tangles that quickly turn into painful mats if you don&apos;t stay on top of them. (For pro-grade dematting tools, slicker brushes, and curly-coat shampoos at vet-supply prices, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink>.)
           </p>
           <p>
             Professional grooming every 6 to 8 weeks is a reality with this breed, running $80 to $150 per visit depending on your area and the coat&apos;s condition. That adds up to $600 to $1,500 per year. The right home grooming tools and a consistent routine between professional appointments can keep costs down, keep your Goldendoodle comfortable, and prevent those dreaded groomer calls where they tell you they had to shave your dog because the mats were too severe.
