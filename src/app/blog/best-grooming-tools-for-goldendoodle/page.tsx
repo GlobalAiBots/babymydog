@@ -61,7 +61,7 @@ export default function BestGroomingToolsGoldendoodle() {
         <div className="prose prose-gray max-w-none text-[#1A1A1A] leading-relaxed space-y-6">
 
           <p>
-            If there&apos;s one thing every Goldendoodle owner learns the hard way, it&apos;s that those beautiful curly coats don&apos;t maintain themselves. Goldendoodles were bred to be low-shedding, and they largely deliver on that promise &mdash; but the trade-off is a coat that mats faster than almost any other breed. Those loose hairs that would normally fall out on a Golden Retriever get trapped in a Goldendoodle&apos;s curls, creating tangles that quickly turn into painful mats if you don&apos;t stay on top of them. (For pro-grade dematting tools, slicker brushes, and curly-coat shampoos at vet-supply prices, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink>.)
+            If there&apos;s one thing every Goldendoodle owner learns the hard way, it&apos;s that those beautiful curly coats don&apos;t maintain themselves. Goldendoodles were bred to be low-shedding, and they largely deliver on that promise &mdash; but the trade-off is a coat that mats faster than almost any other breed. Those loose hairs that would normally fall out on a Golden Retriever get trapped in a Goldendoodle&apos;s curls, creating tangles that quickly turn into painful mats if you don&apos;t stay on top of them.
           </p>
           <p>
             Professional grooming every 6 to 8 weeks is a reality with this breed, running $80 to $150 per visit depending on your area and the coat&apos;s condition. That adds up to $600 to $1,500 per year. The right home grooming tools and a consistent routine between professional appointments can keep costs down, keep your Goldendoodle comfortable, and prevent those dreaded groomer calls where they tell you they had to shave your dog because the mats were too severe.
@@ -82,6 +82,8 @@ export default function BestGroomingToolsGoldendoodle() {
           </p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Our Top 5 Picks</h2>
+
+          <p>The picks below are the consumer-grade options most home owners reach for. Owners moving toward pro-grade kits &mdash; the same dematting combs, slicker brushes, and curly-coat shampoos working salons actually buy &mdash; can browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink> for vet-supply pricing on the larger formats.</p>
 
           <h3 className="text-xl font-bold text-[#1A1A1A] mt-8 mb-3 font-display">1. Chris Christensen Big G Slicker Brush &mdash; Best Slicker Brush</h3>
           <p>

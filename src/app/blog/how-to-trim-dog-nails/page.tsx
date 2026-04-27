@@ -52,7 +52,7 @@ export default function Post() {
       <AffiliateDisclosure />
 
       <div className="space-y-6 text-gray-700 leading-relaxed">
-        <p>Most dog owners either never trim their dog&apos;s nails (letting a groomer do it every 6 weeks), or have one bad experience quicking a nail and never try again. Neither is great. <strong className="text-[#1A1A1A]">Long nails cause joint problems, posture changes, and eventually arthritis</strong> — and paying $15 every month for 15 years of dog life adds up to $2,700+. Learning a 5-minute routine saves the money and keeps nails at the right length between groomer visits. (For pro-grade nail clippers, grinders, and styptic powder used in working salons, browse <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink> &mdash; same formats most groomers buy from, at vet-supply prices.)</p>
+        <p>Most dog owners either never trim their dog&apos;s nails (letting a groomer do it every 6 weeks), or have one bad experience quicking a nail and never try again. Neither is great. <strong className="text-[#1A1A1A]">Long nails cause joint problems, posture changes, and eventually arthritis</strong> — and paying $15 every month for 15 years of dog life adds up to $2,700+. Learning a 5-minute routine saves the money and keeps nails at the right length between groomer visits.</p>
         <p>This guide covers why nail length matters, the tools worth owning, the technique, and the desensitization training that turns nail day from a fight into a routine.</p>
 
         <h2 className="font-[Cabin] text-2xl font-bold text-[#1A1A1A] mt-10">Why Nail Length Actually Matters</h2>
@@ -79,6 +79,7 @@ export default function Post() {
         <p>Most experienced owners use both: clippers to quickly remove bulk, then grinder to smooth and shape. 2 minutes total for a medium dog.</p>
 
         <h2 className="font-[Cabin] text-2xl font-bold text-[#1A1A1A] mt-10">Gear Recommendations</h2>
+        <p>Below are the consumer-grade picks most home owners use. For pro-grade clippers, grinders, blade-sharpening kits, and styptic powder &mdash; the same formats working salons buy in bulk &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="grooming" postSlug={POST_SLUG}>Revival Animal Health&apos;s grooming category</AffiliateInlineLink> stocks them at vet-supply prices, typically meaningfully cheaper than retail-bottle alternatives.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose my-6">
           {products.map((p) => (
             <div key={p.name} className="border border-gray-200 rounded-xl p-4 bg-white">

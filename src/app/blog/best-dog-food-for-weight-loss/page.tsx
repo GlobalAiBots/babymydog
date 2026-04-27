@@ -81,6 +81,7 @@ export default function BestDogFoodForWeightLoss() {
             <li><strong>Reduced lifespan:</strong> Purina&apos;s 14-year lifetime study on Labrador Retrievers showed that dogs kept at ideal body weight lived a median of 1.8 years longer than their overfed siblings &mdash; and spent significantly fewer years suffering from chronic disease.</li>
             <li><strong>Increased surgical risk:</strong> Overweight dogs are harder to anesthetize, slower to heal, and more prone to post-surgical complications.</li>
           </ul>
+          <p>A calorie-restricted diet means fewer calories AND fewer micronutrients arriving with each meal &mdash; which is why a baseline multivitamin paired with weight-management food is what veterinary nutritionists routinely recommend. <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s vitamin lineup</AffiliateInlineLink> covers the formats commonly used during weight-management protocols, at vet-supply prices.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">What to Look for in a Weight Management Food</h2>
 
@@ -130,7 +131,7 @@ export default function BestDogFoodForWeightLoss() {
             <li>Puzzle feeders and food-dispensing toys turn mealtime into physical activity. Scatter kibble in the yard for nose work on nice days.</li>
             <li>Avoid strenuous exercise immediately after meals to reduce bloat risk, especially in deep-chested breeds.</li>
           </ul>
-          <p>For a complete breakdown of activity needs by breed and age, read our <Link href="/blog/how-much-exercise-does-my-dog-need" className="text-[#C4704B] hover:underline font-semibold">exercise guide</Link>. Overweight dogs in a calorie-restricted diet can also benefit from baseline multivitamin support to make sure reduced food intake doesn&apos;t mean reduced micronutrients &mdash; <AffiliateInlineLink partner={REVIVAL} linkKey="vitaminsGeneral" postSlug={POST_SLUG}>Revival Animal Health&apos;s vitamin lineup</AffiliateInlineLink> covers the formats vets recommend for weight-management protocols. And if comprehensive preventive care fits the broader healthy-dog plan, <AffiliateInlineLink partner={BUDGET_PET_CARE} linkKey="evergreen" postSlug={POST_SLUG}>Budget Pet Care&apos;s parasiticide catalog</AffiliateInlineLink> covers brand-name flea, tick, and heartworm preventatives at substantial savings versus clinic pricing.</p>
+          <p>For a complete breakdown of activity needs by breed and age, read our <Link href="/blog/how-much-exercise-does-my-dog-need" className="text-[#C4704B] hover:underline font-semibold">exercise guide</Link>. And if comprehensive preventive care fits the broader healthy-dog plan, <AffiliateInlineLink partner={BUDGET_PET_CARE} linkKey="evergreen" postSlug={POST_SLUG}>Budget Pet Care&apos;s parasiticide catalog</AffiliateInlineLink> covers brand-name flea, tick, and heartworm preventatives at substantial savings versus clinic pricing.</p>
 
           <h2 className="text-2xl font-bold text-[#1A1A1A] mt-10 mb-4 font-display">Safe Weight Loss Rate</h2>
 
